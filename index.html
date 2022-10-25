@@ -7,7 +7,7 @@
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <meta name="author" content="saint-lascivious, 'Hayden Pearce'">
   <meta name="charset" content="UTF-8">
-  <meta name="description" content="sainternet.xyz">
+  <meta name="description" content="Sainternet offers a validating, recursive, caching, mostly specification compliant, filtering DNS server with a zero logging policy served over all your favourite acronyms (and some you've probably never heard of before).">
   <meta name="keywords" content="dns, DNS, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'Hayden Pearce', pokedex, Pokédex, saint, saint-lascivious, sainternet.xyz">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
@@ -17,9 +17,28 @@
       margin-right: auto;
     }
     footer {
+      font-family: verdana;
+      font-size: 120%;
+      text-align: center;
+    }
+    table {
+      font-family: verdana;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    td {
       font-family:verdana;
       font-size:120%;
-      text-align:center;
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 8px;
+    }
+    th {
+      font-family:verdana;
+      font-size:120%;
+      border: 2px solid #dddddd;
+      text-align: center;
+      padding: 8px;
     }
   </style>
 </head>
@@ -45,7 +64,47 @@
     </p>
   </h3>
     <p style="font-family:verdana; font-size:120%; text-align:center;">
-      Sainternet is a validating, recursive, caching, <i>mostly</i> specification compliant, Android Private <a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> compatible, filtering nameserver with a zero logging policy served over <a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS">HTTPS</a>, <a href="https://en.wikipedia.org/wiki/HTTP/3">HTTP/3</a>, <a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol">TCP</a>, <a href="https://en.wikipedia.org/wiki/DNS_over_TLS">TLS</a>, <a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol">UDP</a>, <a href="https://en.wikipedia.org/wiki/DNS_over_QUIC">QUIC</a>, and possibly other acronyms available at the <b>dns.sainternet.xyz</b> subdomain.
+      Sainternet offers a validating, recursive, caching, <i>mostly</i> specification compliant, filtering <a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> server with a zero logging policy served over all your favourite acronyms (and some you've probably never heard of before).
+    </p>
+    <table>
+      <tr>
+        <th>Protocol</th>
+        <th>Address</th>
+        <th>Port</th>
+      </tr>
+      <tr>
+        <td><a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS">HTTPS</a></td>
+        <td>dns.sainternet.xyz</td>
+        <td>TCP 443</td>
+      </tr>
+      <tr>
+        <td><a href="https://en.wikipedia.org/wiki/HTTP/3">HTTP/3</a></td>
+        <td>dns.sainternet.xyz</td>
+        <td>UDP 443</td>
+      </tr>
+      <tr>
+        <td><a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol">TCP</a></td>
+        <td>119.224.127.171</td>
+        <td>TCP 53</td>
+      </tr>
+      <tr>
+        <td><a href="https://en.wikipedia.org/wiki/DNS_over_TLS">TLS</a></td>
+        <td>dns.sainternet.xyz</td>
+        <td>TCP 853</td>
+      </tr>
+      <tr>
+        <td><a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol">UDP</a></td>
+        <td>119.224.127.171</td>
+        <td>UDP 53</td>
+      </tr>
+      <tr>
+        <td><a href="https://en.wikipedia.org/wiki/DNS_over_QUIC">QUIC</a></td>
+        <td>dns.sainternet.xyz</td>
+        <td>UDP 784<br>UDP 853<br>UDP 8853</td>
+      </tr>
+    </table>
+    <p style="font-family:verdana; font-size:120%; text-align:center;">
+      Note: Sainternet intentionally disables Mozilla's <a href="https://support.mozilla.org/en-US/kb/configuring-networks-disable-dns-over-https">default DNS over HTTPS</a> and Apple's <a href="https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay">iCloud Private Relay</a> to prevent them from bypassing Sainternet.
     </p>
   </article>
   <!-- get wurmed -->
@@ -60,7 +119,7 @@
       Sainternet is home to the <i>world's first</i> (…and only?) DNS driven <a href="https://en.wikipedia.org/wiki/TXT_record">TXT</a> record based National Pokédex!
     </p>
     <!-- get termed -->
-    <img src="/images/terminal.png" alt="nslookup -type=txt wurmple.pokedex dns.sainternet.xyz" style="width:80%;">
+    <img src="/images/terminal.png" alt="nslookup -type=txt wurmple.pokedex dns.sainternet.xyz" style="width:90%;">
   </article>
   <hr>
 </main>
