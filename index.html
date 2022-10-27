@@ -3,14 +3,27 @@
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
-  <title>sainternet.xyz</title>
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <!--  basic icon magic  -->
+  <link rel="apple-touch-icon" href="/resources/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="/resources/icons/icon.svg">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any">
+  <!--  basic pwa magic  -->
+  <link rel="manifest" href="/resources/manifests/sainternet.webmanifest">
+  <!--  basic regular magic  -->
   <meta name="author" content="saint-lascivious, 'Hayden Pearce'">
   <meta name="charset" content="UTF-8">
-  <meta name="description" content="Sainternet offers a validating, recursive, caching, mostly specification compliant, filtering DNS server with a zero logging policy served over all your favourite acronyms (and some you've probably never heard of before).">
+  <meta name="description" content="Sainternet offers a validating, recursive, caching, mostly specification compliant, filtering DNS server with a zero logging policy served over all your favourite acronyms.">
   <meta name="keywords" content="dns, DNS, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'Hayden Pearce', pokedex, Pokédex, saint, saint-lascivious, sainternet.xyz">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sainternet.xyz</title>
+  <!--  basic style magic  -->
   <style>
+    h1 {
+      font-family: arial;
+      font-size: 10vw;
+      line-height: 0vw;
+      text-align: center;
+    }
     img {
       display: block;
       margin-left: auto;
@@ -40,31 +53,33 @@
       text-align: center;
       padding: 8px;
     }
+    p1 {
+      font-family: arial;
+      font-size: 2vw;
+      line-height: 0vw;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
 <header>
   <h1>
-    <p style="font-family:arial; font-size:120%; text-align:center;">
-      sainternet.xyz
-    </p>
+    sainternet.xyz
   </h1>
-  <h6>
-    <p style="font-family:arial; font-size:100%; text-align:center;">
-      <i>…breaking the internet, since 2016.</i>
-    </p>
-  </h6>
+  <p1>
+    <b><i>…breaking the internet, since 2016.</i></b>
+  </p1>
+  <hr>
 </header>
 <main>
-  <hr>
   <article>
-  <h3>
+    <h2>
+      <p style="font-family:arial; font-size:120%; text-align:center;">
+        Sainternet DNS
+      </p>
+    </h2>
     <p style="font-family:arial; font-size:120%; text-align:center;">
-      Sainternet DNS
-    </p>
-  </h3>
-    <p style="font-family:arial; font-size:120%; text-align:center;">
-      Sainternet offers a validating, recursive, caching, <i>mostly</i> specification compliant, filtering <a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> server with a zero logging policy served over all your favourite acronyms (and some you've probably never heard of before).
+      Sainternet offers a validating, recursive, caching, <i>mostly</i> specification compliant, filtering <a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> server with a zero logging policy served over all your favourite acronyms.
     </p>
     <table>
       <tr>
@@ -107,24 +122,27 @@
       Note: Sainternet intentionally disables Mozilla's <a href="https://support.mozilla.org/en-US/kb/configuring-networks-disable-dns-over-https">default DNS over HTTPS</a> and Apple's <a href="https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay">iCloud Private Relay</a> to prevent them from bypassing Sainternet.
     </p>
   </article>
-  <!-- get wurmed -->
   <article>
-  <h3>
-    <p style="font-family:arial; font-size:120%; text-align:center;">
-      National Pokédex-over-DNS
-    </p>
-  </h3>
-    <img src="/images/wurmple.png" alt="Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping." style="width:80%;">
-    <p style="font-family:arial; font-size:120%; text-align:center;">
-      Sainternet is home to the <i>world's first</i> (…and only?) DNS driven <a href="https://en.wikipedia.org/wiki/TXT_record">TXT</a> record based National Pokédex!
-    </p>
-    <!-- get termed -->
-    <img src="/images/terminal.png" alt="nslookup -type=txt wurmple.pokedex dns.sainternet.xyz" style="width:90%;">
+    <h2>
+      <p style="font-family:arial; font-size:120%; text-align:center;">
+        Sainternet Pokédex-over-DNS
+      </p>
+    </h2>
+      <!-- get wurmed -->
+      <img src="/resources/images/wurmple.png" alt="Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping." style="width:80%;">
+      <p style="font-family:arial; font-size:120%; text-align:center;">
+        Sainternet is proud to present the <i>world's first</i> (…and only?) DNS driven <a href="https://en.wikipedia.org/wiki/TXT_record">TXT</a> record based National Pokédex!
+      </p>
+      <!-- get termed -->
+      <img src="/resources/images/terminal.png" alt="Example Pokédex-over-DNS query using the nslookup utility from the command line: nslookup -type=txt wurmple.pokedex dns.sainternet.xyz" style="width:90%;">
+      <p style="font-family:arial; font-size:120%; text-align:center;">
+        A somewhat fun (<i>ab</i>)use of DNS enabling one to query a Pokémon species (currently supported: English) in order to receive its National Pokédex Number (NPN), or query an NPN (zero padding optional) in order to receive the Pokémon species name (currently supported: English, Japanese Rōmaji).
+      </p>
   </article>
-  <hr>
 </main>
 <footer>
   <address>
+    <hr>
     Contact: <a href="mailto:saint@sainternet.xyz">saint@sainternet.xyz</a>
   </address>
 </footer>
