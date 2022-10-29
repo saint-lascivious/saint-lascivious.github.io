@@ -4,73 +4,20 @@
 <html lang="en-NZ">
 <head>
   <!--  basic icon magic  -->
-  <link rel="apple-touch-icon" href="/resources/images/icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="/resources/icons/apple-touch-icon.png">
   <link rel="icon" type="image/svg+xml" href="/resources/icons/icon.svg">
   <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any">
   <!--  basic pwa magic  -->
-  <link rel="manifest" href="/resources/manifests/sainternet.webmanifest">
+  <link rel="manifest" href="/resources/manifests/sainternet.json">
+  <!--  basic stylesheet magic  -->
+  <link rel="stylesheet" href="/resources/stylesheets/sainternet.css">
   <!--  basic regular magic  -->
   <meta name="author" content="saint-lascivious, 'Hayden Pearce'">
   <meta name="charset" content="UTF-8">
-  <meta name="description" content="Sainternet offers a validating, recursive, caching, mostly specification compliant, filtering DNS server with a zero logging policy served over all your favourite acronyms.">
-  <meta name="keywords" content="dns, DNS, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'Hayden Pearce', pokedex, Pokédex, saint, saint-lascivious, sainternet.xyz">
+  <meta name="description" content="Sainternet offers validating, recursive, caching, mostly specification compliant, filtered DNS servers with a zero logging policy served over all your favourite acronyms.">
+  <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>sainternet.xyz</title>
-  <!--  basic style magic  -->
-  <style>
-    bodytext {
-      font-family: arial;
-      font-size: 4vmin;
-      text-align: center;
-    }
-    h1 {
-      font-family: arial;
-      font-size: 14vw;
-      line-height: 0vw;
-      text-align: center;
-    }
-    h2 {
-      font-family: arial;
-      font-size: 8vw;
-      line-height: 0vw;
-      text-align: center;
-    }
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    footer {
-      font-family: arial;
-      font-size: 4vmin;
-      text-align: center;
-    }
-    subheader {
-      font-family: arial;
-      font-size: 4vw;
-      line-height: 0vw;
-      text-align: center;
-    }
-    table {
-      font-family: arial;
-      border-collapse: collapse;
-      width: 100%;
-    }
-    td {
-      font-family: arial;
-      font-size: 4vmin;
-      border: 0.5vmin solid #dddddd;
-      text-align: center;
-      padding: 1vmin;
-    }
-    th {
-      font-family: arial;
-      font-size: 4vmin;
-      border: 0.5vmin solid #757575;
-      text-align: center;
-      padding: 1vw;
-    }
-  </style>
 </head>
 <body>
 <header>
@@ -87,11 +34,11 @@
 <main>
   <article>
     <h2>
-      Sainternet DNS
+      Filtered DNS
     </h2>
     <bodytext>
       <p>
-        Sainternet offers a validating, recursive, caching, <i>mostly</i> specification compliant, filtering <a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> server with a zero logging policy served over all your favourite acronyms.
+        Sainternet offers validating, recursive, caching, <i>mostly</i> specification compliant, filtered <a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> servers with a zero logging policy, served over all your favourite acronyms. Sainternet blocks many domains known to be associated with a variety of unsavoury behaviours including but not limited to advertising, botnets, malware, and telemetry using a variety of methods updated regularly. Sainternet <i>does not</i> and <b><i>will not</i></b> block domains based upon ethical, moral, personal or political belief, nor upon any lack thereof.
       </p>
     </bodytext>
     <table>
@@ -139,22 +86,20 @@
   </article>
   <article>
     <h2>
-      <p>
-        Pokédex-over-DNS
-      </p>
+      Pokédex-over-DNS
     </h2>
     <!-- get wurmed -->
-    <img src="/resources/images/wurmple.png" alt="Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping." style="width:80%;">
+    <img src="/resources/images/wurmple.png" alt="#265 Wurmple: Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping." style="width:80%;">
     <bodytext>
       <p>
-        Sainternet is proud to present the <i>world's first</i> (…and only?) DNS driven <a href="https://en.wikipedia.org/wiki/TXT_record">TXT</a> record based National Pokédex!
+        Sainternet is proud to present the <b><i>world's first</i></b> (…and only?) DNS driven <a href="https://en.wikipedia.org/wiki/TXT_record">TXT</a> record based National Pokédex-over-DNS!
       </p>
     </bodytext>
     <!-- get termed -->
     <img src="/resources/images/terminal.png" alt="Example Pokédex-over-DNS query using the nslookup utility from the command line: nslookup -type=txt wurmple.pokedex dns.sainternet.xyz" style="width:90%;">
     <bodytext>
       <p>
-        A somewhat fun (<i>ab</i>)use of DNS enabling one to query a Pokémon species (currently supported: English) in order to receive its National Pokédex Number (NPN), or query an NPN (zero padding optional) in order to receive the Pokémon species name (currently supported: English, Japanese Rōmaji).
+        A somewhat fun (<i>ab</i>)use of DNS enabling one to query a Pokémon species name (currently supported: English) in order to receive its National Pokédex Number (NPN), or query an NPN (zero padding optional) in order to receive the Pokémon species name (currently supported: English, Japanese Rōmaji).
       </p>
     </bodytext>
   </article>
