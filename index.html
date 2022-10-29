@@ -10,7 +10,7 @@
   <!--  basic pwa magic  -->
   <link rel="manifest" href="/resources/manifests/sainternet.json">
   <!--  basic stylesheet magic  -->
-  <link rel="stylesheet" href="/resources/stylesheets/sainternet.css">
+  <link rel="stylesheet" href="/home/saint/Source/saint-lascivious.github.io/resources/stylesheets/sainternet.css">
   <!--  basic regular magic  -->
   <meta name="author" content="saint-lascivious, 'Hayden Pearce'">
   <meta name="charset" content="UTF-8">
@@ -24,11 +24,6 @@
   <h1>
     sainternet.xyz
   </h1>
-  <subheader>
-    <p>
-      <b><i>…breaking the internet, since 2016</i></b>
-    </p>
-  </subheader>
   <hr>
 </header>
 <main>
@@ -36,11 +31,9 @@
     <h2>
       Filtered DNS
     </h2>
-    <bodytext>
       <p>
-        Sainternet offers validating, recursive, caching, <i>mostly</i> specification compliant, filtered <a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> servers with a zero logging policy, served over all your favourite acronyms. Sainternet blocks many domains known to be associated with a variety of unsavoury behaviours including but not limited to advertising, botnets, malware, and telemetry using a variety of methods updated regularly. Sainternet <i>does not</i> and <b><i>will not</i></b> block domains based upon ethical, moral, personal or political belief, nor upon any lack thereof.
+        Sainternet offers validating, recursive, caching, <i>mostly</i> specification compliant, filtered <a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> servers with a zero logging policy, served over all your favourite acronyms.
       </p>
-    </bodytext>
     <table>
       <tr>
         <th>Protocol</th>
@@ -78,36 +71,37 @@
         <td>UDP 784<br>UDP 853<br>UDP 8853</td>
       </tr>
     </table>
-    <bodytext>
-      <p>
-        Note: Sainternet intentionally disables Mozilla's <a href="https://support.mozilla.org/en-US/kb/configuring-networks-disable-dns-over-https">default DNS over HTTPS</a> and Apple's <a href="https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay">iCloud Private Relay</a> to prevent them from bypassing Sainternet.
+    <p>
+      Sainternet blocks many domains known to be associated with unsavoury behaviours (including but not limited to advertising, botnets, malware, spam and telemetry), using a variety of methods updated regularly.
       </p>
-    </bodytext>
+    <p>
+      Sainternet <i>does not</i> and <b><i>will not</i></b> block domains based upon ethical, moral, personal, political or religious belief, nor upon any lack thereof.
+    </p>
+    <p>
+      Note: Sainternet intentionally disables Mozilla's <a href="https://support.mozilla.org/en-US/kb/configuring-networks-disable-dns-over-https">default DNS over HTTPS</a> and Apple's <a href="https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay">iCloud Private Relay</a> to prevent them from bypassing Sainternet.
+    </p>
   </article>
   <article>
     <h2>
       Pokédex-over-DNS
     </h2>
     <!-- get wurmed -->
-    <img src="/resources/images/wurmple.png" alt="#265 Wurmple: Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping." style="width:80%;">
-    <bodytext>
-      <p>
-        Sainternet is proud to present the <b><i>world's first</i></b> (…and only?) DNS driven <a href="https://en.wikipedia.org/wiki/TXT_record">TXT</a> record based National Pokédex-over-DNS!
-      </p>
-    </bodytext>
+    <img src="/home/saint/Source/saint-lascivious.github.io/resources/images/wurmple.png" alt="#265 Wurmple: Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping." style="width:80%;">
+    <p>
+      Sainternet is proud to present the <b><i>world's first</i></b> (…and only?) DNS driven <a href="https://en.wikipedia.org/wiki/TXT_record">TXT</a> record based National Pokédex-over-DNS!
+    </p>
     <!-- get termed -->
-    <img src="/resources/images/terminal.png" alt="Example Pokédex-over-DNS query using the nslookup utility from the command line: nslookup -type=txt wurmple.pokedex dns.sainternet.xyz" style="width:90%;">
-    <bodytext>
-      <p>
-        A somewhat fun (<i>ab</i>)use of DNS enabling one to query a Pokémon species name (currently supported: English) in order to receive its National Pokédex Number (NPN), or query an NPN (zero padding optional) in order to receive the Pokémon species name (currently supported: English, Japanese Rōmaji).
-      </p>
-    </bodytext>
+    <img src="/home/saint/Source/saint-lascivious.github.io/resources/images/terminal.png" alt="Example Pokédex-over-DNS query using the nslookup utility from the command line: nslookup -type=txt wurmple.pokedex dns.sainternet.xyz" style="width:90%;">
+    <p>
+      A somewhat fun (<i>ab</i>)use of DNS enabling one to query a Pokémon species name (currently supported: English) in order to receive its National Pokédex Number (NPN), or query an NPN (zero padding optional) in order to receive the Pokémon species name (currently supported: English, Japanese Rōmaji).
+    </p>
   </article>
 </main>
 <footer>
   <address>
     <hr>
-    Contact: <a href="mailto:saint@sainternet.xyz">saint@sainternet.xyz</a>
+    Contact: <a href="mailto:saint@sainternet.xyz">saint@sainternet.xyz</a><br>
+    GitHub: <a href="https://github.com/saint-lascivious">saint-lascivious</a>
   </address>
 </footer>
 </body>
