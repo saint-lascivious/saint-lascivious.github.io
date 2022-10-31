@@ -6,15 +6,29 @@ body, html {
   width: 98%;
 }
 
-h1, h2, footer, td, th {
+div.titletext {
+  font-family: arial;
+  text-align: center;
+  line-height: 120%;
+}
+
+div.subtitletext, div.subtext {
+  font-family: arial;
+  text-align: center;
+  line-height: 100%;
+}
+
+footer {
   font-family: arial;
   text-align: center;
 }
+
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 p {
   font-family: arial;
   text-align: center;
@@ -22,6 +36,7 @@ p {
   margin-right: auto;
   width: 90%;
 }
+
 table {
   border-collapse: collapse;
   font-family: arial;
@@ -30,50 +45,76 @@ table {
   width: 90%;
 }
 
+td, th {
+  font-family: arial;
+  text-align: center;
+}
+
 @media screen and (orientation: landscape) {
-  h1 {
+  div.titletext {
     font-size: 14vh;
   }
-  h2 {
+
+  div.subtext {
+    font-size: 4vh;
+  }
+
+  div.subtitletext {
     font-size: 8vh;
   }
+
   footer {
     font-size: 4vh;
   }
+
   p {
     font-size: 4vh;
   }
+
   td {
     font-size: 4vh;
     border: 0.5vh solid #dddddd;
   }
+
   th {
-    font-size: 4vh;
+    background-color: #dddddd;
     border: 0.5vh solid #757575;
+    font-size: 4vh;
+    padding: 1vh;
   }
 }
 
 @media screen and (orientation: portrait) {
-  h1 {
+  div.titletext {
     font-size: 14vw;
   }
-  h2 {
+
+  div.subtext {
+    font-size: 4vw;
+  }
+
+  div.subtitletext {
     font-size: 8vw;
   }
+
   footer {
     font-size: 4vw;
   }
+
   p {
     font-size: 4vw;
   }
+
   td {
     font-size: 4vw;
     border: 0.5vw solid #dddddd;
     padding: 1vw;
   }
+
   th {
-    font-size: 4vw;
+    background-color: #dddddd;
     border: 0.5vw solid #757575;
+    font-size: 4vw;
     padding: 1vw;
   }
 }
