@@ -16,5 +16,6 @@
   ],
   "name": "sainternet.xyz",
   "short_name": "Sainternet",
+  "scope": "/",
   "start_url": "/",
 }
