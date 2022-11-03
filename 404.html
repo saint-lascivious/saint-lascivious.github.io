@@ -52,7 +52,7 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-red.min.css">
     <link rel="stylesheet" href="resources/stylesheets/sainternet.css">
     <style>
-    #backhome {
+    #button_home {
       position: fixed;
       display: block;
       right: 0;
@@ -69,6 +69,15 @@
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">sainternet.xyz</span>
           <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search">
+              <label class="mdl-textfield__label" for="search">Enter text…</label>
+            </div>
+          </div>
         </div>
       </header>
       <div class="demo-ribbon"></div>
@@ -76,7 +85,10 @@
         <div class="demo-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3>Pokémon #404<br>Luxio<br>Spark Pokémon</h3>
+            <div class="demo-crumbs mdl-color-text--grey-500">
+              <a href="https://sainternet.xyz">Home</a> &gt; <a href="#pokedexoverdns">Pokémon 404</a>
+            </div>
+            <h3 id="pokemon404">Pokémon #404<br>Luxio<br>Spark Pokémon</h3>
               <img src="resources/images/luxio.png" alt="#404 Luxio: Strong electricity courses through the tips of its sharp claws. A light scratch causes fainting in foes." style="width:80%;">
               <p>
                 A wild <b>Luxio</b> appeared!
@@ -96,7 +108,7 @@
         </footer>
       </main>
     </div>
-    <a href="https://sainternet.xyz" target="_blank" "rel=noopener noreferrer" id="backhome" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Back</a>
+    <a href="https://sainternet.xyz" target="_blank" "rel=noopener noreferrer" id="button_home" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Back</a>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 </html>
