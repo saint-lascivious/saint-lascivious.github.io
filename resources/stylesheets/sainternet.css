@@ -45,11 +45,11 @@
 
 .demo-layout.is-small-screen .demo-content {
   padding: 40px 28px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .demo-content h3 {
-  margin-top: 24px;
+  margin-top: 12px;
 }
 
 .demo-footer {
