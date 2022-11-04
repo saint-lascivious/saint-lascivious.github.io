@@ -38,7 +38,7 @@
 }
 
 .demo-content {
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 80px 56px;
   margin-bottom: 80px;
 }
@@ -99,17 +99,17 @@ table tr th {
 }
 
 table tr:first-child th:first-child {
-  border-top-left-radius: 6px;
+  border-top-left-radius: 8px;
 }
 
 table tr:first-child th:last-child {
-  border-top-right-radius: 6px;
+  border-top-right-radius: 8px;
 }
 
 table tr:last-child td:first-child {
-  border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 8px;
 }
 
 table tr:last-child td:last-child {
-  border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 8px;
 }
