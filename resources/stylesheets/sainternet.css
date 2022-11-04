@@ -28,7 +28,7 @@
 }
 
 .demo-header .mdl-layout__header-row {
-  padding-left: 40px;
+  padding-left: 20px;
 }
 
 .demo-container {
@@ -45,10 +45,11 @@
 
 .demo-layout.is-small-screen .demo-content {
   padding: 40px 28px;
+  margin-bottom: 40px;
 }
 
 .demo-content h3 {
-  margin-top: 48px;
+  margin-top: 24px;
 }
 
 .demo-footer {
@@ -56,7 +57,7 @@
 }
 
 .demo-footer .mdl-mini-footer--link-list a {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 img {
@@ -79,12 +80,12 @@ td, th, h3 {
 
 @media screen and (orientation: landscape) {
   td {
-    border: 0.4vh solid #dddddd;
+    border: 0.4vh solid #BDBDBD;
     padding: 1vh;
   }
 
   th {
-    background-color: #dddddd;
+    background-color: #BDBDBD;
     border: 0.4vh solid #757575;
     padding: 1vh;
   }
@@ -92,12 +93,12 @@ td, th, h3 {
 
 @media screen and (orientation: portrait) {
   td {
-    border: 0.4vw solid #dddddd;
+    border: 0.4vw solid #BDBDBD;
     padding: 1vw;
   }
 
   th {
-    background-color: #dddddd;
+    background-color: #BDBDBD;
     border: 0.4vw solid #757575;
     padding: 1vw;
   }
