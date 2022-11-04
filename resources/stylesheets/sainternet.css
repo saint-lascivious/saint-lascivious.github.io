@@ -43,13 +43,18 @@
   margin-bottom: 80px;
 }
 
+.demo-navigation {
+  border-radius: 30px;
+  padding: 15px 30px;
+}
+
 .demo-layout.is-small-screen .demo-content {
   padding: 40px 28px;
   margin-bottom: 60px;
 }
 
 .demo-content h3 {
-  margin-top: 6px;
+  margin-top: 0px;
   text-align: center;
 }
 
@@ -63,16 +68,20 @@
 
 img {
   display: block;
+  margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
 }
 
 table {
   border-collapse: separate;
   border-spacing: 0;
+  margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  margin-top: 40px;
+  text-align: center;
 }
 
 table tr th,
@@ -94,7 +103,6 @@ table tr td:first-child {
 
 table tr th {
   background: #BDBDBD;
-  text-align: center;
   border-top: solid 2px #757575;
 }
 
@@ -112,4 +120,16 @@ table tr:last-child td:first-child {
 
 table tr:last-child td:last-child {
   border-bottom-right-radius: 8px;
+}
+
+@media (orientation: landscape) {
+  table {
+    width: 90%;
+  }
+}
+
+@media (orientation: portrait) {
+  table {
+    width: 98%;
+  }
 }
