@@ -73,8 +73,6 @@ table {
   border-collapse: separate;
   border-spacing: 0;
   margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 40px;
   text-align: center;
 }
@@ -119,12 +117,14 @@ table tr:last-child td:last-child {
 
 @media (orientation: landscape) {
   table {
-    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
   }
 }
 
 @media (orientation: portrait) {
   table {
-    width: 98%;
+    width: 100%;
   }
 }
