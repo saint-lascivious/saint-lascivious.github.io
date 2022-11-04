@@ -43,9 +43,20 @@
   margin-bottom: 80px;
 }
 
+.demo-navigation {
+  border-radius: 50px;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
 .demo-layout.is-small-screen .demo-content {
   padding: 40px 28px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+}
+
+.demo-layout.is-small-screen .demo-navigation {
+  padding: 20px 30px;
+  margin-bottom: 20px;
 }
 
 .demo-content h3 {
@@ -64,8 +75,6 @@
 img {
   display: block;
   margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 40px;
 }
 
@@ -116,7 +125,7 @@ table tr:last-child td:last-child {
 }
 
 @media (orientation: landscape) {
-  table {
+  img, table {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -124,7 +133,7 @@ table tr:last-child td:last-child {
 }
 
 @media (orientation: portrait) {
-  table {
+  img, table {
     width: 100%;
   }
 }
