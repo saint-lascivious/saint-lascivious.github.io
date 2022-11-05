@@ -15,64 +15,64 @@
  * limitations under the License.
  */
 
-.demo-ribbon {
+.sainternet-ribbon {
   width: 100%;
   height: 40vh;
   background-color: #3F51B5;
   flex-shrink: 0;
 }
 
-.demo-main {
+.sainternet-main {
   margin-top: -35vh;
   flex-shrink: 0;
 }
 
-.demo-header .mdl-layout__header-row {
+.sainternet-header .mdl-layout__header-row {
   padding-left: 20px;
 }
 
-.demo-container {
+.sainternet-container {
   max-width: 1600px;
   width: calc(100% - 16px);
   margin: 0 auto;
 }
 
-.demo-content {
+.sainternet-content {
   border-radius: 8px;
   padding: 80px 56px;
   margin-bottom: 80px;
 }
 
-.demo-navigation {
+.sainternet-navigation {
   border-radius: 50px;
   padding: 40px;
   margin-bottom: 40px;
 }
 
-.demo-layout.is-small-screen .demo-content {
+.sainternet-layout.is-small-screen .sainternet-content {
   padding: 40px 28px;
   margin-bottom: 40px;
 }
 
-.demo-layout.is-small-screen .demo-navigation {
+.sainternet-layout.is-small-screen .sainternet-navigation {
   padding: 20px 30px;
   margin-bottom: 20px;
 }
 
-.demo-content h3 {
+.sainternet-content h3 {
   margin-top: -20px;
   text-align: center;
 }
 
-.demo-footer {
+.sainternet-footer {
   padding-left: 40px;
 }
 
-.demo-footer .mdl-mini-footer--link-list a {
+.sainternet-footer .mdl-mini-footer--link-list a {
   font-size: 36px;
 }
 
-.demo-footer .mdl-mini-footer--link-list icon {
+.sainternet-footer .mdl-mini-footer--link-list icon {
   text-shadow: 2px 2px 16px #000000;
 }
 
