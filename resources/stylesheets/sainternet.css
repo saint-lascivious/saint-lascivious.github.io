@@ -60,7 +60,7 @@
 }
 
 .demo-content h3 {
-  margin-top: 0px;
+  margin-top: -20px;
   text-align: center;
 }
 
@@ -70,6 +70,10 @@
 
 .demo-footer .mdl-mini-footer--link-list a {
   font-size: 36px;
+}
+
+.demo-footer .mdl-mini-footer--link-list icon {
+  text-shadow: 2px 2px 16px #000000;
 }
 
 img {
