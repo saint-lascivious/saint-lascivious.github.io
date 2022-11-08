@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  sainternet.xyz - 265.html
+  sainternet.xyz - /265.html
   Copyright 2022 saint-lascivious (Hayden Pearce). All rights reserved.
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,6 +24,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Pokémon #265</title>
 
+    <!-- Manifest -->
+    <link rel="manifest" href="resources/manifests/sainternet.webmanifest">
+
     <!-- Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="resources/icons/icon-192.png">
@@ -33,7 +36,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="sainternet.xyz">
-    <link rel="apple-touch-icon" href="resources/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/icons/apple-touch-icon.png">
 
     <!-- Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="resources/icons/ms-touch-icon.png">
@@ -41,13 +44,18 @@
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="any">
-    <link rel="icon" href="resources/icons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/icons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16.png">
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://sainternet.xyz/265.html/">
+    <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz, wurmple, Wurmple">
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-red.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="resources/stylesheets/sainternet.css">
     <style>
     #button_home {
@@ -62,34 +70,41 @@
     </style>
   </head>
   <body>
-    <div class="sainternet-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
-      <header class="sainternet-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+    <div class="sainternet-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-shadow--16dp">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title"><b>sainternet.xyz</b></span>
+          <span class="mdl-layout-title">sainternet.xyz</span>
           <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="#pokemon404">Pokémon #404</a>
+            <a class="mdl-navigation__link" href="#example">Example Queries</a>
+          </nav>
         </div>
       </header>
-      <div class="sainternet-ribbon"></div>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">sainternet.xyz</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="https://sainternet.xyz/265.html#pokemon404">Pokémon #265</a>
+          <a class="mdl-navigation__link" href="https://sainternet.xyz/265.html#example">Example Queries</a>
+        </nav>
+      </div>
+      <div class="wurm-ribbon"></div>
       <main class="sainternet-main mdl-layout__content">
-        <!-- card one -->
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <div class="sainternet-crumbs mdl-color-text--grey-500">
-              <a href="index.html">Home</a> &gt; <a href="#pokemon265">Pokémon #265</a> &gt; <a href="#wurmple">Wurmple</a>
+              <a href="index.html">Home</a> &gt; <a href="#pokemon265">Pokémon #265</a> ; <a href="#example">Example Queries</a>
             </div>
           </div>
         </div>
-        <!-- card two -->
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <h3 id="pokemon265">Pokémon #265<br>Wurmple</h3>
               <picture>
-                <a href="index.html#pokedexoverdns">
                 <source srcset="resources/images/wurmple-shiny.png" media="(prefers-color-scheme: dark)">
-                  <img src="resources/images/wurmple.png" alt="Pokémon #265, Wurmple: Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping.">
-                </a>
+                <img src="resources/images/wurmple.png" alt="Pokémon #265, Wurmple: Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping.">
               </picture>
               <p id="wurmple">
                 A wild <b>Wurmple</b> appeared!
@@ -99,9 +114,28 @@
               </p>
            </div>
         </div>
+        <div class="sainternet-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <h3 id="example">Example Pokédex over DNS Queries</h3>
+              <p>
+                Example Pokédex over DNS query using <a href="https://linux.die.net/man/1/dig">dig</a>:
+              </p>
+              <pre>
+dig +short txt wurmple.pokedex @dns.sainternet.xyz
+              </pre>
+              <p>
+                Example Pokédex over DNS query using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
+              </p>
+              <pre>
+nslookup -type=txt 265.pokedex dns.sainternet.xyz
+              </pre>
+          </div>
+        </div>
         <footer class="sainternet-footer mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
             <ul class="mdl-mini-footer--link-list">
+              <li><a href="mailto:saint@sainternet.xyz"><icon class="fa-solid fa-at"></icon></a></li>
               <li><a href="https://discord.gg/NC7taVyn"><icon class="fa-brands fa-discord"></icon></a></li>
               <li><a href="https://github.com/saint-lascivious"><icon class="fa-brands fa-github"></icon></a></li>
               <li><a href="https://www.reddit.com/user/saint-lascivious"><icon class="fa-brands fa-reddit"></icon></a></li>
@@ -110,7 +144,7 @@
         </footer>
       </main>
     </div>
-    <a href="index.html" target="_blank" "rel=noopener noreferrer" id="button_home" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--16dp">Back</a>
+    <a href="index.html" target="_blank" "rel=noopener noreferrer" id="button_home" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--16dp">Home</a>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 </html>

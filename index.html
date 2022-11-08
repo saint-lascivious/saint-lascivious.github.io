@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  sainternet.xyz - index.html
+  sainternet.xyz - /index.html
   Copyright 2022 saint-lascivious (Hayden Pearce). All rights reserved.
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,6 +24,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>sainternet.xyz</title>
 
+    <!-- Manifest -->
+    <link rel="manifest" href="resources/manifests/sainternet.webmanifest">
+
     <!-- Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="resources/icons/icon-192.png">
@@ -33,7 +36,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="sainternet.xyz">
-    <link rel="apple-touch-icon" href="resources/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/icons/apple-touch-icon.png">
 
     <!-- Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="resources/icons/ms-touch-icon.png">
@@ -41,7 +44,8 @@
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="any">
-    <link rel="icon" href="resources/icons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/icons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16.png">
 
     <!-- SEO -->
     <link rel="canonical" href="https://sainternet.xyz/">
@@ -51,10 +55,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-red.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="resources/stylesheets/sainternet.css">
     <style>
-    #button_contact {
+    #button_report {
       position: fixed;
       display: block;
       right: 0;
@@ -66,25 +70,34 @@
     </style>
   </head>
   <body>
-    <div class="sainternet-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
-      <header class="sainternet-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+    <div class="sainternet-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-shadow--16dp">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title"><b>sainternet.xyz</b></span>
+          <span class="mdl-layout-title">sainternet.xyz</span>
           <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="#filtereddns">Filtered DNS</a>
+            <a class="mdl-navigation__link" href="#pokedexoverdns">Pokédex over DNS</a>
+          </nav>
         </div>
       </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">sainternet.xyz</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="https://sainternet.xyz#filtereddns">Filtered DNS</a>
+          <a class="mdl-navigation__link" href="https://sainternet.xyz#pokedexoverdns">Pokédex over DNS</a>
+        </nav>
+      </div>
       <div class="sainternet-ribbon"></div>
       <main class="sainternet-main mdl-layout__content">
-        <!-- card one -->
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <div class="sainternet-crumbs mdl-color-text--grey-500">
-              <a href="#filtereddns">Filtered DNS</a> &gt; <a href="#pokedexoverdns">National Pokédex over DNS</a>
+              <a href="#filtereddns">Filtered DNS</a> ; <a href="#pokedexoverdns">National Pokédex over DNS</a>
             </div>
           </div>
         </div>
-        <!-- card two -->
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
@@ -140,21 +153,17 @@
               </p>
           </div>
         </div>
-        <!-- card three -->
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <h3 id="pokedexoverdns">National Pokédex over DNS</h3>
-              <!-- get wurmed -->
               <picture>
-                <a href="265.html#pokemon265">
-                  <img src="resources/images/wurmple.png" alt="Pokémon #265, Wurmple: Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping.">
-                </a>
+                <source srcset="resources/images/wurmple-shiny.png" media="(prefers-color-scheme: dark)">
+                <img src="resources/images/wurmple.png" alt="Pokémon #265, Wurmple: Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping.">
               </picture>
               <p>
                 Sainternet is proud to present to you the <b><i>world's first</i></b> (…and only?) DNS driven <a href="https://en.wikipedia.org/wiki/TXT_record">TXT record</a> based National Pokédex over DNS!
               </p>
-              <!-- get termed -->
               <picture>
                 <img src="resources/images/terminal.png" alt="Example Pokédex-over-DNS query using nslookup and dig utilities from the command line: nslookup -type=txt wurmple.pokedex dns.sainternet.xyz, dig +short txt wurmple.pokedex @dns.sainternet.xyz">
               </picture>
@@ -169,6 +178,7 @@
         <footer class="sainternet-footer mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
             <ul class="mdl-mini-footer--link-list">
+              <li><a href="mailto:saint@sainternet.xyz"><icon class="fa-solid fa-at"></icon></a></li>
               <li><a href="https://discord.gg/NC7taVyn"><icon class="fa-brands fa-discord"></icon></a></li>
               <li><a href="https://github.com/saint-lascivious"><icon class="fa-brands fa-github"></icon></a></li>
               <li><a href="https://www.reddit.com/user/saint-lascivious"><icon class="fa-brands fa-reddit"></icon></a></li>
@@ -177,7 +187,7 @@
         </footer>
       </main>
     </div>
-    <a href="mailto:saint@sainternet.xyz?subject=Information%20Request&body=Query%20Text%20Here" target="_blank" "rel=noopener noreferrer" id="button_contact" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--16dp">Contact</a>
+    <a href="mailto:admin@sainternet.xyz?subject=Bug%20Report&body=Enter%20sainternet.xyz%20Bug%20Report%20text%20here" target="_blank" "rel=noopener noreferrer" id="button_report" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--16dp">Report</a>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 </html>
