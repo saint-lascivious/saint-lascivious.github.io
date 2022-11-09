@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  sainternet.xyz - /265.html
+  sainternet.xyz - /filtereddns.html
   Copyright 2022 saint-lascivious (Hayden Pearce). All rights reserved.
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Sainternet offers validating, recursive, caching, mostly specification compliant, filtered DNS servers with a zero logging policy served over all your favourite acronyms.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Pokémon #265</title>
+    <title>sainternet.xyz</title>
 
     <!-- Manifest -->
     <link rel="manifest" href="resources/manifests/sainternet.webmanifest">
@@ -48,8 +48,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16.png">
 
     <!-- SEO -->
-    <link rel="canonical" href="https://sainternet.xyz/265.html/">
-    <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz, wurmple, Wurmple">
+    <link rel="canonical" href="https://sainternet.xyz/filtereddns.html">
+    <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz">
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
@@ -58,7 +58,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="resources/stylesheets/sainternet.css">
     <style>
-    #button_home {
+    #button_report {
       position: fixed;
       display: block;
       right: 0;
@@ -76,60 +76,81 @@
           <span class="mdl-layout-title">sainternet.xyz</span>
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link" href="#pokemon404">Pokémon #404</a>
-            <a class="mdl-navigation__link" href="#example">Example Queries</a>
+            <a class="mdl-navigation__link" href="#">Filtered DNS</a>
+            <a class="mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
           </nav>
         </div>
       </header>
       <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">sainternet.xyz</span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="https://sainternet.xyz/265.html#pokemon404">Pokémon #265</a>
-          <a class="mdl-navigation__link" href="https://sainternet.xyz/265.html#example">Example Queries</a>
+          <a class="mdl-navigation__link" href="#">Filtered DNS</a>
+          <a class="mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
         </nav>
       </div>
-      <div class="wurm-ribbon"></div>
+      <div class="sainternet-ribbon"></div>
       <main class="sainternet-main mdl-layout__content">
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <div class="sainternet-crumbs mdl-color-text--grey-500">
-              <a href="index.html">Home</a> &gt; <a href="#pokemon265">Pokémon #265</a> ; <a href="#example">Example Queries</a>
+              <a href="index.html">Home</a> &gt; <a href="#filtereddns">Filtered DNS</a>
             </div>
           </div>
         </div>
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="pokemon265">Pokémon #265<br>Wurmple</h3>
-              <picture>
-                <source srcset="resources/images/wurmple-shiny.png" media="(prefers-color-scheme: dark)">
-                <img src="resources/images/wurmple.png" alt="Pokémon #265, Wurmple: Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping.">
-              </picture>
-              <p id="wurmple">
-                A wild <b>Wurmple</b> appeared!
+            <h3 id="filtereddns">Filtered DNS</h3>
+              <p>
+                Sainternet offers validating, recursive, caching, <i>mostly</i> specification compliant, filtered <a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> servers with a zero logging policy, served over all your favourite acronyms.
+              </p>
+              <table>
+                <tr>
+                  <th>Protocol</th>
+                  <th>Address</th>
+                  <th>Port</th>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS">HTTPS</a></td>
+                  <td>dns.sainternet.xyz</td>
+                  <td>TCP 443</td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/HTTP/3">HTTP/3</a></td>
+                  <td>dns.sainternet.xyz</td>
+                  <td>UDP 443</td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol">TCP</a></td>
+                  <td>119.224.127.171</td>
+                  <td>TCP 53</td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_TLS">TLS</a></td>
+                  <td>dns.sainternet.xyz</td>
+                  <td>TCP 853</td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol">UDP</a></td>
+                  <td>119.224.127.171</td>
+                  <td>UDP 53</td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_QUIC">QUIC</a></td>
+                  <td>dns.sainternet.xyz</td>
+                  <td>UDP 784<br>UDP 853<br>UDP 8853</td>
+                </tr>
+              </table>
+              <p>
+                Sainternet Filtered DNS blocks many domains known to be associated with unsavoury behaviours (including but not limited to advertising, botnets, malware, spam and telemetry), using a variety of methods updated regularly.
               </p>
               <p>
-                Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping.
+                Sainternet <b>does not</b> and <b><i>will not</i></b> block domains based upon ethical, moral, personal, political or religious belief, nor upon any lack thereof.
               </p>
-           </div>
-        </div>
-        <div class="sainternet-container mdl-grid">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="example">Example Pokédex over DNS Queries</h3>
               <p>
-                Example Pokédex over DNS query using <a href="https://linux.die.net/man/1/dig">dig</a>:
+                Note: Sainternet intentionally disables Mozilla's <a href="https://support.mozilla.org/en-US/kb/configuring-networks-disable-dns-over-https">default DNS over HTTPS</a> and Apple's <a href="https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay">iCloud Private Relay</a> to prevent them from bypassing Sainternet.
               </p>
-              <pre>
-dig +short txt wurmple.pokedex @dns.sainternet.xyz
-              </pre>
-              <p>
-                Example Pokédex over DNS query using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
-              </p>
-              <pre>
-nslookup -type=txt 265.pokedex dns.sainternet.xyz
-              </pre>
           </div>
         </div>
         <footer class="sainternet-footer mdl-mini-footer">
@@ -144,7 +165,7 @@ nslookup -type=txt 265.pokedex dns.sainternet.xyz
         </footer>
       </main>
     </div>
-    <a href="index.html" target="_blank" "rel=noopener noreferrer" id="button_home" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--16dp">Home</a>
+    <a href="mailto:admin@sainternet.xyz?subject=Bug%20Report&body=Enter%20sainternet.xyz%20Bug%20Report%20text%20here" target="_blank" "rel=noopener noreferrer" id="button_report" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--16dp">Report</a>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 </html>

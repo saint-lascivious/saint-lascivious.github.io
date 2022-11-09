@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  sainternet.xyz - /265.html
+  sainternet.xyz - /pokedexoverdns.html
   Copyright 2022 saint-lascivious (Hayden Pearce). All rights reserved.
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Sainternet offers validating, recursive, caching, mostly specification compliant, filtered DNS servers with a zero logging policy served over all your favourite acronyms.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Pokémon #265</title>
+    <title>sainternet.xyz</title>
 
     <!-- Manifest -->
     <link rel="manifest" href="resources/manifests/sainternet.webmanifest">
@@ -48,8 +48,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16.png">
 
     <!-- SEO -->
-    <link rel="canonical" href="https://sainternet.xyz/265.html/">
-    <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz, wurmple, Wurmple">
+    <link rel="canonical" href="https://sainternet.xyz/pokedexoverdns.html">
+    <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz">
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
@@ -76,60 +76,44 @@
           <span class="mdl-layout-title">sainternet.xyz</span>
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link" href="#pokemon404">Pokémon #404</a>
-            <a class="mdl-navigation__link" href="#example">Example Queries</a>
+            <a class="mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
+            <a class="mdl-navigation__link" href="#">Pokédex over DNS</a>
           </nav>
         </div>
       </header>
       <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">sainternet.xyz</span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="https://sainternet.xyz/265.html#pokemon404">Pokémon #265</a>
-          <a class="mdl-navigation__link" href="https://sainternet.xyz/265.html#example">Example Queries</a>
+          <a class="mdl-navigation__link" href="filtereddns">Filtered DNS</a>
+          <a class="mdl-navigation__link" href="#">Pokédex over DNS</a>
         </nav>
       </div>
-      <div class="wurm-ribbon"></div>
+      <div class="sainternet-ribbon"></div>
       <main class="sainternet-main mdl-layout__content">
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <div class="sainternet-crumbs mdl-color-text--grey-500">
-              <a href="index.html">Home</a> &gt; <a href="#pokemon265">Pokémon #265</a> ; <a href="#example">Example Queries</a>
+              <a href="index.html">Home</a> &gt; <a href="#pokedexoverdns">National Pokédex over DNS</a>
             </div>
           </div>
         </div>
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="pokemon265">Pokémon #265<br>Wurmple</h3>
+            <h3 id="pokedexoverdns">National Pokédex over DNS</h3>
+              <p>
+                Sainternet is proud to present to you the <b><i>world's first</i></b> (…and only?) DNS driven <a href="https://en.wikipedia.org/wiki/TXT_record">TXT record</a> based National Pokédex over DNS!
+              </p>
               <picture>
-                <source srcset="resources/images/wurmple-shiny.png" media="(prefers-color-scheme: dark)">
-                <img src="resources/images/wurmple.png" alt="Pokémon #265, Wurmple: Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping.">
+                <img src="resources/images/terminal.png" alt="Example Pokédex-over-DNS query using nslookup and dig utilities from the command line: nslookup -type=txt wurmple.pokedex dns.sainternet.xyz, dig +short txt wurmple.pokedex @dns.sainternet.xyz">
               </picture>
-              <p id="wurmple">
-                A wild <b>Wurmple</b> appeared!
+              <p>
+                This fun (<i>ab</i>)use of DNS enables one to query a Pokémon species name (currently supported: English) in order to receive its <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number">National Pokédex Number</a> (NPN), or query an NPN (zero padding optional) in order to receive the Pokémon species name (currently supported: English, Japanese <a href="https://en.wikipedia.org/wiki/Romanization_of_Japanese">Rōmaji</a>).
               </p>
               <p>
-                Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping.
+                <a href="https://www.nlnetlabs.nl/projects/unbound/about/">Unbound</a> local-data record configuration for the .pokedex virtual domain available <a href="https://github.com/saint-lascivious/unbound-config/blob/master/configs/pokedex.conf">here</a>.
               </p>
-           </div>
-        </div>
-        <div class="sainternet-container mdl-grid">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="example">Example Pokédex over DNS Queries</h3>
-              <p>
-                Example Pokédex over DNS query using <a href="https://linux.die.net/man/1/dig">dig</a>:
-              </p>
-              <pre>
-dig +short txt wurmple.pokedex @dns.sainternet.xyz
-              </pre>
-              <p>
-                Example Pokédex over DNS query using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
-              </p>
-              <pre>
-nslookup -type=txt 265.pokedex dns.sainternet.xyz
-              </pre>
           </div>
         </div>
         <footer class="sainternet-footer mdl-mini-footer">

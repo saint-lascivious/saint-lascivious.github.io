@@ -43,7 +43,7 @@
     <meta name="msapplication-TileColor" content="#3372DF">
 
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="resources/icons/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16.png">
 
@@ -76,102 +76,33 @@
           <span class="mdl-layout-title">sainternet.xyz</span>
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link" href="#filtereddns">Filtered DNS</a>
-            <a class="mdl-navigation__link" href="#pokedexoverdns">Pokédex over DNS</a>
+            <a class="mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
+            <a class="mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
           </nav>
         </div>
       </header>
       <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">sainternet.xyz</span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="https://sainternet.xyz#filtereddns">Filtered DNS</a>
-          <a class="mdl-navigation__link" href="https://sainternet.xyz#pokedexoverdns">Pokédex over DNS</a>
+          <a class="mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
+          <a class="mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
         </nav>
       </div>
       <div class="sainternet-ribbon"></div>
       <main class="sainternet-main mdl-layout__content">
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-navigation mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <div class="sainternet-crumbs mdl-color-text--grey-500">
-              <a href="#filtereddns">Filtered DNS</a> ; <a href="#pokedexoverdns">National Pokédex over DNS</a>
-            </div>
-          </div>
-        </div>
-        <div class="sainternet-container mdl-grid">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="filtereddns">Filtered DNS</h3>
-              <p>
-                Sainternet offers validating, recursive, caching, <i>mostly</i> specification compliant, filtered <a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> servers with a zero logging policy, served over all your favourite acronyms.
-              </p>
-              <table>
-                <tr>
-                  <th>Protocol</th>
-                  <th>Address</th>
-                  <th>Port</th>
-                </tr>
-                <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS">HTTPS</a></td>
-                  <td>dns.sainternet.xyz</td>
-                  <td>TCP 443</td>
-                </tr>
-                <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/HTTP/3">HTTP/3</a></td>
-                  <td>dns.sainternet.xyz</td>
-                  <td>UDP 443</td>
-                </tr>
-                <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol">TCP</a></td>
-                  <td>119.224.127.171</td>
-                  <td>TCP 53</td>
-                </tr>
-                <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_TLS">TLS</a></td>
-                  <td>dns.sainternet.xyz</td>
-                  <td>TCP 853</td>
-                </tr>
-                <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol">UDP</a></td>
-                  <td>119.224.127.171</td>
-                  <td>UDP 53</td>
-                </tr>
-                <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_QUIC">QUIC</a></td>
-                  <td>dns.sainternet.xyz</td>
-                  <td>UDP 784<br>UDP 853<br>UDP 8853</td>
-                </tr>
-              </table>
-              <p>
-                Sainternet Filtered DNS blocks many domains known to be associated with unsavoury behaviours (including but not limited to advertising, botnets, malware, spam and telemetry), using a variety of methods updated regularly.
-              </p>
-              <p>
-                Sainternet <b>does not</b> and <b><i>will not</i></b> block domains based upon ethical, moral, personal, political or religious belief, nor upon any lack thereof.
-              </p>
-              <p>
-                Note: Sainternet intentionally disables Mozilla's <a href="https://support.mozilla.org/en-US/kb/configuring-networks-disable-dns-over-https">default DNS over HTTPS</a> and Apple's <a href="https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay">iCloud Private Relay</a> to prevent them from bypassing Sainternet.
-              </p>
-          </div>
-        </div>
-        <div class="sainternet-container mdl-grid">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="pokedexoverdns">National Pokédex over DNS</h3>
+            <h3 id="welcome">Welcome to Sainternet</h3>
               <picture>
                 <source srcset="resources/images/wurmple-shiny.png" media="(prefers-color-scheme: dark)">
                 <img src="resources/images/wurmple.png" alt="Pokémon #265, Wurmple: Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping.">
               </picture>
               <p>
-                Sainternet is proud to present to you the <b><i>world's first</i></b> (…and only?) DNS driven <a href="https://en.wikipedia.org/wiki/TXT_record">TXT record</a> based National Pokédex over DNS!
-              </p>
-              <picture>
-                <img src="resources/images/terminal.png" alt="Example Pokédex-over-DNS query using nslookup and dig utilities from the command line: nslookup -type=txt wurmple.pokedex dns.sainternet.xyz, dig +short txt wurmple.pokedex @dns.sainternet.xyz">
-              </picture>
-              <p>
-                This fun (<i>ab</i>)use of DNS enables one to query a Pokémon species name (currently supported: English) in order to receive its <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number">National Pokédex Number</a> (NPN), or query an NPN (zero padding optional) in order to receive the Pokémon species name (currently supported: English, Japanese <a href="https://en.wikipedia.org/wiki/Romanization_of_Japanese">Rōmaji</a>).
+                Welcome to Sainternet.
               </p>
               <p>
-                <a href="https://www.nlnetlabs.nl/projects/unbound/about/">Unbound</a> local-data record configuration for the .pokedex virtual domain available <a href="https://github.com/saint-lascivious/unbound-config/blob/master/configs/pokedex.conf">here</a>.
+                I'm saint (Hayden Pearce), and I make (and break) things on the internet sometimes. This could be considered one of them.
               </p>
           </div>
         </div>
