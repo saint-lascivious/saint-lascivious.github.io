@@ -1,5 +1,5 @@
 /**
- * sainternet.xyz - /resources/stylesheets/sainternet.css
+ * sainternet.xyz - resources/stylesheets/sainternet.css
  * Copyright 2022 saint-lascivious (Hayden Pearce). All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,6 +14,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License
  */
+
+.dex-ribbon {
+  width: 100%;
+  height: 40vh;
+  background-color: #9C27B0;
+  flex-shrink: 0;
+}
+
+.dns-ribbon {
+  width: 100%;
+  height: 40vh;
+  background-color: #673AB7;
+  flex-shrink: 0;
+}
 
 .lux-ribbon {
   width: 100%;
@@ -32,7 +46,7 @@
 .wurm-ribbon {
   width: 100%;
   height: 40vh;
-  background-color: #DC686D;
+  background-color: #E91C63;
   flex-shrink: 0;
 }
 
