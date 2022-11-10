@@ -16,12 +16,20 @@
  */
 
 /**
+ * about-ribbon         green           4CAF50
  * dex-ribbon           purple          9C27BO
  * dns-ribbon           deep_purple     673AB7
  * lux-ribbon           blue            2196F3
  * sainternet-ribbon    indigo          3F51B5
  * wurm-ribbon          pink            E91C63
  */
+
+.about-ribbon {
+  width: 100%;
+  height: 40vh;
+  background-color: #4CAF50;
+  flex-shrink: 0;
+}
 
 .dex-ribbon {
   width: 100%;
