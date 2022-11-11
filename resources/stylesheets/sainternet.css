@@ -76,3 +76,15 @@
 .sainternet-layout.is-small-screen .sainternet-footer .mdl-mini-footer--link-list icon {
   text-shadow: 1px 1px 8px #000000;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #FFFFFF;
+  }
+}
