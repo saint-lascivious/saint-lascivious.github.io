@@ -15,53 +15,56 @@
  * limitations under the License
  */
 
-/**
- * about-ribbon         green           4CAF50
- * dex-ribbon           purple          9C27BO
- * dns-ribbon           deep_purple     673AB7
- * lux-ribbon           blue            2196F3
- * sainternet-ribbon    indigo          3F51B5
- * wurm-ribbon          pink            E91C63
+/**                                        500|400
+ *                      red             F44336,EF5350
+ *                      orange          FF9800,FFA726
+ *                      yellow          FFEB3B,FFF176
+ * about-ribbon         green           4CAF50,66BB6A
+ * lux-ribbon           blue            2196F3,42A5F5
+ * home-ribbon          indigo          3F51B5,5C6BC0
+ * wurm-ribbon          pink            E91C63,EC407A
+ * dex-ribbon           purple          9C27BO,AB47BC
+ * dns-ribbon           deep_purple     673AB7,7E57C2
  */
 
 .about-ribbon {
   width: 100%;
   height: 40vh;
-  background-color: #4CAF50;
+  background-color: #66BB6A;
   flex-shrink: 0;
 }
 
 .dex-ribbon {
   width: 100%;
   height: 40vh;
-  background-color: #9C27B0;
+  background-color: #AB47BC;
   flex-shrink: 0;
 }
 
 .dns-ribbon {
   width: 100%;
   height: 40vh;
-  background-color: #673AB7;
+  background-color: #7E57C2;
+  flex-shrink: 0;
+}
+
+.home-ribbon {
+  width: 100%;
+  height: 40vh;
+  background-color: #5C6BC0;
   flex-shrink: 0;
 }
 
 .lux-ribbon {
   width: 100%;
   height: 40vh;
-  background-color: #2196F3;
-  flex-shrink: 0;
-}
-
-.sainternet-ribbon {
-  width: 100%;
-  height: 40vh;
-  background-color: #3F51B5;
+  background-color: #42A5F5;
   flex-shrink: 0;
 }
 
 .wurm-ribbon {
   width: 100%;
   height: 40vh;
-  background-color: #E91C63;
+  background-color: #EC407A;
   flex-shrink: 0;
 }
