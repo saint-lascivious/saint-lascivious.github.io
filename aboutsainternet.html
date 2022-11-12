@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  sainternet.xyz - connecttosainternet.html
+  sainternet.xyz - aboutsainternet.html
   Copyright 2022 saint-lascivious (Hayden Pearce). All rights reserved.
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -47,13 +47,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16.png">
 
     <!-- SEO -->
-    <link rel="canonical" href="https://sainternet.xyz/connecttosainternet.html">
+    <link rel="canonical" href="https://sainternet.xyz/aboutsainternet.html">
     <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', luxio, Luxio, pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz">
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.green-red.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.yellow-red.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="resources/stylesheets/ribbons.css">
     <link rel="stylesheet" href="resources/stylesheets/sainternet.css">
@@ -87,8 +87,8 @@
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="index.html">Home</a>
           <a class="mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
-          <a class="mdl-navigation__link" href="aboutsainternet.html"> - About Filtered DNS</a>
-          <a class="mdl-navigation__link" href=""> - <b>Connect to Sainternet</b></a>
+          <a class="mdl-navigation__link" href=""> - <b>About Sainternet</b></a>
+          <a class="mdl-navigation__link" href="connecttosainternet.html"> - Connect to Sainternet</a>
           <a class="mdl-navigation__link" href="testsainternet.html"> - Test Sainternet</a>
           <a class="mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
         </nav>
@@ -99,52 +99,70 @@
           <a class="mdl-navigation__link" href="https://github.com/saint-lascivious/unbound-config">unbound-config</a>
         </nav>
       </div>
-      <div class="green-ribbon"></div>
+      <div class="yellow-ribbon"></div>
       <main class="sainternet-main mdl-layout__content">
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-color--white mdl-shadow--8dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <div class="sainternet-crumbs mdl-color-text--grey-500">
-              <a href="index.html">Home</a> &gt; <a href="filtereddns.html">Filtered DNS</a> &gt; <a href="#connecttosainternet"><b>Connect to Sainternet</b></a><br><a href="#androidprivatedns">Android Private DNS</a>, <a href="#googlechrome">Google Chrome/Chromium</a>, <a href="#mozillafirefox">Mozilla Firefox</a>
+              <a href="index.html">Home</a> &gt; <a href="filtereddns.html">Filtered DNS</a> &gt; <a href="#aboutsainternet"><b>About Sainternet</b></a><br><a href="#dnsdist">dnsdist</a>, <a href="#dnsproxy">dnsproxy</a>, <a href="#piholeftl">pihole-FTL</a>, <a href="#unbound">unbound</a>
             </div>
           </div>
         </div>
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="connecttosainternet">Connect to Sainternet</h3>
+            <h3 id="aboutsainternet">About Sainternet</h3>
               <p>
-                The following describes connecting to Sainternet Filtered DNS in several platforms, services.
+                Sainternet Filtered DNS is made possible using, but neither endorsed nor condoned by, the following projects.
               </p>
            </div>
         </div>
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="androidprivatedns">Android Private DNS</h3>
-              <p align="center">
-                Android 9 (Pie) or higher required.
+            <h3 id="dnsdist">dnsdist</h3>
+              <p>
+                <a href="https://github.com/PowerDNS/pdns/blob/master/pdns/README-dnsdist.md">dnsdist</a>
               </p>
               <p>
-                Settings → Search → Search for "Private DNS" → Select "Private DNS" → Select "Designated Private DNS" → Enter "<b>dns.sainternet.xyz</b>" → Done.
-              </p>
-           </div>
-        </div>
-        <div class="sainternet-container mdl-grid">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="googlechrome">Google Chrome/Chromium</h3>
-              <p>
-                Overflow Menu (three dots, top right corner) → Settings → Select "Privacy and security" → Select "Use secure DNS" → Select "Choose another provider" → Enter "<b>dns.sainternet.xyz</b>" → Done.
+                dnsdist is a highly DNS-, <a href="https://wikipedia.org/wiki/Denial-of-service_attack">DoS</a>- and abuse-aware loadbalancer. Its goal in life is to route traffic to the best server, delivering top performance to legitimate users while shunting or blocking abusive traffic.
               </p>
            </div>
         </div>
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="mozillafirefox">Mozilla Firefox</h3>
+            <h3 id="dnsproxy">dnsproxy</h3>
               <p>
-                Menu → Settings → Select "General" → Select "Network Settings" → Select "Settings" → Select "Enable DNS over HTTPS" → Select "Use Provider" → Select "Custom" → Enter "<b>dns.sainternet.xyz</b>" → Select "OK" → Done.
+                <a href="https://github.com/AdguardTeam/dnsproxy">dnsproxy</a>
+              </p>
+              <p>
+                A simple DNS proxy server that supports all existing DNS protocols including DNS-over-TLS, DNS-over-HTTPS, DNSCrypt, and DNS-over-QUIC. Moreover, it can work as a DNS-over-HTTPS, DNS-over-TLS or DNS-over-QUIC server.
+              </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <h3 id="piholeftl">pihole-FTL</h3>
+              <p>
+                <a href="https://github.com/pi-hole/FTL">pihole-FTL</a>
+              </p>
+              <p>
+                FTLDNS (pihole-FTL) provides an interactive API and also generates statistics for <a href="https://pi-hole.net/">Pi-hole®</a>'s Web interface.
+              </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <h3 id="unbound">unbound</h3>
+              <p>
+                <a href="https://github.com/NLnetLabs/unbound">unbound</a>
+              </p>
+              <p>
+                Unbound is a validating, recursive, caching DNS resolver. It is designed to be fast and lean and incorporates modern features based on open standards.
               </p>
            </div>
         </div>
