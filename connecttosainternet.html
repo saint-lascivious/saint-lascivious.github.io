@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  sainternet.xyz - 404.html
+  sainternet.xyz - connecttosainternet.html
   Copyright 2022 saint-lascivious (Hayden Pearce). All rights reserved.
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Sainternet offers validating, recursive, caching, mostly specification compliant, filtered DNS servers with a zero logging policy served over all your favourite acronyms.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Pokémon #404</title>
+    <title>sainternet.xyz</title>
 
     <!-- Manifest -->
     <link rel="manifest" href="resources/manifests/sainternet.webmanifest">
@@ -53,10 +53,8 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-red.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-red.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="resources/stylesheets/img.css">
-    <link rel="stylesheet" href="resources/stylesheets/pre.css">
     <link rel="stylesheet" href="resources/stylesheets/ribbons.css">
     <link rel="stylesheet" href="resources/stylesheets/sainternet.css">
     <style>
@@ -89,6 +87,8 @@
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="index.html">Home</a>
           <a class="mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
+          <a class="mdl-navigation__link" href="aboutfiltereddns.html"> - About Filtered DNS</a>
+          <a class="mdl-navigation__link" href=""> - <b>Connect to Sainternet</b></a>
           <a class="mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
         </nav>
         <span class="mdl-layout-title">GitHub</span>
@@ -98,49 +98,45 @@
           <a class="mdl-navigation__link" href="https://github.com/saint-lascivious/unbound-config">unbound-config</a>
         </nav>
       </div>
-      <div class="blue-ribbon"></div>
+      <div class="orange-ribbon"></div>
       <main class="sainternet-main mdl-layout__content">
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-color--white mdl-shadow--8dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <div class="sainternet-crumbs mdl-color-text--grey-500">
-              <a href="index.html">Home</a> &gt; <a href="#pokemon404"><b>Pokémon #404</b></a><br><a href="#example">Example Queries</a>
+              <a href="index.html">Home</a> &gt; <a href="filtereddns.html">Filtered DNS</a> &gt; <a href="#connecttosainternet"><b>Connect to Sainternet</b></a><br><a href="#androidprivatedns">Android Private DNS</a>, <a href="#googlechrome">Google Chrome/Chromium</a>
             </div>
           </div>
         </div>
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="pokemon404">Pokémon #404<br>Luxio<br>(Spark Pokémon)</h3>
-              <picture>
-                <source srcset="resources/images/luxio-shiny.png" media="(prefers-color-scheme: dark)">
-                <img src="resources/images/luxio.png" alt="Pokémon #404, Luxio (Spark Pokémon): Strong electricity courses through the tips of its sharp claws. A light scratch causes fainting in foes.">
-              </picture>
+            <h3 id="connecttosainternet">Connect to Sainternet</h3>
               <p>
-                A wild <b>Luxio</b> appeared!
-              </p>
-              <p>
-                Strong electricity courses through the tips of its sharp claws. A light scratch causes fainting in foes.
+                The following describes connecting to Sainternet Filtered DNS in several platforms, services.
               </p>
            </div>
         </div>
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="example">Example Pokédex over DNS Queries</h3>
-              <p>
-                Example Pokédex over DNS query using <a href="https://linux.die.net/man/1/dig">dig</a>:
+            <h3 id="androidprivatedns">Android Private DNS</h3>
+              <p align="center">
+                Android 10+
               </p>
-              <pre>
-dig +short txt luxio.pokedex @dns.sainternet.xyz
-              </pre>
               <p>
-                Example Pokédex over DNS query using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
+                Settings -> Search -> Search for "Private DNS" -> Select "Private DNS" -> Select "Designated Private DNS" -> Enter "<b>dns.sainternet.xyz</b>" -> Done.
               </p>
-              <pre>
-nslookup -type=txt 404.pokedex dns.sainternet.xyz
-              </pre>
-          </div>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <h3 id="googlechrome">Google Chrome/Chromium</h3>
+              <p>
+                Overflow Menu (three dots, top right corner) -> Settings -> Select "Privacy and security" -> Select "Use secure DNS" -> Select "Choose another provider" -> Enter "<b>dns.sainternet.xyz</b>" -> Done.
+              </p>
+           </div>
         </div>
         <footer class="sainternet-footer mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">

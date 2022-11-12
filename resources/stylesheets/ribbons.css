@@ -16,53 +16,74 @@
  */
 
 /**                                        500|400
- *                      red             F44336,EF5350
- *                      orange          FF9800,FFA726
- *                      yellow          FFEB3B,FFF176
- * about-ribbon         green           4CAF50,66BB6A
- * lux-ribbon           blue            2196F3,42A5F5
- * home-ribbon          indigo          3F51B5,5C6BC0
- * wurm-ribbon          pink            E91C63,EC407A
- * dex-ribbon           purple          9C27BO,AB47BC
- * dns-ribbon           deep_purple     673AB7,7E57C2
+ * red-ribbon           red             F44336,EF5350
+ * orange-ribbon        orange          FF9800,FFA726
+ * yellow-ribbon        yellow          FFEB3B,FFF176
+ * green-ribbon         green           4CAF50,66BB6A
+ * blue-ribbon          blue            2196F3,42A5F5
+ * indigo-ribbon        indigo          3F51B5,5C6BC0
+ * purple-ribbon        purple          9C27BO,AB47BC
+ * deep_purple-ribbon   deep_purple     673AB7,7E57C2
+ * pink-ribbon          pink            E91C63,EC407A
  */
 
-.about-ribbon {
+.red-ribbon {
   width: 100%;
   height: 40vh;
   background-color: #66BB6A;
   flex-shrink: 0;
 }
 
-.dex-ribbon {
+.orange-ribbon {
   width: 100%;
   height: 40vh;
-  background-color: #AB47BC;
+  background-color: #66BB6A;
   flex-shrink: 0;
 }
 
-.dns-ribbon {
+.yellow-ribbon {
   width: 100%;
   height: 40vh;
-  background-color: #7E57C2;
+  background-color: #66BB6A;
   flex-shrink: 0;
 }
 
-.home-ribbon {
+.green-ribbon {
   width: 100%;
   height: 40vh;
-  background-color: #5C6BC0;
+  background-color: #66BB6A;
   flex-shrink: 0;
 }
 
-.lux-ribbon {
+.blue-ribbon {
   width: 100%;
   height: 40vh;
   background-color: #42A5F5;
   flex-shrink: 0;
 }
 
-.wurm-ribbon {
+.indigo-ribbon {
+  width: 100%;
+  height: 40vh;
+  background-color: #5C6BC0;
+  flex-shrink: 0;
+}
+
+.purple-ribbon {
+  width: 100%;
+  height: 40vh;
+  background-color: #AB47BC;
+  flex-shrink: 0;
+}
+
+.deep_purple-ribbon {
+  width: 100%;
+  height: 40vh;
+  background-color: #7E57C2;
+  flex-shrink: 0;
+}
+
+.pink-ribbon {
   width: 100%;
   height: 40vh;
   background-color: #EC407A;
