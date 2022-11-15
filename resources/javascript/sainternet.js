@@ -17,9 +17,9 @@
 
 // the mdl-layout drawer component expects links to be external, so
 // it doesn't bother closing after click
-function close() {
+function close_drawer() {
   var d = document.querySelector('.mdl-layout');
   d.MaterialLayout.toggleDrawer();
 }
 
-document.querySelector('.mdl-layout__drawer').addEventListener('click', close);
+document.querySelector('.mdl-layout__drawer').addEventListener('click', close_drawer);
