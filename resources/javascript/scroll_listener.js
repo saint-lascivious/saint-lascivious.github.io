@@ -15,17 +15,16 @@
  * limitations under the License
  */
 
-// Set button ID
-let home_button = document.getElementById("button_home");
+// Get the button
+let mybutton = document.getElementById("button_home");
 
-// Scroll listener toggling button display style
-// Displays home button on (presumably) conscious scrolling
-window.onscroll = function() {scroll_listener()};
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-function scroll_listener() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    home_button.style.display = "block";
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
   } else {
-    home_button.style.display = "none";
+    mybutton.style.display = "none";
   }
 }
