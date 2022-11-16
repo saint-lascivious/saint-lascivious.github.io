@@ -17,7 +17,7 @@
 
 #button_home {
   bottom: 0;
-  display: none;
+  display: block;
   margin-bottom: 30px;
   margin-right: 30px;
   position: fixed;
