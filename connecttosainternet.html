@@ -97,7 +97,7 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-color--white mdl-shadow--8dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <div class="sainternet-crumbs mdl-color-text--grey-500">
-              <a href="index.html">Home</a> &gt; <a href="filtereddns.html">Filtered DNS</a> &gt; <a href="#connecttosainternet"><b>Connect to Sainternet</b></a><br><a href="#androidprivatedns">Android Private DNS</a>, <a href="#googlechrome">Google Chrome/Chromium</a>, <a href="#mozillafirefox">Mozilla Firefox</a>
+              <a href="index.html">Home</a> &gt; <a href="filtereddns.html">Filtered DNS</a> &gt; <a href="#connecttosainternet"><b>Connect to Sainternet</b></a><br><a href="#androidprivatedns">Android Private DNS</a>, <a href="#appleiosmacos">Apple iOS/MacOS</a>, <a href="#googlechromechromium">Google Chrome/Chromium</a>, <a href="#mozillafirefox">Mozilla Firefox</a>, <a href="#samsunginternet">Samsung Internet</a>
             </div>
           </div>
         </div>
@@ -118,16 +118,40 @@
                 Android 9 (Pie) or higher required.
               </p>
               <p>
-                Settings <icon class="fa-solid fa-cog"></icon>, <icon class="fa-solid fa-right-long"></icon> Search <icon class="fa-solid fa-magnifying-glass"></icon>, <icon class="fa-solid fa-right-long"></icon> Search for "Private DNS", <icon class="fa-solid fa-right-long"></icon> Select "Private DNS", <icon class="fa-solid fa-right-long"></icon> Select "Designated Private DNS", <icon class="fa-solid fa-right-long"></icon> Enter "<b>dns.sainternet.xyz</b>", <icon class="fa-solid fa-right-long"></icon> Done.
+                Settings <icon class="fa-solid fa-cog"></icon>, <icon class="fa-regular fa-right-long"></icon> Search <icon class="fa-solid fa-magnifying-glass"></icon>, <icon class="fa-regular fa-right-long"></icon> Search for "Private DNS", <icon class="fa-regular fa-right-long"></icon> Select "Private DNS", <icon class="fa-regular fa-right-long"></icon> Select "Designated Private DNS", <icon class="fa-regular fa-right-long"></icon> Enter "<b>dns.sainternet.xyz</b>", <icon class="fa-regular fa-right-long"></icon> Done.
               </p>
            </div>
         </div>
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="googlechrome"><icon class="fa-brands fa-chrome"></icon> Google Chrome/Chromium</h3>
+            <h3 id="appleiosmacos"><icon class="fa-brands fa-apple"></icon> Apple iOS/macOS</h3>
+              <p align="center">
+                Apple iOS 14/macOS Big Sur or higher required.
+              </p>
               <p>
-                Overflow Menu <icon class="fa-solid fa-ellipsis-vertical"></icon>, <icon class="fa-solid fa-right-long"></icon> Settings <icon class="fa-solid fa-cog"></icon>, <icon class="fa-solid fa-right-long"></icon> Select "Privacy and security", <icon class="fa-solid fa-right-long"></icon> Select "Use secure DNS", <icon class="fa-solid fa-right-long"></icon> Select "Choose another provider", <icon class="fa-solid fa-right-long"></icon> Enter "<b>dns.sainternet.xyz</b>", <icon class="fa-solid fa-right-long"></icon> Done.
+                Select and download one of the following Sainternet Filtered DNS Profiles depending on your wants or requirements and open the downloaded file. You may be prompted one or more times, select to accept. These profiles are not digitally signed and that is expected/normal.
+              </p>
+              <p>
+                Sainternet DNS over HTTPS:<br> - <icon class="fa-regular fa-download"></icon> <a href="resources/downloads/apple/sainternet-https-only.mobileconfig">sainternet-https-only.mobileconfig<a/>
+              </p>
+              <p>
+                Sainternet DNS over TLS:<br> - <icon class="fa-regular fa-download"></icon> <a href="resources/downloads/apple/sainternet-tls-only.mobileconfig">sainternet-tls-only.mobileconfig<a/>
+              </p>
+              <p>
+                Sainternet DNS over HTTPS and TLS:<br> - <icon class="fa-regular fa-download"></icon> <a href="resources/downloads/apple/sainternet-https-and-tls.mobileconfig">sainternet-https-and-tls.mobileconfig<a/>
+              </p>
+              <p>
+                Sainternet intentionally disables Apple's <a href="https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay">iCloud Private Relay</a> to prevent it from bypassing Sainternet.
+              </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <h3 id="googlechromechromium"><icon class="fa-brands fa-chrome"></icon> Google Chrome/Chromium</h3>
+              <p>
+                Overflow Menu <icon class="fa-solid fa-ellipsis-vertical"></icon>, <icon class="fa-regular fa-right-long"></icon> Settings <icon class="fa-solid fa-cog"></icon>, <icon class="fa-regular fa-right-long"></icon> Select "Privacy and security", <icon class="fa-regular fa-right-long"></icon> Select "Use secure DNS", <icon class="fa-regular fa-right-long"></icon> Select "Choose another provider", <icon class="fa-regular fa-right-long"></icon> Enter "<b>dns.sainternet.xyz</b>", <icon class="fa-regular fa-right-long"></icon> Done.
               </p>
            </div>
         </div>
@@ -136,7 +160,19 @@
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <h3 id="mozillafirefox"><icon class="fa-brands fa-firefox-browser"></icon> Mozilla Firefox</h3>
               <p>
-                Menu <icon class="fa-solid fa-bars"></icon>, <icon class="fa-solid fa-right-long"></icon> Settings <icon class="fa-solid fa-cog"></icon>, <icon class="fa-solid fa-right-long"></icon> Select "General", <icon class="fa-solid fa-right-long"></icon> Select "Network Settings", <icon class="fa-solid fa-right-long"></icon> Select "Settings", <icon class="fa-solid fa-right-long"></icon> Select "Enable DNS over HTTPS", <icon class="fa-solid fa-right-long"></icon> Select "Use Provider", <icon class="fa-solid fa-right-long"></icon> Select "Custom", <icon class="fa-solid fa-right-long"></icon> Enter "<b>dns.sainternet.xyz</b>", <icon class="fa-solid fa-right-long"></icon> Select "OK", <icon class="fa-solid fa-right-long"></icon> Done.
+                Menu <icon class="fa-solid fa-bars"></icon>, <icon class="fa-regular fa-right-long"></icon> Settings <icon class="fa-solid fa-cog"></icon>, <icon class="fa-regular fa-right-long"></icon> Select "General", <icon class="fa-regular fa-right-long"></icon> Select "Network Settings", <icon class="fa-regular fa-right-long"></icon> Select "Settings", <icon class="fa-regular fa-right-long"></icon> Select "Enable DNS over HTTPS", <icon class="fa-regular fa-right-long"></icon> Select "Use Provider", <icon class="fa-regular fa-right-long"></icon> Select "Custom", <icon class="fa-regular fa-right-long"></icon> Enter "<b>dns.sainternet.xyz</b>", <icon class="fa-regular fa-right-long"></icon> Select "OK", <icon class="fa-regular fa-right-long"></icon> Done.
+              </p>
+              <p>
+                Sainternet intentionally disables Mozilla's <a href="https://support.mozilla.org/en-US/kb/configuring-networks-disable-dns-over-https">default DNS over HTTPS</a> to prevent it from bypassing Sainternet (ignored if manually configured).
+              </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <h3 id="samsunginternet">Samsung Internet</h3>
+              <p>
+                See instructions for <a href="#googlechrome">Google Chrome/Chromium</a>.
               </p>
            </div>
         </div>
