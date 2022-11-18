@@ -1,5 +1,5 @@
 /**
- * sainternet.xyz - resources/stylesheets/button_home.css
+ * sainternet.xyz - resources/stylesheets/datetime.css
  * Copyright 2022 saint-lascivious (Hayden Pearce). All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,12 +15,8 @@
  * limitations under the License
  */
 
-#button_home {
-  bottom: 0;
-  display: block;
-  margin-bottom: 30px;
-  margin-right: 30px;
-  position: fixed;
-  right: 0;
-  z-index: 900;
+#datetime {
+  font-size: 0.8em;
+  text-align: right;
+
 }
