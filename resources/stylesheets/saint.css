@@ -1,5 +1,5 @@
 /**
- * sainternet.xyz - resources/stylesheets/datetime.css
+ * sainternet.xyz - resources/stylesheets/saint.css
  * Copyright 2022 saint-lascivious (Hayden Pearce). All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,26 @@
  * limitations under the License
  */
 
-#datetime {
-  font-size: 0.6em;
-  text-align: right;
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,900,800,700,600,500,400);
+
+// pure css font weight transition
+#saint {
+  animation: embiggen 2s;
+  animation-delay: 2s;
+  font-weight: 300;
+}
+
+// it's a perfectly cromulent word
+@keyframes embiggen {
+    0% {font-weight: 400;}
+   10% {font-weight: 500;}
+   20% {font-weight: 600;}
+   30% {font-weight: 700;}
+   40% {font-weight: 800;}
+   50% {font-weight: 900;}
+   60% {font-weight: 800;}
+   70% {font-weight: 700;}
+   80% {font-weight: 600;}
+   90% {font-weight: 500;}
+  100% {font-weight: 400;}
 }
