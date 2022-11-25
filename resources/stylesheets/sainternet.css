@@ -16,13 +16,13 @@
  */
 
 .embiggen:hover, .embiggen:active {
-    font-weight: 900;
-    transition: font-weight .2s ease-in-out;
+  font-weight: 900;
+  transition: font-weight .2s ease-in-out;
 }
 
 .mdl-layout-title {
-    -webkit-user-select: none;
-    user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .sainternet-main {
@@ -62,6 +62,8 @@
 .sainternet-content h3 {
   margin-top: -10px;
   text-align: center;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .sainternet-layout.is-small-screen .sainternet-content h3 {
