@@ -15,11 +15,16 @@
  * limitations under the License
  */
 
-.embiggen:hover {
+.embiggen:hover, .embiggen:active {
     font-weight: 900;
     transition: font-weight .2s ease-in-out;
-
 }
+
+.mdl-layout-title {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
 .sainternet-main {
   margin-top: -35vh;
   flex-shrink: 0;
