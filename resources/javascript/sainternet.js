@@ -15,11 +15,14 @@
  * limitations under the License
  */
 
-// the mdl-layout drawer component expects links to be external, so
-// it doesn't bother closing after click
+// mdl-layout__drawer expects links to be external, so it doesn't  bother
+// closing itself after click, leaving the drawer hanging open if a navigation
+// is directed to an id on the same page
 function close_drawer() {
   var d = document.querySelector('.mdl-layout');
   d.MaterialLayout.toggleDrawer();
 }
 
+// listen for clicks there and make sure it happens so that page content is
+// never hidden by the drawer overlay after navigation
 document.querySelector('.mdl-layout__drawer').addEventListener('click', close_drawer);
