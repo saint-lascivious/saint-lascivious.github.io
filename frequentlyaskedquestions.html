@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  sainternet.xyz - newsandupdates.html
+  sainternet.xyz - frequentlyaskedquestions.html
   Copyright 2022 saint-lascivious (Hayden Pearce). All rights reserved.
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Sainternet offers validating, recursive, caching, mostly specification compliant, filtered DNS servers with a zero logging policy served over all your favourite acronyms.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>sainternet.xyz News and Updates</title>
+    <title>sainternet.xyz FAQs</title>
 
     <!-- Manifest -->
     <link rel="manifest" href="resources/manifests/sainternet.webmanifest">
@@ -47,7 +47,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16.png">
 
     <!-- SEO -->
-    <link rel="canonical" href="https://sainternet.xyz/newsandupdates.html">
+    <link rel="canonical" href="https://sainternet.xyz/frequentlyaskedquestions.html">
     <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', luxio, Luxio, pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz">
 
     <!-- Styles -->
@@ -55,11 +55,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_orange-red.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.yellow-red.min.css">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="resources/stylesheets/button_home.css">
-    <link rel="stylesheet" href="resources/stylesheets/datetime.css">
     <link rel="stylesheet" href="resources/stylesheets/ribbons.css">
     <link rel="stylesheet" href="resources/stylesheets/sainternet.css">
   </head>
@@ -71,7 +70,7 @@
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation mdl-layout--large-screen-only">
             <a class="mdl-navigation__link" href="index.html">Home</a>
-            <a class="mdl-navigation__link" href="#newsandupdates"><b>News and Updates</b></a>
+            <a class="mdl-navigation__link" href="newsandupdates.html">News and Updates</a>
             <a class="mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
             <a class="mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
           </nav>
@@ -81,8 +80,13 @@
         <span class="mdl-layout-title">sainternet.xyz</span>
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="index.html">Home</a>
-          <a class="mdl-navigation__link" href="#newsandupdates"><b>News and Updates</b></a>
+          <a class="mdl-navigation__link" href="newsandupdates.html">News and Updates</a>
           <a class="mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
+          <a class="mdl-navigation__link" href="aboutsainternet.html"> - About Filtered DNS</a>
+          <a class="mdl-navigation__link" href="#frequentlyaskedquestions"> <b>- FAQs</b></a>
+          <a class="mdl-navigation__link" href="connecttosainternet.html"> - Connect to Sainternet</a>
+          <a class="mdl-navigation__link" href="portsandprotocols.html"> - Ports and Protocols</a>
+          <a class="mdl-navigation__link" href="testsainternet.html"> - Test Sainternet</a>
           <a class="mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
         </nav>
         <span class="mdl-layout-title">GitHub</span>
@@ -92,40 +96,65 @@
           <a class="mdl-navigation__link" href="https://github.com/saint-lascivious/unbound-config">unbound-config</a>
         </nav>
       </div>
-      <div class="deep_orange-ribbon"></div>
+      <div class="yellow-ribbon"></div>
       <main class="sainternet-main mdl-layout__content">
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-color--white mdl-shadow--8dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <div class="sainternet-crumbs mdl-color-text--grey-500">
-              <a href="index.html">Home</a> &gt; <a href="#newsandupdates">News and Updates</a><br><a href="#iosmacosmadeeasy">iOS/macOS Made Easy</a>
+              <a href="index.html">Home</a> &gt; <a href="filtereddns.html">Filtered DNS</a> &gt; <a href="#frequentlyaskedquestions"><b>Frequently Asked Questions</b></a><br><a href="#thefivews">The Five Ws</a>
             </div>
           </div>
         </div>
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="newsandupdates"><span class="embiggen">News and Updates</span></h3>
+            <h3 id="frequentlyaskedquestions"><span class="embiggen">Frequently Asked Questions</span></h3>
               <p>
-                This page will serve to detail news and updates relevant to Sainternet such as new features and developments, planned maintenance, etc.
-              </p>
-              <p>
-                We shall see how things go but for the moment at least this card will remain pinned, and those below it posted in reverse chronological order with the newest post always being the second.
+                Answers to some frequently asked questions regarding Sainternet Filtered DNS.
               </p>
            </div>
         </div>
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="iosmacosmadeeasy"><icon class="fa-brands fa-apple"></icon> <span class="embiggen">iOS/macOS Made Easy</span></h3>
-              <p id="datetime">
-                Friday, 18 November 2022 22:30+13:00 (NZDT)
+            <h3 id="thefivews"><span class="embiggen">The Five Ws</span></h3>
+              <p align="center">
+                <b>Who?</b>
+              </p>
+                Sainternet is chiefly managed by myself, saint (aka. Hayden Pearce), but would not be possible without contributions from my Chief Analyst/Technician (CAT) Tiggy, and the invaluable oversight of my Knowledge/Information Technologist in charge of Testing Immersive Experiences (KITTIE), Willow.
+              <p>
+              </p>
+              <hr>
+              <p align="center">
+                <b>What?</b>
               </p>
               <p>
-                Previously relegated to the realm of "if you know, you know", I am very much pleased to announce that that is no longer the case and it is much easier for anyone with an Apple iPhone or Mac to connect to Sainternet DNS over HTTPS or DNS over TLS (iOS 14/macOS Big Sur or higher required).
+                As mentioned, Sainternet is a set of validating, recursive, caching, mostly specification compliant, filtered DNS servers with a zero logging policy.
+              </p>
+              <hr>
+              <p align="center">
+                <b>When?</b>
               </p>
               <p>
-                You can choose your preferred DNS Profile (DoH, DoT, DoH/DoT) and get started <a href="connecttosainternet.html#appleiosmacos">here</a>.
+                Sainternet research resolvers or their spiritual ancestors have been operating in some capacity or other since 2016.
+              </p>
+              <hr>
+              <p align="center">
+                <b>Where?</b>
+              </p>
+              <p>
+                Sainternet is based in Christchurch, New Zealand.
+              </p>
+              <hr>
+              <p align="center">
+                <b>Why?</b>
+              </p>
+              <p>
+                Mostly because I can.
+              </p>
+              <p>
+                To educate myself in related technologies, and hopefully to provide a better domain name resolution experience along the way.
               </p>
            </div>
         </div>
