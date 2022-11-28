@@ -1,6 +1,6 @@
 {
     "name": "sainternet.xyz",
-    "short_name": "sainternet",
+    "short_name": "sainternet.xyz",
     "icons": [
         {
             "src": "/android-chrome-36x36.png",
@@ -48,11 +48,10 @@
             "type": "image/png"
         }
     ],
-    "lang": "en"
     "categories": ["dns", "doh", "dohttps", "doh3", "dotls", "doquic", "pokedex", "pokédex", "pokemon", "pokémon",]
     "description": "…breaking the internet, since 2016.",
     "theme_color": "#f44336",
-    "background_color": "#ffffff",
+    "background_color": "#f44336",
     "start_url": "https://sainternet.xyz",
     "display": "standalone"
 }
