@@ -33,6 +33,10 @@
   user-select: none;
 }
 
+.sainternet-list-action {
+    width: 100%;
+}
+
 .sainternet-main {
   margin-top: -35vh;
   flex-shrink: 0;

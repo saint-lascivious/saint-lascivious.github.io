@@ -16,6 +16,7 @@
  */
 
 /** Basic Material Design colour pallet    500|400
+ *
  * red-ribbon           red             F44336,EF5350
  * deep_orange-ribbon   deep_orange     FF5722,FF7043
  * orange-ribbon        orange          FF9800,FFA726
@@ -31,6 +32,11 @@
  * purple-ribbon        purple          9C27BO,AB47BC
  * deep_purple-ribbon   deep_purple     673AB7,7E57C2
  * pink-ribbon          pink            E91C63,EC407A
+ *
+ * all ribbons use the 400% saturation variation for
+ * the best contrast when used alongside the primary
+ * theme colours from mdl css which use the 500%
+ * saturation variation of the same named colour
  */
 
 .red-ribbon {
