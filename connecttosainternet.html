@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://code.getmdl.io">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_green-red.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.yellow-red.min.css">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="/resources/stylesheets/button_home.css">
@@ -72,22 +72,22 @@
           <a class="mdl-navigation__link" href="/index.html">Home</a>
           <a class="mdl-navigation__link" href="/newsandupdates.html">News and Updates</a>
           <a class="mdl-navigation__link" href="/filtereddns.html">Filtered DNS</a>
-          <a class="mdl-navigation__link" href="/aboutsainternet.html"> - About Filtered DNS</a>
           <a class="mdl-navigation__link" href="/frequentlyaskedquestions.html"> - FAQs</a>
           <a class="mdl-navigation__link" href="#connecttosainternet"> <b>- Connect to Sainternet</b></a>
           <a class="mdl-navigation__link" href="/portsandprotocols.html"> - Ports and Protocols</a>
+          <a class="mdl-navigation__link" href="/technologies.html"> - Technologies</a>
           <a class="mdl-navigation__link" href="/testsainternet.html"> - Test Sainternet</a>
           <a class="mdl-navigation__link" href="/pokedexoverdns.html">Pokédex over DNS</a>
           <a class="mdl-navigation__link" href="/projects.html">Projects</a>
         </nav>
       </div>
-      <div class="light_green-ribbon"></div>
+      <div class="yellow-ribbon"></div>
       <main class="sainternet-main mdl-layout__content">
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-color--white mdl-shadow--8dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <div class="sainternet-crumbs mdl-color-text--grey-500">
-              <a href="/index.html">Home</a> &gt; <a href="/filtereddns.html">Filtered DNS</a> &gt; <a href="#connecttosainternet"><b>Connect to Sainternet</b></a><br><a href="#appleiosmacos">Apple iOS/MacOS</a>, <a href="#googleandroidprivatedns">Google Android Private DNS</a>, <a href="#googlechromechromium">Google Chrome/Chromium</a>, <a href="#mozillafirefox">Mozilla Firefox</a>, <a href="#samsunginternet">Samsung Internet</a>
+              <a href="/index.html">Home</a> &gt; <a href="/filtereddns.html">Filtered DNS</a> &gt; <a href="#connecttosainternet"><b>Connect to Sainternet</b></a><br><a href="#androidprivatedns">Android Private DNS</a>, <a href="#appleiosmacos">Apple iOS/MacOS</a>, <a href="#googlechromechromium">Google Chrome/Chromium</a>, <a href="#mozillafirefox">Mozilla Firefox</a>
             </div>
           </div>
         </div>
@@ -103,51 +103,7 @@
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="appleiosmacos"><icon class="fa-brands fa-apple"></icon> <span class="embiggen">Apple<br>iOS/macOS</span></h3>
-              <p align="center">
-                Apple iOS 14/macOS Big Sur or higher required.
-              </p>
-              <ol>
-                <li>Select a DNS Profile from below</li>
-                <li>Download the selected DNS Profile (click the icon to download)</li>
-                <li>Navigate to the downloaded DNS Profile</li>
-                <li>Open the DNS Profile</li>
-                <li>Agree to any/all prompts</li>
-                <li>Done</li>
-              </ol>
-              <div class="sainternet-list-action mdl-list">
-                <div class="mdl-list__item">
-                  <span class="mdl-list__item-primary-content">
-                    <span>sainternet-https-only.mobileconfig</span>
-                  </span>
-                  <a class="mdl-list__item-secondary-action"  href="/downloads/apple/sainternet-https-only.mobileconfig" download="sainternet-https-only.mobileconfig"><icon class="fa-solid fa-download"></icon></a>
-                </div>
-                <div class="mdl-list__item">
-                  <span class="mdl-list__item-primary-content">
-                    <span>sainternet-tls-only.mobileconfig</span>
-                  </span>
-                  <a class="mdl-list__item-secondary-action"  href="/downloads/apple/sainternet-tls-only.mobileconfig" download="sainternet-tls-only.mobileconfig"><icon class="fa-solid fa-download"></icon></a>
-                </div>
-                <div class="mdl-list__item">
-                  <span class="mdl-list__item-primary-content">
-                    <span>sainternet-https-and-tls.mobileconfig</span>
-                  </span>
-                  <a class="mdl-list__item-secondary-action"  href="/downloads/apple/sainternet-https-and-tls.mobileconfig" download="sainternet-https-and-tls.mobileconfig"><icon class="fa-solid fa-download"></icon></a>
-                </div>
-              </div>
-              <p>
-                Notes:
-              </p>
-              <ol>
-                <li>These profiles are not digitally signed and that is expected/normal.</li>
-                <li>Sainternet intentionally disables Apple's <a href="https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay">iCloud Private Relay</a> to prevent it from bypassing Sainternet.</li>
-              </ol>
-           </div>
-        </div>
-        <div class="sainternet-container mdl-grid">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="googleandroidprivatedns"><icon class="fa-brands fa-android"></icon> <span class="embiggen">Google Android<br>Private DNS</span></h3>
+            <h3 id="androidprivatedns"><icon class="fa-brands fa-android"></icon> <span class="embiggen">Android<br>Private DNS</span></h3>
               <p align="center">
                 Android 9 (Pie) or higher required.
               </p>
@@ -159,6 +115,50 @@
                 <li>Select "Designated Private DNS"</li>
                 <li>Enter "<b>dns.sainternet.xyz</b>"</li>
                 <li>Done</li>
+              </ol>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <h3 id="appleiosmacos"><icon class="fa-brands fa-apple"></icon> <span class="embiggen">Apple<br>iOS/macOS</span></h3>
+              <p align="center">
+                Apple iOS 14/macOS Big Sur or higher required.
+              </p>
+              <ol>
+                <li>Select a DNS Profile from below (if you don't know which one to choose, select <a href="#recommendeddnsprofile">DoHTTPS/TLS</a>)</li>
+                <li>Download the selected DNS Profile (click the icon to download)</li>
+                <li>Navigate to the downloaded DNS Profile</li>
+                <li>Open the DNS Profile</li>
+                <li>Agree to any/all prompts</li>
+                <li>Done</li>
+              </ol>
+              <div class="sainternet-list-action mdl-list">
+                <div class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <span>Sainternet DoHTTPS</span>
+                  </span>
+                  <a class="mdl-list__item-secondary-action"  href="/downloads/apple/sainternet-https-only.mobileconfig" download="sainternet-https-only.mobileconfig"><icon class="material-icons-outlined">file_download</icon></a>
+                </div>
+                <div class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <span>Sainternet DoTLS</span>
+                  </span>
+                  <a class="mdl-list__item-secondary-action"  href="/downloads/apple/sainternet-tls-only.mobileconfig" download="sainternet-tls-only.mobileconfig"><icon class="material-icons-outlined">file_download</icon></a>
+                </div>
+                <div class="mdl-list__item" id="recommendeddnsprofile">
+                  <span class="mdl-list__item-primary-content">
+                    <span>Sainternet DoHTTPS/TLS</span>
+                  </span>
+                  <a class="mdl-list__item-secondary-action"  href="/downloads/apple/sainternet-https-and-tls.mobileconfig" download="sainternet-https-and-tls.mobileconfig"><icon class="material-icons-outlined">file_download</icon></a>
+                </div>
+              </div>
+              <p>
+                Notes:
+              </p>
+              <ol>
+                <li>These profiles are not digitally signed and that is expected/normal.</li>
+                <li>Sainternet intentionally disables Apple's <a href="https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay">iCloud Private Relay</a> to prevent it from bypassing Sainternet.</li>
               </ol>
            </div>
         </div>
@@ -200,15 +200,6 @@
               <ol>
                 <li>Sainternet intentionally disables Mozilla's <a href="https://support.mozilla.org/en-US/kb/configuring-networks-disable-dns-over-https">default DNS over HTTPS</a> to prevent it from bypassing Sainternet (ignored if manually configured).</li>
               </ol>
-           </div>
-        </div>
-        <div class="sainternet-container mdl-grid">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="samsunginternet"><span class="embiggen">Samsung<br>Samsung Internet</span></h3>
-              <p>
-                Use the instructions for <a href="#googlechromechromium">Google Chrome/Chromium</a>.
-              </p>
            </div>
         </div>
       </main>

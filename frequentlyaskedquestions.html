@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://code.getmdl.io">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.yellow-red.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.amber-red.min.css">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="/resources/stylesheets/button_home.css">
@@ -72,22 +72,22 @@
           <a class="mdl-navigation__link" href="/index.html">Home</a>
           <a class="mdl-navigation__link" href="/newsandupdates.html">News and Updates</a>
           <a class="mdl-navigation__link" href="/filtereddns.html">Filtered DNS</a>
-          <a class="mdl-navigation__link" href="/aboutsainternet.html"> - About Filtered DNS</a>
           <a class="mdl-navigation__link" href="#frequentlyaskedquestions"> <b>- FAQs</b></a>
           <a class="mdl-navigation__link" href="/connecttosainternet.html"> - Connect to Sainternet</a>
           <a class="mdl-navigation__link" href="/portsandprotocols.html"> - Ports and Protocols</a>
+          <a class="mdl-navigation__link" href="/technologies.html"> - Technologies</a>
           <a class="mdl-navigation__link" href="/testsainternet.html"> - Test Sainternet</a>
           <a class="mdl-navigation__link" href="/pokedexoverdns.html">Pokédex over DNS</a>
           <a class="mdl-navigation__link" href="/projects.html">Projects</a>
         </nav>
       </div>
-      <div class="yellow-ribbon"></div>
+      <div class="amber-ribbon"></div>
       <main class="sainternet-main mdl-layout__content">
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-color--white mdl-shadow--8dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <div class="sainternet-crumbs mdl-color-text--grey-500">
-              <a href="/index.html">Home</a> &gt; <a href="/filtereddns.html">Filtered DNS</a> &gt; <a href="#frequentlyaskedquestions"><b>Frequently Asked Questions</b></a><br><a href="#whowhatwhenwhereandwhy">Who, What, When, Where and Why?</a>, <a href="#howmuchdoessainternetcost">How Much does Sainternet Cost?</a>, <a href="#howdoessainternetgenerateincome">How does Sainternet Generate Income?</a>, <a href="#whopaysforsainternet">Who Pays for Sainternet?</a>
+              <a href="/index.html">Home</a> &gt; <a href="/filtereddns.html">Filtered DNS</a> &gt; <a href="#frequentlyaskedquestions"><b>Frequently Asked Questions</b></a><br><a href="#whowhatwhenwhereandwhy">Who, What, When, Where and Why?</a>, <a href="#howmuch">How Much?</a>, <a href="#howdoessainternetmakemoney">How does Sainternet Make Money?</a>, <a href="#sowhofundssainternet">So, Who Funds Sainternet?</a>
             </div>
           </div>
         </div>
@@ -117,6 +117,13 @@
               <p>
                 As mentioned, Sainternet is a set of validating, recursive, caching, mostly specification compliant, filtered DNS servers with a zero logging policy.
               </p>
+              <p>
+                Notes:
+              </p>
+              <ol>
+                <li>What "mostly specification compliant" means that relevant specifications are adhered to, provided they don't provide a net negative experience for other Sainternet DNS users and/or the Internet at large.<br>Examples of this include but are not limited to: Denial of the request type "ANY", refusing very large/oversize but otherwise valid payloads, selective rate limiting/introducing progressive jitter, etc.</li>
+                <li>Here "zero logging policy" refers to a self enforced policy whereby any/all logging of relevant services (those involved with processing some or all of a Sainternet DNS query and its response) are either disabled entirely, or set to their minimum possible verbosity and redirected to "/dev/null".</li>
+              </ol>
               <hr>
               <p align="center">
                 <b>When?</b>
@@ -139,26 +146,26 @@
                 Mostly because I can.
               </p>
               <p>
-                To educate myself in related technologies, and hopefully to provide a better domain name resolution experience along the way.
+                To better educate myself in the deployment, management and development of related technologies, while hopefully providing a better domain name resolution experience along the way.
               </p>
            </div>
         </div>
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="howmuchdoessainternetcost"><icon class="fa-solid fa-sack-dollar"></icon> <span class="embiggen">How Much does<br>Sainternet Cost?</span></h3>
+            <h3 id="howmuch"><span class="embiggen">How Much?</span></h3>
               <p>
                 Nothing.
               </p>
               <p>
-                Sainternet is free to all.
+                Sainternet services are provided free to all.
               </p>
            </div>
         </div>
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="howdoessainternetgenerateincome"><icon class="fa-solid fa-money-bill-trend-up"></icon> <span class="embiggen">How does Sainternet<br>Generate Income?</span></h3>
+            <h3 id="howdoessainternetmakemoney"><span class="embiggen">How does Sainternet Make Money?</span></h3>
               <p>
                 It doesn't.
               </p>
@@ -167,12 +174,12 @@
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="whopaysforsainternet"><icon class="fa-solid fa-file-invoice-dollar"></icon> <span class="embiggen">Who Pays for<br>Sainternet?</span></h3>
+            <h3 id="sowhofundssainternet"><span class="embiggen">So, Who Funds Sainternet?</span></h3>
               <p>
                 I do.
               </p>
               <p>
-                Sainternet requires very little additional overhead outside of my own network requirements and its continued development is somewhat of a hobby for me.
+                Sainternet requires very little additional overhead outside of my own network requirements, and its continued development is somewhat of a hobby for me.
               </p>
            </div>
         </div>
