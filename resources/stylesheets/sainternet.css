@@ -34,7 +34,13 @@
 }
 
 .sainternet-list-action {
-    width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.sainternet-layout.is-small-screen .sainternet-list-action {
+  width: 100%;
 }
 
 .sainternet-main {
