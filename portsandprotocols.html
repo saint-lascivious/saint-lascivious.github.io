@@ -102,9 +102,9 @@
             </p>
             <table>
               <tr>
-                <th>Protocol</th>
+                <th>Transport</th>
                 <th>Address</th>
-                <th>Port</th>
+                <th>Protocol & Port</th>
               </tr>
               <tr>
                 <td><a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS">HTTPS</a></td>
@@ -118,7 +118,7 @@
               </tr>
               <tr>
                 <td><a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol">TCP</a></td>
-                <td>119.224.127.171<br>::ffff:77e0:7fab</td>
+                <td>119.224.127.171<br><b>::ffff:119.224.127.171</b><br>::ffff:77e0:7fab</td>
                 <td>TCP 53</td>
               </tr>
               <tr>
@@ -128,15 +128,21 @@
               </tr>
               <tr>
                 <td><a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol">UDP</a></td>
-                <td>119.224.127.171<br>::ffff:77e0:7fab</td>
+                <td>119.224.127.171<br><b>::ffff:119.224.127.171</b><br>::ffff:77e0:7fab</td>
                 <td>UDP 53</td>
               </tr>
               <tr>
                 <td><a href="https://en.wikipedia.org/wiki/DNS_over_QUIC">QUIC</a></td>
                 <td>dns.sainternet.xyz</td>
-                <td>UDP 853</td>
+                <td>UDP 784<br><b>UDP 853</b><br>UDP 8853</td>
               </tr>
             </table>
+            <p>
+              Notes:
+            </p>
+            <ol>
+              <li>Where multiple values are present the default is listed in bold.</li>
+            </ol>
            </div>
         </div>
       </main>
