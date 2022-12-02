@@ -97,87 +97,87 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <h3 id="testsainternet"><span class="embiggen">Test Sainternet</span></h3>
-              <p>
-                The following describes testing Sainternet Filtered DNS using several methods, utilities.
-              </p>
+            <p>
+              The following describes testing Sainternet Filtered DNS using several methods, utilities.
+            </p>
            </div>
         </div>
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <h3 id="usingdig"><span class="embiggen">Using dig</span></h3>
-              <p>
-                Example Sainternet test query using <a href="https://linux.die.net/man/1/dig">dig</a>:
-              </p>
-              <pre>
+            <p>
+              Example Sainternet test query using <a href="https://linux.die.net/man/1/dig">dig</a>:
+            </p>
+            <pre>
 dig +short txt test.sainternet.xyz
-              </pre>
+            </pre>
            </div>
         </div>
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <h3 id="usingdnslookup"><span class="embiggen">Using dnslookup</span></h3>
-              <p>
-                Example Sainternet test query using <a href="https://github.com/ameshkov/dnslookup">dnslookup</a>:
-              </p>
-              <pre>
+            <p>
+              Example Sainternet test query using <a href="https://github.com/ameshkov/dnslookup">dnslookup</a>:
+            </p>
+            <pre>
 RRTYPE=TXT dnslookup test.sainternet.xyz dns.sainternet.xyz
-              </pre>
-              <p>
-                Example Sainternet dnslookup query using the TCP protocol:
-              </p>
-              <pre>
+            </pre>
+            <p>
+              Example Sainternet dnslookup query using the TCP protocol:
+            </p>
+            <pre>
 dnslookup example.org tcp://dns.sainternet.xyz
-              </pre>
-              <p>
-                Example Sainternet dnslookup query using the UDP protocol:
-              </p>
-              <pre>
+            </pre>
+            <p>
+              Example Sainternet dnslookup query using the UDP protocol:
+            </p>
+            <pre>
 dnslookup example.org udp://dns.sainternet.xyz
-              </pre>
-              <p>
-                Example Sainternet dnslookup query using the HTTP/2 protocol (DoH):
-              </p>
-              <pre>
+            </pre>
+            <p>
+              Example Sainternet dnslookup query using the HTTP/2 protocol (DoH):
+            </p>
+            <pre>
 dnslookup example.org https://dns.sainternet.xyz
-              </pre>
-              <p>
-                Example Sainternet dnslookup query using the TLS protocol (DoT):
-              </p>
-              <pre>
+            </pre>
+            <p>
+              Example Sainternet dnslookup query using the TLS protocol (DoT):
+            </p>
+            <pre>
 dnslookup example.org tls://dns.sainternet.xyz
-              </pre>
-              <p>
-                Example Sainternet dnslookup query using the HTTP/3 protocol (DoH/3) opportunistically:
-              </p>
-              <pre>
+            </pre>
+            <p>
+              Example Sainternet dnslookup query using the HTTP/3 protocol (DoH/3) opportunistically:
+            </p>
+            <pre>
 HTTP3=1 dnslookup example.org https://dns.sainternet.xyz
-              </pre>
-              <p>
-                Example Sainternet dnslookup query using the HTTP/3 protocol (DoH/3):
-              </p>
-              <pre>
+            </pre>
+            <p>
+              Example Sainternet dnslookup query using the HTTP/3 protocol (DoH/3):
+            </p>
+            <pre>
 dnslookup example.org h3://dns.sainternet.xyz
-              </pre>
-              <p>
-                Example Sainternet dnslookup query using the QUIC protocol (DoQ):
-              </p>
-              <pre>
+            </pre>
+            <p>
+              Example Sainternet dnslookup query using the QUIC protocol (DoQ):
+            </p>
+            <pre>
 dnslookup example.org quic://dns.sainternet.xyz
-              </pre>
+            </pre>
            </div>
         </div>
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <h3 id="usingnslookup"><span class="embiggen">Using nslookup</span></h3>
-              <p>
-                Example Sainternet test query using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
-              </p>
-              <pre>
+            <p>
+              Example Sainternet test query using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
+            </p>
+            <pre>
 nslookup -type=txt test.sainternet.xyz
-              </pre>
+            </pre>
            </div>
         </div>
       </main>

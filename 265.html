@@ -97,34 +97,46 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <h3 id="pokemon265"><span class="embiggen">Pokémon #265<br>Wurmple</span></h3>
-              <picture>
-                <source srcset="resources/images/wurmple-shiny.png" media="(prefers-color-scheme: dark)">
-                <img src="resources/images/wurmple.png" alt="Pokémon #265, Wurmple: Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping.">
-              </picture>
-              <p align="center">
-                A wild <b>Wurmple</b> appeared!
-              </p>
-              <p>
-                Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping.
-              </p>
+            <picture>
+              <source srcset="resources/images/wurmple-shiny.png" media="(prefers-color-scheme: dark)">
+              <img src="resources/images/wurmple.png" alt="Pokémon #265, Wurmple: Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping.">
+            </picture>
+            <p align="center">
+              A wild <b>Wurmple</b> appeared!
+            </p>
+            <p>
+              Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping.
+            </p>
            </div>
         </div>
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-color--white mdl-shadow--16dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <h3 id="example"><span class="embiggen">Example Pokédex over DNS Queries</span></h3>
-              <p>
-                Example Pokédex over DNS query using <a href="https://linux.die.net/man/1/dig">dig</a>:
-              </p>
-              <pre>
+            <p>
+              Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/dig">dig</a>:
+            </p>
+            <pre>
 dig +short txt wurmple.pokedex @dns.sainternet.xyz
-              </pre>
-              <p>
-                Example Pokédex over DNS query using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
-              </p>
-              <pre>
+
+dig +short txt 265.pokedex @dns.sainternet.xyz
+            </pre>
+            <p>
+              Example Pokédex over DNS queries using <a href="https://github.com/ameshkov/dnslookup">dnslookup</a>:
+            </p>
+            <pre>
+RRTYPE=TXT dnslookup wurmple.pokedex dns.sainternet.xyz
+
+RRTYPE=TXT dnslookup 265.pokedex dns.sainternet.xyz
+            </pre>
+            <p>
+              Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
+            </p>
+            <pre>
+nslookup -type=txt wurmple.pokedex dns.sainternet.xyz
+
 nslookup -type=txt 265.pokedex dns.sainternet.xyz
-              </pre>
+            </pre>
           </div>
         </div>
       </main>
