@@ -101,11 +101,11 @@
 }
 
 .sainternet-footer .mdl-mini-footer--link-list icon {
-  text-shadow: 2px 2px 16px #000000;
+  text-shadow: 2px 4px 16px #000000;
 }
 
 .sainternet-layout.is-small-screen .sainternet-footer .mdl-mini-footer--link-list icon {
-  text-shadow: 1px 1px 8px #000000;
+  text-shadow: 1px 2px 8px #000000;
 }
 
 @media (prefers-color-scheme: dark) {
