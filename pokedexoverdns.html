@@ -55,6 +55,9 @@
     <link rel="stylesheet" href="/resources/stylesheets/sainternet.css">
 
     <!-- Prefetch / Prerender-->
+    <link rel="dns-prefetch" href="bulbapedia.bulbgarden.net">
+    <link rel="dns-prefetch" href="linux.die.net">
+    <link rel="dns-prefetch" href="www.nlnetlabs.nl">
     <link rel="prefetch" href="/265.html" as="document">
     <link rel="prerender" href="/265.html">
   </head>
@@ -101,17 +104,18 @@
               Sainternet is proud to present to you the <b><i>world's first</i></b> (…and only?) DNS driven <a href="https://en.wikipedia.org/wiki/TXT_record">TXT record</a> based National Pokédex over DNS!
             </p>
             <picture>
-              <a href="/265.html"><img src="resources/images/terminal.png" alt="Example Pokédex-over-DNS query using nslookup and dig utilities from the command line: nslookup -type=txt wurmple.pokedex dns.sainternet.xyz, dig +short txt wurmple.pokedex @dns.sainternet.xyz"></a>
+              <a href="/265.html#pokemon265"><img src="resources/images/terminal.png" alt="Example Pokédex-over-DNS query using nslookup and dig utilities from the command line: nslookup -type=txt wurmple.pokedex dns.sainternet.xyz, dig +short txt wurmple.pokedex @dns.sainternet.xyz"></a>
             </picture>
             <p>
-              This fun (<i>ab</i>)use of DNS enables one to query a Pokémon species name (currently supported: English) in order to receive its <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number">National Pokédex Number</a> (NPN), or query an NPN (zero padding optional) in order to receive the Pokémon species name (currently supported: English, Japanese <a href="https://en.wikipedia.org/wiki/Romanization_of_Japanese">Rōmaji</a>).
+              This fun little (<i>ab</i>)use of DNS allows one to query a Pokémon species name (currently supported: English) in order to receive its <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number">National Pokédex Number</a> (NPN), or query an NPN (zero padding optional) in order to receive the Pokémon species name (currently supported: English, Japanese <a href="https://en.wikipedia.org/wiki/Romanization_of_Japanese">Rōmaji</a>).
             </p>
             <p>
               Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/dig">dig</a>:
             </p>
             <pre>
 dig +short txt wurmple.pokedex @dns.sainternet.xyz
-
+            </pre>
+            <pre>
 dig +short txt 265.pokedex @dns.sainternet.xyz
             </pre>
             <p>
@@ -119,7 +123,8 @@ dig +short txt 265.pokedex @dns.sainternet.xyz
             </p>
             <pre>
 RRTYPE=TXT dnslookup wurmple.pokedex dns.sainternet.xyz
-
+            </pre>
+            <pre>
 RRTYPE=TXT dnslookup 265.pokedex dns.sainternet.xyz
             </pre>
             <p>
@@ -127,11 +132,12 @@ RRTYPE=TXT dnslookup 265.pokedex dns.sainternet.xyz
             </p>
             <pre>
 nslookup -type=txt wurmple.pokedex dns.sainternet.xyz
-
+            </pre>
+            <pre>
 nslookup -type=txt 265.pokedex dns.sainternet.xyz
             </pre>
             <p>
-              <a href="https://www.nlnetlabs.nl/projects/unbound/about/">Unbound</a> local-data record configuration for the .pokedex virtual domain available <a href="https://github.com/saint-lascivious/unbound-config/blob/master/configs/pokedex.conf">here</a>.
+              <a href="https://www.nlnetlabs.nl/projects/unbound/about/">Unbound</a> local-data record configuration for the <b>.pokedex</b> virtual domain available <a href="https://github.com/saint-lascivious/unbound-config/blob/master/configs/pokedex.conf">here</a>.
             </p>
           </div>
         </div>
