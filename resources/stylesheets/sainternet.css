@@ -112,6 +112,13 @@
   body {
     background-color: #000000;
   }
+  .mdl-layout__drawer {
+    background: #000000;
+    color: #FFFFFF;
+  }
+  .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+    color: #424242;
+  }
 }
 
 @media (prefers-color-scheme: light) {
