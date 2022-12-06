@@ -110,19 +110,35 @@
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #000000;
+    background-color: #121212;
   }
   .mdl-layout__drawer {
-    background: #000000;
-    color: #FFFFFF;
+    background: #363636;
+    color: #FAFAFA;
+  }
+  .sainternet-content {
+    background: #262626;
+    color: #FAFAFA;
   }
   .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
     color: #424242;
+  }
+  .sainternet-navigation {
+    background: #363636;
+    color: #9E9E9E;
   }
 }
 
 @media (prefers-color-scheme: light) {
   body {
     background-color: #FFFFFF;
+  }
+  .sainternet-content {
+    background: #FFFFFF;
+    color: #424242;
+  }
+  .sainternet-navigation {
+    background: #FFFFFF;
+    color: #9E9E9E;
   }
 }
