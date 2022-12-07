@@ -119,7 +119,7 @@
   .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
     color: #424242;
   }
-  .mdl-list {
+  .mdl-list__item-primary-content {
     color: #FAFAFA;
   }
   .sainternet-content {
@@ -136,7 +136,7 @@
   body {
     background-color: #FFFFFF;
   }
-  .mdl-list {
+  .mdl-list__item-primary-content {
     color: #424242;
   }
   .sainternet-content {
