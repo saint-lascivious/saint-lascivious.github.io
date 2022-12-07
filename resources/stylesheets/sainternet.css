@@ -113,7 +113,7 @@
     background-color: #121212;
   }
   .mdl-layout__drawer {
-    background: #363636;
+    background: #212121;
     color: #FAFAFA;
   }
   .sainternet-content {
@@ -126,6 +126,9 @@
   .sainternet-navigation {
     background: #363636;
     color: #9E9E9E;
+  }
+  .sainternet-list-action {
+    color: #FAFAFA;
   }
 }
 
@@ -140,5 +143,8 @@
   .sainternet-navigation {
     background: #FFFFFF;
     color: #9E9E9E;
+  }
+  .sainternet-list-action {
+    color: #424242;
   }
 }

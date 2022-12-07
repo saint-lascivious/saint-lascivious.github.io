@@ -16,10 +16,19 @@
  */
 
 pre {
-  overflow: auto;
-  background-color: #ffffff;
-  border: 2px solid #757575;
+  border: 2px solid #616161;
   border-radius: 8px;
   font-size: 0.9em;
+  overflow: auto;
   padding: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  background-color: #363636;
+  color: #FAFAFA;
+}
+
+@media (prefers-color-scheme: light) {
+  background-color: #FFFFFF;
+  color: #424242;
 }
