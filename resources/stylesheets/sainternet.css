@@ -29,8 +29,8 @@
 }
 
 .mdl-layout-title {
-  -webkit-user-select: none;
   user-select: none;
+  -webkit-user-select: none;
 }
 
 .sainternet-list-action {
@@ -44,14 +44,14 @@
 }
 
 .sainternet-main {
-  margin-top: -35vh;
   flex-shrink: 0;
+  margin-top: -35vh;
 }
 
 .sainternet-container {
+  margin: 0 auto;
   max-width: 1600px;
   width: calc(100% - 16px);
-  margin: 0 auto;
 }
 
 .sainternet-content {
@@ -68,20 +68,20 @@
 }
 
 .sainternet-layout.is-small-screen .sainternet-content {
-  padding: 40px 28px;
   margin-bottom: 40px;
+  padding: 40px 28px;
 }
 
 .sainternet-layout.is-small-screen .sainternet-navigation {
-  padding: 20px 28px;
   margin-bottom: 20px;
+  padding: 20px 28px;
 }
 
 .sainternet-content h3 {
   margin-top: -10px;
   text-align: center;
-  -webkit-user-select: none;
   user-select: none;
+  -webkit-user-select: none;
 }
 
 .sainternet-layout.is-small-screen .sainternet-content h3 {
@@ -116,19 +116,19 @@
     background: #212121;
     color: #FAFAFA;
   }
+  .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+    color: #424242;
+  }
+  .mdl-list {
+    color: #FAFAFA;
+  }
   .sainternet-content {
     background: #262626;
     color: #FAFAFA;
   }
-  .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
-    color: #424242;
-  }
   .sainternet-navigation {
     background: #363636;
     color: #9E9E9E;
-  }
-  .sainternet-list-action {
-    color: #FAFAFA;
   }
 }
 
@@ -136,6 +136,9 @@
   body {
     background-color: #FFFFFF;
   }
+  .mdl-list {
+    color: #424242;
+  }
   .sainternet-content {
     background: #FFFFFF;
     color: #424242;
@@ -143,8 +146,5 @@
   .sainternet-navigation {
     background: #FFFFFF;
     color: #9E9E9E;
-  }
-  .sainternet-list-action {
-    color: #424242;
   }
 }
