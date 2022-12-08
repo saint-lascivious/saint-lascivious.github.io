@@ -25,7 +25,7 @@
 
 .embiggen:hover, .embiggen:active {
   font-weight: 900;
-  transition: font-weight .2s ease-in-out;
+  transition: font-weight .1s ease-in-out;
 }
 
 .mdl-layout-title {
