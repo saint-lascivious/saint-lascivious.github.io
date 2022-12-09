@@ -26,11 +26,7 @@
 .embiggen:hover, .embiggen:active {
   font-weight: 900;
   transition: font-weight .1s ease-in-out;
-}
-
-.mdl-layout-title {
   user-select: none;
-  -webkit-user-select: none;
 }
 
 .sainternet-list-action {
@@ -80,8 +76,6 @@
 .sainternet-content h3 {
   margin-top: -10px;
   text-align: center;
-  user-select: none;
-  -webkit-user-select: none;
 }
 
 .sainternet-layout.is-small-screen .sainternet-content h3 {
@@ -110,7 +104,7 @@
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #121212;
+    background: #121212;
   }
   .mdl-layout__drawer {
     background: #212121;
@@ -134,7 +128,7 @@
 
 @media (prefers-color-scheme: light) {
   body {
-    background-color: #FFFFFF;
+    background: #FFFFFF;
   }
   .mdl-list__item-primary-content {
     color: #424242;
