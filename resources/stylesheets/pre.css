@@ -23,24 +23,16 @@ pre {
   padding: 6px;
 }
 
-@media (orientation: landscape) {
-  pre {
-    width: 80%;
-  }
-}
-
-@media (orientation: portrait) {
-  pre {
-    width: 100%;
-  }
-}
-
 @media (prefers-color-scheme: dark) {
-  background-color: #363636;
-  color: #FAFAFA;
+  pre {
+    background: #000000;
+    color: #FAFAFA;
+  }
 }
 
 @media (prefers-color-scheme: light) {
-  background-color: #FFFFFF;
-  color: #424242;
+  pre {
+    background: #FFFFFF;
+    color: #424242;
+  }
 }

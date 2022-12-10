@@ -68,9 +68,9 @@ table tr:last-child td:last-child {
   }
 
   table tr th {
-    background: #363636;
+    background: #000000;
     border-top: solid 2px #616161;
-    color: #9E9E9E;
+    color: #FAFAFA;
   }
 }
 
@@ -81,7 +81,8 @@ table tr:last-child td:last-child {
   }
 
   table tr th {
-    background: #bdbdbd;
+    background: #FFFFFF;
     border-top: solid 2px #616161;
+    color: #424242;
   }
 }

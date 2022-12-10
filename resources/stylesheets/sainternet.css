@@ -57,8 +57,8 @@
 }
 
 .sainternet-navigation {
-  border-radius: 50px;
-  padding: 30px 28px;
+  border-radius: 50vh;
+  padding: 20px 28px;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -70,7 +70,6 @@
 
 .sainternet-layout.is-small-screen .sainternet-navigation {
   margin-bottom: 20px;
-  padding: 20px 28px;
 }
 
 .sainternet-content h3 {
@@ -104,24 +103,24 @@
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: #121212;
+    background: #000000;
   }
   .mdl-layout__drawer {
-    background: #212121;
+    background: #000000;
     color: #FAFAFA;
   }
   .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
-    color: #424242;
+    color: #000000;
   }
   .mdl-list__item-primary-content {
     color: #FAFAFA;
   }
   .sainternet-content {
-    background: #262626;
+    background: #121212;
     color: #FAFAFA;
   }
   .sainternet-navigation {
-    background: #363636;
+    background: #000000;
     color: #9E9E9E;
   }
 }
