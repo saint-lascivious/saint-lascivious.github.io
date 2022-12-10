@@ -67,6 +67,11 @@ table tr:last-child td:last-child {
     border-left: 2px solid #616161;
   }
 
+  table tr td {
+    background: #000000;
+    color: #FAFAFA;
+  }
+
   table tr th {
     background: #000000;
     border-top: solid 2px #616161;
