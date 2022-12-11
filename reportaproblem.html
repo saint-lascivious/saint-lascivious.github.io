@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  sainternet.xyz - filtereddns.html
+  sainternet.xyz - reportaproblem.html
   Copyright 2022 saint-lascivious (Hayden Pearce). All rights reserved.
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,8 +36,8 @@
     <link rel="icon" sizes="any" href="/favicon.ico">
 
     <!-- SEO -->
-    <link rel="canonical" href="https://sainternet.xyz/filtereddns.html">
-    <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz">
+    <link rel="canonical" href="https://sainternet.xyz/reportaproblem.html">
+    <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', luxio, Luxio, pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz">
 
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,27 +45,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://code.getmdl.io">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-red.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-red.min.css">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="/resources/stylesheets/button_home.css">
     <link rel="stylesheet" href="/resources/stylesheets/ribbons.css">
     <link rel="stylesheet" href="/resources/stylesheets/sainternet.css">
-
-    <!-- Prefetch / Prerender-->
-    <link rel="dns-prefetch" href="wikipedia.org">
-    <link rel="dns-prefetch" href="support.mozilla.org">
-    <link rel="dns-prefetch" href="developer.apple.com">
-    <link rel="prefetch" href="/frequentlyaskedquestions.html" as="document">
-    <link rel="prerender" href="/frequentlyaskedquestions.html">
-    <link rel="prefetch" href="/connecttosainternet.html" as="document">
-    <link rel="prerender" href="/connecttosainternet.html">
-    <link rel="prefetch" href="/portsandprotocols.html" as="document">
-    <link rel="prerender" href="/portsandprotocols.html">
-    <link rel="prefetch" href="/technologies.html" as="document">
-    <link rel="prerender" href="/technologies.html">
-    <link rel="prefetch" href="/testsainternet.html" as="document">
-    <link rel="prerender" href="/testsainternet.html">
   </head>
   <body>
     <div class="sainternet-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -76,7 +61,7 @@
           <nav class="mdl-navigation mdl-layout--large-screen-only">
             <a class="embiggen mdl-navigation__link" href="/index.html">Home</a>
             <a class="embiggen mdl-navigation__link" href="/newsandupdates.html">News and Updates</a>
-            <a class="embiggen mdl-navigation__link" href="#filtereddns"><b>Filtered DNS</b></a>
+            <a class="embiggen mdl-navigation__link" href="/filtereddns.html">Filtered DNS</a>
             <a class="embiggen mdl-navigation__link" href="/pokedexoverdns.html">Pokédex over DNS</a>
             <a class="embiggen mdl-navigation__link" href="/projects.html">Popular Projects</a>
           </nav>
@@ -87,50 +72,83 @@
         <nav class="mdl-navigation">
           <a class="embiggen mdl-navigation__link" href="/index.html">Home</a>
           <a class="embiggen mdl-navigation__link" href="/newsandupdates.html">News and Updates</a>
-          <a class="embiggen mdl-navigation__link" href="#filtereddns"><b>Filtered DNS</b></a>
+          <a class="embiggen mdl-navigation__link" href="/filtereddns.html">Filtered DNS</a>
           <a class="embiggen mdl-navigation__link" href="/frequentlyaskedquestions.html"> - FAQs</a>
           <a class="embiggen mdl-navigation__link" href="/connecttosainternet.html"> - Connect to Sainternet</a>
           <a class="embiggen mdl-navigation__link" href="/portsandprotocols.html"> - Ports and Protocols</a>
           <a class="embiggen mdl-navigation__link" href="/technologies.html"> - Technologies</a>
           <a class="embiggen mdl-navigation__link" href="/testsainternet.html"> - Test Sainternet</a>
-          <a class="embiggen mdl-navigation__link" href="/reportaproblem.html"> - Report a Problem</a>
+          <a class="embiggen mdl-navigation__link" href="#reportaproblem"> <b>- Report a Problem</b></a>
           <a class="embiggen mdl-navigation__link" href="/pokedexoverdns.html">Pokédex over DNS</a>
           <a class="embiggen mdl-navigation__link" href="/projects.html">Popular Projects</a>
         </nav>
       </div>
-      <div class="ribbon orange-ribbon"></div>
+      <div class="ribbon indigo-ribbon"></div>
       <main class="sainternet-main mdl-layout__content">
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-shadow--8dp content mdl-cell mdl-cell--8-col">
             <div class="sainternet-crumbs">
-              <a class="embiggen" href="/index.html">Home</a> &gt; <a class="embiggen" href="#filtereddns"><b>Filtered DNS</b></a>
+              <a class="embiggen" href="/index.html">Home</a> &gt; <a class="embiggen" href="/filtereddns.html">Filtered DNS</a> &gt; <a class="embiggen" href="#reportaproblem"><b>Report a Problem</b></a><br><a class="embiggen" href="#bugreport">Bug Report</a>, <a class="embiggen" href="#blacklist">Blacklist</a>, <a class="embiggen" href="#whitelist">Whitelist</a>, <a class="embiggen" href="#securitydisclosure">Security Disclosure</a>
             </div>
           </div>
         </div>
-        <div class="sainternet-container mdl-grid" id="filtereddns">
+        <div class="sainternet-container mdl-grid" id="reportaproblem">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
-            <h3><span class="embiggen">Filtered DNS</span></h3>
+            <h3><span class="embiggen">Report a Problem</span></h3>
             <p>
-              Sainternet offers validating, recursive, caching, <i>mostly</i> specification compliant, filtered <a href="https://wikipedia.org/wiki/Domain_Name_System">DNS</a> servers with a zero logging policy, served over <a href="/portsandprotocols.html#portsandprotocols">all your favourite acronyms</a>.
+              The following describes various ways in which you can help <b>sainternet.xyz</b> improve.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="bugreport">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">Bug Report</span></h3>
+            <p>
+              Found a bug on <b>sainternet.xyz</b>?
             </p>
             <p>
-              Sainternet Filtered DNS blocks many domains known to be associated with unsavoury behaviours (including but not limited to advertising, botnets, malware, spam and telemetry), using a variety of methods updated regularly.
+              Create a <a class="embiggen" href="https://github.com/saint-lascivious/saint-lascivious.github.io/issues/new?assignees=saint-lascivious&labels=bug&template=BUG_REPORT.md&title=sainternet.xyz%3A+bug+report">Bug Report</a> to help <b>sainternet.xyz</b> improve.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="blacklist">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">Blacklist Proposal</span></h3>
+            <p>
+              Are one or more domains accessible on <b>sainternet.xyz</b>, that you feel shouldn't be?
             </p>
             <p>
-              Sainternet <b>does not</b> and <b><i>will not</i></b> block domains based upon ethical, moral, personal, political or religious belief, nor upon any lack thereof.
+              Create a <a class="embiggen" href="https://github.com/saint-lascivious/saint-lascivious.github.io/issues/new?assignees=saint-lascivious&labels=blacklist&template=BLACKLIST.md&title=sainternet.xyz%3A+blacklist+proposal">Blacklist Proposal</a>.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="whitelist">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">Whitelist Proposal</span></h3>
+            <p>
+              Are one or more domains <i>in</i>accessible on <b>sainternet.xyz</b>, that you feel <i>should</i> be?
             </p>
             <p>
-              Notes:
+              Create a <a class="embiggen" href="https://github.com/saint-lascivious/saint-lascivious.github.io/issues/new?assignees=saint-lascivious&labels=whitelist&template=WHITELIST.md&title=sainternet.xyz%3A+whitelist+proposal">Whitelist Proposal</a>.
             </p>
-            <ol>
-              <li>Sainternet intentionally disables Mozilla's <a href="https://support.mozilla.org/en-US/kb/configuring-networks-disable-dns-over-https">default DNS over HTTPS</a> and Apple's <a href="https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay">iCloud Private Relay</a> to prevent them from bypassing Sainternet.</li>
-            </ol>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="securitydisclosure">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">Security Disclosure</span></h3>
             <p>
-              You can find information about the technologies powering Sainternet Filtered DNS <a href="/technologies.html">here</a>.
+              Disclosures relating to the security (or <in>in</in>security rather) of <b>sainternet.xyz</b> can be directed in confidence to the following address:
             </p>
-          </div>
+            <p>
+              <a class="embiggen" href="mailto:admin@sainternet.xyz" target="_blank" rel="noopener noreferrer">admin@sainternet.xyz</a>
+            </p>
+           </div>
         </div>
       </main>
     <footer class="sainternet-footer mdl-mini-footer">
