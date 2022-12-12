@@ -108,7 +108,7 @@
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: #000000;
+    background: #121212;
   }
   .mdl-layout__drawer {
     background: #000000;
@@ -118,7 +118,7 @@
     color: #FAFAFA;
   }
   .sainternet-content {
-    background: #212121;
+    background: #000000;
     color: #FAFAFA;
   }
   .sainternet-navigation {
