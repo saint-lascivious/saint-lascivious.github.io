@@ -11,8 +11,8 @@
 <string>TLS</string>
 <key>ServerAddresses</key>
 <array>
-<string>::ffff:119.224.127.171</string>
-<string>::ffff:119.224.127.171</string>
+<string>::ffff:77e0:7fab</string>
+<string>::ffff:77e0:7fab</string>
 <string>119.224.127.171</string>
 <string>119.224.127.171</string>
 </array>
@@ -39,15 +39,15 @@
 </dict>
 </array>
 <key>PayloadDescription</key>
-<string>Configures device to use Sainternet DNS Encrypted DNS over TLS</string>
+<string>Configures device to use Sainternet DNS over TLS Encrypted DNS over TLS</string>
 <key>PayloadDisplayName</key>
-<string>Sainternet DNS over TLS</string>
+<string>Sainternet DNS over TLS DNS over TLS</string>
 <key>PayloadIdentifier</key>
-<string>com.apple.dnsSettings.managed.e3ecdd57-2bfa-4813-aa0b-246818785c7f</string>
+<string>com.apple.dnsSettings.managed.29517be4-0899-46c5-bbfb-e72694a106ec</string>
 <key>PayloadType</key>
 <string>com.apple.dnsSettings.managed</string>
 <key>PayloadUUID</key>
-<string>4e4362e1-4246-47b8-9647-528acd49fba0</string>
+<string>5f0db546-a9a3-4910-b6a6-3be99fd78aa3</string>
 <key>PayloadVersion</key>
 <integer>1</integer>
 <key>ProhibitDisablement</key>
@@ -59,13 +59,13 @@
 <key>PayloadDisplayName</key>
 <string>Encrypted DNS (DoH, DoT)</string>
 <key>PayloadIdentifier</key>
-<string>com.notjakob.apple-dns.cc32ad77-6bb8-4152-9df3-2912c869b196</string>
+<string>com.notjakob.apple-dns.035772bb-39ff-46ce-bbfc-6c68b9e58bfc</string>
 <key>PayloadRemovalDisallowed</key>
 <false/>
 <key>PayloadType</key>
 <string>Configuration</string>
 <key>PayloadUUID</key>
-<string>905ffcc7-b33b-4425-8b65-687f5457cabe</string>
+<string>9b9b6507-3bb9-4aca-a84b-d9013538ac4c</string>
 <key>PayloadVersion</key>
 <integer>1</integer>
 </dict>

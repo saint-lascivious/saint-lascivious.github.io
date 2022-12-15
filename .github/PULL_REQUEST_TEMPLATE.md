@@ -15,8 +15,6 @@ Please delete options that are not relevant.
 
 # Checklist:
 
-- [ ] My code follows the style guidelines of this project
 - [ ] I have performed a self-review of my code
 - [ ] I have commented my code in particularly hard-to-understand areas
 - [ ] I have made corresponding changes to the documentation where required
-- [ ] I have performed tests that prove my fix is effective or that my feature works
