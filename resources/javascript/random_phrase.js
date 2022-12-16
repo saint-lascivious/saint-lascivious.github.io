@@ -19,13 +19,14 @@
 var phrases = [
   "…breaking the Internet, since 2016.",
   "…DNS over HTTPS, HTTP/3, TLS and QUIC.",
-  "…every day is ARM day.",
   "…filtered DNS at <b>dns.sainternet.xyz</b>.",
   "…have <b>YOU</b> broken <b>YOUR</b> Internet today?",
+  "…is <b>mostly</b> specification compliant.",
   "…more ARM than a polydactyl octopus.",
-  "…mostly specification compliant.",
+  "…noun: /seɪntənɛt/, <b>saint</b>ernet.",
   "…sucks less than some other things do.",
   "…where ARM cores go to <s>die</s> fry.",
+  "…where every day is ARM day.",
   "…world's first National Pokédex over DNS.",
   "…<b>.xyz</b>, a TLD no one's heard of."
 ];
