@@ -66,6 +66,26 @@
     <link rel="prerender" href="/pokedexoverdns.html">
     <link rel="prefetch" href="/projects.html" as="document">
     <link rel="prerender" href="/projects.html">
+    <script type="text/javascript">
+      var phrases = [
+        "…breaking the Internet, since 2016.",
+        "…DNS over HTTPS, HTTP/3, TCP, TLS, UDP and QUIC.",
+        "…have YOU broken YOUR Internet today?",
+        "…it's mostly specification compliant!",
+        "…more ARM than a prosthetic limb supplier.",
+        "…sucks less than some other things do.",
+        "…where ARM architecture goes to die.",
+        "…world's first National Pokédex over DNS!"
+      ];
+
+      function getphrase() {
+        var randomphrase= Math.floor(Math.random()*phrases.length);
+        document.getElementById('sainternet-phrases').innerHTML=phrases[randomphrase];
+      }
+      onload = function() { getphrase(); }
+
+      var inter = setInterval(function() { getphrase(); }, 10000);
+    </script>
   </head>
   <body>
     <div class="sainternet-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -98,7 +118,7 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-shadow--8dp content mdl-cell mdl-cell--8-col">
             <div class="sainternet-catchphrase">
-              <b><i>…breaking the Internet, since 2016.</i></b>
+              <b><i id="sainternet-phrases">…breaking the Internet, since 2016.</i></b>
             </div>
           </div>
         </div>
