@@ -16,19 +16,26 @@
  */
 
 // declare phrases
+// no limit, more would be preferable
+// lower digit randomness appears...not great
 var phrases = [
+  "…",
+  "…advertisers <b>HATE</b> this <b>ONE SIMPLE TRICK</b>!",
+  "…Android, Chrome, Firefox, iOS, macOS &amp; more.",
+  "…bless this <s>mess</s> DNS.",
   "…breaking the Internet, since 2016.",
   "…DNS over HTTPS, HTTP/3, TLS and QUIC.",
   "…filtered DNS at <b>dns.sainternet.xyz</b>.",
   "…have <b>YOU</b> broken <b>YOUR</b> Internet today?",
-  "…is <b>mostly</b> specification compliant.",
+  "…<b>mostly</b> specification compliant.",
   "…more ARM than a polydactyl octopus.",
-  "…noun: /seɪntənɛt/, <b>saint</b>ernet.",
+  "…/seɪntənɛt/ (<b>saint</b>-er-net) noun: filtered DNS.",
   "…sucks less than some other things do.",
   "…where ARM cores go to <s>die</s> fry.",
   "…where every day is ARM day.",
-  "…world's first National Pokédex over DNS.",
-  "…<b>.xyz</b>, a TLD no one's heard of."
+  "…world's first National Pokédex over DNS!",
+  "…<b>.xyz</b>, the TLD no one's heard of.",
+  "…9/10 trackers <b>don't</b> recommend <b>dns.sainternet.xyz</b>."
 ];
 
 // pick one
