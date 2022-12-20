@@ -52,6 +52,10 @@
     <link rel="stylesheet" href="/resources/stylesheets/ribbons.css">
     <link rel="stylesheet" href="/resources/stylesheets/sainternet.css">
     <link rel="stylesheet" href="/resources/stylesheets/table.css">
+
+    <!-- Prefetch / Prerender -->
+    <link rel="prefetch" href="/newsandupdates.html" as="document">
+    <link rel="prerender" href="/newsandupdates.html">
   </head>
   <body>
     <div class="sainternet-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -143,7 +147,7 @@
             </p>
             <ol>
               <li>Where multiple values are present the default is listed in bold.</li>
-              <li>UDP 784 and UDP 8853 were previously proposed default ports for the QUIC specification, and as QUIC has only fairly recently (in the grander scheme) been standardised several services/tools still currently use one or both of the originally proposed ports.<br>These deprecated ports will be closed at some point in the not terribly distant future, at which time Sainternet QUIC will be served exclusively over UDP 853.</li>
+              <li>UDP 784 and UDP 8853 were previously proposed default ports for the QUIC specification, and as QUIC has only fairly recently (in the grander scheme) been standardised several services/tools still currently use one or both of the originally proposed ports.<br>These ports will be deprecated in the <a href="/newsandupdates.html#aquickstop">not terribly distant future</a>, at which time Sainternet QUIC will be served exclusively over UDP 853.</li>
             </ol>
            </div>
         </div>
