@@ -52,6 +52,10 @@
     <link rel="stylesheet" href="/resources/stylesheets/datetime.css">
     <link rel="stylesheet" href="/resources/stylesheets/ribbons.css">
     <link rel="stylesheet" href="/resources/stylesheets/sainternet.css">
+
+    <!-- Prefetch / Prerender -->
+    <link rel="prefetch" href="/reportaproblem.html" as="document">
+    <link rel="prerender" href="/reportaproblem.html">
   </head>
   <body>
     <div class="sainternet-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -84,7 +88,7 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-shadow--8dp content mdl-cell mdl-cell--8-col">
             <div class="sainternet-crumbs">
-              <a class="embiggen" href="/index.html">Home</a> &gt; <a class="embiggen" href="#newsandupdates">News and Updates</a><br><a class="embiggen" href="#aquickstop">A QUICk Stop</a>, <a class="embiggen" href="#materialdesigndark">Material Design <s>Lite</s> Dark</a>, <a class="embiggen" href="#iosmacosmadeeasy">iOS/macOS Made Easy</a>
+              <a class="embiggen" href="/index.html">Home</a> &gt; <a class="embiggen" href="#newsandupdates">News and Updates</a><br><a class="embiggen" href="#reportingproblems">Reporting Problems</a>, <a class="embiggen" href="#aquickstop">A QUICk Stop</a>, <a class="embiggen" href="#materialdesigndark">Material Design <s>Lite</s> Dark</a>, <a class="embiggen" href="#iosmacosmadeeasy">iOS/macOS Made Easy</a>
             </div>
           </div>
         </div>
@@ -97,12 +101,27 @@
             </p>
            </div>
         </div>
+        <div class="sainternet-container mdl-grid" id="reportingproblems">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">Reporting Problems</span></h3>
+            <p class="embiggen" id="datetime">
+              Friday, 23 December 2022 01:00+13:00 (NZDT)
+            </p>
+            <p>
+              This is just a reminder, that issues with this site, as well as issues pertaining to <b>dns.sainternet.xyz</b> DNS resolution can be reported via the mechanisms detailed <a href="/reportaproblem.html">here</a>.
+            </p>
+            <p>
+              Your input is instrumental in the improvement of these services.
+            </p>
+           </div>
+        </div>
         <div class="sainternet-container mdl-grid" id="aquickstop">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
             <h3><span class="embiggen">A QUICk Stop</span></h3>
             <p class="embiggen" id="datetime">
-              Thursday, 21 December 2022 06:00+13:00 (NZDT)
+              Wednesday, 21 December 2022 06:00+13:00 (NZDT)
             </p>
             <p>
               DNS resolution via QUIC legacy ports (UDP 784 and 8853) is to be suspended as of Friday, 1 January 2023 NZDT.
