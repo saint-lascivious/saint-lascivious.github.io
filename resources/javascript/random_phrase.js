@@ -20,6 +20,7 @@
 // lower digit randomness appears...not great
 var phrases = [
   "…",
+  "…a Festivus for the rest of us!",
   "…advertisers <b>HATE</b> this <b>ONE SIMPLE TRICK</b>!",
   "…Android, Chrome, Firefox, iOS, macOS &amp; more.",
   "…bless this <s>mess</s> DNS.",
@@ -30,6 +31,7 @@ var phrases = [
   "…<b>mostly</b> specification compliant.",
   "…more ARM than a polydactyl octopus.",
   "…/seɪntənɛt/ (<b>saint</b>-er-net) noun: filtered DNS.",
+  "…so, have a Merry Christmas, Happy Hanukkah, kwazy Kwanzaa, a tip-top Tet, and a solemn, dignified Ramadan.",
   "…sucks less than some other things do.",
   "…where ARM cores go to <s>die</s> fry.",
   "…where every day is ARM day.",
