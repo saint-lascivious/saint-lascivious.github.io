@@ -31,7 +31,6 @@ var phrases = [
   "…more ARM than a polydactyl octopus.",
   "…/seɪntənɛt/ (<b>saint</b>-er-net) noun: filtered DNS.",
   "…sucks less than some other things do.",
-  "…the FBI agent watching you <a href="https://www.ic3.gov/Media/Y2022/PSA221221">agrees</a>, use <b>dns.sainternet.xyz</b>.",
   "…where ARM cores go to <s>die</s> fry.",
   "…where every day is ARM day.",
   "…world's first National Pokédex over DNS!",
