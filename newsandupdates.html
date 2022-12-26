@@ -54,6 +54,9 @@
     <link rel="stylesheet" href="/resources/stylesheets/sainternet.css">
 
     <!-- Prefetch / Prerender -->
+    <link rel="dns-prefetch" href="pi-hole.net">
+    <link rel="prefetch" href="/projects.html" as="document">
+    <link rel="prerender" href="/projects.html">
     <link rel="prefetch" href="/reportaproblem.html" as="document">
     <link rel="prerender" href="/reportaproblem.html">
   </head>
@@ -99,6 +102,30 @@
             <p>
               This page will serve to detail news and updates relevant to Sainternet such as new features and developments, planned maintenance, etc.
             </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="munin-pihole-plugins-v08-02-00">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">Munin Pi-hole Plugins: 08.02.00</span></h3>
+            <p class="embiggen" id="datetime">
+              Monday, 26 December 2022 22:30+13:00 (NZDT)
+            </p>
+            <p>
+              The current versions of <a href="/projects.html#munin-pihole-plugins">munin-pihole-plugins</a>, 08.02.00 and 09.03.00 for <code>master</code> and <code>development</code> branches respectively, add support for the <a href="https://pi-hole.net/blog/2022/11/17/upcoming-changes-authentication-for-more-api-endpoints-required/">recently announced</a> API changes which landed in <a href="https://pi-hole.net/blog/2022/12/21/pi-hole-ftl-v5-20-and-web-v5-18-released/">Pi-hole Web v5.18</a> where authentication is now required for the <code>summaryRaw</code> endpoint.
+            </p>
+            <p>
+              If you have updated Pi-hole and some of your graphs have stopped working, simply update munin-pihole-plugins. Or update Pi-hole if your graphs have stopped working after you updated munin-pihole-plugins.
+            </p>
+            <p>
+              See the <a href="https://github.com/saint-lascivious/munin-pihole-plugins/wiki">project wiki</a> for more information on munin pihole plugins.
+            </p>
+            <p>
+              Notes:
+            </p>
+            <ol>
+              <li>If you are using the <code>telnet</code> API, which is the plugin default, these changes do not concern you.</li>
+            </ol>
            </div>
         </div>
         <div class="sainternet-container mdl-grid" id="reportingproblems">
