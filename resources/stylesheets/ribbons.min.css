@@ -1,0 +1,7 @@
+/**
+ * sainternet.xyz - resources/stylesheets/ribbons.min.css
+ * @license Apache-2.0
+ * @copyright 2022 saint-lascivious
+ **/
+
+.ribbon{flex-shrink:0;height:40vh;width:100%}.red-ribbon{background-color:#ef5350}.orange-ribbon{background-color:#ffa726}.deep_orange-ribbon{background-color:#ff7043}.yellow-ribbon{background-color:#fff176}.amber-ribbon{background-color:#ffca28}.light_green-ribbon{background-color:#9ccc65}.green-ribbon{background-color:#66bb6a}.teal-ribbon{background-color:#26a69a}.light_blue-ribbon{background-color:#29b6f6}.cyan-ribbon{background-color:#26c6da}.blue-ribbon{background-color:#42a5f5}.indigo-ribbon{background-color:#5c6bc0}.purple-ribbon{background-color:#ab47bc}.deep_purple-ribbon{background-color:#7e57c2}.pink-ribbon{background-color:#ec407a}
