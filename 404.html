@@ -86,7 +86,9 @@
           <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
             <h3><span class="embiggen">Pokémon #404<br>Luxio<br>(Spark Pokémon)</span></h3>
             <picture>
-              <source srcset="resources/images/luxio-shiny.png" media="(prefers-color-scheme: dark)">
+              <source srcset="resources/images/luxio.webp" type="image/webp">
+              <source srcset="resources/images/luxio-shiny.webp" type="image/webp" media="(prefers-color-scheme: dark)">
+              <source srcset="resources/images/luxio-shiny.png" type="image/png" media="(prefers-color-scheme: dark)">
               <img src="resources/images/luxio.png" alt="Pokémon #404, Luxio (Spark Pokémon): Strong electricity courses through the tips of its sharp claws. A light scratch causes fainting in foes.">
             </picture>
             <p align="center">
@@ -178,7 +180,7 @@ nslookup -type=txt 404.pokedex dns.sainternet.xyz
       </div>
     </footer>
     <a href="https://sainternet.xyz" id="button_home" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--16dp"><icon class="material-icons">home</icon></a>
-    <script type="text/javascript" src="/resources/javascript/material.min.js"></script>
-    <script type="text/javascript" src="/resources/javascript/sainternet.min.js"></script>
+    <script type="text/javascript" src="/resources/javascript/material.min.js" async></script>
+    <script type="text/javascript" src="/resources/javascript/sainternet.min.js" async></script>
   </body>
 </html>
