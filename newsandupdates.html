@@ -74,7 +74,7 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-shadow--8dp content mdl-cell mdl-cell--8-col">
             <div class="sainternet-crumbs">
-              <a class="embiggen" href="/index.html">Home</a> &gt; <a class="embiggen" href="#newsandupdates">News and Updates</a><br><a class="embiggen" href="#reportingproblems">Reporting Problems</a>, <a class="embiggen" href="#aquickstop">A QUICk Stop</a>, <a class="embiggen" href="#materialdesigndark">Material Design <s>Lite</s> Dark</a>, <a class="embiggen" href="#iosmacosmadeeasy">iOS/macOS Made Easy</a>
+              <a class="embiggen" href="/index.html">Home</a> &gt; <a class="embiggen" href="#newsandupdates">News and Updates</a><br><a class="embiggen" href="#2022metrics"><b>2022 Metrics</b></a>, <a class="embiggen" href="#munin-pihole-plugins-v08-02-00">Munin Pi-hole Plugins: 08.02.00</a>, <a class="embiggen" href="#reportingproblems">Reporting Problems</a>, <a class="embiggen" href="#aquickstop">A QUICk Stop</a>, <a class="embiggen" href="#materialdesigndark">Material Design <s>Lite</s> Dark</a>, <a class="embiggen" href="#iosmacosmadeeasy">iOS/macOS Made Easy</a>
             </div>
           </div>
         </div>
@@ -84,6 +84,32 @@
             <h3><span class="embiggen">News and Updates</span></h3>
             <p>
               This page will serve to detail news and updates relevant to Sainternet such as new features and developments, planned maintenance, etc.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="2022metrics">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">2022 Metrics</span></h3>
+            <p class="embiggen" id="datetime">
+              Friday, 1 January 2023 00:00+13:00 (NZDT)
+            </p>
+            <p>
+              Some reflections on 2022.
+            </p>
+            <p>
+              In the past year <code>dns.sainternet.xyz</code> has:
+            </p>
+            <ul>
+              <li>Answered half a billion DNS queries</li>
+              <li>Using an encrypted standard 42% of the time</li>
+              <li>To over 5,000 unique client IPs</li>
+              <li>Most of whom (~85%) preferred IPv4</li>
+              <li>38% of which resulted in a block (<code>NXDOMAIN</code>)</li>
+              <li>While it maintained a ~95% uptime status</li>
+            </ul>
+            <p>
+              As time marches forward into the new year, and us with it, please be aware that DNS resolution via QUIC legacy ports (<code>UDP 784</code> and <code>8853</code>) is to be suspended as of today Friday, 1 January 2023 NZDT.
             </p>
            </div>
         </div>
@@ -134,7 +160,7 @@
               Wednesday, 21 December 2022 06:00+13:00 (NZDT)
             </p>
             <p>
-              DNS resolution via QUIC legacy ports (UDP 784 and 8853) is to be suspended as of Friday, 1 January 2023 NZDT.
+              DNS resolution via QUIC legacy ports (<code>UDP 784</code> and <code>8853</code>) is to be suspended as of Friday, 1 January 2023 NZDT.
             </p>
            </div>
         </div>
