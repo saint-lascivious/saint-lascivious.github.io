@@ -4,4 +4,4 @@
  * @copyright 2022 saint-lascivious
  **/
 
-img{display:block;margin-bottom:40px;margin-top:40px}@media (orientation:landscape){img{margin-left:auto;margin-right:auto;width:80%}}@media (orientation:portrait){img{width:100%}}
+img{display:block;margin-bottom:40px;margin-top:40px}@media (orientation:landscape){img{height:auto;margin-left:auto;margin-right:auto;width:80%}}@media (orientation:portrait){img{height:auto;width:100%}}
