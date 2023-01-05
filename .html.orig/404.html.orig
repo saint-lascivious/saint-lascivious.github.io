@@ -61,6 +61,8 @@
     <link rel="prefetch" href="265.html" as="document">
     <link rel="prerender" href="265.html">
 
+    <link rel="prefetch" href="index.html" as="document">
+    <link rel="prerender" href="index.html">
     <link rel="prefetch" href="newsandupdates.html" as="document">
     <link rel="prerender" href="newsandupdates.html">
     <link rel="prefetch" href="filtereddns.html" as="document">

@@ -64,6 +64,8 @@
     <link rel="prefetch" href="reportaproblem.html" as="document">
     <link rel="prerender" href="reportaproblem.html">
 
+    <link rel="prefetch" href="index.html" as="document">
+    <link rel="prerender" href="index.html">
     <link rel="prefetch" href="newsandupdates.html" as="document">
     <link rel="prerender" href="newsandupdates.html">
     <link rel="prefetch" href="pokedexoverdns.html" as="document">
