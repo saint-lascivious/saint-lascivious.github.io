@@ -1,0 +1,214 @@
+<!doctype html>
+<!--
+  sainternet.xyz - reportaproblem.html
+  license Apache-2.0
+  copyright 2022 saint-lascivious
+-->
+<html lang="en-NZ">
+  <head>
+    <meta name="author" content="saint-lascivious, 'Hayden Pearce'">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sainternet offers validating, recursive, caching, mostly specification compliant, filtered DNS servers with a zero logging policy served over all your favourite acronyms.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>sainternet.xyz</title>
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/png" sizes="256x256" href="resources/icons/android-chrome-256x256.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="resources/icons/android-chrome-192x192.png">
+
+    <link rel="icon" type="image/png" sizes="48x48" href="resources/icons/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16x16.png">
+    <link rel="icon" sizes="any" href="favicon.ico">
+
+    <link rel="canonical" href="https://sainternet.xyz/reportaproblem.html">
+    <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', luxio, Luxio, pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz">
+
+    <link rel="preload" as="style" href="resources/stylesheets/material.indigo-red.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/material.indigo-red.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/sainternet.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/sainternet.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/ribbons.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/ribbons.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/button_home.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/button_home.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="preload" as="style" href="resources/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="resources/fontawesome/css/fontawesome.min.css">
+    <link rel="preload" as="style" href="resources/fontawesome/css/solid.min.css">
+    <link rel="stylesheet" href="resources/fontawesome/css/solid.min.css">
+    <link rel="preload" as="style" href="resources/fontawesome/css/brands.min.css">
+    <link rel="stylesheet" href="resources/fontawesome/css/brands.min.css">
+
+    <script type="text/javascript" src="resources/javascript/material.min.js" async></script>
+    <script type="text/javascript" src="resources/javascript/sainternet.min.js" async></script>
+
+    <link rel="prefetch" href="newsandupdates.html" as="document">
+    <link rel="prerender" href="newsandupdates.html">
+    <link rel="prefetch" href="filtereddns.html" as="document">
+    <link rel="prerender" href="filtereddns.html">
+    <link rel="prefetch" href="pokedexoverdns.html" as="document">
+    <link rel="prerender" href="pokedexoverdns.html">
+    <link rel="prefetch" href="projects.html" as="document">
+    <link rel="prerender" href="projects.html">
+
+    <link rel="dns-prefetch" href="discord.gg">
+    <link rel="dns-prefetch" href="github.com">
+    <link rel="dns-prefetch" href="www.reddit.com">
+  </head>
+  <body>
+    <div class="sainternet-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-shadow--4dp">
+        <div class="mdl-layout__header-row">
+          <span class="embiggen mdl-layout-title">sainternet.xyz</span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="embiggen mdl-navigation__link" href="index.html">Home</a>
+            <a class="embiggen mdl-navigation__link" href="newsandupdates.html">News and Updates</a>
+            <a class="embiggen mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
+            <a class="embiggen mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
+            <a class="embiggen mdl-navigation__link" href="projects.html">Popular Projects</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="embiggen mdl-layout-title">sainternet.xyz</span>
+        <nav class="mdl-navigation">
+          <a class="embiggen mdl-navigation__link" href="index.html">Home</a>
+          <a class="embiggen mdl-navigation__link" href="newsandupdates.html">News and Updates</a>
+          <a class="embiggen mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
+          <a class="embiggen mdl-navigation__link" href="frequentlyaskedquestions.html"> - FAQ</a>
+          <a class="embiggen mdl-navigation__link" href="connecttosainternet.html"> - Connect to Sainternet</a>
+          <a class="embiggen mdl-navigation__link" href="portsandprotocols.html"> - Ports and Protocols</a>
+          <a class="embiggen mdl-navigation__link" href="technologies.html"> - Technologies</a>
+          <a class="embiggen mdl-navigation__link" href="testsainternet.html"> - Test Sainternet</a>
+          <a class="embiggen mdl-navigation__link" href="#reportaproblem"> <b>- Report a Problem</b></a>
+          <a class="embiggen mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
+          <a class="embiggen mdl-navigation__link" href="projects.html">Popular Projects</a>
+        </nav>
+      </div>
+      <div class="ribbon indigo-ribbon"></div>
+      <main class="sainternet-main mdl-layout__content">
+        <div class="sainternet-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-navigation mdl-shadow--8dp content mdl-cell mdl-cell--8-col">
+            <div class="sainternet-crumbs">
+              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="filtereddns.html">Filtered DNS</a> &gt; <a class="embiggen" href="#reportaproblem"><b>Report a Problem</b></a><br><a class="embiggen" href="#bugreport">Bug Report</a>, <a class="embiggen" href="#blacklist">Blacklist</a>, <a class="embiggen" href="#whitelist">Whitelist</a>, <a class="embiggen" href="#securitydisclosure">Security Disclosure</a>
+            </div>
+          </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="reportaproblem">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">Report a Problem</span></h3>
+            <p>
+              The following describes various ways in which you can help <b>sainternet.xyz</b> improve.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="bugreport">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">Bug Report</span></h3>
+            <p>
+              Found a bug on <b>sainternet.xyz</b>?
+            </p>
+            <p>
+              Create a <a href="https://github.com/saint-lascivious/saint-lascivious.github.io/issues/new?assignees=saint-lascivious&labels=bug&template=BUG_REPORT.md&title=sainternet.xyz%3A+bug+report">Bug Report</a> to help <b>sainternet.xyz</b> improve.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="blacklist">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">Blacklist Proposal</span></h3>
+            <p>
+              Are one or more domains accessible via <code>dns.sainternet.xyz</code>, that you feel shouldn't be?
+            </p>
+            <p>
+              Create a <a href="https://github.com/saint-lascivious/saint-lascivious.github.io/issues/new?assignees=saint-lascivious&labels=blacklist&template=BLACKLIST.md&title=sainternet.xyz%3A+blacklist+proposal">Blacklist Proposal</a>.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="whitelist">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">Whitelist Proposal</span></h3>
+            <p>
+              Are one or more domains <i>inaccessible</i> via <code>dns.sainternet.xyz</code>, that you feel <i>should</i> be?
+            </p>
+            <p>
+              Create a <a href="https://github.com/saint-lascivious/saint-lascivious.github.io/issues/new?assignees=saint-lascivious&labels=whitelist&template=WHITELIST.md&title=sainternet.xyz%3A+whitelist+proposal">Whitelist Proposal</a>.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="securitydisclosure">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">Security Disclosure</span></h3>
+            <p>
+              Disclosures relating to the security (or <in>in</in>security rather) of <code>sainternet.xyz</code> can be directed in confidence to the following address:
+            </p>
+            <p>
+              <a class="embiggen" href="mailto:admin@sainternet.xyz" target="_blank" rel="noopener noreferrer">admin@sainternet.xyz</a>
+            </p>
+           </div>
+        </div>
+      </main>
+    <footer class="sainternet-footer mdl-mini-footer">
+      <div class="mdl-mini-footer--left-section">
+        <ul class="mdl-mini-footer--link-list">
+          <li>
+            <a href="mailto:saint@sainternet.xyz" target="_blank" rel="noopener noreferrer">
+              <span id="tooltip-email">
+                <icon class="fa-solid fa-at"></icon>
+              </span>
+              <span class="mdl-tooltip mdl-tooltip--top" for="tooltip-email">
+                Email
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://discord.gg/NC7taVyn">
+              <span id="tooltip-discord">
+                <icon class="fa-brands fa-discord"></icon>
+              </span>
+              <span class="mdl-tooltip mdl-tooltip--top" for="tooltip-discord">
+                Discord
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/saint-lascivious">
+              <span id="tooltip-github">
+                <icon class="fa-brands fa-github"></icon>
+              </span>
+              <span class="mdl-tooltip mdl-tooltip--top" for="tooltip-github">
+                GitHub
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/user/saint-lascivious">
+              <span id="tooltip-reddit">
+                <icon class="fa-brands fa-reddit"></icon>
+              </span>
+              <span class="mdl-tooltip mdl-tooltip--top" for="tooltip-reddit">
+                Reddit
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <a href="https://sainternet.xyz" id="button_home" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--16dp"><icon class="material-icons">home</icon></a>
+  </body>
+</html>

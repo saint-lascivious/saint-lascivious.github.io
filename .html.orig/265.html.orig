@@ -1,0 +1,214 @@
+<!doctype html>
+<!--
+  sainternet.xyz - 265.html
+  license Apache-2.0
+  copyright 2022 saint-lascivious
+-->
+<html lang="en-NZ">
+  <head>
+    <meta name="author" content="saint-lascivious, 'Hayden Pearce'">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sainternet offers validating, recursive, caching, mostly specification compliant, filtered DNS servers with a zero logging policy served over all your favourite acronyms.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Pokémon #265</title>
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/png" sizes="256x256" href="resources/icons/android-chrome-265-256x256.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="resources/icons/android-chrome-265-192x192.png">
+
+    <link rel="icon" type="image/png" sizes="48x48" href="resources/icons/favicon-265-48x48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/icons/favicon-265-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-265-16x16.png">
+    <link rel="icon" sizes="any" href="resources/icons/favicon-265.ico">
+
+    <link rel="canonical" href="https://sainternet.xyz/265.html">
+    <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz, wurmple, Wurmple">
+
+    <link rel="preload" as="style" href="resources/stylesheets/material.pink-red.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/material.pink-red.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/sainternet.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/sainternet.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/ribbons.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/ribbons.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/img.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/img.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/pre.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/pre.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/button_home.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/button_home.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="preload" as="style" href="resources/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="resources/fontawesome/css/fontawesome.min.css">
+    <link rel="preload" as="style" href="resources/fontawesome/css/solid.min.css">
+    <link rel="stylesheet" href="resources/fontawesome/css/solid.min.css">
+    <link rel="preload" as="style" href="resources/fontawesome/css/brands.min.css">
+    <link rel="stylesheet" href="resources/fontawesome/css/brands.min.css">
+
+    <link rel="preload" as="image" href="resources/images/wurmple.webp" type="image/webp">
+    <link rel="preload" as="image" href="resources/images/wurmple-shiny.webp" type="image/webp">
+
+    <script type="text/javascript" src="resources/javascript/material.min.js" async></script>
+    <script type="text/javascript" src="resources/javascript/sainternet.min.js" async></script>
+
+    <link rel="prefetch" href="404.html" as="document">
+    <link rel="prerender" href="404.html">
+
+    <link rel="prefetch" href="newsandupdates.html" as="document">
+    <link rel="prerender" href="newsandupdates.html">
+    <link rel="prefetch" href="filtereddns.html" as="document">
+    <link rel="prerender" href="filtereddns.html">
+    <link rel="prefetch" href="pokedexoverdns.html" as="document">
+    <link rel="prerender" href="pokedexoverdns.html">
+    <link rel="prefetch" href="projects.html" as="document">
+    <link rel="prerender" href="projects.html">
+
+    <link rel="dns-prefetch" href="discord.gg">
+    <link rel="dns-prefetch" href="github.com">
+    <link rel="dns-prefetch" href="www.reddit.com">
+  </head>
+  <body>
+    <div class="sainternet-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-shadow--4dp">
+        <div class="mdl-layout__header-row">
+          <span class="embiggen mdl-layout-title">sainternet.xyz</span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="embiggen mdl-navigation__link" href="index.html">Home</a>
+            <a class="embiggen mdl-navigation__link" href="newsandupdates.html">News and Updates</a>
+            <a class="embiggen mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
+            <a class="embiggen mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
+            <a class="embiggen mdl-navigation__link" href="projects.html">Projects</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="embiggen mdl-layout-title">sainternet.xyz</span>
+        <nav class="mdl-navigation">
+          <a class="embiggen mdl-navigation__link" href="index.html">Home</a>
+          <a class="embiggen mdl-navigation__link" href="newsandupdates.html">News and Updates</a>
+          <a class="embiggen mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
+          <a class="embiggen mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
+          <a class="embiggen mdl-navigation__link" href="projects.html">Projects</a>
+        </nav>
+        <span class="embiggen mdl-layout-title">???</span>
+        <nav class="mdl-navigation">
+          <a class="embiggen mdl-navigation__link" href="#pokemon265"><b>???</b></a>
+        </nav>
+      </div>
+      <div class="ribbon pink-ribbon"></div>
+      <main class="sainternet-main mdl-layout__content">
+        <div class="sainternet-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-navigation mdl-shadow--8dp content mdl-cell mdl-cell--8-col">
+            <div class="sainternet-crumbs">
+              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="#pokemon265"><b>Pokémon #265</b></a><br><a class="embiggen" href="#example">Example Queries</a>
+            </div>
+          </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="pokemon265">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">Pokémon #265<br>Wurmple</span></h3>
+            <picture>
+              <source srcset="resources/images/wurmple-shiny.webp" type="image/webp" media="(prefers-color-scheme: dark)">
+              <img src="resources/images/wurmple.webp" width="480" height="480" alt="Pokémon #265, Wurmple: Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping.">
+            </picture>
+            <p align="center">
+              A wild <b>Wurmple</b> appeared!
+            </p>
+            <p>
+              Using the spikes on its rear end, Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon's feet are tipped with suction pads that allow it to cling to glass without slipping.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="example">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">Example Pokédex over DNS Queries</span></h3>
+            <p>
+              Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/dig">dig</a>:
+            </p>
+            <pre>
+dig +short txt wurmple.pokedex @dns.sainternet.xyz
+            </pre>
+            <pre>
+dig +short txt 265.pokedex @dns.sainternet.xyz
+            </pre>
+            <p>
+              Example Pokédex over DNS queries using <a href="https://github.com/ameshkov/dnslookup">dnslookup</a>:
+            </p>
+            <pre>
+RRTYPE=TXT dnslookup wurmple.pokedex dns.sainternet.xyz
+            </pre>
+            <pre>
+RRTYPE=TXT dnslookup 265.pokedex dns.sainternet.xyz
+            </pre>
+            <p>
+              Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
+            </p>
+            <pre>
+nslookup -type=txt wurmple.pokedex dns.sainternet.xyz
+            </pre>
+            <pre>
+nslookup -type=txt 265.pokedex dns.sainternet.xyz
+            </pre>
+          </div>
+        </div>
+      </main>
+    <footer class="sainternet-footer mdl-mini-footer">
+      <div class="mdl-mini-footer--left-section">
+        <ul class="mdl-mini-footer--link-list">
+          <li>
+            <a href="mailto:saint@sainternet.xyz" target="_blank" rel="noopener noreferrer">
+              <span id="tooltip-email">
+                <icon class="fa-solid fa-at"></icon>
+              </span>
+              <span class="mdl-tooltip mdl-tooltip--top" for="tooltip-email">
+                Email
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://discord.gg/NC7taVyn">
+              <span id="tooltip-discord">
+                <icon class="fa-brands fa-discord"></icon>
+              </span>
+              <span class="mdl-tooltip mdl-tooltip--top" for="tooltip-discord">
+                Discord
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/saint-lascivious">
+              <span id="tooltip-github">
+                <icon class="fa-brands fa-github"></icon>
+              </span>
+              <span class="mdl-tooltip mdl-tooltip--top" for="tooltip-github">
+                GitHub
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/user/saint-lascivious">
+              <span id="tooltip-reddit">
+                <icon class="fa-brands fa-reddit"></icon>
+              </span>
+              <span class="mdl-tooltip mdl-tooltip--top" for="tooltip-reddit">
+                Reddit
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <a href="https://sainternet.xyz" id="button_home" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--16dp"><icon class="material-icons">home</icon></a>
+  </body>
+</html>
