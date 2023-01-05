@@ -3,5 +3,4 @@
  * @license Apache-2.0
  * @copyright 2022 saint-lascivious
  **/
-
 pre{border:2px solid #616161;border-radius:8px;font-size:.9em;overflow:auto;padding:6px}@media (prefers-color-scheme:dark){pre{background:#000;color:#fafafa}}@media (prefers-color-scheme:light){pre{background:#fff;color:#424242}}
