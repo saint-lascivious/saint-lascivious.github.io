@@ -125,8 +125,7 @@
             <p>
               Example Sainternet test query using <a href="https://linux.die.net/man/1/dig">dig</a>:
             </p>
-            <pre>
-dig +short txt test.sainternet.xyz
+            <pre>dig +short txt test.sainternet.xyz
             </pre>
            </div>
         </div>
@@ -137,51 +136,35 @@ dig +short txt test.sainternet.xyz
             <p>
               Example Sainternet test query using <a href="https://github.com/ameshkov/dnslookup">dnslookup</a>:
             </p>
-            <pre>
-RRTYPE=TXT dnslookup test.sainternet.xyz dns.sainternet.xyz
-            </pre>
+            <pre>RRTYPE=TXT dnslookup test.sainternet.xyz dns.sainternet.xyz</pre>
             <p>
               Example Sainternet dnslookup query using the TCP protocol:
             </p>
-            <pre>
-dnslookup example.org tcp://dns.sainternet.xyz
-            </pre>
+            <pre>dnslookup example.org tcp://dns.sainternet.xyz</pre>
             <p>
               Example Sainternet dnslookup query using the UDP protocol:
             </p>
-            <pre>
-dnslookup example.org udp://dns.sainternet.xyz
-            </pre>
+            <pre>dnslookup example.org udp://dns.sainternet.xyz</pre>
             <p>
               Example Sainternet dnslookup query using the HTTP/2 protocol (DoH):
             </p>
-            <pre>
-dnslookup example.org https://dns.sainternet.xyz
-            </pre>
+            <pre>dnslookup example.org https://dns.sainternet.xyz</pre>
             <p>
               Example Sainternet dnslookup query using the TLS protocol (DoT):
             </p>
-            <pre>
-dnslookup example.org tls://dns.sainternet.xyz
-            </pre>
+            <pre>dnslookup example.org tls://dns.sainternet.xyz</pre>
             <p>
               Example Sainternet dnslookup query using the HTTP/3 protocol (DoH/3) opportunistically:
             </p>
-            <pre>
-HTTP3=1 dnslookup example.org https://dns.sainternet.xyz
-            </pre>
+            <pre>HTTP3=1 dnslookup example.org https://dns.sainternet.xyz</pre>
             <p>
               Example Sainternet dnslookup query using the HTTP/3 protocol (DoH/3):
             </p>
-            <pre>
-dnslookup example.org h3://dns.sainternet.xyz
-            </pre>
+            <pre>dnslookup example.org h3://dns.sainternet.xyz</pre>
             <p>
               Example Sainternet dnslookup query using the QUIC protocol (DoQ):
             </p>
-            <pre>
-dnslookup example.org quic://dns.sainternet.xyz
-            </pre>
+            <pre>dnslookup example.org quic://dns.sainternet.xyz</pre>
            </div>
         </div>
         <div class="sainternet-container mdl-grid" id="usingnslookup">
@@ -191,9 +174,7 @@ dnslookup example.org quic://dns.sainternet.xyz
             <p>
               Example Sainternet test query using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
             </p>
-            <pre>
-nslookup -type=txt test.sainternet.xyz
-            </pre>
+            <pre>nslookup -type=txt test.sainternet.xyz</pre>
            </div>
         </div>
       </main>
