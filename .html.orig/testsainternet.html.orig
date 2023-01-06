@@ -125,8 +125,11 @@
             <p>
               Example Sainternet test query using <a href="https://linux.die.net/man/1/dig">dig</a>:
             </p>
-            <pre>dig +short txt test.sainternet.xyz
-            </pre>
+            <pre>dig +short txt test.sainternet.xyz</pre>
+            <p>
+              Example Sainternet dig query:
+            </p>
+            <pre>dig example.org @dns.sainternet.xyz</pre>
            </div>
         </div>
         <div class="sainternet-container mdl-grid" id="usingdnslookup">
@@ -175,6 +178,10 @@
               Example Sainternet test query using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
             </p>
             <pre>nslookup -type=txt test.sainternet.xyz</pre>
+            <p>
+              Example Sainternet nslookup query:
+            </p>
+            <pre>nslookup example.org dns.sainternet.xyz</pre>
            </div>
         </div>
       </main>
