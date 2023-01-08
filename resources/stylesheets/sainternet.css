@@ -15,6 +15,14 @@
  * limitations under the License
  */
 
+body {
+  font-family: sans-serif;
+}
+
+.fonts-loaded body {
+  font-family: Roboto,  sans-serif;
+}
+
 .mdl-layout__content {
   flex: 1 0 auto;
 }

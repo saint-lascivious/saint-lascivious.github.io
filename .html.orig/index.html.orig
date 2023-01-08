@@ -52,6 +52,7 @@
     <link rel="preload" as="image" href="resources/images/wurmple-shiny.webp" type="image/webp">
 
     <script type="text/javascript" src="resources/javascript/material.min.js" async></script>
+    <script type="text/javascript" src="resources/javascript/load-fonts.min.js" async></script>
     <script type="text/javascript" src="resources/javascript/random_phrase.min.js" async></script>
     <script type="text/javascript" src="resources/javascript/sainternet.min.js" async></script>
 
