@@ -1,0 +1,65 @@
+{
+  "short_name": "sainternet",
+  "name": "sainternet.xyz",
+  "categories": ["DNS", "Filtered DNS"],
+  "icons": [
+    {
+    "src": "resources/icons/android-chrome-512x512.png",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose": "any"
+    },
+    "src": "resources/icons/pwa-maskable-512x512.png",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose": "maskable"
+    },
+    {
+    "src": "resources/icons/android-chrome-192x192.png",
+    "sizes": "192x192",
+    "type": "image/png",
+    "purpose": "any"
+    },
+    "src": "resources/icons/pwa-maskable-192x192.png",
+    "sizes": "192x192",
+    "type": "image/png",
+    "purpose": "maskable"
+    }
+  ],
+  "id": "/?source=pwa",
+  "start_url": "/",
+  "background_color": "#FFFFFF",
+  "display_override": ["fullscreen", "minimal-ui"],
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "theme_color": "#F44336",
+  "shortcuts": [
+    {
+      "name": "News and Updates",
+      "short_name": "News",
+      "description": "Sainternet News and Updates.",
+      "url": "/newsandupdates.html?source=pwa",
+      "icons": [{ "src": "resources/icons/android-chrome-192x192.png", "sizes": "192x192" }]
+    },
+      "name": "Filtered DNS",
+      "short_name": "DNS",
+      "description": "Sainternet Filtered DNS.",
+      "url": "/filtereddns.html?source=pwa",
+      "icons": [{ "src": "resources/icons/android-chrome-192x192.png", "sizes": "192x192" }]
+    },
+      "name": "Pokédex over DNS",
+      "short_name": "PoDNS",
+      "description": "Sainternet Pokédex over DNS.",
+      "url": "/pokedexoverdns.html?source=pwa",
+      "icons": [{ "src": "/resources/icons/android-chrome-192x192.png", "sizes": "192x192" }]
+    },
+      "name": "Projects",
+      "short_name": "Projects",
+      "description": "Popular Projects.",
+      "url": "/projects.html?source=pwa",
+      "icons": [{ "src": "resources/icons/android-chrome-192x192.png", "sizes": "192x192" }]
+    }
+  ],
+  "description": "…breaking the Internet, since 2016."
+}

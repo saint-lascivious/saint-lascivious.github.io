@@ -65,6 +65,8 @@
     <link rel="prefetch" href="projects.html" as="document">
     <link rel="prerender" href="projects.html">
 
+    <link rel="manifest" href="resources/manifests/sainternet.webmanifest">
+
     <link rel="dns-prefetch" href="discord.gg">
     <link rel="dns-prefetch" href="github.com">
     <link rel="dns-prefetch" href="www.reddit.com">
@@ -123,7 +125,10 @@
               Hello, I'm saint (aka. Hayden Pearce), and I make (and break) things on the internet sometimes.
             </p>
             <p>
-              This site details some of those things, and could be considered one of those things itself.
+              This site is one of those things.
+            </p>
+            <p>
+              Take a look around, there's a navigational panel to your left and/or above (desktop and mobile layouts may differ), you may find something that interests you here.
             </p>
           </div>
         </div>
