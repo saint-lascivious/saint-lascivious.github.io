@@ -55,6 +55,7 @@
     <script type="text/javascript" src="resources/javascript/load-fonts.min.js" async></script>
     <script type="text/javascript" src="resources/javascript/random_phrase.min.js" async></script>
     <script type="text/javascript" src="resources/javascript/sainternet.min.js" async></script>
+    <script type="text/javascript" src="resources/javascript/pwapp.min.js" async></script>
 
     <link rel="prefetch" href="newsandupdates.html" as="document">
     <link rel="prerender" href="newsandupdates.html">

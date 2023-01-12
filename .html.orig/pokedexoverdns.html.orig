@@ -35,6 +35,8 @@
     <link rel="stylesheet" href="resources/stylesheets/img.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/pre.min.css">
     <link rel="stylesheet" href="resources/stylesheets/pre.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/button_home.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/button_home.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
