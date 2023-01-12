@@ -1,6 +1,9 @@
 {
     "name": "sainternet.xyz",
     "short_name": "sainternet.xyz",
+    "id": "index.html",
+    "start_url": "https://sainternet.xyz/",
+    "scope": "/",
     "description": "…breaking the Internet, since 2016.",
     "icons": [
         {
@@ -83,7 +86,6 @@
     }
     ],
     "background_color": "#EF5350",
-    "start_url": "/index.html",
-    "scope": "/",
-    "display": "fullscreen"
+    "display": "fullscreen",
+    "orientation": "portrait-primary"
 }
