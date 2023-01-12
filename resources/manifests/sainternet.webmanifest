@@ -1,6 +1,6 @@
 {
     "name": "sainternet.xyz",
-    "short_name": "sainternet",
+    "short_name": "sainternet.xyz",
     "description": "…breaking the Internet, since 2016.",
     "icons": [
         {
@@ -52,6 +52,7 @@
             "purpose": "maskable"
         }
     ],
+    "theme_color": "#F44336",
     "background_color": "#EF5350",
     "start_url": "https://sainternet.xyz/",
     "scope": "/",
