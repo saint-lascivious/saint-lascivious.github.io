@@ -48,4 +48,4 @@ function getphrase() {
 onload = function() { getphrase(); }
 
 // update phrase every 10 seconds
-var inter = setInterval(function() { getphrase(); }, 10000);
+//var inter = setInterval(function() { getphrase(); }, 10000);
