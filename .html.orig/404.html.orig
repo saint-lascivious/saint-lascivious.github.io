@@ -13,6 +13,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Pokémon #404</title>
 
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#03A9F4">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#03A9F4">
+
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" type="image/png" sizes="256x256" href="resources/icons/android-chrome-404-256x256.png">
     <link rel="icon" type="image/png" sizes="192x192" href="resources/icons/android-chrome-404-192x192.png">

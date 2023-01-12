@@ -52,7 +52,36 @@
             "purpose": "maskable"
         }
     ],
-    "theme_color": "#F44336",
+    "shortcuts": [
+    {
+      "name": "News and Updates",
+      "short_name": "News",
+      "description": "Sainternet News and Updates",
+      "url": "/newsandupdates.html",
+      "icons": [{ "src": "/images/icons/android-chrome-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Filtered DNS",
+      "short_name": "DNS",
+      "description": "Sainternet Filtered DNS",
+      "url": "/filtereddns.html",
+      "icons": [{ "src": "/images/icons/android-chrome-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Pokédex over DNS",
+      "short_name": "PoDNS",
+      "description": "Sainternet Pokédex over DNS",
+      "url": "/pokedexoverdns.html",
+      "icons": [{ "src": "/images/icons/android-chrome-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Popular Projects",
+      "short_name": "Projects",
+      "description": "Sainternet Popular Projects",
+      "url": "/popularprojects.html",
+      "icons": [{ "src": "/images/icons/android-chrome-192x192.png", "sizes": "192x192" }]
+    }
+    ],
     "background_color": "#EF5350",
     "start_url": "/index.html",
     "scope": "/",
