@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  sainternet.xyz - projects.html
+  sainternet.xyz - pokedexoverdns.html
   license Apache-2.0
   copyright 2022 saint-lascivious
 -->
@@ -13,8 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>sainternet.xyz</title>
 
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#9C27BO">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#9C27BO">
+    <meta name="theme-color" content="#673AB7">
 
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" type="image/png" sizes="256x256" href="resources/icons/android-chrome-256x256.png">
@@ -25,15 +24,19 @@
     <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16x16.png">
     <link rel="icon" sizes="any" href="favicon.ico">
 
-    <link rel="canonical" href="https://sainternet.xyz/projects.html">
-    <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', luxio, Luxio, pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz">
+    <link rel="canonical" href="https://sainternet.xyz/pokedexoverdns.html">
+    <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz">
 
-    <link rel="preload" as="style" href="resources/stylesheets/material.purple-red.min.css">
-    <link rel="stylesheet" href="resources/stylesheets/material.purple-red.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/material.deep_purple-red.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/material.deep_purple-red.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/sainternet.min.css">
     <link rel="stylesheet" href="resources/stylesheets/sainternet.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/ribbons.min.css">
     <link rel="stylesheet" href="resources/stylesheets/ribbons.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/img.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/img.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/pre.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/pre.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/button_home.min.css">
     <link rel="stylesheet" href="resources/stylesheets/button_home.min.css">
 
@@ -51,8 +54,13 @@
     <link rel="preload" as="style" href="resources/fontawesome/css/brands.min.css">
     <link rel="stylesheet" href="resources/fontawesome/css/brands.min.css">
 
+    <link rel="preload" as="image" href="resources/images/terminal.webp" type="image/webp">
+
     <script type="text/javascript" src="resources/javascript/material.min.js" async></script>
     <script type="text/javascript" src="resources/javascript/sainternet.min.js" async></script>
+
+    <link rel="prefetch" href="265.html" as="document">
+    <link rel="prerender" href="265.html">
 
     <link rel="prefetch" href="index.html" as="document">
     <link rel="prerender" href="index.html">
@@ -60,9 +68,12 @@
     <link rel="prerender" href="newsandupdates.html">
     <link rel="prefetch" href="filtereddns.html" as="document">
     <link rel="prerender" href="filtereddns.html">
-    <link rel="prefetch" href="pokedexoverdns.html" as="document">
-    <link rel="prerender" href="pokedexoverdns.html">
+    <link rel="prefetch" href="projects.html" as="document">
+    <link rel="prerender" href="projects.html">
 
+    <link rel="dns-prefetch" href="bulbapedia.bulbgarden.net">
+    <link rel="dns-prefetch" href="linux.die.net">
+    <link rel="dns-prefetch" href="www.nlnetlabs.nl">
     <link rel="dns-prefetch" href="discord.gg">
     <link rel="dns-prefetch" href="github.com">
     <link rel="dns-prefetch" href="www.reddit.com">
@@ -77,8 +88,8 @@
             <a class="embiggen mdl-navigation__link" href="index.html">Home</a>
             <a class="embiggen mdl-navigation__link" href="newsandupdates.html">News and Updates</a>
             <a class="embiggen mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
-            <a class="embiggen mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
-            <a class="embiggen mdl-navigation__link" href="#projects"><b>Popular Projects</b></a>
+            <a class="embiggen mdl-navigation__link" href="#pokedexoverdns"><b>Pokédex over DNS</b></a>
+            <a class="embiggen mdl-navigation__link" href="projects.html">Popular Projects</a>
           </nav>
         </div>
       </header>
@@ -88,101 +99,54 @@
           <a class="embiggen mdl-navigation__link" href="index.html">Home</a>
           <a class="embiggen mdl-navigation__link" href="newsandupdates.html">News and Updates</a>
           <a class="embiggen mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
-          <a class="embiggen mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
-          <a class="embiggen mdl-navigation__link" href="#projects"><b>Popular Projects</b></a>
+          <a class="embiggen mdl-navigation__link" href="#pokedexoverdns"><b>Pokédex over DNS</b></a>
+          <a class="embiggen mdl-navigation__link" href="projects.html">Popular Projects</a>
         </nav>
       </div>
-      <div class="ribbon purple-ribbon"></div>
+      <div class="ribbon deep_purple-ribbon"></div>
       <main class="sainternet-main mdl-layout__content">
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-shadow--8dp content mdl-cell mdl-cell--8-col">
             <div class="sainternet-crumbs">
-              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="#projects"><b>Popular Projects</b></a><br><a class="embiggen" href="#dnsproxy-config">dnsproxy config</a>, <a class="embiggen" href="#haha_cache_go_brrr">haha cache go brrr</a>, <a class="embiggen" href="#munin-pihole-plugins">munin pihole plugins</a>, <a class="embiggen" href="#saint-lascivious_github_io">sainternet.xyz</a>, <a class="embiggen" href="#unbound-config">unbound config</a>
+              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="#pokedexoverdns"><b>National Pokédex over DNS</b></a>
             </div>
           </div>
         </div>
-        <div class="sainternet-container mdl-grid" id="projects">
+        <div class="sainternet-container mdl-grid" id="pokedexoverdns">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
-            <h3><span class="embiggen">Popular Projects</span></h3>
+            <h3><span class="embiggen">National Pokédex over DNS</span></h3>
             <p>
-              This page lists some of my more popular projects on GitHub.
+              Sainternet is proud to present to you the <b><i>world's first</i></b> (…and only?) DNS driven <a href="https://en.wikipedia.org/wiki/TXT_record">TXT record</a> based National Pokédex over DNS!
             </p>
-           </div>
-        </div>
-        <div class="sainternet-container mdl-grid" id="dnsproxy-config">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
-            <h3><span class="embiggen">dnsproxy config</span></h3>
+            <picture>
+              <source srcset="resources/images/terminal.webp" type="image/webp">
+              <source srcset="resources/images/terminal.png" type="image/png">
+              <a href="265.html#pokemon265" style="cursor:default"><img src="resources/images/terminal.jpg" width="820" height="480" alt="Example Pokédex-over-DNS query using nslookup and dig utilities from the command line: nslookup -type=txt wurmple.pokedex dns.sainternet.xyz, dig +short txt wurmple.pokedex @dns.sainternet.xyz"></a>
+            </picture>
             <p>
-              <a href="https://github.com/saint-lascivious/dnsproxy-config">dnsproxy-config</a>
-            </p>
-            <p>
-              dnsproxy as a simple service
+              This fun little (<i>ab</i>)use of DNS allows one to query a Pokémon species name (currently supported: English) in order to receive its <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number">National Pokédex Number</a> (NPN), or query an NPN (zero padding optional) in order to receive the Pokémon species name (currently supported: English, Japanese <a href="https://en.wikipedia.org/wiki/Romanization_of_Japanese">Rōmaji</a>).
             </p>
             <p>
-              Example service using AdGuard Team's dnsproxy to provide encrypted transports to existing local and remote nameservers, can be easily modified to purpose.
+              Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/dig">dig</a>:
             </p>
-           </div>
-        </div>
-        <div class="sainternet-container mdl-grid" id="haha_cache_go_brrr">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
-            <h3><span class="embiggen">haha cache go brrr</span></h3>
+            <pre>dig +short txt wurmple.pokedex @dns.sainternet.xyz</pre>
+            <pre>dig +short txt 265.pokedex @dns.sainternet.xyz</pre>
             <p>
-              <a href="https://github.com/saint-lascivious/haha_cache_go_brrr">haha_cache_go_brrr</a>
+              Example Pokédex over DNS queries using <a href="https://github.com/ameshkov/dnslookup">dnslookup</a>:
             </p>
+            <pre>RRTYPE=TXT dnslookup wurmple.pokedex dns.sainternet.xyz</pre>
+            <pre>RRTYPE=TXT dnslookup 265.pokedex dns.sainternet.xyz</pre>
             <p>
-              A very silly, very shitty little DNS cache warmup tool born of sleep deprivation, far too much coffee, and a poor moral compass.
+              Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
             </p>
-           </div>
-        </div>
-        <div class="sainternet-container mdl-grid" id="munin-pihole-plugins">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
-            <h3><span class="embiggen">munin pihole plugins</span></h3>
+            <pre>nslookup -type=txt wurmple.pokedex dns.sainternet.xyz</pre>
+            <pre>nslookup -type=txt 265.pokedex dns.sainternet.xyz</pre>
             <p>
-              <a href="https://github.com/saint-lascivious/munin-pihole-plugins">munin-pihole-plugins</a>
+              <a href="https://www.nlnetlabs.nl/projects/unbound/about/">Unbound</a> local-data record configuration for the <b>.pokedex</b> virtual domain available <a href="https://github.com/saint-lascivious/unbound-config/blob/master/configs/pokedex.conf">here</a>.
             </p>
-            <p>
-              A set of Munin plugins for monitoring various Pi-hole® stats.
-            </p>
-           </div>
-        </div>
-        <div class="sainternet-container mdl-grid" id="saint-lascivious_github_io">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
-            <h3><span class="embiggen">sainternet.xyz</span></h3>
-            <p>
-              <a href="https://github.com/saint-lascivious/saint-lascivious.github.io">saint-lascivious.github.io</a>
-            </p>
-            <p>
-              sainternet.xyz
-            </p>
-            <p>
-              The GitHub Pages repository currently hosting this site.
-            </p>
-            <p id="you_are_here">
-              <!-- https://sainternet.xyz/projects#you_are_here -->
-              You are <a href="https://github.com/saint-lascivious/saint-lascivious.github.io/blob/master/projects.html#L151">here</a>.
-            </p>
-           </div>
-        </div>
-        <div class="sainternet-container mdl-grid" id="unbound-config">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
-            <h3><span class="embiggen">unbound config</span></h3>
-            <p>
-              <a href="https://github.com/pi-hole/FTL">unbound-config</a>
-            </p>
-            <p>
-              Fragmented configuration files for Unbound recursive DNS resolver.
-            </p>
-            <p>
-              Originally designed purely for personal use, unbound-config is a project that has evolved around the configuration and management of NLnet Labs' Unbound recursive nameserver.
-            </p>
-           </div>
+          </div>
         </div>
       </main>
     <footer class="sainternet-footer mdl-mini-footer">

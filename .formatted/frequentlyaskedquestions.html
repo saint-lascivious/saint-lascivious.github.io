@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  sainternet.xyz - pokedexoverdns.html
+  sainternet.xyz - frequentlyaskedquestions.html
   license Apache-2.0
   copyright 2022 saint-lascivious
 -->
@@ -13,8 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>sainternet.xyz</title>
 
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#673AB7">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#673AB7">
+    <meta name="theme-color" content="#FFC107">
 
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" type="image/png" sizes="256x256" href="resources/icons/android-chrome-256x256.png">
@@ -25,19 +24,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16x16.png">
     <link rel="icon" sizes="any" href="favicon.ico">
 
-    <link rel="canonical" href="https://sainternet.xyz/pokedexoverdns.html">
-    <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz">
+    <link rel="canonical" href="https://sainternet.xyz/frequentlyaskedquestions.html">
+    <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', luxio, Luxio, pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz">
 
-    <link rel="preload" as="style" href="resources/stylesheets/material.deep_purple-red.min.css">
-    <link rel="stylesheet" href="resources/stylesheets/material.deep_purple-red.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/material.amber-red.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/material.amber-red.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/sainternet.min.css">
     <link rel="stylesheet" href="resources/stylesheets/sainternet.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/ribbons.min.css">
     <link rel="stylesheet" href="resources/stylesheets/ribbons.min.css">
-    <link rel="preload" as="style" href="resources/stylesheets/img.min.css">
-    <link rel="stylesheet" href="resources/stylesheets/img.min.css">
-    <link rel="preload" as="style" href="resources/stylesheets/pre.min.css">
-    <link rel="stylesheet" href="resources/stylesheets/pre.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/button_home.min.css">
     <link rel="stylesheet" href="resources/stylesheets/button_home.min.css">
 
@@ -55,13 +50,8 @@
     <link rel="preload" as="style" href="resources/fontawesome/css/brands.min.css">
     <link rel="stylesheet" href="resources/fontawesome/css/brands.min.css">
 
-    <link rel="preload" as="image" href="resources/images/terminal.webp" type="image/webp">
-
     <script type="text/javascript" src="resources/javascript/material.min.js" async></script>
     <script type="text/javascript" src="resources/javascript/sainternet.min.js" async></script>
-
-    <link rel="prefetch" href="265.html" as="document">
-    <link rel="prerender" href="265.html">
 
     <link rel="prefetch" href="index.html" as="document">
     <link rel="prerender" href="index.html">
@@ -69,12 +59,11 @@
     <link rel="prerender" href="newsandupdates.html">
     <link rel="prefetch" href="filtereddns.html" as="document">
     <link rel="prerender" href="filtereddns.html">
+    <link rel="prefetch" href="pokedexoverdns.html" as="document">
+    <link rel="prerender" href="pokedexoverdns.html">
     <link rel="prefetch" href="projects.html" as="document">
     <link rel="prerender" href="projects.html">
 
-    <link rel="dns-prefetch" href="bulbapedia.bulbgarden.net">
-    <link rel="dns-prefetch" href="linux.die.net">
-    <link rel="dns-prefetch" href="www.nlnetlabs.nl">
     <link rel="dns-prefetch" href="discord.gg">
     <link rel="dns-prefetch" href="github.com">
     <link rel="dns-prefetch" href="www.reddit.com">
@@ -89,7 +78,7 @@
             <a class="embiggen mdl-navigation__link" href="index.html">Home</a>
             <a class="embiggen mdl-navigation__link" href="newsandupdates.html">News and Updates</a>
             <a class="embiggen mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
-            <a class="embiggen mdl-navigation__link" href="#pokedexoverdns"><b>Pokédex over DNS</b></a>
+            <a class="embiggen mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
             <a class="embiggen mdl-navigation__link" href="projects.html">Popular Projects</a>
           </nav>
         </div>
@@ -100,54 +89,117 @@
           <a class="embiggen mdl-navigation__link" href="index.html">Home</a>
           <a class="embiggen mdl-navigation__link" href="newsandupdates.html">News and Updates</a>
           <a class="embiggen mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
-          <a class="embiggen mdl-navigation__link" href="#pokedexoverdns"><b>Pokédex over DNS</b></a>
+          <a class="embiggen mdl-navigation__link" href="#frequentlyaskedquestions"> <b>- FAQ</b></a>
+          <a class="embiggen mdl-navigation__link" href="connecttosainternet.html"> - Connect to Sainternet</a>
+          <a class="embiggen mdl-navigation__link" href="portsandprotocols.html"> - Ports and Protocols</a>
+          <a class="embiggen mdl-navigation__link" href="technologies.html"> - Technologies</a>
+          <a class="embiggen mdl-navigation__link" href="testsainternet.html"> - Test Sainternet</a>
+          <a class="embiggen mdl-navigation__link" href="reportaproblem.html"> - Report a Problem</a>
+          <a class="embiggen mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
           <a class="embiggen mdl-navigation__link" href="projects.html">Popular Projects</a>
         </nav>
       </div>
-      <div class="ribbon deep_purple-ribbon"></div>
+      <div class="ribbon amber-ribbon"></div>
       <main class="sainternet-main mdl-layout__content">
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-shadow--8dp content mdl-cell mdl-cell--8-col">
             <div class="sainternet-crumbs">
-              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="#pokedexoverdns"><b>National Pokédex over DNS</b></a>
+              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="filtereddns.html">Filtered DNS</a> &gt; <a class="embiggen" href="#frequentlyaskedquestions"><b>Frequently Asked Questions</b></a><br><a class="embiggen" href="#whowhatwhenwhereandwhy">Who, What, When, Where and Why?</a>, <a class="embiggen" href="#howmuch">How Much?</a>, <a class="embiggen" href="#howdoessainternetmakemoney">How does Sainternet Make Money?</a>, <a class="embiggen" href="#sowhofundssainternet">So, Who Funds Sainternet?</a>
             </div>
           </div>
         </div>
-        <div class="sainternet-container mdl-grid" id="pokedexoverdns">
+        <div class="sainternet-container mdl-grid" id="frequentlyaskedquestions">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
-            <h3><span class="embiggen">National Pokédex over DNS</span></h3>
+            <h3><span class="embiggen">Frequently Asked Questions</span></h3>
             <p>
-              Sainternet is proud to present to you the <b><i>world's first</i></b> (…and only?) DNS driven <a href="https://en.wikipedia.org/wiki/TXT_record">TXT record</a> based National Pokédex over DNS!
+              Answers to some frequently asked questions regarding Sainternet Filtered DNS.
             </p>
-            <picture>
-              <source srcset="resources/images/terminal.webp" type="image/webp">
-              <source srcset="resources/images/terminal.png" type="image/png">
-              <a href="265.html#pokemon265" style="cursor:default"><img src="resources/images/terminal.jpg" width="820" height="480" alt="Example Pokédex-over-DNS query using nslookup and dig utilities from the command line: nslookup -type=txt wurmple.pokedex dns.sainternet.xyz, dig +short txt wurmple.pokedex @dns.sainternet.xyz"></a>
-            </picture>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="whowhatwhenwhereandwhy">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">Who, What,<br>When, Where and Why?</span></h3>
+            <p align="center" class="embiggen">
+              <b>Who?</b>
+            </p>
+              Sainternet is chiefly managed by myself, saint (aka. Hayden Pearce), but would not be possible without contributions from my Chief Analyst/Technician (CAT) Tiggy, and the invaluable oversight of my Knowledge/Information Technologist in charge of Testing Immersive Experiences (KITTIE), Willow.
             <p>
-              This fun little (<i>ab</i>)use of DNS allows one to query a Pokémon species name (currently supported: English) in order to receive its <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number">National Pokédex Number</a> (NPN), or query an NPN (zero padding optional) in order to receive the Pokémon species name (currently supported: English, Japanese <a href="https://en.wikipedia.org/wiki/Romanization_of_Japanese">Rōmaji</a>).
+            </p>
+            <hr>
+            <p align="center" class="embiggen">
+              <b>What?</b>
             </p>
             <p>
-              Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/dig">dig</a>:
+              As mentioned, Sainternet is a set of validating, recursive, caching, mostly specification compliant, filtered DNS servers with a zero logging policy.
             </p>
-            <pre>dig +short txt wurmple.pokedex @dns.sainternet.xyz</pre>
-            <pre>dig +short txt 265.pokedex @dns.sainternet.xyz</pre>
             <p>
-              Example Pokédex over DNS queries using <a href="https://github.com/ameshkov/dnslookup">dnslookup</a>:
+              Notes:
             </p>
-            <pre>RRTYPE=TXT dnslookup wurmple.pokedex dns.sainternet.xyz</pre>
-            <pre>RRTYPE=TXT dnslookup 265.pokedex dns.sainternet.xyz</pre>
+            <ol>
+              <li>What "mostly specification compliant" means that relevant specifications are adhered to, provided they don't provide a net negative experience for other Sainternet DNS users and/or the Internet at large.<br>Examples of this include but are not limited to: Denial of the request type "ANY", refusing very large/oversize but otherwise valid payloads, selective rate limiting/introducing progressive jitter, etc.</li>
+              <li>Here "zero logging policy" refers to a self enforced policy whereby any/all logging of relevant services (those involved with processing some or all of a Sainternet DNS query and its response) are either disabled entirely, or set to their minimum possible verbosity and redirected to "/dev/null".</li>
+            </ol>
+            <hr>
+            <p align="center" class="embiggen">
+              <b>When?</b>
+            </p>
             <p>
-              Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
+              Sainternet research resolvers or their spiritual ancestors have been operating in some capacity or other since 2016.
             </p>
-            <pre>nslookup -type=txt wurmple.pokedex dns.sainternet.xyz</pre>
-            <pre>nslookup -type=txt 265.pokedex dns.sainternet.xyz</pre>
+            <hr>
+            <p align="center" class="embiggen">
+              <b>Where?</b>
+            </p>
             <p>
-              <a href="https://www.nlnetlabs.nl/projects/unbound/about/">Unbound</a> local-data record configuration for the <b>.pokedex</b> virtual domain available <a href="https://github.com/saint-lascivious/unbound-config/blob/master/configs/pokedex.conf">here</a>.
+              Sainternet is based in Christchurch, New Zealand.
             </p>
-          </div>
+            <hr>
+            <p align="center" class="embiggen">
+              <b>Why?</b>
+            </p>
+            <p>
+              Mostly because I can.
+            </p>
+            <p>
+              To better educate myself in the deployment, management and development of related technologies, while hopefully providing a better domain name resolution experience along the way.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="howmuch">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">How Much?</span></h3>
+            <p>
+              Nothing.
+            </p>
+            <p>
+              Sainternet services are provided free to all.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="howdoessainternetmakemoney">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">How does Sainternet Make Money?</span></h3>
+            <p>
+              It doesn't.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="sowhofundssainternet">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">So, Who Funds Sainternet?</span></h3>
+            <p>
+              I do.
+            </p>
+            <p>
+              Sainternet requires very little additional overhead outside of my own network requirements, and its continued development is somewhat of a hobby for me.
+            </p>
+           </div>
         </div>
       </main>
     <footer class="sainternet-footer mdl-mini-footer">

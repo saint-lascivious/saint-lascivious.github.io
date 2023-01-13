@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  sainternet.xyz - testsainternet.html
+  sainternet.xyz - newsandupdates.html
   license Apache-2.0
   copyright 2022 saint-lascivious
 -->
@@ -13,8 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>sainternet.xyz</title>
 
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#2196F3">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#2196F3">
+    <meta name="theme-color" content="#FF5722">
 
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" type="image/png" sizes="256x256" href="resources/icons/android-chrome-256x256.png">
@@ -25,17 +24,17 @@
     <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16x16.png">
     <link rel="icon" sizes="any" href="favicon.ico">
 
-    <link rel="canonical" href="https://sainternet.xyz/testsainternet.html">
+    <link rel="canonical" href="https://sainternet.xyz/newsandupdates.html">
     <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', luxio, Luxio, pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz">
 
-    <link rel="preload" as="style" href="resources/stylesheets/material.blue-red.min.css">
-    <link rel="stylesheet" href="resources/stylesheets/material.blue-red.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/material.deep_orange-red.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/material.deep_orange-red.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/sainternet.min.css">
     <link rel="stylesheet" href="resources/stylesheets/sainternet.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/ribbons.min.css">
     <link rel="stylesheet" href="resources/stylesheets/ribbons.min.css">
-    <link rel="preload" as="style" href="resources/stylesheets/pre.min.css">
-    <link rel="stylesheet" href="resources/stylesheets/pre.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/datetime.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/datetime.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/button_home.min.css">
     <link rel="stylesheet" href="resources/stylesheets/button_home.min.css">
 
@@ -56,10 +55,13 @@
     <script type="text/javascript" src="resources/javascript/material.min.js" async></script>
     <script type="text/javascript" src="resources/javascript/sainternet.min.js" async></script>
 
+    <link rel="prefetch" href="projects.html" as="document">
+    <link rel="prerender" href="projects.html">
+    <link rel="prefetch" href="reportaproblem.html" as="document">
+    <link rel="prerender" href="reportaproblem.html">
+
     <link rel="prefetch" href="index.html" as="document">
     <link rel="prerender" href="index.html">
-    <link rel="prefetch" href="newsandupdates.html" as="document">
-    <link rel="prerender" href="newsandupdates.html">
     <link rel="prefetch" href="filtereddns.html" as="document">
     <link rel="prerender" href="filtereddns.html">
     <link rel="prefetch" href="pokedexoverdns.html" as="document">
@@ -67,6 +69,7 @@
     <link rel="prefetch" href="projects.html" as="document">
     <link rel="prerender" href="projects.html">
 
+    <link rel="dns-prefetch" href="pi-hole.net">
     <link rel="dns-prefetch" href="discord.gg">
     <link rel="dns-prefetch" href="github.com">
     <link rel="dns-prefetch" href="www.reddit.com">
@@ -79,7 +82,7 @@
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation mdl-layout--large-screen-only">
             <a class="embiggen mdl-navigation__link" href="index.html">Home</a>
-            <a class="embiggen mdl-navigation__link" href="newsandupdates.html">News and Updates</a>
+            <a class="embiggen mdl-navigation__link" href="#newsandupdates"><b>News and Updates</b></a>
             <a class="embiggen mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
             <a class="embiggen mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
             <a class="embiggen mdl-navigation__link" href="projects.html">Popular Projects</a>
@@ -90,101 +93,137 @@
         <span class="embiggen mdl-layout-title">sainternet.xyz</span>
         <nav class="mdl-navigation">
           <a class="embiggen mdl-navigation__link" href="index.html">Home</a>
-          <a class="embiggen mdl-navigation__link" href="newsandupdates.html">News and Updates</a>
+          <a class="embiggen mdl-navigation__link" href="#newsandupdates"><b>News and Updates</b></a>
           <a class="embiggen mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
-          <a class="embiggen mdl-navigation__link" href="frequentlyaskedquestions.html"> - FAQ</a>
-          <a class="embiggen mdl-navigation__link" href="connecttosainternet.html"> - Connect to Sainternet</a>
-          <a class="embiggen mdl-navigation__link" href="portsandprotocols.html"> - Ports and Protocols</a>
-          <a class="embiggen mdl-navigation__link" href="technologies.html"> - Technologies</a>
-          <a class="embiggen mdl-navigation__link" href="#testsainternet"> <b>- Test Sainternet</b></a>
-          <a class="embiggen mdl-navigation__link" href="reportaproblem.html"> - Report a Problem</a>
           <a class="embiggen mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
           <a class="embiggen mdl-navigation__link" href="projects.html">Popular Projects</a>
         </nav>
       </div>
-      <div class="ribbon blue-ribbon"></div>
+      <div class="ribbon deep_orange-ribbon"></div>
       <main class="sainternet-main mdl-layout__content">
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-shadow--8dp content mdl-cell mdl-cell--8-col">
             <div class="sainternet-crumbs">
-              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="filtereddns.html">Filtered DNS</a> &gt; <a class="embiggen" href="#testsainternet"><b>Test Sainternet</b></a><br><a class="embiggen" href="#usingdig">Using dig</a>, <a class="embiggen" href="#usingdnslookup">Using dnslookup</a>, <a class="embiggen" href="#usingnslookup">Using nslookup</a>
+              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="#newsandupdates">News and Updates</a><br><a class="embiggen" href="#2022metrics"><b>2022 Metrics</b></a>, <a class="embiggen" href="#munin-pihole-plugins-v08-02-00">Munin Pi-hole Plugins: 08.02.00</a>, <a class="embiggen" href="#reportingproblems">Reporting Problems</a>, <a class="embiggen" href="#aquickstop">A QUICk Stop</a>, <a class="embiggen" href="#materialdesigndark">Material Design <s>Lite</s> Dark</a>, <a class="embiggen" href="#iosmacosmadeeasy">iOS/macOS Made Easy</a>
             </div>
           </div>
         </div>
-        <div class="sainternet-container mdl-grid" id="testsainternet">
+        <div class="sainternet-container mdl-grid" id="newsandupdates">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
-            <h3><span class="embiggen">Test Sainternet</span></h3>
+            <h3><span class="embiggen">News and Updates</span></h3>
             <p>
-              The following describes testing Sainternet Filtered DNS using several methods, utilities.
+              This page will serve to detail news and updates relevant to Sainternet such as new features and developments, planned maintenance, etc.
             </p>
            </div>
         </div>
-        <div class="sainternet-container mdl-grid" id="usingdig">
+        <div class="sainternet-container mdl-grid" id="2022metrics">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
-            <h3><span class="embiggen">Using dig</span></h3>
-            <p>
-              Example Sainternet test query using <a href="https://linux.die.net/man/1/dig">dig</a>:
+            <h3><span class="embiggen">2022 Metrics</span></h3>
+            <p class="embiggen" id="datetime">
+              Friday, 1 January 2023 00:00+13:00 (NZDT)
             </p>
-            <pre>dig +short txt test.sainternet.xyz</pre>
             <p>
-              Example Sainternet dig query:
+              Some reflections on 2022.
             </p>
-            <pre>dig example.org @dns.sainternet.xyz</pre>
+            <p>
+              In the past year <code>dns.sainternet.xyz</code> has:
+            </p>
+            <ul>
+              <li>Answered over half a billion (500,000,000) DNS queries</li>
+              <li>For over 140,000 unique domains</li>
+              <li>Using an encrypted standard 42% of the time</li>
+              <li>From over 5,000 unique client IPs</li>
+              <li>Most of whom (~85%) preferred IPv4</li>
+              <li>Where ~38% resulted in a block (<code>NXDOMAIN</code>)</li>
+              <li>While it maintained a ~95% uptime status</li>
+            </ul>
+            <p>
+              As time marches forward into the new year, and us with it, please be aware that DNS resolution via QUIC legacy ports (<code>UDP 784</code> and <code>8853</code>) is to be suspended as of today Friday, 1 January 2023 NZDT.
+            </p>
            </div>
         </div>
-        <div class="sainternet-container mdl-grid" id="usingdnslookup">
+        <div class="sainternet-container mdl-grid" id="munin-pihole-plugins-v08-02-00">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
-            <h3><span class="embiggen">Using dnslookup</span></h3>
-            <p>
-              Example Sainternet test query using <a href="https://github.com/ameshkov/dnslookup">dnslookup</a>:
+            <h3><span class="embiggen">Munin Pi-hole Plugins: 08.02.00</span></h3>
+            <p class="embiggen" id="datetime">
+              Monday, 26 December 2022 22:30+13:00 (NZDT)
             </p>
-            <pre>RRTYPE=TXT dnslookup test.sainternet.xyz dns.sainternet.xyz</pre>
             <p>
-              Example Sainternet dnslookup query using the TCP protocol:
+              The current versions of <a href="projects.html#munin-pihole-plugins">munin-pihole-plugins</a>, 08.02.00 and 09.03.00 for <code>master</code> and <code>development</code> branches respectively, add support for the <a href="https://pi-hole.net/blog/2022/11/17/upcoming-changes-authentication-for-more-api-endpoints-required/">recently announced</a> API changes which landed in <a href="https://pi-hole.net/blog/2022/12/21/pi-hole-ftl-v5-20-and-web-v5-18-released/">Pi-hole Web v5.18</a> where authentication is now required for the <code>summaryRaw</code> endpoint.
             </p>
-            <pre>dnslookup example.org tcp://dns.sainternet.xyz</pre>
             <p>
-              Example Sainternet dnslookup query using the UDP protocol:
+              If you have updated Pi-hole and some of your graphs have stopped working, simply update munin-pihole-plugins. Or update Pi-hole if your graphs have stopped working after you updated munin-pihole-plugins.
             </p>
-            <pre>dnslookup example.org udp://dns.sainternet.xyz</pre>
             <p>
-              Example Sainternet dnslookup query using the HTTP/2 protocol (DoH):
+              See the <a href="https://github.com/saint-lascivious/munin-pihole-plugins/wiki">project wiki</a> for more information on munin pihole plugins.
             </p>
-            <pre>dnslookup example.org https://dns.sainternet.xyz</pre>
             <p>
-              Example Sainternet dnslookup query using the TLS protocol (DoT):
+              Notes:
             </p>
-            <pre>dnslookup example.org tls://dns.sainternet.xyz</pre>
-            <p>
-              Example Sainternet dnslookup query using the HTTP/3 protocol (DoH/3) opportunistically:
-            </p>
-            <pre>HTTP3=1 dnslookup example.org https://dns.sainternet.xyz</pre>
-            <p>
-              Example Sainternet dnslookup query using the HTTP/3 protocol (DoH/3):
-            </p>
-            <pre>dnslookup example.org h3://dns.sainternet.xyz</pre>
-            <p>
-              Example Sainternet dnslookup query using the QUIC protocol (DoQ):
-            </p>
-            <pre>dnslookup example.org quic://dns.sainternet.xyz</pre>
+            <ol>
+              <li>If you are using the <code>telnet</code> API, which is the plugin default, these changes do not concern you.</li>
+            </ol>
            </div>
         </div>
-        <div class="sainternet-container mdl-grid" id="usingnslookup">
+        <div class="sainternet-container mdl-grid" id="reportingproblems">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
-            <h3><span class="embiggen">Using nslookup</span></h3>
-            <p>
-              Example Sainternet test query using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
+            <h3><span class="embiggen">Reporting Problems</span></h3>
+            <p class="embiggen" id="datetime">
+              Friday, 23 December 2022 01:00+13:00 (NZDT)
             </p>
-            <pre>nslookup -type=txt test.sainternet.xyz</pre>
             <p>
-              Example Sainternet nslookup query:
+              This is just a reminder, that issues with this site (<code>sainternet.xyz</code>, <code>www.sainternet.xyz</code>), as well as issues pertaining to DNS resolution (<code>dns.sainternet.xyz</code>) can be reported via the mechanisms detailed <a href="reportaproblem.html">here</a>.
             </p>
-            <pre>nslookup example.org dns.sainternet.xyz</pre>
+            <p>
+              Your input is instrumental in the improvement of these services.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="aquickstop">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">A QUICk Stop</span></h3>
+            <p class="embiggen" id="datetime">
+              Wednesday, 21 December 2022 06:00+13:00 (NZDT)
+            </p>
+            <p>
+              DNS resolution via QUIC legacy ports (<code>UDP 784</code> and <code>8853</code>) is to be suspended as of Friday, 1 January 2023 NZDT.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="materialdesigndark">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">Material Design <s>Lite</s> Dark</span></h3>
+            <p class="embiggen" id="datetime">
+              Thursday, 8 December 2022 13:00+13:00 (NZDT)
+            </p>
+            <p>
+              There have been several changes to the design and layout of these pages over the past short while, with one of the more drastic and noticeable changes being a full dark theme that follows the system theme and/or browser preference.
+            </p>
+            <p>
+              I plan on making all this available as a standalone template at some point in the near future, and when I do I'll more than likely make some form of noise about it here.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="iosmacosmadeeasy">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">iOS/macOS Made Easy</span></h3>
+            <p class="embiggen" id="datetime">
+              Friday, 18 November 2022 22:30+13:00 (NZDT)
+            </p>
+            <p>
+              Previously relegated to the realm of "if you know, you know", I am very much pleased to announce that that is no longer the case and it is much easier for anyone with an Apple iPhone or Mac to connect to Sainternet DNS over HTTPS or DNS over TLS (iOS 14/macOS Big Sur or higher required).
+            </p>
+            <p>
+              You can choose your preferred DNS Profile (DoH, DoT, DoH/DoT) and get started <a href="connecttosainternet.html#appleiosmacos">here</a>.
+            </p>
            </div>
         </div>
       </main>

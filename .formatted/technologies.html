@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  sainternet.xyz - portsandprotocols.html
+  sainternet.xyz - technologies.html
   license Apache-2.0
   copyright 2022 saint-lascivious
 -->
@@ -13,8 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>sainternet.xyz</title>
 
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#8BC34A">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#8BC34A">
+    <meta name="theme-color" content="#4CAF50">
 
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" type="image/png" sizes="256x256" href="resources/icons/android-chrome-256x256.png">
@@ -25,17 +24,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16x16.png">
     <link rel="icon" sizes="any" href="favicon.ico">
 
-    <link rel="canonical" href="https://sainternet.xyz/portsandprotocols.html">
+    <link rel="canonical" href="https://sainternet.xyz/technologies.html">
     <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', luxio, Luxio, pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz">
 
-    <link rel="preload" as="style" href="resources/stylesheets/material.light_green-red.min.css">
-    <link rel="stylesheet" href="resources/stylesheets/material.light_green-red.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/material.green-red.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/material.green-red.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/sainternet.min.css">
     <link rel="stylesheet" href="resources/stylesheets/sainternet.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/ribbons.min.css">
     <link rel="stylesheet" href="resources/stylesheets/ribbons.min.css">
-    <link rel="preload" as="style" href="resources/stylesheets/table.min.css">
-    <link rel="stylesheet" href="resources/stylesheets/table.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/button_home.min.css">
     <link rel="stylesheet" href="resources/stylesheets/button_home.min.css">
 
@@ -94,68 +91,79 @@
           <a class="embiggen mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
           <a class="embiggen mdl-navigation__link" href="frequentlyaskedquestions.html"> - FAQ</a>
           <a class="embiggen mdl-navigation__link" href="connecttosainternet.html"> - Connect to Sainternet</a>
-          <a class="embiggen mdl-navigation__link" href="#portsandprotocols"> <b>- Ports and Protocols</b></a>
-          <a class="embiggen mdl-navigation__link" href="technologies.html"> - Technologies</a>
+          <a class="embiggen mdl-navigation__link" href="portsandprotocols.html"> - Ports and Protocols</a>
+          <a class="embiggen mdl-navigation__link" href="#technologies"> <b>- Technologies</b></a>
           <a class="embiggen mdl-navigation__link" href="testsainternet.html"> - Test Sainternet</a>
           <a class="embiggen mdl-navigation__link" href="reportaproblem.html"> - Report a Problem</a>
           <a class="embiggen mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
           <a class="embiggen mdl-navigation__link" href="projects.html">Popular Projects</a>
         </nav>
       </div>
-      <div class="ribbon light_green-ribbon"></div>
+      <div class="ribbon green-ribbon"></div>
       <main class="sainternet-main mdl-layout__content">
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-shadow--8dp content mdl-cell mdl-cell--8-col">
             <div class="sainternet-crumbs">
-              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="filtereddns.html">Filtered DNS</a> &gt; <a class="embiggen" href="#portsandprotocols"><b>Ports and Protocols</b></a>
+              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="filtereddns.html">Filtered DNS</a> &gt; <a class="embiggen" href="#technologies"><b>Technologies</b></a><br><a class="embiggen" href="#dnsdist">dnsdist</a>, <a class="embiggen" href="#dnsproxy">dnsproxy</a>, <a class="embiggen" href="#piholeftl">pihole-FTL</a>, <a class="embiggen" href="#unbound">unbound</a>
             </div>
           </div>
         </div>
-        <div class="sainternet-container mdl-grid" id="portsandprotocols">
+        <div class="sainternet-container mdl-grid" id="technologies">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
-            <h3><span class="embiggen">Ports and Protocols</span></h3>
+            <h3><span class="embiggen">Technologies</span></h3>
             <p>
-              Sainternet Filtered DNS is available over the following ports and protocols.
+              Sainternet Filtered DNS (<code>dns.sainternet.xyz</code>) is made possible using, but neither endorsed nor condoned by, the following projects.
             </p>
-            <table>
-              <tr>
-                <th>Transport</th>
-                <th>Address</th>
-                <th>Protocol & Port</th>
-              </tr>
-              <tr>
-                <td><a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS">HTTPS</a></td>
-                <td>dns.sainternet.xyz</td>
-                <td>TCP 443</td>
-              </tr>
-              <tr>
-                <td><a href="https://en.wikipedia.org/wiki/HTTP/3">HTTP/3</a></td>
-                <td>dns.sainternet.xyz</td>
-                <td>UDP 443</td>
-              </tr>
-              <tr>
-                <td><a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol">TCP</a></td>
-                <td>119.224.127.171<br>::ffff:119.224.127.171<br>::ffff:77e0:7fab</td>
-                <td>TCP 53</td>
-              </tr>
-              <tr>
-                <td><a href="https://en.wikipedia.org/wiki/DNS_over_TLS">TLS</a></td>
-                <td>dns.sainternet.xyz</td>
-                <td>TCP 853</td>
-              </tr>
-              <tr>
-                <td><a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol">UDP</a></td>
-                <td>119.224.127.171<br>::ffff:119.224.127.171<br>::ffff:77e0:7fab</td>
-                <td>UDP 53</td>
-              </tr>
-              <tr>
-                <td><a href="https://en.wikipedia.org/wiki/DNS_over_QUIC">QUIC</a></td>
-                <td>dns.sainternet.xyz</td>
-                <td>UDP 853</td>
-              </tr>
-            </table>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="dnsdist">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">dnsdist</span></h3>
+            <p>
+              <a href="https://github.com/PowerDNS/pdns/blob/master/pdns/README-dnsdist.md">dnsdist</a>
+            </p>
+            <p>
+              dnsdist is a highly DNS-, <a href="https://wikipedia.org/wiki/Denial-of-service_attack">DoS</a>- and abuse-aware loadbalancer. Its goal in life is to route traffic to the best server, delivering top performance to legitimate users while shunting or blocking abusive traffic.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="dnsproxy">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">dnsproxy</span></h3>
+            <p>
+              <a href="https://github.com/AdguardTeam/dnsproxy">dnsproxy</a>
+            </p>
+            <p>
+              A simple DNS proxy server that supports all existing DNS protocols including DNS-over-TLS, DNS-over-HTTPS, DNSCrypt, and DNS-over-QUIC. Moreover, it can work as a DNS-over-HTTPS, DNS-over-TLS or DNS-over-QUIC server.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="piholeftl">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">pihole-FTL</span></h3>
+            <p>
+              <a href="https://github.com/pi-hole/FTL">pihole-FTL</a>
+            </p>
+            <p>
+              FTLDNS (pihole-FTL) provides an interactive API and also generates statistics for <a href="https://pi-hole.net/">Pi-hole®</a>'s Web interface.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="unbound">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+            <h3><span class="embiggen">unbound</span></h3>
+            <p>
+              <a href="https://github.com/NLnetLabs/unbound">unbound</a>
+            </p>
+            <p>
+              Unbound is a validating, recursive, caching DNS resolver. It is designed to be fast and lean and incorporates modern features based on open standards.
+            </p>
            </div>
         </div>
       </main>

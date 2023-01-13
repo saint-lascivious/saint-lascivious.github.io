@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  sainternet.xyz - frequentlyaskedquestions.html
+  sainternet.xyz - testsainternet.html
   license Apache-2.0
   copyright 2022 saint-lascivious
 -->
@@ -13,8 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>sainternet.xyz</title>
 
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFC107">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#FFC107">
+    <meta name="theme-color" content="#2196F3">
 
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" type="image/png" sizes="256x256" href="resources/icons/android-chrome-256x256.png">
@@ -25,15 +24,17 @@
     <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16x16.png">
     <link rel="icon" sizes="any" href="favicon.ico">
 
-    <link rel="canonical" href="https://sainternet.xyz/frequentlyaskedquestions.html">
+    <link rel="canonical" href="https://sainternet.xyz/testsainternet.html">
     <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', luxio, Luxio, pokedex, Pokedex, pokédex, Pokédex, saint, saint-lascivious, sainternet.xyz">
 
-    <link rel="preload" as="style" href="resources/stylesheets/material.amber-red.min.css">
-    <link rel="stylesheet" href="resources/stylesheets/material.amber-red.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/material.blue-red.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/material.blue-red.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/sainternet.min.css">
     <link rel="stylesheet" href="resources/stylesheets/sainternet.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/ribbons.min.css">
     <link rel="stylesheet" href="resources/stylesheets/ribbons.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/pre.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/pre.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/button_home.min.css">
     <link rel="stylesheet" href="resources/stylesheets/button_home.min.css">
 
@@ -90,116 +91,99 @@
           <a class="embiggen mdl-navigation__link" href="index.html">Home</a>
           <a class="embiggen mdl-navigation__link" href="newsandupdates.html">News and Updates</a>
           <a class="embiggen mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
-          <a class="embiggen mdl-navigation__link" href="#frequentlyaskedquestions"> <b>- FAQ</b></a>
+          <a class="embiggen mdl-navigation__link" href="frequentlyaskedquestions.html"> - FAQ</a>
           <a class="embiggen mdl-navigation__link" href="connecttosainternet.html"> - Connect to Sainternet</a>
           <a class="embiggen mdl-navigation__link" href="portsandprotocols.html"> - Ports and Protocols</a>
           <a class="embiggen mdl-navigation__link" href="technologies.html"> - Technologies</a>
-          <a class="embiggen mdl-navigation__link" href="testsainternet.html"> - Test Sainternet</a>
+          <a class="embiggen mdl-navigation__link" href="#testsainternet"> <b>- Test Sainternet</b></a>
           <a class="embiggen mdl-navigation__link" href="reportaproblem.html"> - Report a Problem</a>
           <a class="embiggen mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
           <a class="embiggen mdl-navigation__link" href="projects.html">Popular Projects</a>
         </nav>
       </div>
-      <div class="ribbon amber-ribbon"></div>
+      <div class="ribbon blue-ribbon"></div>
       <main class="sainternet-main mdl-layout__content">
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-shadow--8dp content mdl-cell mdl-cell--8-col">
             <div class="sainternet-crumbs">
-              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="filtereddns.html">Filtered DNS</a> &gt; <a class="embiggen" href="#frequentlyaskedquestions"><b>Frequently Asked Questions</b></a><br><a class="embiggen" href="#whowhatwhenwhereandwhy">Who, What, When, Where and Why?</a>, <a class="embiggen" href="#howmuch">How Much?</a>, <a class="embiggen" href="#howdoessainternetmakemoney">How does Sainternet Make Money?</a>, <a class="embiggen" href="#sowhofundssainternet">So, Who Funds Sainternet?</a>
+              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="filtereddns.html">Filtered DNS</a> &gt; <a class="embiggen" href="#testsainternet"><b>Test Sainternet</b></a><br><a class="embiggen" href="#usingdig">Using dig</a>, <a class="embiggen" href="#usingdnslookup">Using dnslookup</a>, <a class="embiggen" href="#usingnslookup">Using nslookup</a>
             </div>
           </div>
         </div>
-        <div class="sainternet-container mdl-grid" id="frequentlyaskedquestions">
+        <div class="sainternet-container mdl-grid" id="testsainternet">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
-            <h3><span class="embiggen">Frequently Asked Questions</span></h3>
+            <h3><span class="embiggen">Test Sainternet</span></h3>
             <p>
-              Answers to some frequently asked questions regarding Sainternet Filtered DNS.
+              The following describes testing Sainternet Filtered DNS using several methods, utilities.
             </p>
            </div>
         </div>
-        <div class="sainternet-container mdl-grid" id="whowhatwhenwhereandwhy">
+        <div class="sainternet-container mdl-grid" id="usingdig">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
-            <h3><span class="embiggen">Who, What,<br>When, Where and Why?</span></h3>
-            <p align="center" class="embiggen">
-              <b>Who?</b>
-            </p>
-              Sainternet is chiefly managed by myself, saint (aka. Hayden Pearce), but would not be possible without contributions from my Chief Analyst/Technician (CAT) Tiggy, and the invaluable oversight of my Knowledge/Information Technologist in charge of Testing Immersive Experiences (KITTIE), Willow.
+            <h3><span class="embiggen">Using dig</span></h3>
             <p>
+              Example Sainternet test query using <a href="https://linux.die.net/man/1/dig">dig</a>:
             </p>
-            <hr>
-            <p align="center" class="embiggen">
-              <b>What?</b>
-            </p>
+            <pre>dig +short txt test.sainternet.xyz</pre>
             <p>
-              As mentioned, Sainternet is a set of validating, recursive, caching, mostly specification compliant, filtered DNS servers with a zero logging policy.
+              Example Sainternet dig query:
             </p>
-            <p>
-              Notes:
-            </p>
-            <ol>
-              <li>What "mostly specification compliant" means that relevant specifications are adhered to, provided they don't provide a net negative experience for other Sainternet DNS users and/or the Internet at large.<br>Examples of this include but are not limited to: Denial of the request type "ANY", refusing very large/oversize but otherwise valid payloads, selective rate limiting/introducing progressive jitter, etc.</li>
-              <li>Here "zero logging policy" refers to a self enforced policy whereby any/all logging of relevant services (those involved with processing some or all of a Sainternet DNS query and its response) are either disabled entirely, or set to their minimum possible verbosity and redirected to "/dev/null".</li>
-            </ol>
-            <hr>
-            <p align="center" class="embiggen">
-              <b>When?</b>
-            </p>
-            <p>
-              Sainternet research resolvers or their spiritual ancestors have been operating in some capacity or other since 2016.
-            </p>
-            <hr>
-            <p align="center" class="embiggen">
-              <b>Where?</b>
-            </p>
-            <p>
-              Sainternet is based in Christchurch, New Zealand.
-            </p>
-            <hr>
-            <p align="center" class="embiggen">
-              <b>Why?</b>
-            </p>
-            <p>
-              Mostly because I can.
-            </p>
-            <p>
-              To better educate myself in the deployment, management and development of related technologies, while hopefully providing a better domain name resolution experience along the way.
-            </p>
+            <pre>dig example.org @dns.sainternet.xyz</pre>
            </div>
         </div>
-        <div class="sainternet-container mdl-grid" id="howmuch">
+        <div class="sainternet-container mdl-grid" id="usingdnslookup">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
-            <h3><span class="embiggen">How Much?</span></h3>
+            <h3><span class="embiggen">Using dnslookup</span></h3>
             <p>
-              Nothing.
+              Example Sainternet test query using <a href="https://github.com/ameshkov/dnslookup">dnslookup</a>:
             </p>
+            <pre>RRTYPE=TXT dnslookup test.sainternet.xyz dns.sainternet.xyz</pre>
             <p>
-              Sainternet services are provided free to all.
+              Example Sainternet dnslookup query using the TCP protocol:
             </p>
+            <pre>dnslookup example.org tcp://dns.sainternet.xyz</pre>
+            <p>
+              Example Sainternet dnslookup query using the UDP protocol:
+            </p>
+            <pre>dnslookup example.org udp://dns.sainternet.xyz</pre>
+            <p>
+              Example Sainternet dnslookup query using the HTTP/2 protocol (DoH):
+            </p>
+            <pre>dnslookup example.org https://dns.sainternet.xyz</pre>
+            <p>
+              Example Sainternet dnslookup query using the TLS protocol (DoT):
+            </p>
+            <pre>dnslookup example.org tls://dns.sainternet.xyz</pre>
+            <p>
+              Example Sainternet dnslookup query using the HTTP/3 protocol (DoH/3) opportunistically:
+            </p>
+            <pre>HTTP3=1 dnslookup example.org https://dns.sainternet.xyz</pre>
+            <p>
+              Example Sainternet dnslookup query using the HTTP/3 protocol (DoH/3):
+            </p>
+            <pre>dnslookup example.org h3://dns.sainternet.xyz</pre>
+            <p>
+              Example Sainternet dnslookup query using the QUIC protocol (DoQ):
+            </p>
+            <pre>dnslookup example.org quic://dns.sainternet.xyz</pre>
            </div>
         </div>
-        <div class="sainternet-container mdl-grid" id="howdoessainternetmakemoney">
+        <div class="sainternet-container mdl-grid" id="usingnslookup">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
-            <h3><span class="embiggen">How does Sainternet Make Money?</span></h3>
+            <h3><span class="embiggen">Using nslookup</span></h3>
             <p>
-              It doesn't.
+              Example Sainternet test query using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
             </p>
-           </div>
-        </div>
-        <div class="sainternet-container mdl-grid" id="sowhofundssainternet">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
-            <h3><span class="embiggen">So, Who Funds Sainternet?</span></h3>
+            <pre>nslookup -type=txt test.sainternet.xyz</pre>
             <p>
-              I do.
+              Example Sainternet nslookup query:
             </p>
-            <p>
-              Sainternet requires very little additional overhead outside of my own network requirements, and its continued development is somewhat of a hobby for me.
-            </p>
+            <pre>nslookup example.org dns.sainternet.xyz</pre>
            </div>
         </div>
       </main>
