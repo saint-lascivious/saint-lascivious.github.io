@@ -53,7 +53,7 @@
         }
     ],
     "background_color": "#EF5350",
-    "start_url": "https://sainternet.xyz/",
+    "start_url": "/index.html",
     "scope": "/",
     "display": "standalone"
 }
