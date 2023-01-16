@@ -1,18 +1,4 @@
-User-Agent: Googlebot
-Allow: /
-Disallow: /.formatted/
-Disallow: /.git/
-Disallow: /.github/
-Disallow: /resources/
-
-User-Agent: Googlebot-Mobile
-Allow: /
-Disallow: /.formatted/
-Disallow: /.git/
-Disallow: /.github/
-Disallow: /resources/
+Sitemap: https://sainternet.xyz/sitemap.xml
 
 User-Agent: *
-Disallow: /
-
-Sitemap: https://sainternet.xyz/sitemap.xml
+Disallow:
