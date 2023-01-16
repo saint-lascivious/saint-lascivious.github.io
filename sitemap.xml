@@ -1,55 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <url>
-    <loc>https://sainternet.xyz</loc>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://sainternet.xyz/index.html</loc>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://sainternet.xyz/projects.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sainternet.xyz/pokedexoverdns.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sainternet.xyz/filtereddns.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sainternet.xyz/newsandupdates.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sainternet.xyz/265.html</loc>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://sainternet.xyz/reportaproblem.html</loc>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://sainternet.xyz/testsainternet.html</loc>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://sainternet.xyz/technologies.html</loc>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://sainternet.xyz/portsandprotocols.html</loc>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://sainternet.xyz/connecttosainternet.html</loc>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://sainternet.xyz/frequentlyaskedquestions.html</loc>
-    <priority>0.64</priority>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://sainternet.xyz/</loc>
+</url>
+<url>
+  <loc>https://sainternet.xyz/newsandupdates.html</loc>
+</url>
+<url>
+  <loc>https://sainternet.xyz/filtereddns.html</loc>
+</url>
+<url>
+  <loc>https://sainternet.xyz/pokedexoverdns.html</loc>
+</url>
+<url>
+  <loc>https://sainternet.xyz/projects.html</loc>
+</url>
+<url>
+  <loc>https://sainternet.xyz/index.html</loc>
+</url>
+<url>
+  <loc>https://sainternet.xyz/reportaproblem.html</loc>
+</url>
+<url>
+  <loc>https://sainternet.xyz/connecttosainternet.html</loc>
+</url>
+<url>
+  <loc>https://sainternet.xyz/frequentlyaskedquestions.html</loc>
+</url>
+<url>
+  <loc>https://sainternet.xyz/portsandprotocols.html</loc>
+</url>
+<url>
+  <loc>https://sainternet.xyz/technologies.html</loc>
+</url>
+<url>
+  <loc>https://sainternet.xyz/testsainternet.html</loc>
+</url>
+<url>
+  <loc>https://sainternet.xyz/265.html</loc>
+</url>
+
+
 </urlset>
