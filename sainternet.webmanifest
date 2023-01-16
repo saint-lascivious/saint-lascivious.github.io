@@ -52,6 +52,24 @@
             "purpose": "maskable"
         }
     ],
+    "shortcuts" : [
+        {
+            "name": "News and Updates",
+            "url": "/newsandupdates.html",
+            "description": "Sainternet News and Updates"
+        },
+        {
+            "name": "Filtered DNS",
+            "url": "/filtereddns.html",
+            "description": "Sainternet Filtered DNS"
+        },
+        {
+            "name": "Pokédex over DNS",
+            "url": "/pokedexoverdns.html",
+            "description": "Sainternet National Pokédex over DNS"
+        }
+    ],
+    "theme_color": "#F44336",
     "background_color": "#EF5350",
     "start_url": "/index.html",
     "scope": "/",
