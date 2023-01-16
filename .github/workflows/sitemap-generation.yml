@@ -1,0 +1,29 @@
+name: generate xml sitemap
+
+on:
+  push:
+    branches: [ master ]
+    paths: [ '**.html' ]
+
+jobs:
+  sitemap_job:
+    runs-on: ubuntu-latest
+    name: generate a sitemap
+
+    steps:
+    - name: checkout the repo
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: generate the sitemap
+      id: sitemap
+      uses: cicirello/generate-sitemap@v1
+      with:
+        base-url-path: https://sainternet.xyz/
+
+    - name: output stats
+      run: |
+        echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
+        echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
+        echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
