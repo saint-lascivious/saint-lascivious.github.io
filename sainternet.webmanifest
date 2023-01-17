@@ -54,19 +54,28 @@
     ],
     "shortcuts" : [
         {
-            "name": "News and Updates",
-            "url": "/newsandupdates.html",
-            "description": "Sainternet News and Updates"
-        },
-        {
-            "name": "Filtered DNS",
-            "url": "/filtereddns.html",
-            "description": "Sainternet Filtered DNS"
+            "name": "Projects",
+            "url": "/projects.html",
+            "description": "Sainternet Projects",
+            "icons": [{"src": "/resources/icons/projects-192x192.png", "sizes": "192x192"}]
         },
         {
             "name": "Pokédex over DNS",
             "url": "/pokedexoverdns.html",
-            "description": "Sainternet National Pokédex over DNS"
+            "description": "Sainternet National Pokédex over DNS",
+            "icons": [{"src": "/resources/icons/pokedexoverdns-192x192.png", "sizes": "192x192"}]
+        },
+        {
+            "name": "News and Updates",
+            "url": "/newsandupdates.html",
+            "description": "Sainternet News and Updates",
+            "icons": [{"src": "/resources/icons/newsandupdates-192x192.png", "sizes": "192x192"}]
+        },
+        {
+            "name": "Filtered DNS",
+            "url": "/filtereddns.html",
+            "description": "Sainternet Filtered DNS",
+            "icons": [{"src": "/resources/icons/filtereddns-192x192.png", "sizes": "192x192"}]
         }
     ],
     "theme_color": "#F44336",
