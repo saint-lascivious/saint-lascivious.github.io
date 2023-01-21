@@ -1,4 +1,15 @@
-Sitemap: https://sainternet.xyz/sitemap.xml
-
-User-Agent: *
+User-agent: Googlebot
+Disallow:
+User-agent: googlebot-image
+Disallow:
+User-agent: googlebot-mobile
+Disallow:
+User-agent: ia_archiver
+Disallow:
+User-agent: *
+Disallow: /
 Disallow: /.formatted/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /resources/
+Sitemap: https://sainternet.xyz/sitemap.xml
