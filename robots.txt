@@ -1,4 +1,4 @@
 Sitemap: https://sainternet.xyz/sitemap.xml
 
 User-Agent: *
-Disallow:
+Disallow: /.formatted/
