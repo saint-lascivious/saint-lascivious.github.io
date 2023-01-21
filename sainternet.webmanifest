@@ -80,10 +80,10 @@
     ],
     "theme_color": "#F44336",
     "background_color": "#EF5350",
-    "start_url": "/index.html",
+    "start_url": "/?webapp=0.1",
     "scope": "/",
     "display": "standalone",
-    "id": "index.html",
+    "id": "sainternet",
     "categories": ["dns", "dns server", "dohttps", "dotls", "doquic", "filtered dns", "networking"],
     "orientation": "any",
     "launch_handler": {
