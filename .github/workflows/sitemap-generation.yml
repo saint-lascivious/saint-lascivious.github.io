@@ -3,7 +3,6 @@ name: generate xml sitemap
 on:
   push:
     branches: [ master ]
-    paths: [ '**.html', '**.txt' ]
 
 jobs:
   sitemap_job:
@@ -21,8 +20,6 @@ jobs:
       uses: cicirello/generate-sitemap@v1.9.1
       with:
         base-url-path: https://sainternet.xyz/
-        drop-html-extension: false
-        sitemap-format: xml
 
     - name: output stats
       run: |
