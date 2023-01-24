@@ -1,6 +1,8 @@
 {
+    "dir": "ltr",
+    "lang": "en-NZ",
     "name": "sainternet.xyz",
-    "short_name": "sainternet.xyz",
+    "short_name": "sainternet",
     "description": "…breaking the Internet, since 2016.",
     "icons": [
         {
@@ -80,7 +82,7 @@
     ],
     "theme_color": "#F44336",
     "background_color": "#EF5350",
-    "start_url": "/?webapp=0.2",
+    "start_url": "/?utm_source=homescreen",
     "scope": "/",
     "display": "standalone",
     "id": "sainternet",
