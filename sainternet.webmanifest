@@ -80,7 +80,7 @@
     ],
     "theme_color": "#F44336",
     "background_color": "#EF5350",
-    "start_url": "/?webapp=0.1",
+    "start_url": "/?webapp=0.2",
     "scope": "/",
     "display": "standalone",
     "id": "sainternet",
