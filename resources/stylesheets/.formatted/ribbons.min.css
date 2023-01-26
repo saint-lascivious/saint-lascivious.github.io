@@ -19,18 +19,24 @@
  *
  * red-ribbon           red             F44336,EF5350
  * deep_orange-ribbon   deep_orange     FF5722,FF7043
+ * grey-ribbon          grey            9E9E9E,BDBDBD
+ * blue_grey-ribbon     blue_grey       607D8B,78909C
+ * brown-ribbon         brown           795548,8D6E63
  * orange-ribbon        orange          FF9800,FFA726
- * yellow-ribbon        yellow          FFEB3B,FFF176
  * amber-ribbon         amber           FFC107,FFCA28
+ * yellow-ribbon        yellow          FFEB3B,FFF176
+ * lime-ribbon          lime            CDDC39,D4E157
  * light_green-ribbon   light_green     8BC34A,9CCC65
  * green-ribbon         green           4CAF50,66BB6A
  * teal-ribbon          teal            009688,26A69A
- * light_blue-ribbon    light_blue      03A9F4,29B6F6
  * cyan-ribbon          cyan            00BCD4,26C6DA
+ * light_blue-ribbon    light_blue      03A9F4,29B6F6
  * blue-ribbon          blue            2196F3,42A5F5
  * indigo-ribbon        indigo          3F51B5,5C6BC0
- * purple-ribbon        purple          9C27BO,AB47BC
  * deep_purple-ribbon   deep_purple     673AB7,7E57C2
+ *  - note: can not be used as theme colour
+ *          unsure exactly as to why
+ * purple-ribbon        purple          9C27BO,AB47BC
  * pink-ribbon          pink            E91C63,EC407A
  *
  * all ribbons use the 400% saturation variation for
@@ -49,20 +55,36 @@
   background-color: #EF5350;
 }
 
+.deep_orange-ribbon {
+  background-color: #FF7043;
+}
+
+.grey-ribbon {
+  background-color: #BDBDBD;
+}
+
+.blue_grey-ribbon {
+  background-color: #78909C;
+}
+
+.brown-ribbon {
+  background-color: #8D6E63;
+}
+
 .orange-ribbon {
   background-color: #FFA726;
 }
 
-.deep_orange-ribbon {
-  background-color: #FF7043;
+.amber-ribbon {
+  background-color: #FFCA28;
 }
 
 .yellow-ribbon {
   background-color: #FFF176;
 }
 
-.amber-ribbon {
-  background-color: #FFCA28;
+.lime-ribbon {
+  background-color: #D4E157;
 }
 
 .light_green-ribbon {
@@ -77,12 +99,12 @@
   background-color: #26A69A;
 }
 
-.light_blue-ribbon {
-  background-color: #29B6F6;
-}
-
 .cyan-ribbon {
   background-color: #26C6DA;
+}
+
+.light_blue-ribbon {
+  background-color: #29B6F6;
 }
 
 .blue-ribbon {
@@ -93,12 +115,12 @@
   background-color: #5C6BC0;
 }
 
-.purple-ribbon {
-  background-color: #AB47BC;
-}
-
 .deep_purple-ribbon {
   background-color: #7E57C2;
+}
+
+.purple-ribbon {
+  background-color: #AB47BC;
 }
 
 .pink-ribbon {
