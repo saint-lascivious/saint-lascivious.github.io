@@ -17,22 +17,23 @@
 
 img {
   display: block;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (orientation: landscape) {
   img {
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 60%;
   }
 }
 
 @media (orientation: portrait) {
   img {
-    height: auto;
-    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 80%;
   }
 }
