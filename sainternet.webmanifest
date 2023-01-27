@@ -65,7 +65,8 @@
     ],
     "shortcuts" : [
         {
-            "name": "News and Updates",
+            "name": "News & Updates",
+            "short_name": "News",
             "url": "newsandupdates.html",
             "description": "News and Updates",
             "icons": [
@@ -77,6 +78,7 @@
         },
         {
             "name": "Filtered DNS",
+            "short_name": "DNS",
             "url": "filtereddns.html",
             "description": "Filtered DNS",
             "icons": [
@@ -88,6 +90,7 @@
         },
         {
             "name": "Pokédex over DNS",
+            "short_name": "PokéDNS",
             "url": "pokedexoverdns.html",
             "description": "National Pokédex over DNS",
             "icons": [
@@ -99,6 +102,7 @@
         },
         {
             "name": "Projects",
+            "short_name": "GitHub",
             "url": "projects.html",
             "description": "Some of My Popular Projects on Github",
             "icons": [
