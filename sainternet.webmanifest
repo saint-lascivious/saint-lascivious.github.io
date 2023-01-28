@@ -1,16 +1,4 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "allOf": [
-      {
-        "$ref": "https://json.schemastore.org/web-manifest.json"
-      },
-      {
-        "$ref": "https://json.schemastore.org/web-manifest-app-info.json"
-      },
-      {
-        "$ref": "https://json.schemastore.org/web-manifest-share-target.json"
-      }
-    ],
     "dir": "ltr",
     "lang": "en-NZ",
     "name": "sainternet.xyz",
@@ -18,72 +6,63 @@
     "description": "…breaking the Internet, since 2016.",
     "icons": [
         {
-            "src": "resources/icons/pwa-maskable-48x48.png",
+            "src": "/resources/icons/pwa-maskable-48x48.png",
             "sizes": "48x48",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "resources/icons/pwa-maskable-96x96.png",
+            "src": "/resources/icons/pwa-maskable-96x96.png",
             "sizes": "96x96",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "resources/icons/pwa-maskable-128x128.png",
+            "src": "/resources/icons/pwa-maskable-128x128.png",
             "sizes": "128x128",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "resources/icons/android-chrome-192x192.png",
+            "src": "/resources/icons/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "resources/icons/pwa-maskable-192x192.png",
+            "src": "/resources/icons/pwa-maskable-192x192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "resources/icons/android-chrome-256x256.png",
+            "src": "/resources/icons/android-chrome-256x256.png",
             "sizes": "256x256",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "resources/icons/pwa-maskable-384x384.png",
+            "src": "/resources/icons/pwa-maskable-384x384.png",
             "sizes": "384x384",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "resources/icons/pwa-maskable-512x512.png",
+            "src": "/resources/icons/pwa-maskable-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
-        }
-    ],
-    "screenshots" : [
-        {
-            "src": "resources/screenshots/sainternet.webp",
-            "sizes": "720x2174",
-            "type": "image/webp",
-            "platform": "narrow",
-            "label": "Home"
         }
     ],
     "shortcuts" : [
         {
             "name": "News & Updates",
             "short_name": "News",
-            "url": "newsandupdates.html",
+            "url": "/newsandupdates.html",
             "description": "News and Updates",
             "icons": [
                 {
-                    "src": "resources/icons/newsandupdates-192x192.png",
+                    "src": "/resources/icons/newsandupdates-192x192.png",
                     "sizes": "192x192"
                 }
             ]
@@ -91,11 +70,11 @@
         {
             "name": "Filtered DNS",
             "short_name": "DNS",
-            "url": "filtereddns.html",
+            "url": "/filtereddns.html",
             "description": "Filtered DNS",
             "icons": [
                 {
-                    "src": "resources/icons/filtereddns-192x192.png",
+                    "src": "/resources/icons/filtereddns-192x192.png",
                     "sizes": "192x192"
                 }
             ]
@@ -103,11 +82,11 @@
         {
             "name": "Pokédex over DNS",
             "short_name": "PokéDNS",
-            "url": "pokedexoverdns.html",
+            "url": "/pokedexoverdns.html",
             "description": "National Pokédex over DNS",
             "icons": [
                 {
-                    "src": "resources/icons/pokedexoverdns-192x192.png",
+                    "src": "/resources/icons/pokedexoverdns-192x192.png",
                     "sizes": "192x192"
                 }
             ]
@@ -115,11 +94,11 @@
         {
             "name": "Projects",
             "short_name": "GitHub",
-            "url": "projects.html",
+            "url": "/projects.html",
             "description": "Some of My Popular Projects on Github",
             "icons": [
                 {
-                    "src": "resources/icons/projects-192x192.png",
+                    "src": "/resources/icons/projects-192x192.png",
                     "sizes": "192x192"
                 }
             ]
@@ -127,10 +106,10 @@
     ],
     "theme_color": "#F44336",
     "background_color": "#EF5350",
-    "start_url": "index.html?utm_source=homescreen",
+    "start_url": "/index.html?utm_source=homescreen",
     "scope:" "/",
     "display": "standalone",
-    "id": "index.html?utm_source=homescreen",
+    "id": "/index.html?utm_source=homescreen",
     "categories": ["dns", "dns server", "dohttps", "dotls", "doquic", "filtered dns", "networking"],
     "orientation": "any",
     "launch_handler": {
