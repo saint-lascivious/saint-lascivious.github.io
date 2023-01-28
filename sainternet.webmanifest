@@ -107,7 +107,7 @@
     "theme_color": "#F44336",
     "background_color": "#EF5350",
     "start_url": "/index.html?utm_source=homescreen",
-    "scope:" "/",
+    "scope": "/",
     "display": "standalone",
     "id": "/index.html?utm_source=homescreen",
     "categories": ["dns", "dns server", "dohttps", "dotls", "doquic", "filtered dns", "networking"],
