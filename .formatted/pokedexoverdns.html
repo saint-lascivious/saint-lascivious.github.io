@@ -8,6 +8,7 @@
   <head>
     <meta name="author" content="saint-lascivious, 'Hayden Pearce'">
     <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="max-age=1209600">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self';font-src 'self' fonts.gstatic.com;style-src 'self' fonts.googleapis.com">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Sainternet offers validating, recursive, caching, mostly specification compliant, filtered DNS servers with a zero logging policy served over all your favourite acronyms.">
@@ -65,8 +66,10 @@
 
     <link rel="preload" as="image" href="resources/images/terminal.webp" type="image/webp">
 
-    <script type="text/javascript" src="resources/javascript/material.min.js" async></script>
-    <script type="text/javascript" src="resources/javascript/sainternet.min.js" async></script>
+    <script type="text/javascript" src="resources/javascript/material.min.js" defer></script>
+    <script type="text/javascript" src="resources/javascript/sainternet.min.js" defer></script>
+    <script type="text/javascript" src="resources/javascript/load-fonts.min.js" defer></script>
+    <script type="text/javascript" src="pwapp.min.js" defer></script>
 
     <link rel="prefetch" href="265.html" as="document">
     <link rel="prerender" href="265.html">
@@ -79,6 +82,8 @@
     <link rel="prerender" href="filtereddns.html">
     <link rel="prefetch" href="projects.html" as="document">
     <link rel="prerender" href="projects.html">
+
+    <link rel="manifest" href="sainternet.webmanifest">
 
     <link rel="dns-prefetch" href="bulbapedia.bulbgarden.net">
     <link rel="dns-prefetch" href="linux.die.net">
