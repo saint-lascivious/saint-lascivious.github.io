@@ -118,10 +118,10 @@
     ],
     "theme_color": "#F44336",
     "background_color": "#EF5350",
-    "start_url": "/index.html?utm_source=homescreen",
+    "start_url": "/index.html",
     "scope": "/",
     "display": "standalone",
-    "id": "/index.html?utm_source=homescreen",
+    "id": "/index.html",
     "categories": ["dns", "dns server", "dohttps", "dotls", "doquic", "filtered dns", "networking"],
     "orientation": "any",
     "launch_handler": {
