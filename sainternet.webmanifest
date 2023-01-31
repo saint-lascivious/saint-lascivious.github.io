@@ -123,13 +123,6 @@
         "type": "image/webp",
         "platform": "narrow",
         "label": "sainternet.xyz"
-      },
-      {
-        "src": "/resources/screenshots/sainternet.png",
-        "sizes": "480x1024",
-        "type": "image/png",
-        "platform": "narrow",
-        "label": "sainternet.xyz"
       }
     ],
     "theme_color": "#F44336",
