@@ -28,6 +28,13 @@ img {
     margin-top: 20px;
     width: 50%;
   }
+  /* for use with images that are much wider than they are tall */
+  .image-wide img {
+    width: 80%;
+  }
+  .sainternet-layout.is-small-screen .image-wide img {
+    width: 100%;
+  }
 }
 
 @media (orientation: portrait) {
@@ -35,5 +42,12 @@ img {
     margin-bottom: 40px;
     margin-top: 40px;
     width: 60%;
+  }
+  /* as above */
+  .image-wide img {
+    width: 80%;
+  }
+  .sainternet-layout.is-small-screen .image-wide img {
+    width: 100%;
   }
 }
