@@ -16,6 +16,17 @@
     "name": "sainternet.xyz",
     "short_name": "sainternet",
     "description": "…breaking the Internet, since 2016.",
+    "theme_color": "#F44336",
+    "background_color": "#EF5350",
+    "start_url": "https://sainternet.xyz/index.html",
+    "scope": "https://sainternet.xyz/",
+    "id": "index.html",
+    "display": "standalone",
+    "categories": ["dns", "dns server", "dohttps", "dotls", "doquic", "filtered dns", "networking"],
+    "orientation": "any",
+    "launch_handler": {
+        "client_mode": ["navigate-existing, auto"]
+    },
     "icons": [
         {
             "src": "/resources/icons/pwa-maskable-48x48.png",
@@ -104,8 +115,8 @@
             ]
         },
         {
-            "name": "Projects",
-            "short_name": "GitHub",
+            "name": "Popular Projects",
+            "short_name": "Projects",
             "url": "/projects.html",
             "description": "Some of My Popular Projects on Github",
             "icons": [
@@ -122,45 +133,35 @@
         "sizes": "480x1024",
         "type": "image/webp",
         "platform": "narrow",
-        "label": "sainternet.xyz"
+        "label": "Home"
       },
       {
         "src": "/resources/screenshots/newsandupdates.webp",
         "sizes": "480x1024",
         "type": "image/webp",
         "platform": "narrow",
-        "label": "sainternet.xyz"
+        "label": "News and Updates"
       },
       {
         "src": "/resources/screenshots/filtereddns.webp",
         "sizes": "480x1024",
         "type": "image/webp",
         "platform": "narrow",
-        "label": "sainternet.xyz"
+        "label": "Filtered DNS"
       },
       {
         "src": "/resources/screenshots/pokedexoverdns.webp",
         "sizes": "480x1024",
         "type": "image/webp",
         "platform": "narrow",
-        "label": "sainternet.xyz"
+        "label": "Pokédex over DNS"
       },
       {
         "src": "/resources/screenshots/popularprojects.webp",
         "sizes": "480x1024",
         "type": "image/webp",
         "platform": "narrow",
-        "label": "sainternet.xyz"
+        "label": "Popular Projects"
       }
-    ],
-    "theme_color": "#F44336",
-    "background_color": "#EF5350",
-    "start_url": "https://sainternet.xyz/index.html",
-    "scope": "https://sainternet.xyz/",
-    "display": "standalone",
-    "categories": ["dns", "dns server", "dohttps", "dotls", "doquic", "filtered dns", "networking"],
-    "orientation": "any",
-    "launch_handler": {
-        "client_mode": ["navigate-existing, auto"]
-    }
+    ]
 }
