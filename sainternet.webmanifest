@@ -1,16 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "allOf": [
-      {
-        "$ref": "https://json.schemastore.org/web-manifest.json"
-      },
-      {
-        "$ref": "https://json.schemastore.org/web-manifest-app-info.json"
-      },
-      {
-        "$ref": "https://json.schemastore.org/web-manifest-share-target.json"
-      }
-    ],
+    "$schema": "https://json.schemastore.org/web-manifest-combined.json",
     "dir": "ltr",
     "lang": "en-NZ",
     "name": "sainternet.xyz",
@@ -22,11 +11,8 @@
     "scope": "https://sainternet.xyz/",
     "id": "index.html",
     "display": "standalone",
-    "categories": ["dns", "dns server", "dohttps", "dotls", "doquic", "filtered dns", "networking"],
+    "categories": ["productivity", "security", "utilities"],
     "orientation": "any",
-    "launch_handler": {
-        "client_mode": ["navigate-existing, auto"]
-    },
     "icons": [
         {
             "src": "/resources/icons/pwa-maskable-48x48.png",
@@ -163,5 +149,8 @@
         "platform": "narrow",
         "label": "Popular Projects"
       }
-    ]
+    ],
+    "launch_handler": {
+        "client_mode": ["navigate-existing, auto"]
+    }
 }
