@@ -118,7 +118,35 @@
     ],
     "screenshots" : [
       {
-        "src": "/resources/screenshots/sainternet.webp",
+        "src": "/resources/screenshots/home.webp",
+        "sizes": "480x1024",
+        "type": "image/webp",
+        "platform": "narrow",
+        "label": "sainternet.xyz"
+      },
+      {
+        "src": "/resources/screenshots/newsandupdates.webp",
+        "sizes": "480x1024",
+        "type": "image/webp",
+        "platform": "narrow",
+        "label": "sainternet.xyz"
+      },
+      {
+        "src": "/resources/screenshots/filtereddns.webp",
+        "sizes": "480x1024",
+        "type": "image/webp",
+        "platform": "narrow",
+        "label": "sainternet.xyz"
+      },
+      {
+        "src": "/resources/screenshots/pokedexoverdns.webp",
+        "sizes": "480x1024",
+        "type": "image/webp",
+        "platform": "narrow",
+        "label": "sainternet.xyz"
+      },
+      {
+        "src": "/resources/screenshots/popularprojects.webp",
         "sizes": "480x1024",
         "type": "image/webp",
         "platform": "narrow",
