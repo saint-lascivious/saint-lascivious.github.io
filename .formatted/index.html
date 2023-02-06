@@ -123,14 +123,20 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
             <h3><span class="embiggen">Welcome</span></h3>
-            <picture>
-              <source srcset="resources/images/wurmple.webp" type="image/webp" media="(prefers-color-scheme: light)">
-              <source srcset="resources/images/wurmple.png" type="image/png" media="(prefers-color-scheme: light)">
-              <source srcset="resources/images/wurmple-shiny.webp" type="image/webp" media="(prefers-color-scheme: dark)">
-              <source srcset="resources/images/wurmple-shiny.png" type="image/png" media="(prefers-color-scheme: dark)">
-              <source srcset="resources/images/wurmple-shiny.jpg" type="image/jpeg" media="(prefers-color-scheme: dark)">
-              <img src="resources/images/wurmple.jpg" width="480" height="480" alt="Image supplied not illustrative, the author is not a Pokémon.">
-            </picture>
+            <a href="pokedexoverdns.html#pokedexoverdns" class="subterfuge">
+              <picture class="light-mode-img">
+                <source srcset="resources/images/wurmple.webp" type="image/webp">
+                <source srcset="resources/images/wurmple.png" type="image/png">
+                <source srcset="resources/images/wurmple.jpeg" type="image/jpeg">
+                <img src="resources/images/wurmple.jpg" width="480" height="480" alt="Image supplied not illustrative, the author is not a Pokémon.">
+              </picture>
+              <picture class="dark-mode-img">
+                <source srcset="resources/images/wurmple-shiny.webp" type="image/webp">
+                <source srcset="resources/images/wurmple-shiny.png" type="image/png">
+                <source srcset="resources/images/wurmple-shiny.jpeg" type="image/jpeg">
+                <img src="resources/images/wurmple-shiny.jpg" width="480" height="480" alt="Image supplied not illustrative, the author is not a Pokémon.">
+              </picture>
+            </a>
             <p align="center">
               Welcome to Sainternet.
             </p>

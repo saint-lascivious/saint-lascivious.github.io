@@ -21,6 +21,14 @@ img {
   margin-top: 40px;
 }
 
+.light-mode-img {
+  display: none;
+}
+
+.subterfuge {
+  cursor:default;
+}
+
 @media (orientation: landscape) {
   img {
     height: auto;
@@ -34,5 +42,23 @@ img {
   img {
     height: auto;
     width: 100%;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .light-mode-img {
+    display: block;
+  }
+  .dark-mode-img {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .light-mode-img {
+    display: none;
+  }
+  .dark-mode-img {
+    display: block;
   }
 }
