@@ -32,9 +32,11 @@
     <link rel="canonical" href="https://sainternet.xyz/connecttosainternet.html">
     <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', pokedex, Pokedex, pokédex, Pokédex, saint, sainternet, saint-lascivious, sainternet.xyz">
 
+    <link rel="preload" as="script" href="resources/javascript/headers.min.js">
     <script type="text/javascript" src="resources/javascript/headers.min.js" async></script>
     <link rel="dns-prefetch" href="www.googletagmanager.com">
     <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preload" as="script" href="resources/javascript/tag_manager.min.js">
     <script type="text/javascript" src="resources/javascript/tag_manager.min.js" async></script>
 
     <link rel="preload" as="style" href="resources/stylesheets/material.light_green-red.min.css">
@@ -51,12 +53,12 @@
     <link rel="dns-prefetch" href="fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap">
-    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2" type="font/woff2">
-    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2" type="font/woff2">
-    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4.woff2" type="font/woff2">
-    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfBBc4.woff2" type="font/woff2">
-    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu51xIIzI.woff2" type="font/woff2">
-    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2" type="font/woff2">
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfBBc4.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu51xIIzI.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2" type="font/woff2" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="preload" as="style" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">
@@ -68,9 +70,13 @@
     <link rel="preload" as="style" href="resources/fontawesome-free-6.3.0-web/css/brands-stripped.min.css">
     <link rel="stylesheet" href="resources/fontawesome-free-6.3.0-web/css/brands-stripped.min.css">
 
+    <link rel="preload" as="script" href="resources/javascript/material.min.js">
     <script type="text/javascript" src="resources/javascript/material.min.js" defer></script>
+    <link rel="preload" as="script" href="resources/javascript/sainternet.min.js">
     <script type="text/javascript" src="resources/javascript/sainternet.min.js" defer></script>
-    <script type="text/javascript" src="resources/javascript/load-fonts.min.js" defer></script>
+    <link rel="preload" as="script" href="resources/javascript/load_fonts.min.js">
+    <script type="text/javascript" src="resources/javascript/load_fonts.min.js" defer></script>
+    <link rel="preload" as="script" href="pwapp.min.js">
     <script type="text/javascript" src="pwapp.min.js" defer></script>
 
     <link rel="prefetch" href="index.html" as="document">
@@ -95,7 +101,7 @@
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DT44KL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <div class="sainternet-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-shadow--4dp">
+      <header class="mdl-layout__header mdl-shadow--4dp enlift">
         <div class="mdl-layout__header-row">
           <span class="embiggen mdl-layout-title">sainternet.xyz</span>
           <div class="mdl-layout-spacer"></div>
@@ -128,7 +134,7 @@
       <main class="sainternet-main mdl-layout__content">
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-navigation mdl-shadow--8dp content mdl-cell mdl-cell--8-col">
+          <div class="sainternet-navigation mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <div class="sainternet-crumbs">
               <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="filtereddns.html">Filtered DNS</a> &gt; <a class="embiggen" href="#connecttosainternet"><b>Connect to Sainternet</b></a><br><a class="embiggen" href="#androidprivatedns">Android Private DNS</a>, <a class="embiggen" href="#appleiosmacos">Apple iOS/MacOS</a>, <a class="embiggen" href="#googlechromechromium">Google Chrome/Chromium</a>, <a class="embiggen" href="#mozillafirefox">Mozilla Firefox</a>
             </div>
@@ -136,7 +142,7 @@
         </div>
         <div class="sainternet-container mdl-grid" id="connecttosainternet">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <h3><span class="embiggen">Connect to Sainternet</span></h3>
             <p>
               The following describes connecting to Sainternet Filtered DNS in several platforms, services.
@@ -145,7 +151,7 @@
         </div>
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <h3 id="androidprivatedns"><icon class="fa-brands fa-android"></icon> <span class="embiggen">Android<br>Private DNS</span></h3>
             <p align="center">
               Android 9 (Pie) or higher required.
@@ -163,7 +169,7 @@
         </div>
         <div class="sainternet-container mdl-grid" id="appleiosmacos">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <h3><icon class="fa-brands fa-apple"></icon> <span class="embiggen">Apple<br>iOS/macOS</span></h3>
             <p align="center">
               Apple iOS 14/macOS Big Sur or higher required.
@@ -207,7 +213,7 @@
         </div>
         <div class="sainternet-container mdl-grid" id="googlechromechromium">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <h3><icon class="fa-brands fa-chrome"></icon> <span class="embiggen">Google<br>Chrome/Chromium</span></h3>
             <ol>
               <li>Overflow Menu <icon class="fa-solid fa-ellipsis-vertical"></icon></li>
@@ -222,7 +228,7 @@
         </div>
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--16dp content mdl-cell mdl-cell--8-col">
+          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <h3 id="mozillafirefox"><icon class="fa-brands fa-firefox-browser"></icon> <span class="embiggen">Mozilla<br>Firefox</span></h3>
             <ol>
               <li>Menu <icon class="fa-solid fa-bars"></icon></li>
@@ -292,6 +298,6 @@
         </ul>
       </div>
     </footer>
-    <a href="index.html" id="button_home" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--16dp"><icon class="material-icons">home</icon></a>
+    <a href="index.html" id="button_home" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--4dp enlift"><icon class="material-icons">home</icon></a>
   </body>
 </html>
