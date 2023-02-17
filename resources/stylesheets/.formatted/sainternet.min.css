@@ -15,6 +15,10 @@
  * limitations under the License
  */
 
+:root {
+  color-scheme: light dark
+}
+
 body {
   font-family: sans-serif;
 }
@@ -122,6 +126,23 @@ body {
   text-shadow: 0px 2px 10px rgb(0 0 0 / 20%),0px 1px 6px rgb(0 0 0 / 40%),0px 1px 2px rgb(0 0 0 / 80%);
 }
 
+@media (prefers-color-scheme: light) {
+  body {
+    background: #FFFFFF;
+  }
+  .mdl-list__item-primary-content {
+    color: #424242;
+  }
+  .sainternet-content {
+    background: #FFFFFF;
+    color: #424242;
+  }
+  .sainternet-navigation {
+    background: #FFFFFF;
+    color: #424242;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: #121212;
@@ -140,22 +161,5 @@ body {
   .sainternet-navigation {
     background: #000000;
     color: #FAFAFA;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background: #FFFFFF;
-  }
-  .mdl-list__item-primary-content {
-    color: #424242;
-  }
-  .sainternet-content {
-    background: #FFFFFF;
-    color: #424242;
-  }
-  .sainternet-navigation {
-    background: #FFFFFF;
-    color: #424242;
   }
 }
