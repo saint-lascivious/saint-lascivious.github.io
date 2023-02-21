@@ -7,7 +7,7 @@
     "description": "…breaking the Internet, since 2016.",
     "theme_color": "#F44336",
     "background_color": "#EF5350",
-    "start_url": "https://sainternet.xyz/index.html",
+    "start_url": "https://sainternet.xyz/index.html?utm_source=homescreen",
     "scope": "https://sainternet.xyz/",
     "id": "index.html",
     "display": "standalone",
