@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>sainternet.xyz</title>
 
-    <meta name="theme-color" content="#4CAF50">
+    <meta name="theme-color" content="#795548">
 
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -132,7 +132,7 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <div class="sainternet-crumbs">
-              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="#debug"><b>Debug</b></a>
+              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="#debug"><b>Debug</b></a><br><a class="embiggen" href="#consolelogging">Console Logging</a>
             </div>
           </div>
         </div>
@@ -140,15 +140,21 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <h3><span class="embiggen">Debug</span></h3>
-            <span id="tooltip-debug">
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="toggleDebugFlag()">
+          </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="consolelogging">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
+            <h3><span class="embiggen">Console Logging</span></h3>
+            <span id="tooltip-console">
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect enlift" onclick="toggleDebugFlag()">
                 Console Logging
               </button>
             </span>
-            <span class="mdl-tooltip mdl-tooltip--top" for="tooltip-debug">
+            <span class="mdl-tooltip mdl-tooltip--top" for="tooltip-console">
               Toggle console logging
             </span>
-          </div>
+           </div>
         </div>
       </main>
     <footer class="sainternet-footer mdl-mini-footer">
