@@ -1,6 +1,5 @@
 User-agent: *
 Disallow:
-Disallow: /debug.html
 Disallow: /.formatted/
 Disallow: /.git/
 Disallow: /.github/
