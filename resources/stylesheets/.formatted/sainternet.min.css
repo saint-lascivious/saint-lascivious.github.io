@@ -1,6 +1,6 @@
 /**
  * sainternet.xyz - resources/stylesheets/sainternet.css
- * Copyright 2022 saint-lascivious (Hayden Pearce). All rights reserved.
+ * Copyright 2023 saint-lascivious (Hayden Pearce). All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
  */
 
 :root {
-  color-scheme: light dark
+  color-scheme: dark light
 }
 
 body {
@@ -40,7 +40,7 @@ body {
 }
 
 .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
-  color: #000000;
+  color: #424242;
 }
 
 .embiggen:hover, .embiggen:active {
@@ -126,23 +126,6 @@ body {
   text-shadow: 0px 2px 10px rgb(0 0 0 / 20%),0px 1px 6px rgb(0 0 0 / 40%),0px 1px 2px rgb(0 0 0 / 80%);
 }
 
-@media (prefers-color-scheme: light) {
-  body {
-    background: #FFFFFF;
-  }
-  .mdl-list__item-primary-content {
-    color: #424242;
-  }
-  .sainternet-content {
-    background: #FFFFFF;
-    color: #424242;
-  }
-  .sainternet-navigation {
-    background: #FFFFFF;
-    color: #424242;
-  }
-}
-
 @media (prefers-color-scheme: dark) {
   body {
     background: #121212;
@@ -161,5 +144,22 @@ body {
   .sainternet-navigation {
     background: #000000;
     color: #FAFAFA;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: #FFFFFF;
+  }
+  .mdl-list__item-primary-content {
+    color: #424242;
+  }
+  .sainternet-content {
+    background: #FFFFFF;
+    color: #424242;
+  }
+  .sainternet-navigation {
+    background: #FFFFFF;
+    color: #424242;
   }
 }
