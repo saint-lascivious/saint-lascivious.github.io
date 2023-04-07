@@ -1,6 +1,6 @@
 /**
  * sainternet.xyz - resources/stylesheets/pre.css
- * Copyright 2023 saint-lascivious (Hayden Pearce). All rights reserved.
+ * Copyright 2022 saint-lascivious (Hayden Pearce). All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,16 +23,16 @@ pre {
   padding: 6px;
 }
 
-@media (prefers-color-scheme: dark) {
-  pre {
-    background: #000000;
-    color: #FAFAFA;
-  }
-}
-
 @media (prefers-color-scheme: light) {
   pre {
     background: #FFFFFF;
     color: #424242;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  pre {
+    background: #000000;
+    color: #FAFAFA;
   }
 }
