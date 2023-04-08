@@ -20,11 +20,11 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'DejaVu Sans', sans-serif;
 }
 
 .fonts-loaded body {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, 'DejaVu Sans', sans-serif;
 }
 
 .mdl-layout__content {

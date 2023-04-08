@@ -18,6 +18,7 @@
 pre {
   border: 2px solid #616161;
   border-radius: 8px;
+  font-family: 'Roboto Mono', 'DejaVu Sans Mono', 'Courier New', monospace;
   font-size: 0.9em;
   overflow: auto;
   padding: 6px;
