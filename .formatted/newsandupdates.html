@@ -151,7 +151,7 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <div class="sainternet-crumbs">
-              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="#newsandupdates">News and Updates</a><br><a class="embiggen" href="#analyticsdisclosure"><b>Analytics Disclosure</b></a>, <a class="embiggen" href="#pwa">PWA!</a>, <a class="embiggen" href="#2022metrics">2022 Metrics</a>, <a class="embiggen" href="#munin-pihole-plugins-v08-02-00">Munin Pi-hole Plugins: 08.02.00</a>, <a class="embiggen" href="#reportingproblems">Reporting Problems</a>, <a class="embiggen" href="#aquickstop">A QUICk Stop</a>, <a class="embiggen" href="#materialdesigndark">Material Design <s>Lite</s> Dark</a>, <a class="embiggen" href="#iosmacosmadeeasy">iOS/macOS Made Easy</a>
+              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="#newsandupdates">News and Updates</a><br><a class="embiggen" href="#unepokedexsilvousplait"><b>Une Pokédex, S'il Vous Plaît</b></a>, <a class="embiggen" href="#analyticsdisclosure">Analytics Disclosure</a>, <a class="embiggen" href="#pwa">PWA!</a>, <a class="embiggen" href="#2022metrics">2022 Metrics</a>, <a class="embiggen" href="#munin-pihole-plugins-v08-02-00">Munin Pi-hole Plugins: 08.02.00</a>, <a class="embiggen" href="#reportingproblems">Reporting Problems</a>, <a class="embiggen" href="#aquickstop">A QUICk Stop</a>, <a class="embiggen" href="#materialdesigndark">Material Design <s>Lite</s> Dark</a>, <a class="embiggen" href="#iosmacosmadeeasy">iOS/macOS Made Easy</a>
             </div>
           </div>
         </div>
@@ -162,6 +162,42 @@
             <p>
               This page will serve to detail news and updates relevant to Sainternet such as new features and developments, planned maintenance, etc.
             </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="unepokedexsilvousplait">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
+            <h3><span class="embiggen">Une Pokédex, S'il Vous Plaît</span></h3>
+            <p class="embiggen" id="datetime">
+              Tuesday, 11 April 2023 01:00+12:00 (NZST)
+            </p>
+            <p>
+              Pokémon Name to National Pokédex Number queries using <a href="pokedexoverdns.html">Pokédex over DNS</a> now support multiple languages. English/US, Japanese (roomaji), French and German.
+            </p>
+            <p>
+              The following examples show US, JP, FR and DE lookups respectively.
+            </p>
+            <p>
+              Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/dig">dig</a>:
+            </p>
+            <pre>dig +short txt wurmple.pokedex @dns.sainternet.xyz</pre>
+            <pre>dig +short txt kemusso.pokedex @dns.sainternet.xyz</pre>
+            <pre>dig +short txt chenipotte.pokedex @dns.sainternet.xyz</pre>
+            <pre>dig +short txt waumpel.pokedex @dns.sainternet.xyz</pre>
+            <p>
+              Example Pokédex over DNS queries using <a href="https://github.com/ameshkov/dnslookup">dnslookup</a>:
+            </p>
+            <pre>RRTYPE=TXT dnslookup wurmple.pokedex dns.sainternet.xyz</pre>
+            <pre>RRTYPE=TXT dnslookup kemusso.pokedex dns.sainternet.xyz</pre>
+            <pre>RRTYPE=TXT dnslookup chenipotte.pokedex dns.sainternet.xyz</pre>
+            <pre>RRTYPE=TXT dnslookup waumpel.pokedex dns.sainternet.xyz</pre>
+            <p>
+              Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
+            </p>
+            <pre>nslookup -type=txt wurmple.pokedex dns.sainternet.xyz</pre>
+            <pre>nslookup -type=txt kemusso.pokedex dns.sainternet.xyz</pre>
+            <pre>nslookup -type=txt chenipotte.pokedex dns.sainternet.xyz</pre>
+            <pre>nslookup -type=txt waumpel.pokedex dns.sainternet.xyz</pre>
            </div>
         </div>
         <div class="sainternet-container mdl-grid" id="analyticsdisclosure">
