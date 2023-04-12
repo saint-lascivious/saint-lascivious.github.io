@@ -81,6 +81,11 @@ body {
   margin-bottom: 80px;
 }
 
+.sainternet-highlights a {
+  color: rgb(255,82,82);
+  font-weight: 500;
+}
+
 .sainternet-navigation {
   border-radius: 50vh;
   padding: 20px 28px;
