@@ -114,6 +114,7 @@
 
     <link rel="manifest" href="sainternet.webmanifest">
 
+    <link rel="dns-prefetch" href="developer.mozilla.org">
     <link rel="dns-prefetch" href="bulbapedia.bulbgarden.net">
     <link rel="dns-prefetch" href="pi-hole.net">
     <link rel="dns-prefetch" href="discord.gg">
@@ -154,7 +155,7 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <div class="sainternet-crumbs">
-              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="#newsandupdates">News and Updates</a><br><a class="embiggen" href="#unepokedexsilvousplait"><b>Une Pokédex, S'il Vous Plaît</b></a>, <a class="embiggen" href="#analyticsdisclosure">Analytics Disclosure</a>, <a class="embiggen" href="#pwa">PWA!</a>, <a class="embiggen" href="#2022metrics">2022 Metrics</a>, <a class="embiggen" href="#munin-pihole-plugins-v08-02-00">Munin Pi-hole Plugins: 08.02.00</a>, <a class="embiggen" href="#reportingproblems">Reporting Problems</a>, <a class="embiggen" href="#aquickstop">A QUICk Stop</a>, <a class="embiggen" href="#materialdesigndark">Material Design <s>Lite</s> Dark</a>, <a class="embiggen" href="#iosmacosmadeeasy">iOS/macOS Made Easy</a>
+              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="#newsandupdates">News and Updates</a><br><a class="embiggen" href="#devdiarygoingoffline"><b>De<s>ar</s>v Diary: Going Offline</b></a>, <a class="embiggen" href="#unepokedexsilvousplait">Une Pokédex, S'il Vous Plaît</a>, <a class="embiggen" href="#analyticsdisclosure">Analytics Disclosure</a>, <a class="embiggen" href="#pwa">PWA!</a>, <a class="embiggen" href="#2022metrics">2022 Metrics</a>, <a class="embiggen" href="#munin-pihole-plugins-v08-02-00">Munin Pi-hole Plugins: 08.02.00</a>, <a class="embiggen" href="#reportingproblems">Reporting Problems</a>, <a class="embiggen" href="#aquickstop">A QUICk Stop</a>, <a class="embiggen" href="#materialdesigndark">Material Design <s>Lite</s> Dark</a>, <a class="embiggen" href="#iosmacosmadeeasy">iOS/macOS Made Easy</a>
             </div>
           </div>
         </div>
@@ -164,6 +165,33 @@
             <h3><span class="embiggen">News and Updates</span></h3>
             <p>
               This page will serve to detail news and updates relevant to Sainternet such as new features and developments, planned maintenance, etc.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="devdiarygoingoffline">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
+            <h3><span class="embiggen">De<s>ar</s>v Diary: Going Offline</span></h3>
+            <p class="embiggen" id="datetime">
+              Friday, 14 April 2023 22:30+12:00 (NZST)
+            </p>
+            <p>
+              <code>sainternet.xyz</code> is going offline.
+            </p>
+            <p>
+              Sorry. Rather, <code>sainternet.xyz</code> <i>can</i> go offline, and it isn't a problem. Let me explain.
+            </p>
+            <p>
+              Historically, handling offline in a website or progressive web application was hard, with each service deploying their own workarounds or even just choosing not to handle the case at all. Enter the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API">Service Worker API</a>. Service workers give developers the tools they need to create effective offline experiences.
+            </p>
+            <p>
+              Using a service worker allows for the interception of requests within the service worker's scope, which can then be acted on accordingly. For instance <code>sainternet.xyz</code>'s <a href="https://github.com/saint-lascivious/saint-lascivious.github.io/blob/master/.formatted/serviceworker.min.js">service worker</a> uses both network first and cache first fetch policies depending upon the asset being requested. Objects that are likely to be static (fonts, images, etc.) or change infrequently are fetched by checking the cache first, falling back to network (if available) if the object is not found in the current cache. Dynamic or otherwise frequently updated objects are fetched from network first (if available), falling back to cache if the network request fails. Successful fetches from either case are added to the cache for later use.
+            </p>
+            <p>
+              After visiting any page on this site, if you're running an even vaguely modern browser and have JavaScript enabled, some magic should have happened.
+            </p>
+            <p>
+              Your browser was tested to see if it can support service worker registration, and if supported, a service worker was installed and registered. That service worker then created and populated a cache of critical objects (all those required for <code>sainternet.xyz</code> to function, approximately 4MB), and removed any orphaned caches. At this point you should be able to disconnect from the network or enter Flight Mode, and continue to navigate the site as usual.
             </p>
            </div>
         </div>
