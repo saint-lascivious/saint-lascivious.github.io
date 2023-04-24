@@ -5,14 +5,8 @@ on:
     branches: [ master ]
     paths: [ '**.html' ]
 
-permissions: {}
-
 jobs:
   sitemap_job:
-    permissions:
-      contents: read
-      pull-requests: write
-
     runs-on: ubuntu-latest
     name: generate a sitemap
 
