@@ -240,38 +240,72 @@
         }
     ],
     "screenshots" : [{
-        "src": "/resources/screenshots/home.webp",
-        "sizes": "480x1024",
+        "src": "/resources/screenshots/portrait/home.webp",
+        "sizes": "720x1280",
         "type": "image/webp",
         "platform": "narrow",
         "label": "Home"
       },
+        "src": "/resources/screenshots/landscape/home.webp",
+        "sizes": "1280x720",
+        "type": "image/webp",
+        "platform": "wide",
+        "label": "Home"
+      },
       {
-        "src": "/resources/screenshots/newsandupdates.webp",
-        "sizes": "480x1024",
+        "src": "/resources/screenshots/portrait/newsandupdates.webp",
+        "sizes": "720x1280",
         "type": "image/webp",
         "platform": "narrow",
         "label": "News and Updates"
       },
       {
-        "src": "/resources/screenshots/filtereddns.webp",
-        "sizes": "480x1024",
+        "src": "/resources/screenshots/landscape/newsandupdates.webp",
+        "sizes": "1280x720",
+        "type": "image/webp",
+        "platform": "wide",
+        "label": "News and Updates"
+      },
+      {
+        "src": "/resources/screenshots/portrait/filtereddns.webp",
+        "sizes": "720x1280",
         "type": "image/webp",
         "platform": "narrow",
         "label": "Filtered DNS"
       },
       {
-        "src": "/resources/screenshots/pokedexoverdns.webp",
-        "sizes": "480x1024",
+        "src": "/resources/screenshots/landscape/filtereddns.webp",
+        "sizes": "1280x720",
+        "type": "image/webp",
+        "platform": "wide",
+        "label": "Filtered DNS"
+      },
+      {
+        "src": "/resources/screenshots/portrait/pokedexoverdns.webp",
+        "sizes": "720x1280",
         "type": "image/webp",
         "platform": "narrow",
         "label": "Pokédex over DNS"
       },
       {
-        "src": "/resources/screenshots/popularprojects.webp",
-        "sizes": "480x1024",
+        "src": "/resources/screenshots/landscape/pokedexoverdns.webp",
+        "sizes": "1280x720",
+        "type": "image/webp",
+        "platform": "wide",
+        "label": "Pokédex over DNS"
+      },
+      {
+        "src": "/resources/screenshots/portrait/popularprojects.webp",
+        "sizes": "720x1280",
         "type": "image/webp",
         "platform": "narrow",
+        "label": "Popular Projects"
+      },
+      {
+        "src": "/resources/screenshots/landscape/popularprojects.webp",
+        "sizes": "1280x720",
+        "type": "image/webp",
+        "platform": "wide",
         "label": "Popular Projects"
       }
     ],
