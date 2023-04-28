@@ -12,25 +12,26 @@ jobs:
 
     steps:
     - name: checkout repo
-      id: cr
+      id: checkout_repo
       uses: actions/checkout@v3
       with:
         fetch-depth: 0
 
     - name: generate sitemap
-      id: gs
+      id: generate_sitemap
       uses: cicirello/generate-sitemap@v1
       with:
         base-url-path: https://sainternet.xyz/
 
     - name: output stats
+      id: output_stats
       run: |
         echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
         echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
         echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
 
     - name: create pull request
-      id: cpr
+      id: create_pull_request
       uses: peter-evans/create-pull-request@v4.2.3
       with:
         title: "automated sitemap update"
