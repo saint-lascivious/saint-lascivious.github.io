@@ -56,12 +56,16 @@
 
     <link rel="canonical" href="https://sainternet.xyz/newsandupdates.html">
 
+    <link rel="preload" as="image" href="resources/images/farquaad.webp" type="image/webp" fetchpriority="high">
+
     <link rel="preload" as="style" href="resources/stylesheets/material.orange-red.min.css">
     <link rel="stylesheet" href="resources/stylesheets/material.orange-red.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/sainternet.min.css">
     <link rel="stylesheet" href="resources/stylesheets/sainternet.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/ribbons.min.css">
     <link rel="stylesheet" href="resources/stylesheets/ribbons.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/img.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/img.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/datetime.min.css">
     <link rel="stylesheet" href="resources/stylesheets/datetime.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/mono.min.css">
@@ -115,6 +119,7 @@
 
     <link rel="manifest" href="sainternet.webmanifest">
 
+    <link rel="dns-prefetch" href="en.wikipedia.org">
     <link rel="dns-prefetch" href="developer.mozilla.org">
     <link rel="dns-prefetch" href="bulbapedia.bulbgarden.net">
     <link rel="dns-prefetch" href="pi-hole.net">
@@ -161,7 +166,7 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <div class="sainternet-crumbs">
-              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="#newsandupdates">News and Updates</a><br><a class="embiggen" href="#enablejavascript"><b>Enable JavaScript</b></a>, <a class="embiggen" href="#devdiarygoingoffline">De<s>ar</s>v Diary: Going Offline</a>, <a class="embiggen" href="#unepokedexsilvousplait">Une Pokédex, S'il Vous Plaît</a>, <a class="embiggen" href="#analyticsdisclosure">Analytics Disclosure</a>, <a class="embiggen" href="#pwa">PWA!</a>, <a class="embiggen" href="archive.html">Archived Posts</a>
+              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="#newsandupdates">News and Updates</a><br><a class="embiggen" href="#certaindoom"><b>CERTain Doom</b></a>, <a class="embiggen" href="#enablejavascript">Enable JavaScript</a>, <a class="embiggen" href="#devdiarygoingoffline">De<s>ar</s>v Diary: Going Offline</a>, <a class="embiggen" href="#unepokedexsilvousplait">Une Pokédex, S'il Vous Plaît</a>, <a class="embiggen" href="#analyticsdisclosure">Analytics Disclosure</a>, <a class="embiggen" href="#pwa">PWA!</a>, <a class="embiggen" href="archive.html">Archived Posts</a>
             </div>
           </div>
         </div>
@@ -171,6 +176,51 @@
             <h3><span class="embiggen">News and Updates</span></h3>
             <p>
               This page will serve to detail news and updates relevant to Sainternet such as new features and developments, planned maintenance, etc.
+            </p>
+           </div>
+        </div>
+        <div class="sainternet-container mdl-grid" id="certaindoom">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
+            <h3><span class="embiggen">CERTain Doom</span></h3>
+            <p class="embiggen" id="datetime">
+              first posted on Monday, 1 May 2023 21:00+12:00 (NZST)
+            </p>
+            <p class="embiggen sainternet-subheader-centered">
+              What Is Happening?
+            </p>
+            <p>
+              Starting at approximately midnight Thursday, 1 June 2023 (NZST) all certificates related to <code>dns.sainternet.xyz</code> will be gradually transitioned from <a href="https://en.wikipedia.org/wiki/RSA_(cryptosystem)">RSA</a> (2048) to <a href="https://en.wikipedia.org/wiki/ECDSA">ECDSA</a> (secp256r1).
+            </p>
+            <p class="embiggen sainternet-subheader-centered">
+              Okay, Why?
+            </p>
+            <p>
+              In simpler terms, there are two types of digital certificates that help ensure secure connections on the internet. RSA used to be the most popular one because it offered a good balance between security, compatibility, and speed. But now, a newer one called ECDSA is widely supported in modern web software and offers even better security and speed. So, it's a good idea to make ECDSA the default certificate type to help people benefit from its improved security and performance.
+            </p>
+            <p class="embiggen sainternet-subheader-centered">
+              What Does This Mean for Me?
+            </p>
+            <picture>
+              <source srcset="resources/images/farquaad.webp" type="image/webp">
+              <source srcset="resources/images/farquaad.png" type="image/png">
+              <source srcset="resources/images/farquaad.jpg" type="image/jpeg">
+              <img src="resources/images/farquaad.jpg" width="756" height="480" alt="Some of you may die, but that is a sacrifice I am willing to make.">
+            </picture>
+            <p>
+              It's important to note that while transitioning to the newer ECDSA certificate type may provide enhanced security and performance benefits, it may negatively affect some clients, particularly those using legacy Android devices (Android 7.1 and lower).
+            </p>
+            <p>
+              This is because some older versions of Android do not support ECDSA and may not be able to establish a secure connection with websites using this certificate type. As a result, users may experience issues accessing certain websites or services that have switched to ECDSA.
+            </p>
+            <p>
+              I understand and appreciate that some users may be concerned about the potential loss of access to the service as a result of the upcoming key change.
+            </p>
+            <p>
+              I want to reassure you that this decision was not made lightly and was carefully considered with the best interests of <code>dns.sainternet.xyz</code> users and the internet as a whole in mind. The transition to the newer ECDSA certificate type will provide significant security and performance benefits that will help protect users' data and improve their overall browsing experience. I am committed to ensuring a smooth transition and will work to minimise any disruption to users.
+            </p>
+            <p>
+              Your patience and understanding is appreciated while navigating this important change.
             </p>
            </div>
         </div>
@@ -196,7 +246,7 @@
               first posted on Friday, 14 April 2023 22:30+12:00 (NZST)<br>updated on Saturday, 15 April 2023 21:30+12:00 (NZST)
             </p>
             <p class="embiggen sainternet-subheader-centered">
-              <b>Going Offline</b>
+              Going Offline
             </p>
             <p>
               <code>sainternet.xyz</code> is going offline.
@@ -208,7 +258,7 @@
               Historically, handling offline in a website or progressive web application was hard, with each service deploying their own workarounds or even just choosing not to handle the case at all.
             </p>
             <p class="embiggen sainternet-subheader-centered">
-              <b>At Your Service</b>
+              At Your Service
             </p>
             <p>
               Enter the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API">Service Worker API</a>. Service workers give developers the tools they need to create effective offline experiences.
@@ -217,7 +267,7 @@
               Using a service worker allows for the interception of requests within the service worker's scope, which can then be acted on accordingly. For instance <code>sainternet.xyz</code>'s <a href="https://github.com/saint-lascivious/saint-lascivious.github.io/blob/master/.formatted/serviceworker.min.js">service worker</a> uses both network first and cache first fetch policies depending upon the asset being requested. Objects that are likely to be static (fonts, images, etc.) or change infrequently are fetched by checking the cache first, falling back to network (if available) if the object is not found in the current cache. Dynamic or otherwise frequently updated objects are fetched from network first (if available), falling back to cache if the network request fails. Successful fetches from either case are added to the cache for later use.
             </p>
             <p class="embiggen sainternet-subheader-centered">
-              <b>Putting It All Together</b>
+              Putting It All Together
             </p>
             <p>
               After visiting any page on this site, if you're running an even vaguely modern browser and have JavaScript enabled, some magic should have happened.
