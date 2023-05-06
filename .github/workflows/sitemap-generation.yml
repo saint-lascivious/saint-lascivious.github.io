@@ -1,4 +1,4 @@
-name: Generate sitemap
+name: generate sitemap
 
 on:
   push:
@@ -11,24 +11,28 @@ jobs:
     name: Generate a sitemap
 
     steps:
-    - name: Checkout the repo
+    - name: notify start
+      run: |
+        echo "action started"
+
+    - name: checkout the repo
       uses: actions/checkout@v3
       with:
         fetch-depth: 0
 
-    - name: Generate the sitemap
+    - name: generate the sitemap
       id: sitemap
       uses: cicirello/generate-sitemap@v1
       with:
         base-url-path: https://sainternet.xyz/
 
-    - name: Output stats
+    - name: output statistics
       run: |
         echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
         echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
         echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
 
-    - name: Create Pull Request
+    - name: create pull request
       uses: peter-evans/create-pull-request@v5.0.0
       with:
         title: "update sitemap"
@@ -39,3 +43,7 @@ jobs:
         committer: Hayden Pearce <saint-lascivious@users.noreply.github.com>
         branch: create-pull-request/sitemap
         delete-branch: true
+
+    - name: notify completion
+      run: |
+        echo "action completed"
