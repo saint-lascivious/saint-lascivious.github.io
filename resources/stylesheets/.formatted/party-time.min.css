@@ -16,6 +16,9 @@
  */
 
 .party-time {
+  animation: party 5s none 0s linear infinite;
+  font-family: 'Roboto';
+  font-size: 36px;
   background: linear-gradient(
     to right,
     red,
@@ -30,7 +33,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: party 5s none 0s linear infinite;
+  text-align: center;
 }
 
 @keyframes party {
