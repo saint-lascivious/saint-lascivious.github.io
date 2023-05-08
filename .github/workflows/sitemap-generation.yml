@@ -41,7 +41,7 @@ jobs:
         commit-message: "saint-lascivious.github.io: update sitemap"
         author: Hayden Pearce <saint-lascivious@users.noreply.github.com>
         committer: Hayden Pearce <saint-lascivious@users.noreply.github.com>
-        branch: create-pull-request/sitemap
+        branch: staging
         delete-branch: true
 
     - name: notify completion
