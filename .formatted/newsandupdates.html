@@ -192,7 +192,7 @@
           <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <h3><span class="embiggen">De<s>ar</s>v Diary: Gotta Go Fast!</span></h3>
             <p class="embiggen" id="datetime">
-              first posted on Tuesday, 9 May 2023 06:40+12:00 (NZST)
+              first posted on Tuesday, 9 May 2023 07:00+12:00 (NZST)
             </p>
             <p class="embiggen sainternet-subheader-centered">
               How sainternet.xyz Managed 100%<a href="#disclaimer">*</a> on Major Website Performance Tests
@@ -210,7 +210,10 @@
               I've tried many different tactics to achieve faster load times, but I've found that a combination of strategies works best. For example, self-hosting everything possible, including Google fonts, is a great way to reduce the number of external requests and speed up page load times. I've also embraced modern image and font formats, which can significantly reduce file sizes and improve load times.
             </p>
             <p>
-              But it's not just about hosting and file formats. I've also implemented a JavaScript-powered FOUT (Flash Of Unstyled Text) font loading policy (the <i>perception</i> of fast loading is just as important, text should display as quickly as possible) and deferred JavaScript to ensure that my pages load quickly and efficiently. The basic premise with FOUT, is to display the first available font that matches in your list, while promising to load the fonts you actually need, and then swapping fonts as soon as you know they are available. This allows the page to be rendered or prior to fonts having loaded completely and provides a significant reduction in perceived load time.
+              But it's not just about hosting and file formats. I've also implemented a JavaScript-powered FOUT (Flash Of Unstyled Text) font loading policy (the <i>perception</i> of fast loading is just as important, text should display as quickly as possible) and deferred JavaScript to ensure that my pages load quickly and efficiently.
+            </p>
+            <p>
+              The basic premise with FOUT, is to display the first available font that matches in your list, while promising to load the fonts you actually need, and then swapping fonts as soon as you know they are available. This allows the page to be rendered prior to fonts having loaded completely and provides a significant reduction in perceived load time.
             </p>
             <p>
               Aggressive CSS, JavaScript and HTML minification has also been a key strategy, as has preloading assets and prerendering pages to speed up subsequent page loads.
