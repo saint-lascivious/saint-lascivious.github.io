@@ -56,6 +56,10 @@
 
     <link rel="canonical" href="https://sainternet.xyz/newsandupdates.html">
 
+    <link rel="preload" as="image" href="resources/images/pihole_percent-day.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="resources/images/pihole_percent-week.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="resources/images/pihole_percent-month.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="resources/images/pihole_percent-year.webp" type="image/webp" fetchpriority="high">
     <link rel="preload" as="image" href="resources/images/farquaad.webp" type="image/webp" fetchpriority="high">
 
     <link rel="preload" as="style" href="resources/stylesheets/material.orange-red.min.css">
@@ -126,7 +130,9 @@
     <link rel="dns-prefetch" href="bulbapedia.bulbgarden.net">
     <link rel="dns-prefetch" href="pi-hole.net">
     <link rel="dns-prefetch" href="discord.gg">
+    <link rel="dns-prefetch" href="docs.pi-hole.net">
     <link rel="dns-prefetch" href="github.com">
+    <link rel="dns-prefetch" href="munin-monitoring.org">
     <link rel="dns-prefetch" href="www.reddit.com">
   </head>
   <body>
@@ -168,7 +174,7 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <div class="sainternet-crumbs">
-              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="#newsandupdates">News and Updates</a><br><a class="embiggen" href="#thepolishinvasionof2023"><b>The Polish Invasion of 2023</b></a>, <a class="embiggen" href="#certaindoom">CERTain Doom</a>, <a class="embiggen" href="#enablejavascript">Enable JavaScript</a>, <a class="embiggen" href="#devdiarygoingoffline">De<s>ar</s>v Diary: Going Offline</a>, <a class="embiggen" href="#unepokedexsilvousplait">Une Pokédex, S'il Vous Plaît</a>, <a class="embiggen" href="#analyticsdisclosure">Analytics Disclosure</a>, <a class="embiggen" href="#pwa">PWA!</a>, <a class="embiggen" href="archive.html">Archived Posts</a>
+              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="#newsandupdates">News and Updates</a><br><a class="embiggen" href="#somepunaboutblocksorblocking"><b>Some Pun About Blocks or Blocking</b></a>, <a class="embiggen" href="#thepolishinvasionof2023">The Polish Invasion of 2023</a>, <a class="embiggen" href="#certaindoom">CERTain Doom</a>, <a class="embiggen" href="#enablejavascript">Enable JavaScript</a>, <a class="embiggen" href="#devdiarygoingoffline">De<s>ar</s>v Diary: Going Offline</a>, <a class="embiggen" href="#unepokedexsilvousplait">Une Pokédex, S'il Vous Plaît</a>, <a class="embiggen" href="#analyticsdisclosure">Analytics Disclosure</a>, <a class="embiggen" href="#pwa">PWA!</a>, <a class="embiggen" href="archive.html">Archived Posts</a>
             </div>
           </div>
         </div>
@@ -181,12 +187,69 @@
             </p>
            </div>
         </div>
+        <div class="sainternet-container mdl-grid" id="somepunaboutblocksorblocking">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
+            <h3><span class="embiggen">Some Pun About Blocks or Blocking</span></h3>
+            <p class="embiggen" id="datetime">
+              first posted on Monday, 8 May 2023 21:00+12:00 (NZST)
+            </p>
+            <p>
+              Have you ever wondered what it might look like to graph the rate of blocked queries on <code>dns.sainternet.xyz</code>?
+            </p>
+            <p>
+              Even if you haven't, if you keep reading you're going to see it anyway.
+            </p>
+            <p>
+              Since <code>dns.sainternet.xyz</code> uses <a href="https://github.com/pi-hole/FTL"><i>FTL</i>DNS</a>, with its <a href="https://docs.pi-hole.net/ftldns/telnet-api/">API</a> and <s>a little bit of</s> <a href="https://github.com/saint-lascivious/munin-pihole-plugins/blob/master/usr/share/munin/plugins/pihole_">some bash</a>, we can do so and check the percentage of blocked queries (and more) periodically and graph them using <a href="http://munin-monitoring.org">Munin</a>.
+            </p>
+            <p>
+              The following graphs depict smoothed output polled at five minute intervals.
+            </p>
+            <p class="embiggen sainternet-subheader-centered">
+              Day
+            </p>
+            <picture>
+              <source srcset="resources/images/pihole_percent-day.webp" type="image/webp">
+              <source srcset="resources/images/pihole_percent-day.png" type="image/png">
+              <source srcset="resources/images/pihole_percent-day.jpg" type="image/jpeg">
+              <img src="resources/images/pihole_percent-day.jpg" width="860" height="480" alt="Blocked queries as a percentile, by day.">
+            </picture>
+            <p class="embiggen sainternet-subheader-centered">
+              Week
+            </p>
+            <picture>
+              <source srcset="resources/images/pihole_percent-week.webp" type="image/webp">
+              <source srcset="resources/images/pihole_percent-week.png" type="image/png">
+              <source srcset="resources/images/pihole_percent-week.jpg" type="image/jpeg">
+              <img src="resources/images/pihole_percent-day.jpg" width="860" height="480" alt="Blocked queries as a percentile, by week.">
+            </picture>
+            <p class="embiggen sainternet-subheader-centered">
+              Month
+            </p>
+            <picture>
+              <source srcset="resources/images/pihole_percent-month.webp" type="image/webp">
+              <source srcset="resources/images/pihole_percent-month.png" type="image/png">
+              <source srcset="resources/images/pihole_percent-month.jpg" type="image/jpeg">
+              <img src="resources/images/pihole_percent-month.jpg" width="860" height="480" alt="Blocked queries as a percentile, by month.">
+            </picture>
+            <p class="embiggen sainternet-subheader-centered">
+              Year
+            </p>
+            <picture>
+              <source srcset="resources/images/pihole_percent-year.webp" type="image/webp">
+              <source srcset="resources/images/pihole_percent-year.png" type="image/png">
+              <source srcset="resources/images/pihole_percent-year.jpg" type="image/jpeg">
+              <img src="resources/images/pihole_percent-year.jpg" width="860" height="480" alt="Blocked queries as a percentile, by year.">
+            </picture>
+           </div>
+        </div>
         <div class="sainternet-container mdl-grid" id="thepolishinvasionof2023">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <h3><span class="embiggen">The Polish Invasion of 2023</span></h3>
             <p class="embiggen" id="datetime">
-              first posted on Sunday, 6 May 2023 10:30+12:00 (NZST)
+              first posted on Sunday, 6 May 2023 16:40+12:00 (NZST)
             </p>
             <p class="embiggen sainternet-subheader-centered">
               Poddaję się!
