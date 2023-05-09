@@ -192,10 +192,13 @@
           <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <h3><span class="embiggen">De<s>ar</s>v Diary: Gotta Go Fast!</span></h3>
             <p class="embiggen" id="datetime">
-              first posted on Tuesday, 9 May 2023 07:00+12:00 (NZST)<br>updated on Tuesday, 9 May 2023 20:00+12:00 (NZST)
+              first posted on Tuesday, 9 May 2023 07:00+12:00 (NZST)<br>updated on Tuesday, 9 May 2023 21:45+12:00 (NZST)
             </p>
-            <p class="embiggen sainternet-subheader-centered">
-              How sainternet.xyz Managed 100%<a href="#disclaimer">*</a> on Major Website Performance Tests
+            <p class="embiggen sainternet-subheader-centered" id="speedtests">
+              How sainternet.xyz Managed 100%<a href="#disclaimerone"><sup><sub>1</sub></sup></a> on Major Website Performance Tests
+            </p>
+            <p class="mdl-tooltip mdl-tooltip--bottom" for="speedtests">
+              GTmetrix, PageSpeed Insights, Website Speed Test etc.
             </p>
             <p>
               I know the pain of waiting for a website to load.
@@ -219,32 +222,52 @@
               But it's not just about hosting and file formats. I've also implemented a JavaScript-powered FOUT (Flash Of Unstyled Text) font loading policy (the <i>perception</i> of fast loading is just as important, text should display as quickly as possible) and deferred JavaScript to ensure that my pages load quickly and efficiently.
             </p>
             <p class="embiggen sainternet-subheader-centered">
-              Flash (Not That One), Ah-ah, Saviour of the Universe
+              Flash<a href="#disclaimertwo"><sup><sub>2</sub></sup></a>, Ah-ah, Saviour of the Universe
             </p>
             <p>
               The basic premise with FOUT, is to display the first available font that matches in your list, while promising to load the fonts you actually need, and then swapping fonts as soon as you know they are available. This allows the page to be rendered prior to fonts having loaded completely and provides a significant reduction in perceived load time.
             </p>
             <p class="embiggen sainternet-subheader-centered">
+              It’s the Little Things That Count
+            </p>
+            <p>
+              Aggressive CSS, JavaScript and HTML minification has also been a key strategy, as has preloading assets and prerendering pages to speed up subsequent page loads. From anywhere you navigate to on <code>sainternet.xyz</code>, anywhere you could navigate to from there is already preloaded and prerendered, making for a PWA (Progressive Web Application) which feels more like a native application.
+            </p>
+            <p class="embiggen sainternet-subheader-centered">
               Size Does Matter
             </p>
             <p>
-              Aggressive CSS, JavaScript and HTML minification has also been a key strategy, as has preloading assets and prerendering pages to speed up subsequent page loads.
+              I have paid close attention to image sizing and scaling, in particular to avoid CLS (Cumulative Layout Shift), which can make for a frustrating user experience with page assets moving around the page as things load. You try and click on one thing, but then something else loads and it's moved. Yeah, nah. No one wants that.
             </p>
             <p>
-              I have paid close attention to image sizing and scaling, in particular to avoid CLS (Cumulative Layout Shift), which can make for a frustrating user experience. By taking all of these steps, I've achieved a significantly faster web experience.
+              By taking all of these steps and more, I've achieved a significantly faster, smoother and more navigable web experience.
             </p>
             <p>
               Overall, optimising <code>sainternet.xyz</code> is an ongoing process, but by staying on top of the latest strategies and testing out new approaches, I'm confident that I can continue to deliver a better, faster web experience for all visitors.
             </p>
-            <p class="embiggen sainternet-subheader-centered" id="disclaimer">
-              Disclaimer
+            <p class="embiggen sainternet-subheader-centered">
+              Disclaimers
             </p>
-            <p>
-              *On desktop browsers. Lighthouse**'s emulated mobile hardware and connectivity is <s>bulls…</s> a rock, placed vaguely near an FM radio tower.
-            </p>
-            <p>
-              **Everything uses Lighthouse.
-            </p>
+            <ol>
+            <li id="disclaimerone">
+              On desktop browsers. Lighthouse<a href="#disclaimerthree"><sup><sub>3</sub></sup></a>'s emulated mobile hardware and connectivity is <s>bulls…</s> a rock, placed vaguely near an FM radio tower.
+            </li>
+            <li class="mdl-tooltip mdl-tooltip--bottom" for="disclaimerone">
+              It's not even in stereo.
+            </li>
+            <li id="disclaimertwo">
+              Not that one.
+            </li>
+            <li class="mdl-tooltip mdl-tooltip--bottom" for="disclaimertwo">
+              Or that other one.
+            </li>
+            <li id="disclaimerthree">
+              Everything uses Lighthouse.
+            </li>
+            <li class="mdl-tooltip mdl-tooltip--bottom" for="disclaimerthree">
+              Google decides how the Internet works.
+            </li>
+            </ol>
            </div>
         </div>
         <div class="sainternet-container mdl-grid" id="somepunaboutblocksorblocking">
