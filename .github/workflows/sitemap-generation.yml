@@ -1,4 +1,4 @@
-name: generate sitemap
+name: generate xml sitemap
 
 on:
   push:
@@ -8,12 +8,12 @@ on:
 jobs:
   sitemap_job:
     runs-on: ubuntu-latest
-    name: Generate a sitemap
+    name: generate sitemap
 
     steps:
-    - name: notify start
+    - name: workflow start
       run: |
-        echo "action started"
+        echo "generate xml sitemap workflow started"
 
     - name: checkout the repo
       uses: actions/checkout@v3
@@ -41,9 +41,9 @@ jobs:
         commit-message: "saint-lascivious.github.io: update sitemap"
         author: Hayden Pearce <saint-lascivious@users.noreply.github.com>
         committer: Hayden Pearce <saint-lascivious@users.noreply.github.com>
-        branch: staging
+        branch: sitemap-staging
         delete-branch: true
 
-    - name: notify completion
+    - name: workflow completion
       run: |
-        echo "action completed"
+        echo "generate xml sitemap workflow completed"
