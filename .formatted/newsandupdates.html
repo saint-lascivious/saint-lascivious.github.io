@@ -113,6 +113,8 @@
 
     <link rel="prefetch" href="archive.html" as="document">
     <link rel="prerender" href="archive.html">
+    <link rel="prefetch" href="devdiary.html" as="document">
+    <link rel="prerender" href="devdiary.html">
 
     <link rel="prefetch" href="index.html" as="document">
     <link rel="prerender" href="index.html">
@@ -159,7 +161,8 @@
         <nav class="mdl-navigation">
           <a class="embiggen mdl-navigation__link" href="index.html">Home</a>
           <a class="embiggen mdl-navigation__link" href="#newsandupdates"><b>News and Updates</b></a>
-          <a class="embiggen mdl-navigation__link" href="archive.html"><b>&nbsp;<icon class="fa-solid fa-caret-right"></icon>&nbsp;Archived Posts</b></a>
+          <a class="embiggen mdl-navigation__link" href="devdiary.html">&nbsp;<icon class="fa-solid fa-caret-right"></icon>&nbsp;Dev Diary</a>
+          <a class="embiggen mdl-navigation__link" href="archive.html">&nbsp;<icon class="fa-solid fa-caret-right"></icon>&nbsp;Archived Posts</a>
           <a class="embiggen mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
           <a class="embiggen mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
           <a class="embiggen mdl-navigation__link" href="projects.html">Popular Projects</a>
@@ -174,7 +177,7 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <div class="sainternet-crumbs">
-              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="#newsandupdates">News and Updates</a><br><a class="embiggen" href="#devdiarygottagofast"><b>De<s>ar</s>v Diary: Gotta Go Fast!</b></a>, <a class="embiggen" href="#somepunaboutblocksorblocking">Some Pun About Blocks or Blocking</a>, <a class="embiggen" href="#thepolishinvasionof2023">The Polish Invasion of 2023</a>, <a class="embiggen" href="#certaindoom">CERTain Doom</a>, <a class="embiggen" href="#enablejavascript">Enable JavaScript</a>, <a class="embiggen" href="#devdiarygoingoffline">De<s>ar</s>v Diary: Going Offline</a>, <a class="embiggen" href="#unepokedexsilvousplait">Une Pokédex, S'il Vous Plaît</a>, <a class="embiggen" href="#analyticsdisclosure">Analytics Disclosure</a>, <a class="embiggen" href="#pwa">PWA!</a>, <a class="embiggen" href="archive.html">Archived Posts</a>
+              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="#newsandupdates">News and Updates</a><br><a class="embiggen" href="#somepunaboutblocksorblocking"><b>Some Pun About Blocks or Blocking</b></a>, <a class="embiggen" href="#thepolishinvasionof2023">The Polish Invasion of 2023</a>, <a class="embiggen" href="#certaindoom">CERTain Doom</a>, <a class="embiggen" href="#enablejavascript">Enable JavaScript</a>, <a class="embiggen" href="#unepokedexsilvousplait">Une Pokédex, S'il Vous Plaît</a>, <a class="embiggen" href="#analyticsdisclosure">Analytics Disclosure</a>, <a class="embiggen" href="#pwa">PWA!</a>, <a class="embiggen" href="archive.html">Archived Posts</a>
             </div>
           </div>
         </div>
@@ -185,89 +188,6 @@
             <p>
               This page will serve to detail news and updates relevant to Sainternet such as new features and developments, planned maintenance, etc.
             </p>
-           </div>
-        </div>
-        <div class="sainternet-container mdl-grid" id="devdiarygottagofast">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
-            <h3><span class="embiggen">De<s>ar</s>v Diary: Gotta Go Fast!</span></h3>
-            <p class="embiggen" id="datetime">
-              first posted on Tuesday, 9 May 2023 07:00+12:00 (NZST)<br>updated on Tuesday, 9 May 2023 21:45+12:00 (NZST)
-            </p>
-            <p class="embiggen sainternet-subheader-centered" id="speedtests">
-              How sainternet.xyz Managed 100%<a href="#disclaimerone"><sup><sub>1</sub></sup></a> on Major Website Performance Tests
-            </p>
-            <p class="mdl-tooltip mdl-tooltip--bottom" for="speedtests">
-              GTmetrix, PageSpeed Insights, Website Speed Test etc.
-            </p>
-            <p>
-              I know the pain of waiting for a website to load.
-            </p>
-            <p>
-              There's no beating about the bush. It sucks. Not only is it frustrating, it can be a major factor in whether or not users stick around and browse a site.
-            </p>
-            <p>
-              That's why I'm always looking for ways to optimise website performance and deliver a faster, smoother experience with clean and striking visuals for everyone who visits my site.
-            </p>
-            <p class="embiggen sainternet-subheader-centered">
-              Sometimes, You Actually Want to Finish Fast
-            </p>
-            <p>
-              The <a href="index.html">Home page</a> reliably provides a sub-second SI (Speed Index) around ~06.s, with an FCP (First Contentful Paint) of ~0.4s and LCP (Largest Contentful Paint) of ~0.7s on a fresh load with no existing cache. Subsequent page loads (with cache) are even faster.
-            </p>
-            <p>
-              I've tried many different tactics to achieve faster load times, but I've found that a combination of strategies works best. For example, self-hosting everything possible, including Google fonts, is a great way to reduce the number of external requests and speed up page load times. I've also embraced modern image and font formats, which can significantly reduce file sizes and improve load times.
-            </p>
-            <p>
-              But it's not just about hosting and file formats. I've also implemented a JavaScript-powered FOUT (Flash Of Unstyled Text) font loading policy (the <i>perception</i> of fast loading is just as important, text should display as quickly as possible) and deferred JavaScript to ensure that my pages load quickly and efficiently.
-            </p>
-            <p class="embiggen sainternet-subheader-centered">
-              Flash<a href="#disclaimertwo"><sup><sub>2</sub></sup></a>, Ah-ah, Saviour of the Universe
-            </p>
-            <p>
-              The basic premise with FOUT, is to display the first available font that matches in your list, while promising to load the fonts you actually need, and then swapping fonts as soon as you know they are available. This allows the page to be rendered prior to fonts having loaded completely and provides a significant reduction in perceived load time.
-            </p>
-            <p class="embiggen sainternet-subheader-centered">
-              It’s the Little Things That Count
-            </p>
-            <p>
-              Aggressive CSS, JavaScript and HTML minification has also been a key strategy, as has preloading assets and prerendering pages to speed up subsequent page loads. From anywhere you navigate to on <code>sainternet.xyz</code>, anywhere you could navigate to from there is already preloaded and prerendered, making for a PWA (Progressive Web Application) which feels more like a native application.
-            </p>
-            <p class="embiggen sainternet-subheader-centered">
-              Size Does Matter
-            </p>
-            <p>
-              I have paid close attention to image sizing and scaling, in particular to avoid CLS (Cumulative Layout Shift), which can make for a frustrating user experience with page assets moving around the page as things load. You try and click on one thing, but then something else loads and it's moved. Yeah, nah. No one wants that.
-            </p>
-            <p>
-              By taking all of these steps and more, I've achieved a significantly faster, smoother and more navigable web experience.
-            </p>
-            <p>
-              Overall, optimising <code>sainternet.xyz</code> is an ongoing process, but by staying on top of the latest strategies and testing out new approaches, I'm confident that I can continue to deliver a better, faster web experience for all visitors.
-            </p>
-            <p class="embiggen sainternet-subheader-centered">
-              Disclaimers
-            </p>
-            <ol>
-            <li id="disclaimerone">
-              On desktop browsers. Lighthouse<a href="#disclaimerthree"><sup><sub>3</sub></sup></a>'s emulated mobile hardware and connectivity is <s>bulls…</s> a rock, placed vaguely near an FM radio tower.
-            </li>
-            <li class="mdl-tooltip mdl-tooltip--bottom" for="disclaimerone">
-              It's not even in stereo.
-            </li>
-            <li id="disclaimertwo">
-              Not that one.
-            </li>
-            <li class="mdl-tooltip mdl-tooltip--bottom" for="disclaimertwo">
-              Or that other one.
-            </li>
-            <li id="disclaimerthree">
-              Everything uses Lighthouse.
-            </li>
-            <li class="mdl-tooltip mdl-tooltip--bottom" for="disclaimerthree">
-              Google decides how the Internet works.
-            </li>
-            </ol>
            </div>
         </div>
         <div class="sainternet-container mdl-grid" id="somepunaboutblocksorblocking">
@@ -474,45 +394,6 @@
             </p>
             <p>
               Consider allowing JavaScript to run on <code>sainternet.xyz</code> for the best experience.
-            </p>
-           </div>
-        </div>
-        <div class="sainternet-container mdl-grid" id="devdiarygoingoffline">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
-            <h3><span class="embiggen">De<s>ar</s>v Diary: Going Offline</span></h3>
-            <p class="embiggen" id="datetime">
-              first posted on Friday, 14 April 2023 22:30+12:00 (NZST)<br>updated on Saturday, 15 April 2023 21:30+12:00 (NZST)
-            </p>
-            <p class="embiggen sainternet-subheader-centered">
-              Going Offline
-            </p>
-            <p>
-              <code>sainternet.xyz</code> is going offline.
-            </p>
-            <p>
-              Sorry. Rather, <code>sainternet.xyz</code> <i>can</i> go offline, and it isn't a problem. Let me explain.
-            </p>
-            <p>
-              Historically, handling offline in a website or progressive web application was hard, with each service deploying their own workarounds or even just choosing not to handle the case at all.
-            </p>
-            <p class="embiggen sainternet-subheader-centered">
-              At Your Service
-            </p>
-            <p>
-              Enter the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API">Service Worker API</a>. Service workers give developers the tools they need to create effective offline experiences.
-            </p>
-            <p>
-              Using a service worker allows for the interception of requests within the service worker's scope, which can then be acted on accordingly. For instance <code>sainternet.xyz</code>'s <a href="https://github.com/saint-lascivious/saint-lascivious.github.io/blob/master/.formatted/serviceworker.min.js">service worker</a> uses both network first and cache first fetch policies depending upon the asset being requested. Objects that are likely to be static (fonts, images, etc.) or change infrequently are fetched by checking the cache first, falling back to network (if available) if the object is not found in the current cache. Dynamic or otherwise frequently updated objects are fetched from network first (if available), falling back to cache if the network request fails. Successful fetches from either case are added to the cache for later use.
-            </p>
-            <p class="embiggen sainternet-subheader-centered">
-              Putting It All Together
-            </p>
-            <p>
-              After visiting any page on this site, if you're running an even vaguely modern browser and have JavaScript enabled, some magic should have happened.
-            </p>
-            <p>
-              Your browser was tested to see if it can support service worker registration, and if supported, a service worker was installed and registered. That service worker then created and populated a cache of critical objects (all those required for <code>sainternet.xyz</code> to function, approximately 4MB), and removed any orphaned caches. At this point you should be able to disconnect from the network or enter Flight Mode, and continue to navigate the site as usual.
             </p>
            </div>
         </div>

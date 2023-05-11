@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  sainternet.xyz - archive.html
+  sainternet.xyz - devdiary.html
   Copyright 2023 saint-lascivious (Hayden Pearce). All rights reserved.
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@
     <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', pokedex, Pokedex, pokédex, Pokédex, saint, sainternet, saint-lascivious, sainternet.xyz">
     <meta name="author" content="saint-lascivious, 'Hayden Pearce'">
 
-    <meta name="theme-color" content="#607D8B">
+    <meta name="theme-color" content="#9E9E9E">
 
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -54,14 +54,16 @@
     <meta name="msapplication-config" content="resources/icons/browserconfig.xml">
     <meta name="msapplication-TileColor" content="#ef5350">
 
-    <link rel="canonical" href="https://sainternet.xyz/archive.html">
+    <link rel="canonical" href="https://sainternet.xyz/devdiary.html">
 
-    <link rel="preload" as="style" href="resources/stylesheets/material.blue_grey-red.min.css">
-    <link rel="stylesheet" href="resources/stylesheets/material.blue_grey-red.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/material.grey-red.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/material.grey-red.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/sainternet.min.css">
     <link rel="stylesheet" href="resources/stylesheets/sainternet.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/ribbons.min.css">
     <link rel="stylesheet" href="resources/stylesheets/ribbons.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/table.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/table.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/datetime.min.css">
     <link rel="stylesheet" href="resources/stylesheets/datetime.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/mono.min.css">
@@ -101,11 +103,6 @@
     <link rel="preload" as="script" href="resources/javascript/tag_manager.min.js">
     <script type="text/javascript" src="resources/javascript/tag_manager.min.js" defer></script>
 
-    <link rel="prefetch" href="projects.html" as="document">
-    <link rel="prerender" href="projects.html">
-    <link rel="prefetch" href="reportaproblem.html" as="document">
-    <link rel="prerender" href="reportaproblem.html">
-
     <link rel="prefetch" href="index.html" as="document">
     <link rel="prerender" href="index.html">
     <link rel="prefetch" href="newsandupdates.html" as="document">
@@ -119,11 +116,14 @@
 
     <link rel="manifest" href="sainternet.webmanifest">
 
+    <link rel="dns-prefetch" href="en.wikipedia.org">
     <link rel="dns-prefetch" href="developer.mozilla.org">
     <link rel="dns-prefetch" href="bulbapedia.bulbgarden.net">
     <link rel="dns-prefetch" href="pi-hole.net">
     <link rel="dns-prefetch" href="discord.gg">
+    <link rel="dns-prefetch" href="docs.pi-hole.net">
     <link rel="dns-prefetch" href="github.com">
+    <link rel="dns-prefetch" href="munin-monitoring.org">
     <link rel="dns-prefetch" href="www.reddit.com">
   </head>
   <body>
@@ -137,7 +137,7 @@
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation mdl-layout--large-screen-only">
             <a class="embiggen mdl-navigation__link" href="index.html">Home</a>
-            <a class="embiggen mdl-navigation__link" href="newsandupdates.html"><b>News and Updates</b></a>
+            <a class="embiggen mdl-navigation__link" href="newsandupdates.html">News and Updates</a>
             <a class="embiggen mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
             <a class="embiggen mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
             <a class="embiggen mdl-navigation__link" href="projects.html">Popular Projects</a>
@@ -150,8 +150,8 @@
         <nav class="mdl-navigation">
           <a class="embiggen mdl-navigation__link" href="index.html">Home</a>
           <a class="embiggen mdl-navigation__link" href="newsandupdates.html">News and Updates</a>
-          <a class="embiggen mdl-navigation__link" href="devdiary.html">&nbsp;<icon class="fa-solid fa-caret-right"></icon>&nbsp;Dev Diary</a>
-          <a class="embiggen mdl-navigation__link" href="#archivedposts">&nbsp;<icon class="fa-solid fa-caret-right"></icon>&nbsp;<b>Archived Posts</b></a>
+          <a class="embiggen mdl-navigation__link" href="#devdiary">&nbsp;<icon class="fa-solid fa-caret-right"></icon>&nbsp;<b>Dev Diary</b></a>
+          <a class="embiggen mdl-navigation__link" href="archive.html">&nbsp;<icon class="fa-solid fa-caret-right"></icon>&nbsp;Archived Posts</a>
           <a class="embiggen mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
           <a class="embiggen mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
           <a class="embiggen mdl-navigation__link" href="projects.html">Popular Projects</a>
@@ -160,127 +160,197 @@
           <a class="embiggen mdl-navigation__link" href="debug.html">Debug</a>
         </nav>
       </div>
-      <div class="ribbon blue_grey-ribbon"></div>
+      <div class="ribbon grey-ribbon"></div>
       <main class="sainternet-main mdl-layout__content">
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <div class="sainternet-crumbs">
-              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="newsandupdates.html">News and Updates</a> &gt; <a class="embiggen" href="#archivedposts">Archived Posts</a><br><a class="embiggen" href="#2022metrics">2022 Metrics</a>, <a class="embiggen" href="#munin-pihole-plugins-v08-02-00">Munin Pi-hole Plugins: 08.02.00</a>, <a class="embiggen" href="#reportingproblems">Reporting Problems</a>, <a class="embiggen" href="#aquickstop">A QUICk Stop</a>, <a class="embiggen" href="#materialdesigndark">Material Design <s>Lite</s> Dark</a>, <a class="embiggen" href="#iosmacosmadeeasy">iOS/macOS Made Easy</a>
+              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="newsandupdates.html">News and Updates</a> &gt; <a class="embiggen" href="devdiary.html">Dev Diary</a><br><a class="embiggen" href="#devdiaryidliketothinkimprettyprogressive"><b>Dev Diary: I’d Like to Think I’m Pretty Progressive</b></a>, <a class="embiggen" href="#devdiarygottagofast">Dev Diary: Gotta Go Fast!</a>, <a class="embiggen" href="#devdiarygoingoffline">Dev Diary: Going Offline</a>
             </div>
           </div>
         </div>
-        <div class="sainternet-container mdl-grid" id="archivedposts">
+        <div class="sainternet-container mdl-grid" id="devdiary">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
-            <h3><span class="embiggen">Archived Posts</span></h3>
-           </div>
-        </div>
-        <div class="sainternet-container mdl-grid" id="2022metrics">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
-            <h3><span class="embiggen">2022 Metrics</span></h3>
-            <p class="embiggen" id="datetime">
-              Friday, 1 January 2023 00:00+13:00 (NZDT)
+            <h3><span class="embiggen">Dev Diary</span></h3>
+            <p class="embiggen sainternet-subheader-centered">
+              Inane Ramblings
             </p>
             <p>
-              Some reflections on 2022.
-            </p>
-            <p>
-              In the past year <code>dns.sainternet.xyz</code> has:
-            </p>
-            <ul>
-              <li>Answered over half a billion (500,000,000) DNS queries</li>
-              <li>For over 140,000 unique domains</li>
-              <li>Using an encrypted standard 42% of the time</li>
-              <li>From over 5,000 unique client IPs</li>
-              <li>Most of whom (~85%) preferred IPv4</li>
-              <li>Where ~38% resulted in a block (<code>NXDOMAIN</code>)</li>
-              <li>While it maintained a ~95% uptime status</li>
-            </ul>
-            <p>
-              As time marches forward into the new year, and us with it, please be aware that DNS resolution via QUIC legacy ports (<code>UDP 784</code> and <code>8853</code>) is to be suspended as of today Friday, 1 January 2023 NZDT.
+              Often about technical topics.
             </p>
            </div>
         </div>
-        <div class="sainternet-container mdl-grid" id="munin-pihole-plugins-v08-02-00">
+        <div class="sainternet-container mdl-grid" id="devdiaryidliketothinkimprettyprogressive">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
-            <h3><span class="embiggen">Munin Pi-hole Plugins: 08.02.00</span></h3>
+            <h3><span class="embiggen">Dev Diary: I’d Like to Think I’m Pretty Progressive</span></h3>
             <p class="embiggen" id="datetime">
-              Monday, 26 December 2022 22:30+13:00 (NZDT)
+              first posted on Thursday, 11 May 2023 21:10+12:00 (NZST)
             </p>
-            <p>
-              The current versions of <a href="projects.html#munin-pihole-plugins">munin-pihole-plugins</a>, 08.02.00 and 09.03.00 for <code>master</code> and <code>development</code> branches respectively, add support for the <a href="https://pi-hole.net/blog/2022/11/17/upcoming-changes-authentication-for-more-api-endpoints-required/">recently announced</a> API changes which landed in <a href="https://pi-hole.net/blog/2022/12/21/pi-hole-ftl-v5-20-and-web-v5-18-released/">Pi-hole Web v5.18</a> where authentication is now required for the <code>summaryRaw</code> endpoint.
-            </p>
-            <p>
-              If you have updated Pi-hole and some of your graphs have stopped working, simply update munin-pihole-plugins. Or update Pi-hole if your graphs have stopped working after you updated munin-pihole-plugins.
-            </p>
-            <p>
-              See the <a href="https://github.com/saint-lascivious/munin-pihole-plugins/wiki">project wiki</a> for more information on munin pihole plugins.
-            </p>
-            <p>
-              Notes:
+            <p class="embiggen sainternet-subheader-centered">
+              How 2 PWA/Web APK
             </p>
             <ol>
-              <li>If you are using the <code>telnet</code> API, which is the plugin default, these changes do not concern you.</li>
+              <li>
+                Have a website.
+              </li>
+              <li>
+                Have HTTPS.
+              </li>
+              <li>
+                Have a <a href="https://github.com/saint-lascivious/saint-lascivious.github.io/blob/master/sainternet.webmanifest">manifest</a>.
+              </li>
+              <p>
+                Your site can now be saved to desktop.
+              </p>
+              <li>
+                Have a <a href="https://github.com/saint-lascivious/saint-lascivious.github.io/blob/master/.formatted/serviceworker.min.js">service worker</a>.
+              </li>
+              <p>
+                Your site is now a progressive web application, it can be "installed".
+              </p>
+              <li>
+                Have <a href="https://github.com/saint-lascivious/saint-lascivious.github.io/tree/master/resources/icons/maskable">maskable icons</a> in <a href="https://github.com/saint-lascivious/saint-lascivious.github.io/blob/master/sainternet.webmanifest#L16">manifest</a>.
+              </li>
+              <li>
+                Have <a href="https://github.com/saint-lascivious/saint-lascivious.github.io/tree/master/resources/screenshots">screenshots</a> in <a href="https://github.com/saint-lascivious/saint-lascivious.github.io/blob/master/sainternet.webmanifest#L242">manifest</a>.
+              </li>
+              <p>
+                Your site is now a PWA web APK, it can be installed as a native application.
+              </p>
+              <li>
+                Collect underpants.
+              </li>
+              <li>
+                ?
+              </li>
+              <li>
+                Profit.
+              </li>
             </ol>
            </div>
         </div>
-        <div class="sainternet-container mdl-grid" id="reportingproblems">
+        <div class="sainternet-container mdl-grid" id="devdiarygottagofast">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
-            <h3><span class="embiggen">Reporting Problems</span></h3>
+            <h3><span class="embiggen">Dev Diary: Gotta Go Fast!</span></h3>
             <p class="embiggen" id="datetime">
-              Friday, 23 December 2022 01:00+13:00 (NZDT)
+              first posted on Tuesday, 9 May 2023 07:00+12:00 (NZST)<br>updated on Tuesday, 9 May 2023 21:45+12:00 (NZST)
+            </p>
+            <p class="embiggen sainternet-subheader-centered" id="speedtests">
+              How sainternet.xyz Managed 100%<a href="#disclaimerone"><sup><sub>1</sub></sup></a> on Major Website Performance Tests
+            </p>
+            <p class="mdl-tooltip mdl-tooltip--bottom" for="speedtests">
+              GTmetrix, PageSpeed Insights, Website Speed Test etc.
             </p>
             <p>
-              This is just a reminder, that issues with this site (<code>sainternet.xyz</code>, <code>www.sainternet.xyz</code>), as well as issues pertaining to DNS resolution (<code>dns.sainternet.xyz</code>) can be reported via the mechanisms detailed <a href="reportaproblem.html">here</a>.
+              I know the pain of waiting for a website to load.
             </p>
             <p>
-              Your input is instrumental in the improvement of these services.
+              There's no beating about the bush. It sucks. Not only is it frustrating, it can be a major factor in whether or not users stick around and browse a site.
             </p>
+            <p>
+              That's why I'm always looking for ways to optimise website performance and deliver a faster, smoother experience with clean and striking visuals for everyone who visits my site.
+            </p>
+            <p class="embiggen sainternet-subheader-centered">
+              Sometimes, You Actually Want to Finish Fast
+            </p>
+            <p>
+              The <a href="index.html">Home page</a> reliably provides a sub-second SI (Speed Index) around ~06.s, with an FCP (First Contentful Paint) of ~0.4s and LCP (Largest Contentful Paint) of ~0.7s on a fresh load with no existing cache. Subsequent page loads (with cache) are even faster.
+            </p>
+            <p>
+              I've tried many different tactics to achieve faster load times, but I've found that a combination of strategies works best. For example, self-hosting everything possible, including Google fonts, is a great way to reduce the number of external requests and speed up page load times. I've also embraced modern image and font formats, which can significantly reduce file sizes and improve load times.
+            </p>
+            <p>
+              But it's not just about hosting and file formats. I've also implemented a JavaScript-powered FOUT (Flash Of Unstyled Text) font loading policy (the <i>perception</i> of fast loading is just as important, text should display as quickly as possible) and deferred JavaScript to ensure that my pages load quickly and efficiently.
+            </p>
+            <p class="embiggen sainternet-subheader-centered">
+              Flash<a href="#disclaimertwo"><sup><sub>2</sub></sup></a>, Ah-ah, Saviour of the Universe
+            </p>
+            <p>
+              The basic premise with FOUT, is to display the first available font that matches in your list, while promising to load the fonts you actually need, and then swapping fonts as soon as you know they are available. This allows the page to be rendered prior to fonts having loaded completely and provides a significant reduction in perceived load time.
+            </p>
+            <p class="embiggen sainternet-subheader-centered">
+              It’s the Little Things That Count
+            </p>
+            <p>
+              Aggressive CSS, JavaScript and HTML minification has also been a key strategy, as has preloading assets and prerendering pages to speed up subsequent page loads. From anywhere you navigate to on <code>sainternet.xyz</code>, anywhere you could navigate to from there is already preloaded and prerendered, making for a PWA (Progressive Web Application) which feels more like a native application.
+            </p>
+            <p class="embiggen sainternet-subheader-centered">
+              Size Does Matter
+            </p>
+            <p>
+              I have paid close attention to image sizing and scaling, in particular to avoid CLS (Cumulative Layout Shift), which can make for a frustrating user experience with page assets moving around the page as things load. You try and click on one thing, but then something else loads and it's moved. Yeah, nah. No one wants that.
+            </p>
+            <p>
+              By taking all of these steps and more, I've achieved a significantly faster, smoother and more navigable web experience.
+            </p>
+            <p>
+              Overall, optimising <code>sainternet.xyz</code> is an ongoing process, but by staying on top of the latest strategies and testing out new approaches, I'm confident that I can continue to deliver a better, faster web experience for all visitors.
+            </p>
+            <p class="embiggen sainternet-subheader-centered">
+              Disclaimers
+            </p>
+            <ol>
+              <li id="disclaimerone">
+                On desktop browsers. Lighthouse<a href="#disclaimerthree"><sup><sub>3</sub></sup></a>'s emulated mobile hardware and connectivity is <s>bulls…</s> a rock, placed vaguely near an FM radio tower.
+              </li>
+              <li class="mdl-tooltip mdl-tooltip--bottom" for="disclaimerone">
+                It's not even in stereo.
+              </li>
+              <li id="disclaimertwo">
+                Not that one.
+              </li>
+              <li class="mdl-tooltip mdl-tooltip--bottom" for="disclaimertwo">
+                Or that other one.
+              </li>
+              <li id="disclaimerthree">
+                Everything uses Lighthouse.
+              </li>
+              <li class="mdl-tooltip mdl-tooltip--bottom" for="disclaimerthree">
+                Google decides how the Internet works.
+              </li>
+            </ol>
            </div>
         </div>
-        <div class="sainternet-container mdl-grid" id="aquickstop">
+        <div class="sainternet-container mdl-grid" id="devdiarygoingoffline">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
-            <h3><span class="embiggen">A QUICk Stop</span></h3>
+            <h3><span class="embiggen">Dev Diary: Going Offline</span></h3>
             <p class="embiggen" id="datetime">
-              Wednesday, 21 December 2022 06:00+13:00 (NZDT)
+              first posted on Friday, 14 April 2023 22:30+12:00 (NZST)<br>updated on Saturday, 15 April 2023 21:30+12:00 (NZST)
+            </p>
+            <p class="embiggen sainternet-subheader-centered">
+              Going Offline
             </p>
             <p>
-              DNS resolution via QUIC legacy ports (<code>UDP 784</code> and <code>8853</code>) is to be suspended as of Friday, 1 January 2023 NZDT.
-            </p>
-           </div>
-        </div>
-        <div class="sainternet-container mdl-grid" id="materialdesigndark">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
-            <h3><span class="embiggen">Material Design <s>Lite</s> Dark</span></h3>
-            <p class="embiggen" id="datetime">
-              Thursday, 8 December 2022 13:00+13:00 (NZDT)
+              <code>sainternet.xyz</code> is going offline.
             </p>
             <p>
-              There have been several changes to the design and layout of these pages over the past short while, with one of the more drastic and noticeable changes being a full dark theme that follows the system theme and/or browser preference.
+              Sorry. Rather, <code>sainternet.xyz</code> <i>can</i> go offline, and it isn't a problem. Let me explain.
             </p>
             <p>
-              I plan on making all this available as a standalone template at some point in the near future, and when I do I'll more than likely make some form of noise about it here.
+              Historically, handling offline in a website or progressive web application was hard, with each service deploying their own workarounds or even just choosing not to handle the case at all.
             </p>
-           </div>
-        </div>
-        <div class="sainternet-container mdl-grid" id="iosmacosmadeeasy">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
-            <h3><span class="embiggen">iOS/macOS Made Easy</span></h3>
-            <p class="embiggen" id="datetime">
-              Friday, 18 November 2022 22:30+13:00 (NZDT)
+            <p class="embiggen sainternet-subheader-centered">
+              At Your Service
             </p>
             <p>
-              Previously relegated to the realm of "if you know, you know", I am very much pleased to announce that that is no longer the case and it is much easier for anyone with an Apple iPhone or Mac to connect to Sainternet DNS over HTTPS or DNS over TLS (iOS 14/macOS Big Sur or higher required).
+              Enter the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API">Service Worker API</a>. Service workers give developers the tools they need to create effective offline experiences.
             </p>
             <p>
-              You can choose your preferred DNS Profile (DoH, DoT, DoH/DoT) and get started <a href="connecttosainternet.html#appleiosmacos">here</a>.
+              Using a service worker allows for the interception of requests within the service worker's scope, which can then be acted on accordingly. For instance <code>sainternet.xyz</code>'s <a href="https://github.com/saint-lascivious/saint-lascivious.github.io/blob/master/.formatted/serviceworker.min.js">service worker</a> uses both network first and cache first fetch policies depending upon the asset being requested. Objects that are likely to be static (fonts, images, etc.) or change infrequently are fetched by checking the cache first, falling back to network (if available) if the object is not found in the current cache. Dynamic or otherwise frequently updated objects are fetched from network first (if available), falling back to cache if the network request fails. Successful fetches from either case are added to the cache for later use.
+            </p>
+            <p class="embiggen sainternet-subheader-centered">
+              Putting It All Together
+            </p>
+            <p>
+              After visiting any page on this site, if you're running an even vaguely modern browser and have JavaScript enabled, some magic should have happened.
+            </p>
+            <p>
+              Your browser was tested to see if it can support service worker registration, and if supported, a service worker was installed and registered. That service worker then created and populated a cache of critical objects (all those required for <code>sainternet.xyz</code> to function, approximately 4MB), and removed any orphaned caches. At this point you should be able to disconnect from the network or enter Flight Mode, and continue to navigate the site as usual.
             </p>
            </div>
         </div>
