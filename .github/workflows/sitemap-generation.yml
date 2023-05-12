@@ -1,4 +1,4 @@
-name: generate xml sitemap
+name: generate-xml-sitemap
 
 on:
   push:
