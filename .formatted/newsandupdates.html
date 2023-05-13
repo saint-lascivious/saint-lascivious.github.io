@@ -68,6 +68,8 @@
     <link rel="stylesheet" href="resources/stylesheets/sainternet.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/ribbons.min.css">
     <link rel="stylesheet" href="resources/stylesheets/ribbons.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/shadow-boxing.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/shadow-boxing.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/table.min.css">
     <link rel="stylesheet" href="resources/stylesheets/table.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/img.min.css">
@@ -212,40 +214,48 @@
             <p class="embiggen sainternet-subheader-centered">
               Day
             </p>
-            <picture>
-              <source srcset="resources/images/pihole_percent-day.webp" type="image/webp">
-              <source srcset="resources/images/pihole_percent-day.png" type="image/png">
-              <source srcset="resources/images/pihole_percent-day.jpg" type="image/jpeg">
-              <img src="resources/images/pihole_percent-day.jpg" width="860" height="480" alt="Blocked queries as a percentile, by day.">
-            </picture>
+            <div class="enlift shadow-boxing">
+              <picture>
+                <source srcset="resources/images/pihole_percent-day.webp" type="image/webp">
+                <source srcset="resources/images/pihole_percent-day.png" type="image/png">
+                <source srcset="resources/images/pihole_percent-day.jpg" type="image/jpeg">
+                <img src="resources/images/pihole_percent-day.jpg" width="860" height="480" alt="Blocked queries as a percentile, by day.">
+              </picture>
+            </div>
             <p class="embiggen sainternet-subheader-centered">
               Week
             </p>
-            <picture>
-              <source srcset="resources/images/pihole_percent-week.webp" type="image/webp">
-              <source srcset="resources/images/pihole_percent-week.png" type="image/png">
-              <source srcset="resources/images/pihole_percent-week.jpg" type="image/jpeg">
-              <img src="resources/images/pihole_percent-day.jpg" width="860" height="480" alt="Blocked queries as a percentile, by week.">
-            </picture>
+            <div class="enlift shadow-boxing">
+              <picture>
+                <source srcset="resources/images/pihole_percent-week.webp" type="image/webp">
+                <source srcset="resources/images/pihole_percent-week.png" type="image/png">
+                <source srcset="resources/images/pihole_percent-week.jpg" type="image/jpeg">
+                <img src="resources/images/pihole_percent-day.jpg" width="860" height="480" alt="Blocked queries as a percentile, by week.">
+              </picture>
+            </div>
             <p class="embiggen sainternet-subheader-centered">
               Month
             </p>
-            <picture>
-              <source srcset="resources/images/pihole_percent-month.webp" type="image/webp">
-              <source srcset="resources/images/pihole_percent-month.png" type="image/png">
-              <source srcset="resources/images/pihole_percent-month.jpg" type="image/jpeg">
-              <img src="resources/images/pihole_percent-month.jpg" width="860" height="480" alt="Blocked queries as a percentile, by month.">
-            </picture>
+            <div class="enlift shadow-boxing">
+              <picture>
+                <source srcset="resources/images/pihole_percent-month.webp" type="image/webp">
+                <source srcset="resources/images/pihole_percent-month.png" type="image/png">
+                <source srcset="resources/images/pihole_percent-month.jpg" type="image/jpeg">
+                <img src="resources/images/pihole_percent-month.jpg" width="860" height="480" alt="Blocked queries as a percentile, by month.">
+              </picture>
+            </div>
             <p class="embiggen sainternet-subheader-centered">
               Year
             </p>
-            <picture>
-              <source srcset="resources/images/pihole_percent-year.webp" type="image/webp">
-              <source srcset="resources/images/pihole_percent-year.png" type="image/png">
-              <source srcset="resources/images/pihole_percent-year.jpg" type="image/jpeg">
-              <img src="resources/images/pihole_percent-year.jpg" width="860" height="480" alt="Blocked queries as a percentile, by year.">
-            </picture>
-           </div>
+            <div class="enlift shadow-boxing">
+              <picture>
+                <source srcset="resources/images/pihole_percent-year.webp" type="image/webp">
+                <source srcset="resources/images/pihole_percent-year.png" type="image/png">
+                <source srcset="resources/images/pihole_percent-year.jpg" type="image/jpeg">
+                <img src="resources/images/pihole_percent-year.jpg" width="860" height="480" alt="Blocked queries as a percentile, by year.">
+              </picture>
+            </div>
+          </div>
         </div>
         <div class="sainternet-container mdl-grid" id="thepolishinvasionof2023">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
@@ -285,56 +295,58 @@
               <li>Were at or above 2% of total hits.</li>
               <li>I thought were interesting or otherwise significant.</li>
             </ol>
-            <table>
-              <tr>
-                <th>Country</th>
-                <th>Percent of Total Hits</th>
-                <th>Preferred Destination</th>
-                <th>Average Duration</th>
-              </tr>
-              <tr>
-                <td>Poland</td>
-                <td><code>22%</code></td>
-                <td><a href="connecttosainternet.html">Connect to Sainternet</a></td>
-                <td><code>10 min</code></td>
-              </tr>
-              <tr>
-                <td>United States</td>
-                <td><code>21%</code></td>
-                <td><a href="index.html">Home</a></td>
-                <td><code>5 min</code></td>
-              </tr>
-              <tr>
-                <td>New Zealand</td>
-                <td><code>18%</code></td>
-                <td><a href="index.html">Home</a></td>
-                <td><code>5 min</code></td>
-              </tr>
-              <tr>
-                <td>United Kingdom</td>
-                <td><code>9%</code></td>
-                <td><a href="index.html">Home</a></td>
-                <td><code>5 min</code></td>
-              </tr>
-              <tr>
-                <td>China</td>
-                <td><code>6%</code></td>
-                <td><a href="connecttosainternet.html">Connect to Sainternet</a></td>
-                <td><code>5 min</code></td>
-              </tr>
-              <tr>
-                <td>Japan</td>
-                <td><code>4%</code></td>
-                <td><a href="pokedexoverdns.html">Pokédex over DNS</a></td>
-                <td><code>10 min</code></td>
-              </tr>
-              <tr>
-                <td>Russia</td>
-                <td><code>2%</code></td>
-                <td><a href="connecttosainternet.html">Connect to Sainternet</a></td>
-                <td><code>5 min</code></td>
-              </tr>
-            </table>
+            <div class="enlift rounded-corners shadow-boxing">
+              <table>
+                <tr>
+                  <th>Country</th>
+                  <th>Percent of Total Hits</th>
+                  <th>Preferred Destination</th>
+                  <th>Average Duration</th>
+                </tr>
+                <tr>
+                  <td>Poland</td>
+                  <td><code>22%</code></td>
+                  <td><a href="connecttosainternet.html">Connect to Sainternet</a></td>
+                  <td><code>10 min</code></td>
+                </tr>
+                <tr>
+                  <td>United States</td>
+                  <td><code>21%</code></td>
+                  <td><a href="index.html">Home</a></td>
+                  <td><code>5 min</code></td>
+                </tr>
+                <tr>
+                  <td>New Zealand</td>
+                  <td><code>18%</code></td>
+                  <td><a href="index.html">Home</a></td>
+                  <td><code>5 min</code></td>
+                </tr>
+                <tr>
+                  <td>United Kingdom</td>
+                  <td><code>9%</code></td>
+                  <td><a href="index.html">Home</a></td>
+                  <td><code>5 min</code></td>
+                </tr>
+                <tr>
+                  <td>China</td>
+                  <td><code>6%</code></td>
+                  <td><a href="connecttosainternet.html">Connect to Sainternet</a></td>
+                  <td><code>5 min</code></td>
+                </tr>
+                <tr>
+                  <td>Japan</td>
+                  <td><code>4%</code></td>
+                  <td><a href="pokedexoverdns.html">Pokédex over DNS</a></td>
+                  <td><code>10 min</code></td>
+                </tr>
+                <tr>
+                  <td>Russia</td>
+                  <td><code>2%</code></td>
+                  <td><a href="connecttosainternet.html">Connect to Sainternet</a></td>
+                  <td><code>5 min</code></td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
         <div class="sainternet-container mdl-grid" id="certaindoom">
@@ -359,12 +371,14 @@
             <p class="embiggen sainternet-subheader-centered">
               What Does This Mean for Me?
             </p>
-            <picture>
-              <source srcset="resources/images/farquaad.webp" type="image/webp">
-              <source srcset="resources/images/farquaad.png" type="image/png">
-              <source srcset="resources/images/farquaad.jpg" type="image/jpeg">
-              <img src="resources/images/farquaad.jpg" width="756" height="480" alt="Some of you may die, but that is a sacrifice I am willing to make.">
-            </picture>
+            <div class="enlift shadow-boxing">
+              <picture>
+                <source srcset="resources/images/farquaad.webp" type="image/webp">
+                <source srcset="resources/images/farquaad.png" type="image/png">
+                <source srcset="resources/images/farquaad.jpg" type="image/jpeg">
+                <img src="resources/images/farquaad.jpg" width="756" height="480" alt="Some of you may die, but that is a sacrifice I am willing to make.">
+              </picture>
+            </div>
             <p>
               It's important to note that while transitioning to the newer ECDSA certificate type may provide enhanced security and performance benefits, it may negatively affect some clients, particularly those using legacy Android devices (Android 7.1 and lower).
             </p>
@@ -511,7 +525,7 @@
               It's progressive, it's a webpage, it's an app. It's a Progressive Web App!
             </p>
             <p>
-              Continuing the trend in honing my skills and adopting modern concepts in the Sainternet ecosystem, and given that this site gradually met all the conditions required in order to do so, you can now install this website as an Android, Chrome or Chromium application<sup><a href="#pwasupportdisclaimer">1</a></sup>.
+              Continuing the trend in honing my skills and adopting modern concepts in the Sainternet ecosystem, and given that this site gradually met all the conditions required in order to do so, you can now install this website as an Android, Chrome or Chromium application<a href="#pwasupportdisclaimer"><sup><sub>1</sub></sup></a>.
             </p>
             <p>
               Why would you want to? Who knows. The point is you can. Behind the scenes the site is also more secure, and now slicker than ever.

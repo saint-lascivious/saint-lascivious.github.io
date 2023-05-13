@@ -1,0 +1,41 @@
+/**
+ * sainternet.xyz - resources/stylesheets/shadow-boxing.css
+ * Copyright 2022 saint-lascivious (Hayden Pearce). All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License
+ */
+
+.rounded-corners {
+  border-radius: 8px;
+}
+
+.shadow-boxing {
+  box-shadow:
+    0 2px 2px 0 rgba(0,0,0,.14),
+    0 3px 1px -2px rgba(0,0,0,.2),
+    0 1px 5px 0 rgba(0,0,0,.12);
+  width: 100%;
+}
+
+.shadow-boxing img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (orientation: landscape) {
+  .shadow-boxing {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+  }
+}

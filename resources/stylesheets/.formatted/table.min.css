@@ -22,6 +22,7 @@ table {
   margin-bottom: 40px;
   margin-top: 40px;
   text-align: center;
+  width: 100%;
 }
 
 table tr th,
@@ -45,20 +46,6 @@ table tr:last-child td:first-child {
 
 table tr:last-child td:last-child {
   border-bottom-right-radius: 8px;
-}
-
-@media (orientation: landscape) {
-  table {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-  }
-}
-
-@media (orientation: portrait) {
-  table {
-    width: 100%;
-  }
 }
 
 @media (prefers-color-scheme: light) {
