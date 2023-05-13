@@ -43,6 +43,11 @@ body {
   color: #000000;
 }
 
+.motion-sickness * {
+  transition: none !important;
+  animation: none !important;
+}
+
 .embiggen:hover, .embiggen:active {
   font-weight: 900;
   transition: font-weight .3s ease-in-out;
