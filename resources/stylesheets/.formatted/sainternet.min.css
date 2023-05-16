@@ -149,6 +149,10 @@ body {
   body {
     background: #FFFFFF;
   }
+  .mdl-layout__drawer {
+    background: #FFFFFF;
+    color: #424242;
+  }
   .mdl-list__item-primary-content {
     color: #424242;
   }
