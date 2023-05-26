@@ -179,6 +179,10 @@
             <h3><span class="embiggen">National Pokédex over DNS</span></h3>
             <ul>
               <li><a href="pokedexoverdns.html#examplequeries">#Example Pokédex over DNS Queries</a></li>
+              <li><a href="pokedexoverdns.html#examplequeryusingdig">#Using dig</a></li>
+              <li><a href="pokedexoverdns.html#examplequeryusingdnslookup">#Using dnslookup</a></li>
+              <li><a href="pokedexoverdns.html#examplequeryusingnslookup">#Using nslookup</a></li>
+              <li><a href="pokedexoverdns.html#nationalpokedexunboundconfiguration">#National Pokédex Unbound Configuration</a></li>
             </ul>
             <p>
               Sainternet is proud to present to you the <b><i>world's first</i></b> (…and only?) DNS driven <a href="https://en.wikipedia.org/wiki/TXT_record">TXT record</a> based National Pokédex over DNS!
@@ -202,6 +206,9 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <h3><span class="embiggen">Example Pokédex over DNS Queries</span></h3>
+            <p class="embiggen sainternet-subheader-centered" id="examplequeryusingdig">
+              Using dig
+            </p>
             <p>
               Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/dig">dig</a>:
             </p>
@@ -225,6 +232,9 @@
               Deutsch
             </p>
             <pre>dig +short txt waumpel.pokedex @dns.sainternet.xyz</pre>
+            <p class="embiggen sainternet-subheader-centered" id="examplequeryusingdnslookup">
+              Using dnslookup
+            </p>
             <p>
               Example Pokédex over DNS queries using <a href="https://github.com/ameshkov/dnslookup">dnslookup</a>:
             </p>
@@ -248,8 +258,11 @@
               Deutsch
             </p>
             <pre>RRTYPE=TXT dnslookup waumpel.pokedex dns.sainternet.xyz</pre>
+            <p class="embiggen sainternet-subheader-centered" id="examplequeryusingnslookup">
+              Using nslookup
+            </p>
             <p>
-              Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
+              Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>
             </p>
             <p>
               National Pokedex
@@ -271,6 +284,9 @@
               Deutsch
             </p>
             <pre>nslookup -type=txt waumpel.pokedex dns.sainternet.xyz</pre>
+            <p class="embiggen sainternet-subheader-centered" id="nationalpokedexunboundconfiguration">
+              National Pokédex Unbound Configuration
+            </p>
             <p>
               <a href="https://www.nlnetlabs.nl/projects/unbound/about/">Unbound</a> local-data record configuration for the <b>.pokedex</b> virtual domain available <a href="https://github.com/saint-lascivious/unbound-config/blob/master/configs/pokedex.conf">here</a>.
             </p>

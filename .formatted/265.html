@@ -178,6 +178,9 @@
             <h3><span class="embiggen">Pokémon #265<br>Wurmple</span></h3>
             <ul>
               <li><a href="265.html#265examplequeries">#Example Pokédex over DNS Queries</a></li>
+              <li><a href="265.html#265examplequeryusingdig">#Using dig</a></li>
+              <li><a href="265.html#265examplequeryusingdnslookup">#Using dnslookup</a></li>
+              <li><a href="265.html#265examplequeryusingnslookup">#Using nslookup</a></li>
             </ul>
             <p class="embiggen sainternet-subheader-centered">
               A wild <b>Wurmple</b> appeared!
@@ -205,21 +208,84 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <h3><span class="embiggen">Example Pokédex over DNS Queries</span></h3>
+            <p class="embiggen sainternet-subheader-centered" id="265examplequeryusingdig">
+              Using dig
+            </p>
             <p>
               Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/dig">dig</a>:
             </p>
-            <pre>dig +short txt wurmple.pokedex @dns.sainternet.xyz</pre>
+            <p>
+              National Pokedex
+            </p>
             <pre>dig +short txt 265.pokedex @dns.sainternet.xyz</pre>
+            <p>
+              English US
+            </p>
+            <pre>dig +short txt wurmple.pokedex @dns.sainternet.xyz</pre>
+            <p>
+              Nihon
+            </p>
+            <pre>dig +short txt kemusso.pokedex @dns.sainternet.xyz</pre>
+            <p>
+              Français
+            </p>
+            <pre>dig +short txt chenipotte.pokedex @dns.sainternet.xyz</pre>
+            <p>
+              Deutsch
+            </p>
+            <pre>dig +short txt waumpel.pokedex @dns.sainternet.xyz</pre>
+            <p class="embiggen sainternet-subheader-centered" id="265examplequeryusingdnslookup">
+              Using dnslookup
+            </p>
             <p>
               Example Pokédex over DNS queries using <a href="https://github.com/ameshkov/dnslookup">dnslookup</a>:
             </p>
-            <pre>RRTYPE=TXT dnslookup wurmple.pokedex dns.sainternet.xyz</pre>
+            <p>
+              National Pokédex
+            </p>
             <pre>RRTYPE=TXT dnslookup 265.pokedex dns.sainternet.xyz</pre>
             <p>
-              Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
+              English US
+            </p>
+            <pre>RRTYPE=TXT dnslookup wurmple.pokedex dns.sainternet.xyz</pre>
+            <p>
+              Nihon
+            </p>
+            <pre>RRTYPE=TXT dnslookup kemusso.pokedex dns.sainternet.xyz</pre>
+            <p>
+              Français
+            </p>
+            <pre>RRTYPE=TXT dnslookup chenipotte.pokedex dns.sainternet.xyz</pre>
+            <p>
+              Deutsch
+            </p>
+            <pre>RRTYPE=TXT dnslookup waumpel.pokedex dns.sainternet.xyz</pre>
+            <p class="embiggen sainternet-subheader-centered" id="265examplequeryusingnslookup">
+              Using nslookup
+            </p>
+            <p>
+              Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>
+            </p>
+            <p>
+              National Pokedex
+            </p>
+            <pre>nslookup -type=txt 265.pokedex dns.sainternet.xyz</pre>
+            <p>
+              English US
             </p>
             <pre>nslookup -type=txt wurmple.pokedex dns.sainternet.xyz</pre>
-            <pre>nslookup -type=txt 265.pokedex dns.sainternet.xyz</pre>
+            <p>
+              Nihon
+            </p>
+            <pre>nslookup -type=txt kemusso.pokedex dns.sainternet.xyz</pre>
+            <p>
+              Français
+            </p>
+            <pre>nslookup -type=txt chenipotte.pokedex dns.sainternet.xyz</pre>
+            <p>
+              Deutsch
+            </p>
+            <pre>nslookup -type=txt waumpel.pokedex dns.sainternet.xyz</pre>
           </div>
         </div>
       </main>

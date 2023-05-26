@@ -157,7 +157,7 @@
           <a class="embiggen mdl-navigation__link" href="newsandupdates.html">News and Updates</a>
           <a class="embiggen mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
           <a class="embiggen mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
-          <a class="embiggen mdl-navigation__link" href="#pokemon265">&nbsp;<icon class="material-icons">arrow_right</icon>&nbsp;<b>Pokémon #404</b></a>
+          <a class="embiggen mdl-navigation__link" href="#pokemon404">&nbsp;<icon class="material-icons">arrow_right</icon>&nbsp;<b>Pokémon #404</b></a>
           <a class="embiggen mdl-navigation__link" href="projects.html">Popular Projects</a>
         </nav>
         <nav class="mdl-navigation mdl-layout--large-screen-only">
@@ -180,6 +180,9 @@
             <h3><span class="embiggen">Pokémon #404<br>Luxio<br>(Spark Pokémon)</span></h3>
             <ul>
               <li><a href="404.html#404examplequeries">#Example Pokédex over DNS Queries</a></li>
+              <li><a href="404.html#404examplequeryusingdig">#Using dig</a></li>
+              <li><a href="404.html#404examplequeryusingdnslookup">#Using dnslookup</a></li>
+              <li><a href="404.html#404examplequeryusingnslookup">#Using nslookup</a></li>
             </ul>
             <p class="embiggen sainternet-subheader-centered">
               A wild <b>Luxio</b> appeared!
@@ -207,21 +210,84 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <h3><span class="embiggen">Example Pokédex over DNS Queries</span></h3>
+            <p class="embiggen sainternet-subheader-centered" id="404examplequeryusingdig">
+              Using dig
+            </p>
             <p>
               Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/dig">dig</a>:
             </p>
-            <pre>dig +short txt luxio.pokedex @dns.sainternet.xyz</pre>
+            <p>
+              National Pokedex
+            </p>
             <pre>dig +short txt 404.pokedex @dns.sainternet.xyz</pre>
+            <p>
+              English US
+            </p>
+            <pre>dig +short txt luxio.pokedex @dns.sainternet.xyz</pre>
+            <p>
+              Nihon
+            </p>
+            <pre>dig +short txt luxio.pokedex @dns.sainternet.xyz</pre>
+            <p>
+              Français
+            </p>
+            <pre>dig +short txt luxio.pokedex @dns.sainternet.xyz</pre>
+            <p>
+              Deutsch
+            </p>
+            <pre>dig +short txt luxio.pokedex @dns.sainternet.xyz</pre>
+            <p class="embiggen sainternet-subheader-centered" id="404examplequeryusingdnslookup">
+              Using dnslookup
+            </p>
             <p>
               Example Pokédex over DNS queries using <a href="https://github.com/ameshkov/dnslookup">dnslookup</a>:
             </p>
-            <pre>RRTYPE=TXT dnslookup luxio.pokedex dns.sainternet.xyz</pre>
+            <p>
+              National Pokédex
+            </p>
             <pre>RRTYPE=TXT dnslookup 404.pokedex dns.sainternet.xyz</pre>
             <p>
-              Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
+              English US
+            </p>
+            <pre>RRTYPE=TXT dnslookup luxio.pokedex dns.sainternet.xyz</pre>
+            <p>
+              Nihon
+            </p>
+            <pre>RRTYPE=TXT dnslookup luxio.pokedex dns.sainternet.xyz</pre>
+            <p>
+              Français
+            </p>
+            <pre>RRTYPE=TXT dnslookup luxio.pokedex dns.sainternet.xyz</pre>
+            <p>
+              Deutsch
+            </p>
+            <pre>RRTYPE=TXT dnslookup luxio.pokedex dns.sainternet.xyz</pre>
+            <p class="embiggen sainternet-subheader-centered" id="404examplequeryusingnslookup">
+              Using nslookup
+            </p>
+            <p>
+              Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>
+            </p>
+            <p>
+              National Pokedex
+            </p>
+            <pre>nslookup -type=txt 404.pokedex dns.sainternet.xyz</pre>
+            <p>
+              English US
             </p>
             <pre>nslookup -type=txt luxio.pokedex dns.sainternet.xyz</pre>
-            <pre>nslookup -type=txt 404.pokedex dns.sainternet.xyz</pre>
+            <p>
+              Nihon
+            </p>
+            <pre>nslookup -type=txt luxio.pokedex dns.sainternet.xyz</pre>
+            <p>
+              Français
+            </p>
+            <pre>nslookup -type=txt luxio.pokedex dns.sainternet.xyz</pre>
+            <p>
+              Deutsch
+            </p>
+            <pre>nslookup -type=txt luxio.pokedex dns.sainternet.xyz</pre>
           </div>
         </div>
       </main>
