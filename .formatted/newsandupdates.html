@@ -446,7 +446,7 @@
           <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <h3><span class="embiggen">Une Pokédex, S'il Vous Plaît</span></h3>
             <p class="embiggen" id="datetime">
-              first posted on Tuesday, 11 April 2023 01:00+12:00 (NZST)<br>updated on Wednesday, 12 April 2023 00:00+12:00 (NZST)
+              first posted on Tuesday, 11 April 2023 01:00+12:00 (NZST)<br>updated on Friday, 2 June 2023 00:15+12:00 (NZST)
             </p>
             <p>
               Pokémon Name to <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number">National Pokédex Number</a> (NPN) queries using <code>dns.sainternet.xyz</code> <a href="filtereddns.html">Filtered DNS</a> <a href="pokedexoverdns.html">Pokédex over DNS</a> now support multiple languages. English (US), Japanese (roomaji), French and German.
@@ -462,59 +462,101 @@
               Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/dig">dig</a>:
             </p>
             <p>
+              National Pokedex
+            </p>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>dig +short txt 265.pokedex @dns.sainternet.xyz</pre>
+            </div>
+            <p>
               English US
             </p>
-            <pre>dig +short txt wurmple.pokedex @dns.sainternet.xyz</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>dig +short txt wurmple.pokedex @dns.sainternet.xyz</pre>
+            </div>
             <p>
               Nihon
             </p>
-            <pre>dig +short txt kemusso.pokedex @dns.sainternet.xyz</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>dig +short txt kemusso.pokedex @dns.sainternet.xyz</pre>
+            </div>
             <p>
               Français
             </p>
-            <pre>dig +short txt chenipotte.pokedex @dns.sainternet.xyz</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>dig +short txt chenipotte.pokedex @dns.sainternet.xyz</pre>
+            </div>
             <p>
               Deutsch
             </p>
-            <pre>dig +short txt waumpel.pokedex @dns.sainternet.xyz</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>dig +short txt waumpel.pokedex @dns.sainternet.xyz</pre>
+            </div>
             <p>
               Example Pokédex over DNS queries using <a href="https://github.com/ameshkov/dnslookup">dnslookup</a>:
             </p>
             <p>
-              English US
+              National Pokédex
             </p>
-            <pre>RRTYPE=TXT dnslookup wurmple.pokedex dns.sainternet.xyz</pre>
-            <p>
-              Nihon
-            </p>
-            <pre>RRTYPE=TXT dnslookup kemusso.pokedex dns.sainternet.xyz</pre>
-            <p>
-              Français
-            </p>
-            <pre>RRTYPE=TXT dnslookup chenipotte.pokedex dns.sainternet.xyz</pre>
-            <p>
-              Deutsch
-            </p>
-            <pre>RRTYPE=TXT dnslookup waumpel.pokedex dns.sainternet.xyz</pre>
-            <p>
-              Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
-            </p>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>RRTYPE=TXT dnslookup 265.pokedex dns.sainternet.xyz</pre>
+            </div>
             <p>
               English US
             </p>
-            <pre>nslookup -type=txt wurmple.pokedex dns.sainternet.xyz</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>RRTYPE=TXT dnslookup wurmple.pokedex dns.sainternet.xyz</pre>
+            </div>
             <p>
               Nihon
             </p>
-            <pre>nslookup -type=txt kemusso.pokedex dns.sainternet.xyz</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>RRTYPE=TXT dnslookup kemusso.pokedex dns.sainternet.xyz</pre>
+            </div>
             <p>
               Français
             </p>
-            <pre>nslookup -type=txt chenipotte.pokedex dns.sainternet.xyz</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>RRTYPE=TXT dnslookup chenipotte.pokedex dns.sainternet.xyz</pre>
+            </div>
             <p>
               Deutsch
             </p>
-            <pre>nslookup -type=txt waumpel.pokedex dns.sainternet.xyz</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>RRTYPE=TXT dnslookup waumpel.pokedex dns.sainternet.xyz</pre>
+            </div>
+            <p>
+              Example Pokédex over DNS queries using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>
+            </p>
+            <p>
+              National Pokedex
+            </p>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>nslookup -type=txt 265.pokedex dns.sainternet.xyz</pre>
+            </div>
+            <p>
+              English US
+            </p>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>nslookup -type=txt wurmple.pokedex dns.sainternet.xyz</pre>
+            </div>
+            <p>
+              Nihon
+            </p>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>nslookup -type=txt kemusso.pokedex dns.sainternet.xyz</pre>
+            </div>
+            <p>
+              Français
+            </p>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>nslookup -type=txt chenipotte.pokedex dns.sainternet.xyz</pre>
+            </div>
+            <p>
+              Deutsch
+            </p>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>nslookup -type=txt waumpel.pokedex dns.sainternet.xyz</pre>
+            </div>
           </div>
         </div>
         <div class="sainternet-container mdl-grid" id="analyticsdisclosure">

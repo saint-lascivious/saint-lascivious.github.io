@@ -151,18 +151,18 @@ body {
   }
   .mdl-layout__drawer {
     background: #FFFFFF;
-    color: #424242;
+    color: #000000;
   }
   .mdl-list__item-primary-content {
-    color: #424242;
+    color: #000000;
   }
   .sainternet-content {
     background: #FFFFFF;
-    color: #424242;
+    color: #000000;
   }
   .sainternet-navigation {
     background: #FFFFFF;
-    color: #424242;
+    color: #000000;
   }
 }
 
@@ -172,17 +172,17 @@ body {
   }
   .mdl-layout__drawer {
     background: #000000;
-    color: #FAFAFA;
+    color: #FFFFFF;
   }
   .mdl-list__item-primary-content {
-    color: #FAFAFA;
+    color: #FFFFFF;
   }
   .sainternet-content {
     background: #000000;
-    color: #FAFAFA;
+    color: #FFFFFF;
   }
   .sainternet-navigation {
     background: #000000;
-    color: #FAFAFA;
+    color: #FFFFFF;
   }
 }

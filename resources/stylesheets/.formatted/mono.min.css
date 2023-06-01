@@ -39,13 +39,13 @@ pre {
 @media (prefers-color-scheme: light) {
   pre {
     background: #FFFFFF;
-    color: #424242;
+    color: #000000;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   pre {
     background: #000000;
-    color: #FAFAFA;
+    color: #FFFFFF;
   }
 }

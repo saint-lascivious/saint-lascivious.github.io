@@ -57,7 +57,7 @@ table tr:last-child td:last-child {
   table tr th {
     background: #FFFFFF;
     border-top: solid 2px #616161;
-    color: #424242;
+    color: #000000;
   }
 }
 
@@ -69,12 +69,12 @@ table tr:last-child td:last-child {
 
   table tr td {
     background: #000000;
-    color: #FAFAFA;
+    color: #FFFFFF;
   }
 
   table tr th {
     background: #000000;
     border-top: solid 2px #616161;
-    color: #FAFAFA;
+    color: #FFFFFF;
   }
 }
