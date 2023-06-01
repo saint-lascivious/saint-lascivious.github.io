@@ -31,6 +31,12 @@ body {
   flex: 1 0 auto;
 }
 
+.mdl-layout__drawer.is-visible {
+  max-width: 300px;
+  min-width: 240px;
+  width: 30%;
+}
+
 .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
   transition: background-color .3s ease-in-out;
 }
