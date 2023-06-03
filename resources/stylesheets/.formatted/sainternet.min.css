@@ -168,17 +168,19 @@ body {
   }
   .sainternet-content {
     background: #FFFFFF;
+    border: solid 2px #000000;
     color: #000000;
   }
   .sainternet-navigation {
     background: #FFFFFF;
+    border: solid 2px #000000;
     color: #000000;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: #121212;
+    background: #000000;
   }
   .mdl-layout__drawer {
     background: #000000;
@@ -189,9 +191,11 @@ body {
   }
   .sainternet-content {
     background: #000000;
+    border: solid 2px #FFFFFF;
     color: #FFFFFF;
   }
   .sainternet-navigation {
+    border: solid 2px #FFFFFF;
     background: #000000;
     color: #FFFFFF;
   }
