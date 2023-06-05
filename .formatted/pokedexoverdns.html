@@ -187,20 +187,18 @@
             <p>
               Sainternet is proud to present to you the <b><i>world's first</i></b> (…and only?) DNS driven <a href="https://en.wikipedia.org/wiki/TXT_record">TXT record</a> based National Pokédex over DNS!
             </p>
-            <div class="enlift shadow-boxing">
-              <span id="tooltip-alttext">
-                <a href="265.html" class="subterfuge">
-                  <picture>
-                    <source srcset="resources/images/terminal.webp" type="image/webp">
-                    <source srcset="resources/images/terminal.png" type="image/png">
-                    <source srcset="resources/images/terminal.jpg" type="image/jpeg">
-                    <img src="resources/images/terminal.jpg" width="820" height="480" alt="Example Pokédex-over-DNS query using nslookup and dig utilities from the command line: nslookup -type=txt wurmple.pokedex dns.sainternet.xyz, dig +short txt wurmple.pokedex @dns.sainternet.xyz">
+            <div class="enlift rounded-corners shadow-boxing">
+              <a href="265.html" class="subterfuge">
+                <picture id="tooltip-alttext-terminal">
+                  <source srcset="resources/images/terminal.webp" type="image/webp">
+                  <source srcset="resources/images/terminal.png" type="image/png">
+                  <source srcset="resources/images/terminal.jpg" type="image/jpeg">
+                  <img src="resources/images/terminal.jpg" width="820" height="480" alt="Example Pokédex-over-DNS query using nslookup and dig utilities from the command line: nslookup -type=txt wurmple.pokedex dns.sainternet.xyz, dig +short txt wurmple.pokedex @dns.sainternet.xyz">
                 </picture>
-                </a>
-              </span>
-              <span class="mdl-tooltip mdl-tooltip--right" for="tooltip-alttext">
-                Example Pokédex-over-DNS query using nslookup and dig utilities from the command line: nslookup -type=txt wurmple.pokedex dns.sainternet.xyz, dig +short txt wurmple.pokedex @dns.sainternet.xyz
-              </span>
+                <picture class="mdl-tooltip mdl-tooltip--top" for="tooltip-alttext-terminal">
+                  Example Pokédex-over-DNS query using nslookup and dig utilities from the command line: nslookup -type=txt wurmple.pokedex dns.sainternet.xyz, dig +short txt wurmple.pokedex @dns.sainternet.xyz
+                </picture>
+              </a>
             </div>
             <p>
               This fun little (<i>ab</i>)use of DNS allows one to query a Pokémon species name (currently supported: US, JP, FR, DE) in order to receive its <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number">National Pokédex Number</a> (NPN), or query an NPN (zero padding optional) in order to receive the Pokémon species name (currently supported: US, JP <a href="https://en.wikipedia.org/wiki/Romanization_of_Japanese">Rōmaji</a>, FR, DE).
@@ -375,5 +373,8 @@
       </div>
     </footer>
     <a href="index.html" id="button_home" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--4dp enlift"><icon class="material-icons">home</icon></a>
+    <a class="mdl-tooltip mdl-tooltip--left" for="button_home">
+      Back to Home page.
+    </a>
   </body>
 </html>

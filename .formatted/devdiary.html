@@ -277,10 +277,10 @@
             <p class="embiggen" id="datetime">
               first posted on Tuesday, 9 May 2023 07:00+12:00 (NZST)<br>updated on Tuesday, 9 May 2023 21:45+12:00 (NZST)
             </p>
-            <p class="embiggen sainternet-subheader-centered" id="speedtests">
-              How sainternet.xyz Managed 100%<a href="#disclaimerone"><sup><sub>1</sub></sup></a> on Major Website Performance Tests
+            <p class="embiggen sainternet-subheader-centered" id="tooltip-speedtests">
+              How sainternet.xyz Managed 100%<a href="#tooltip-ggf-disclaimerone"><sup><sub>1</sub></sup></a> on Major Website Performance Tests
             </p>
-            <p class="mdl-tooltip mdl-tooltip--bottom" for="speedtests">
+            <p class="mdl-tooltip mdl-tooltip--bottom" for="tooltip-speedtests">
               GTmetrix, PageSpeed Insights, Website Speed Test etc.
             </p>
             <p>
@@ -305,7 +305,7 @@
               But it's not just about hosting and file formats. I've also implemented a JavaScript-powered FOUT (Flash Of Unstyled Text) font loading policy (the <i>perception</i> of fast loading is just as important, text should display as quickly as possible) and deferred JavaScript to ensure that my pages load quickly and efficiently.
             </p>
             <p class="embiggen sainternet-subheader-centered">
-              Flash<a href="#disclaimertwo"><sup><sub>2</sub></sup></a>, Ah-ah, Saviour of the Universe
+              Flash<a href="#tooltip-ggf-disclaimertwo"><sup><sub>2</sub></sup></a>, Ah-ah, Saviour of the Universe
             </p>
             <p>
               The basic premise with FOUT, is to display the first available font that matches in your list, while promising to load the fonts you actually need, and then swapping fonts as soon as you know they are available. This allows the page to be rendered prior to fonts having loaded completely and provides a significant reduction in perceived load time.
@@ -332,22 +332,22 @@
               Disclaimers
             </p>
             <ol>
-              <li id="disclaimerone">
-                On desktop browsers. Lighthouse<a href="#disclaimerthree"><sup><sub>3</sub></sup></a>'s emulated mobile hardware and connectivity is <s>bulls…</s> a rock, placed vaguely near an FM radio tower.
+              <li id="tooltip-ggf-disclaimerone">
+                On desktop browsers. Lighthouse<a href="#tooltip-ggf-disclaimerthree"><sup><sub>3</sub></sup></a>'s emulated mobile hardware and connectivity is <s>bulls…</s> a rock, placed vaguely near an FM radio tower.
               </li>
-              <li class="mdl-tooltip mdl-tooltip--bottom" for="disclaimerone">
+              <li class="mdl-tooltip mdl-tooltip--bottom" for="tooltip-ggf-disclaimerone">
                 It's not even in stereo.
               </li>
-              <li id="disclaimertwo">
+              <li id="tooltip-ggf-disclaimertwo">
                 Not that one.
               </li>
-              <li class="mdl-tooltip mdl-tooltip--bottom" for="disclaimertwo">
+              <li class="mdl-tooltip mdl-tooltip--bottom" for="tooltip-ggf-disclaimertwo">
                 Or that other one.
               </li>
-              <li id="disclaimerthree">
+              <li id="tooltip-ggf-disclaimerthree">
                 Everything uses Lighthouse.
               </li>
-              <li class="mdl-tooltip mdl-tooltip--bottom" for="disclaimerthree">
+              <li class="mdl-tooltip mdl-tooltip--bottom" for="tooltip-ggf-disclaimerthree">
                 Google decides how the Internet works.
               </li>
             </ol>
@@ -440,5 +440,8 @@
       </div>
     </footer>
     <a href="index.html" id="button_home" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--4dp enlift"><icon class="material-icons">home</icon></a>
+    <a class="mdl-tooltip mdl-tooltip--left" for="button_home">
+      Back to Home page.
+    </a>
   </body>
 </html>

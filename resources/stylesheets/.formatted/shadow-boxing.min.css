@@ -28,8 +28,21 @@
 }
 
 .shadow-boxing img {
+  border-radius: 8px;
   width: 100%;
   height: auto;
+}
+
+@media (prefers-color-scheme: light) {
+  .shadow-boxing img {
+    border: solid 2px #000000;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .shadow-boxing img {
+    border: solid 2px #FFFFFF;
+  }
 }
 
 @media screen and (orientation: landscape) {

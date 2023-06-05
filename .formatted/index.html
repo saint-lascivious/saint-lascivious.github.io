@@ -156,11 +156,11 @@
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
-            <div class="sainternet-highlights">
-              <span id="sainternet-urls"><a href="newsandupdates.html#enablejavascript">Enable JavaScript</a></span>
-              <span class="mdl-tooltip mdl-tooltip--top" for="sainternet-urls">
-                Explore sainternet.xyz with this random URL
-              </span>
+            <div class="sainternet-highlights" id="sainternet-urls">
+              <a href="newsandupdates.html#enablejavascript">Enable JavaScript</a>
+            </div>
+            <div class="mdl-tooltip mdl-tooltip--top" for="sainternet-urls">
+              Explore sainternet.xyz with this random URL
             </div>
           </div>
         </div>
@@ -180,25 +180,23 @@
             <p>
               Take a look around, there's a navigational panel to your left and/or above (desktop and mobile layouts may differ), you may find something that interests you here.
             </p>
-            <span id="tooltip-alttext">
-              <a href="pokedexoverdns.html" class="subterfuge">
-                <picture class="light-mode-img">
-                  <source srcset="resources/images/wurmple.webp" type="image/webp">
-                  <source srcset="resources/images/wurmple.png" type="image/png">
-                  <source srcset="resources/images/wurmple.jpeg" type="image/jpeg">
-                  <img src="resources/images/wurmple.jpg" width="480" height="480" alt="Image supplied not illustrative, the author is not a Pokémon.">
-                </picture>
-                <picture class="dark-mode-img">
-                  <source srcset="resources/images/wurmple-shiny.webp" type="image/webp">
-                  <source srcset="resources/images/wurmple-shiny.png" type="image/png">
-                  <source srcset="resources/images/wurmple-shiny.jpeg" type="image/jpeg">
-                  <img src="resources/images/wurmple-shiny.jpg" width="480" height="480" alt="Image supplied not illustrative, the author is not a Pokémon.">
-                </picture>
-              </a>
-            </span>
-            <span class="mdl-tooltip mdl-tooltip--right" for="tooltip-alttext">
+            <a href="pokedexoverdns.html" class="subterfuge" id="tooltip-alttext-wurm">
+              <picture class="light-mode-img">
+                <source srcset="resources/images/wurmple.webp" type="image/webp">
+                <source srcset="resources/images/wurmple.png" type="image/png">
+                <source srcset="resources/images/wurmple.jpeg" type="image/jpeg">
+                <img src="resources/images/wurmple.jpg" width="480" height="480" alt="Image supplied not illustrative, the author is not a Pokémon.">
+              </picture>
+              <picture class="dark-mode-img">
+                <source srcset="resources/images/wurmple-shiny.webp" type="image/webp">
+                <source srcset="resources/images/wurmple-shiny.png" type="image/png">
+                <source srcset="resources/images/wurmple-shiny.jpeg" type="image/jpeg">
+                <img src="resources/images/wurmple-shiny.jpg" width="480" height="480" alt="Image supplied not illustrative, the author is not a Pokémon.">
+              </picture>
+            </a>
+            <a class="mdl-tooltip mdl-tooltip--top" for="tooltip-alttext-wurm">
               Image supplied not illustrative, the author is not a Pokémon.
-            <span>
+            </a>
           </div>
         </div>
       </main>

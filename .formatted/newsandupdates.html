@@ -244,45 +244,57 @@
             <p class="embiggen sainternet-subheader-centered">
               Day
             </p>
-            <div class="enlift shadow-boxing">
-              <picture>
+            <div class="enlift rounded-corners shadow-boxing">
+              <picture id="tooltip-alttext-day">
                 <source srcset="resources/images/pihole_percent-day.webp" type="image/webp">
                 <source srcset="resources/images/pihole_percent-day.png" type="image/png">
                 <source srcset="resources/images/pihole_percent-day.jpg" type="image/jpeg">
                 <img src="resources/images/pihole_percent-day.jpg" width="860" height="480" alt="Blocked queries as a percentile, by day.">
               </picture>
+              <picture class="mdl-tooltip mdl-tooltip--top" for="tooltip-alttext-day">
+                Blocked queries as a percentile, by day.
+              </picture>
             </div>
             <p class="embiggen sainternet-subheader-centered">
               Week
             </p>
-            <div class="enlift shadow-boxing">
-              <picture>
+            <div class="enlift rounded-corners shadow-boxing">
+              <picture id="tooltip-alttext-week">
                 <source srcset="resources/images/pihole_percent-week.webp" type="image/webp">
                 <source srcset="resources/images/pihole_percent-week.png" type="image/png">
                 <source srcset="resources/images/pihole_percent-week.jpg" type="image/jpeg">
                 <img src="resources/images/pihole_percent-day.jpg" width="860" height="480" alt="Blocked queries as a percentile, by week.">
               </picture>
+              <picture class="mdl-tooltip mdl-tooltip--top" for="tooltip-alttext-week">
+                Blocked queries as a percentile, by week.
+              </picture>
             </div>
             <p class="embiggen sainternet-subheader-centered">
               Month
             </p>
-            <div class="enlift shadow-boxing">
-              <picture>
+            <div class="enlift rounded-corners shadow-boxing">
+              <picture id="tooltip-alttext-month">
                 <source srcset="resources/images/pihole_percent-month.webp" type="image/webp">
                 <source srcset="resources/images/pihole_percent-month.png" type="image/png">
                 <source srcset="resources/images/pihole_percent-month.jpg" type="image/jpeg">
                 <img src="resources/images/pihole_percent-month.jpg" width="860" height="480" alt="Blocked queries as a percentile, by month.">
               </picture>
+              <picture class="mdl-tooltip mdl-tooltip--top" for="tooltip-alttext-month">
+                Blocked queries as a percentile, by month.
+              </picture>
             </div>
             <p class="embiggen sainternet-subheader-centered">
               Year
             </p>
-            <div class="enlift shadow-boxing">
-              <picture>
+            <div class="enlift rounded-corners shadow-boxing">
+              <picture id="tooltip-alttext-year">
                 <source srcset="resources/images/pihole_percent-year.webp" type="image/webp">
                 <source srcset="resources/images/pihole_percent-year.png" type="image/png">
                 <source srcset="resources/images/pihole_percent-year.jpg" type="image/jpeg">
                 <img src="resources/images/pihole_percent-year.jpg" width="860" height="480" alt="Blocked queries as a percentile, by year.">
+              </picture>
+              <picture class="mdl-tooltip mdl-tooltip--top" for="tooltip-alttext-year">
+                Blocked queries as a percentile, by year.
               </picture>
             </div>
           </div>
@@ -401,12 +413,15 @@
             <p class="embiggen sainternet-subheader-centered">
               What Does This Mean for Me?
             </p>
-            <div class="enlift shadow-boxing">
-              <picture>
+            <div class="enlift rounded-corners shadow-boxing">
+              <picture id="tooltip-alttext-farquaad">
                 <source srcset="resources/images/farquaad.webp" type="image/webp">
                 <source srcset="resources/images/farquaad.png" type="image/png">
                 <source srcset="resources/images/farquaad.jpg" type="image/jpeg">
                 <img src="resources/images/farquaad.jpg" width="756" height="480" alt="Some of you may die, but that is a sacrifice I am willing to make.">
+              </picture>
+              <picture class="mdl-tooltip mdl-tooltip--top" for="tooltip-alttext-farquaad">
+                Some of you may die, but that is a sacrifice I am willing to make.
               </picture>
             </div>
             <p>
@@ -454,7 +469,9 @@
             <p>
               NPN to Pokémon Name queries now give a response featuring all supported languages in the following format.
             </p>
-            <pre>"US: pokemonname, JP: pokemonname, FR: pokemonname, DE: pokemonname"</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>"US: pokemonname, JP: pokemonname, FR: pokemonname, DE: pokemonname"</pre>
+            </div>
             <p>
               The following examples show lookups using US, JP, FR and DE Pokémon Names respectively.
             </p>
@@ -610,8 +627,11 @@
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-navigation mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
-            <div class="sainternet-crumbs">
+            <div class="sainternet-crumbs" id="archive-crumb">
               <a class="embiggen" href="archive.html">Archived Posts</a>
+            </div>
+            <div class="mdl-tooltip mdl-tooltip--top" for="archive-crumb">
+              Archived News and Updates posts.
             </div>
           </div>
         </div>
@@ -663,5 +683,8 @@
       </div>
     </footer>
     <a href="index.html" id="button_home" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--4dp enlift"><icon class="material-icons">home</icon></a>
+    <a class="mdl-tooltip mdl-tooltip--left" for="button_home">
+      Back to Home page.
+    </a>
   </body>
 </html>
