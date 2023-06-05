@@ -150,14 +150,6 @@
       </div>
       <div class="ribbon brown-ribbon"></div>
       <main class="sainternet-main mdl-layout__content">
-        <div class="sainternet-container mdl-grid">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-navigation mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
-            <div class="sainternet-crumbs">
-              <a class="embiggen" href="#debug"><b>Debug</b></a>
-            </div>
-          </div>
-        </div>
         <div class="sainternet-container mdl-grid" id="debug">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
@@ -174,40 +166,34 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <h3><span class="embiggen">Console Logging</span></h3>
-            <span id="tooltip-consolelogging">
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast enlift" onclick="toggleConsoleLogging();">
-                Console Logging
-              </button>
-            </span>
-            <span class="mdl-tooltip mdl-tooltip--top" for="tooltip-consolelogging">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast enlift" id="button_consolelogging" onclick="toggleConsoleLogging();">
+              Console Logging
+            </button>
+            <button class="mdl-tooltip mdl-tooltip--top" for="button_consolelogging">
               Toggle console logging
-            </span>
+            </button>
           </div>
         </div>
         <div class="sainternet-container mdl-grid" id="deletestorage">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <h3><span class="embiggen">Delete Storage</span></h3>
-            <span id="tooltip-deletestorage">
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast enlift" onclick="deleteLocalStorageAndSessionStorage();">
-                Delete Storage
-              </button>
-            </span>
-            <span class="mdl-tooltip mdl-tooltip--top" for="tooltip-deletestorage">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast enlift" id="button_deletestorage" onclick="deleteLocalStorageAndSessionStorage();">
+              Delete Storage
+            </button>
+            <button class="mdl-tooltip mdl-tooltip--top" for="button_deletestorage">
               Delete local and session storage
-            </span>
+            </button>
           </div>
         </div>
-        <div class="sainternet-container mdl-grid" id="pingserviceworker">
+        <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <h3><span class="embiggen">Ping Service Worker</span></h3>
-            <span id="tooltip-pingserviceworker">
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast enlift" onclick="pingServiceWorker();">
-                Ping Service Worker
-              </button>
-            </span>
-            <span class="mdl-tooltip mdl-tooltip--top" for="tooltip-pingserviceworker">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast enlift" id="button_pingserviceworker" onclick="pingServiceWorker();">
+              Ping Service Worker
+            </button>
+            <button class="mdl-tooltip mdl-tooltip--top" for="button_pingserviceworker">
               Ping service worker
             </span>
           </div>
@@ -216,14 +202,12 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
             <h3><span class="embiggen">Service Worker Info</span></h3>
-            <span id="tooltip-serviceworkerinfo">
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast enlift" onclick="getServiceWorkerInfo();">
-                Service Worker Info
-              </button>
-            </span>
-            <span class="mdl-tooltip mdl-tooltip--top" for="tooltip-serviceworkerinfo">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast enlift" id="button_serviceworkerinfo" onclick="getServiceWorkerInfo();">
+              Service Worker Info
+            </button>
+            <button class="mdl-tooltip mdl-tooltip--top" for="button_serviceworkerinfo">
               Get service worker info
-            </span>
+            </button>
           </div>
         </div>
       </main>
@@ -232,40 +216,40 @@
         <ul class="mdl-mini-footer--link-list">
           <li>
             <a href="mailto:saint@sainternet.xyz" target="_blank" rel="noopener noreferrer">
-              <span id="tooltip-email">
+              <span id="icon-email">
                 <icon class="material-icons">email</icon>
               </span>
-              <span class="mdl-tooltip mdl-tooltip--top" for="tooltip-email">
+              <span class="mdl-tooltip mdl-tooltip--top" for="icon-email">
                 Email
               </span>
             </a>
           </li>
           <li>
             <a href="https://discord.gg/NC7taVyn">
-              <span id="tooltip-discord">
+              <span id="icon-discord">
                 <icon class="fa-brands fa-discord"></icon>
               </span>
-              <span class="mdl-tooltip mdl-tooltip--top" for="tooltip-discord">
+              <span class="mdl-tooltip mdl-tooltip--top" for="icon-discord">
                 Discord
               </span>
             </a>
           </li>
           <li>
             <a href="https://github.com/saint-lascivious">
-              <span id="tooltip-github">
+              <span id="icon-github">
                 <icon class="fa-brands fa-github"></icon>
               </span>
-              <span class="mdl-tooltip mdl-tooltip--top" for="tooltip-github">
+              <span class="mdl-tooltip mdl-tooltip--top" for="icon-github">
                 GitHub
               </span>
             </a>
           </li>
           <li>
             <a href="https://www.reddit.com/user/saint-lascivious">
-              <span id="tooltip-reddit">
+              <span id="icon-reddit">
                 <icon class="fa-brands fa-reddit"></icon>
               </span>
-              <span class="mdl-tooltip mdl-tooltip--top" for="tooltip-reddit">
+              <span class="mdl-tooltip mdl-tooltip--top" for="icon-reddit">
                 Reddit
               </span>
             </a>
