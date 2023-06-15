@@ -62,6 +62,8 @@
     <link rel="stylesheet" href="resources/stylesheets/sainternet.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/ribbons.min.css">
     <link rel="stylesheet" href="resources/stylesheets/ribbons.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/shadow-boxing.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/shadow-boxing.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/mono.min.css">
     <link rel="stylesheet" href="resources/stylesheets/mono.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/button_home.min.css">
@@ -190,13 +192,17 @@
             <p>
               Example Sainternet test query using <a href="https://linux.die.net/man/1/dig">dig</a>:
             </p>
-            <pre>dig +short txt test.sainternet.xyz</pre>
-            <pre>"SAINTERNET -- TEST PASSED -- Thank you for using Sainternet DNS"</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>dig +short txt test.sainternet.xyz</pre>
+            </div>
             <p>
               Example Sainternet dig query:
             </p>
-            <pre>dig example.org @dns.sainternet.xyz</pre>
-            <pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>dig example.org @dns.sainternet.xyz</pre>
+            </div>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>
 ; &lt;&lt;&gt;&gt; DiG 9.18.12-1ubuntu1-Ubuntu &lt;&lt;&gt;&gt; example.org @dns.sainternet.xyz
 ;; global options: +cmd
 ;; Got answer:
@@ -215,7 +221,8 @@ example.org.            86282   IN      A       93.184.216.34
 ;; SERVER: 119.224.127.171#53(dns.sainternet.xyz) (UDP)
 ;; WHEN: Thu Jun 15 23:05:27 NZST 2023
 ;; MSG SIZE  rcvd: 56
-            </pre>
+              </pre>
+            </div>
           </div>
         </div>
         <div class="sainternet-container mdl-grid" id="usingdnslookup">
@@ -225,12 +232,17 @@ example.org.            86282   IN      A       93.184.216.34
             <p>
               Example Sainternet test query using <a href="https://github.com/ameshkov/dnslookup">dnslookup</a>:
             </p>
-            <pre>RRTYPE=TXT dnslookup test.sainternet.xyz dns.sainternet.xyz</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>RRTYPE=TXT dnslookup test.sainternet.xyz dns.sainternet.xyz</pre>
+            </div>
             <p>
               Example Sainternet dnslookup query:
             </p>
-            <pre>dnslookup example.org dns.sainternet.xyz</pre>
-            <pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>dnslookup example.org dns.sainternet.xyz</pre>
+            </div>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>
 dnslookup v1.9.1+2bcfa73
 dnslookup result (elapsed 4.101185ms):
 ;; opcode: QUERY, status: NOERROR, id: 24641
@@ -241,35 +253,50 @@ dnslookup result (elapsed 4.101185ms):
 
 ;; ANSWER SECTION:
 example.org.    84557   IN      A       93.184.216.34
-            </pre>
+              </pre>
+            </div>
             <p>
               Example Sainternet dnslookup query using the TCP protocol:
             </p>
-            <pre>dnslookup example.org tcp://dns.sainternet.xyz</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>dnslookup example.org tcp://dns.sainternet.xyz</pre>
+            </div>
             <p>
               Example Sainternet dnslookup query using the UDP protocol:
             </p>
-            <pre>dnslookup example.org udp://dns.sainternet.xyz</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>dnslookup example.org udp://dns.sainternet.xyz</pre>
+            </div>
             <p>
               Example Sainternet dnslookup query using the HTTP/2 protocol (DoH):
             </p>
-            <pre>dnslookup example.org https://dns.sainternet.xyz</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>dnslookup example.org https://dns.sainternet.xyz</pre>
+            </div>
             <p>
               Example Sainternet dnslookup query using the TLS protocol (DoT):
             </p>
-            <pre>dnslookup example.org tls://dns.sainternet.xyz</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>dnslookup example.org tls://dns.sainternet.xyz</pre>
+            </div>
             <p>
               Example Sainternet dnslookup query using the HTTP/3 protocol (DoH/3) opportunistically:
             </p>
-            <pre>HTTP3=1 dnslookup example.org https://dns.sainternet.xyz</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>HTTP3=1 dnslookup example.org https://dns.sainternet.xyz</pre>
+            </div>
             <p>
               Example Sainternet dnslookup query using the HTTP/3 protocol (DoH/3):
             </p>
-            <pre>dnslookup example.org h3://dns.sainternet.xyz</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>dnslookup example.org h3://dns.sainternet.xyz</pre>
+            </div>
             <p>
               Example Sainternet dnslookup query using the QUIC protocol (DoQ):
             </p>
-            <pre>dnslookup example.org quic://dns.sainternet.xyz</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>dnslookup example.org quic://dns.sainternet.xyz</pre>
+            </div>
           </div>
         </div>
         <div class="sainternet-container mdl-grid" id="usingnslookup">
@@ -279,12 +306,17 @@ example.org.    84557   IN      A       93.184.216.34
             <p>
               Example Sainternet test query using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
             </p>
-            <pre>nslookup -type=txt test.sainternet.xyz</pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>nslookup -type=txt test.sainternet.xyz</pre>
+            </div>
             <p>
               Example Sainternet nslookup query:
             </p>
-            <pre>nslookup example.org dns.sainternet.xyz</pre>
-            <pre>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>nslookup example.org dns.sainternet.xyz</pre>
+            </div>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>
 Server:         dns.sainternet.xyz
 Address:        119.224.127.171#53
 
@@ -294,7 +326,8 @@ Address: 93.184.216.34
 
 Name:   example.org
 Address: 2606:2800:220:1:248:1893:25c8:1946
-            </pre>
+              </pre>
+            </div>
           </div>
         </div>
       </main>
