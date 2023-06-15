@@ -191,10 +191,31 @@
               Example Sainternet test query using <a href="https://linux.die.net/man/1/dig">dig</a>:
             </p>
             <pre>dig +short txt test.sainternet.xyz</pre>
+            <pre>"SAINTERNET -- TEST PASSED -- Thank you for using Sainternet DNS"</pre>
             <p>
               Example Sainternet dig query:
             </p>
             <pre>dig example.org @dns.sainternet.xyz</pre>
+            <pre>
+; &lt;&lt;&gt;&gt; DiG 9.18.12-1ubuntu1-Ubuntu &lt;&lt;&gt;&gt; example.org @dns.sainternet.xyz
+;; global options: +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 17430
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;example.org.                   IN      A
+
+;; ANSWER SECTION:
+example.org.            86282   IN      A       93.184.216.34
+
+;; Query time: 2 msec
+;; SERVER: 119.224.127.171#53(dns.sainternet.xyz) (UDP)
+;; WHEN: Thu Jun 15 23:05:27 NZST 2023
+;; MSG SIZE  rcvd: 56
+            </pre>
           </div>
         </div>
         <div class="sainternet-container mdl-grid" id="usingdnslookup">
@@ -205,6 +226,22 @@
               Example Sainternet test query using <a href="https://github.com/ameshkov/dnslookup">dnslookup</a>:
             </p>
             <pre>RRTYPE=TXT dnslookup test.sainternet.xyz dns.sainternet.xyz</pre>
+            <p>
+              Example Sainternet dnslookup query:
+            </p>
+            <pre>dnslookup example.org dns.sainternet.xyz</pre>
+            <pre>
+dnslookup v1.9.1+2bcfa73
+dnslookup result (elapsed 4.101185ms):
+;; opcode: QUERY, status: NOERROR, id: 24641
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;example.org.   IN       A
+
+;; ANSWER SECTION:
+example.org.    84557   IN      A       93.184.216.34
+            </pre>
             <p>
               Example Sainternet dnslookup query using the TCP protocol:
             </p>
@@ -247,6 +284,17 @@
               Example Sainternet nslookup query:
             </p>
             <pre>nslookup example.org dns.sainternet.xyz</pre>
+            <pre>
+Server:         dns.sainternet.xyz
+Address:        119.224.127.171#53
+
+Non-authoritative answer:
+Name:   example.org
+Address: 93.184.216.34
+
+Name:   example.org
+Address: 2606:2800:220:1:248:1893:25c8:1946
+            </pre>
           </div>
         </div>
       </main>
