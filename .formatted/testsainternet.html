@@ -128,7 +128,7 @@
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DT44KL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <div class="sainternet-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-shadow--4dp enlift">
+      <header class="mdl-layout__header mdl-shadow--2dp enlift">
         <div class="mdl-layout__header-row">
           <span class="embiggen mdl-layout-title">sainternet.xyz</span>
           <div class="mdl-layout-spacer"></div>
@@ -165,7 +165,7 @@
       <main class="sainternet-main mdl-layout__content">
         <div class="sainternet-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-navigation mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
+          <div class="sainternet-navigation mdl-shadow--2dp content mdl-cell mdl-cell--8-col enlift">
             <div class="sainternet-crumbs">
               <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="filtereddns.html">Filtered DNS</a> &gt; <a class="embiggen" href="#testsainternet"><b>Test Sainternet</b></a>
             </div>
@@ -173,27 +173,30 @@
         </div>
         <div class="sainternet-container mdl-grid" id="testsainternet">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
-            <h3><span class="embiggen">Test Sainternet</span></h3>
+          <div class="sainternet-content mdl-shadow--2dp content mdl-cell mdl-cell--8-col enlift">
+            <h3 class="embiggen">Test Sainternet</h3>
             <p>
               The following describes testing Sainternet Filtered DNS using several methods, utilities.
             </p>
             <ul>
-              <li><a href="testsainternet.html#usingdig"><span class="embiggen">#Using dig</span></a></li>
-              <li><a href="testsainternet.html#usingdnslookup"><span class="embiggen">#Using dnslookup</span></a></li>
-              <li><a href="testsainternet.html#usingnslookup"><span class="embiggen">#Using nslookup</span></a></li>
+              <li><a href="testsainternet.html#usingdig" class="embiggen">Using dig</a></li>
+              <li><a href="testsainternet.html#usingdnslookup" class="embiggen">Using dnslookup</a></li>
+              <li><a href="testsainternet.html#usingnslookup" class="embiggen">Using nslookup</a></li>
             </ul>
           </div>
         </div>
         <div class="sainternet-container mdl-grid" id="usingdig">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
-            <h3><span class="embiggen">Using dig</span></h3>
+          <div class="sainternet-content mdl-shadow--2dp content mdl-cell mdl-cell--8-col enlift">
+            <h3 class="embiggen">Using dig</h3>
             <p>
               Example Sainternet test query using <a href="https://linux.die.net/man/1/dig">dig</a>:
             </p>
             <div class="enlift rounded-corners shadow-boxing">
               <pre>dig +short txt test.sainternet.xyz @dns.sainternet.xyz</pre>
+            </div>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>"SAINTERNET -- TEST PASSED -- Thank you for using Sainternet DNS"</pre>
             </div>
             <p>
               Example Sainternet dig query:
@@ -227,13 +230,27 @@ example.org.            86282   IN      A       93.184.216.34
         </div>
         <div class="sainternet-container mdl-grid" id="usingdnslookup">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
-            <h3><span class="embiggen">Using dnslookup</span></h3>
+          <div class="sainternet-content mdl-shadow--2dp content mdl-cell mdl-cell--8-col enlift">
+            <h3 class="embiggen">Using dnslookup</h3>
             <p>
               Example Sainternet test query using <a href="https://github.com/ameshkov/dnslookup">dnslookup</a>:
             </p>
             <div class="enlift rounded-corners shadow-boxing">
               <pre>RRTYPE=TXT dnslookup test.sainternet.xyz dns.sainternet.xyz</pre>
+            </div>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>
+dnslookup v1.9.1+2bcfa73
+dnslookup result (elapsed 4.638719ms):
+;; opcode: QUERY, status: NOERROR, id: 56736
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;test.sainternet.xyz.   IN       TXT
+
+;; ANSWER SECTION:
+test.sainternet.xyz.    60      IN      TXT     "SAINTERNET -- TEST PASSED -- Thank you for using Sainternet DNS"
+              </pre>
             </div>
             <p>
               Example Sainternet dnslookup query:
@@ -301,13 +318,22 @@ example.org.    84557   IN      A       93.184.216.34
         </div>
         <div class="sainternet-container mdl-grid" id="usingnslookup">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--4dp content mdl-cell mdl-cell--8-col enlift">
-            <h3><span class="embiggen">Using nslookup</span></h3>
+          <div class="sainternet-content mdl-shadow--2dp content mdl-cell mdl-cell--8-col enlift">
+            <h3 class="embiggen">Using nslookup</h3>
             <p>
               Example Sainternet test query using <a href="https://linux.die.net/man/1/nslookup">nslookup</a>:
             </p>
             <div class="enlift rounded-corners shadow-boxing">
               <pre>nslookup -type=txt test.sainternet.xyz dns.sainternet.xyz</pre>
+            </div>
+            <div class="enlift rounded-corners shadow-boxing">
+              <pre>
+Server:         dns.sainternet.xyz
+Address:        119.224.127.171#53
+
+Non-authoritative answer:
+test.sainternet.xyz     text = "SAINTERNET -- TEST PASSED -- Thank you for using Sainternet DNS"
+              </pre>
             </div>
             <p>
               Example Sainternet nslookup query:
@@ -369,7 +395,7 @@ Address: 2606:2800:220:1:248:1893:25c8:1946
         </ul>
       </div>
     </footer>
-    <a href="index.html" id="button_home" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--4dp enlift"><icon class="material-icons">home</icon></a>
+    <a href="index.html" id="button_home" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--2dp enlift"><icon class="material-icons">home</icon></a>
     <a class="mdl-tooltip mdl-tooltip--left" for="button_home">
       Back to Home page.
     </a>
