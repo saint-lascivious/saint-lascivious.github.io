@@ -308,6 +308,20 @@
             "type": "image/webp",
             "platform": "wide",
             "label": "Popular Projects"
+        },
+        {
+            "src": "/resources/screenshots/portrait/debug.webp",
+            "sizes": "720x1280",
+            "type": "image/webp",
+            "platform": "narrow",
+            "label": "Debug"
+        },
+        {
+            "src": "/resources/screenshots/landscape/debug.webp",
+            "sizes": "1280x720",
+            "type": "image/webp",
+            "platform": "wide",
+            "label": "Debug"
         }
     ],
     "launch_handler": {
