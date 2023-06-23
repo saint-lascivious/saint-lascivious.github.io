@@ -35,6 +35,7 @@ https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts
 https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
 https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
 https://sainternet.xyz/downloads/lists/top-level-domains-with-abuse-potential.txt
+https://sainternet.xyz/downloads/lists/virtual-top-level-domains-for-dns-server-interrogation.txt
 https://someonewhocares.org/hosts/zero/hosts
 https://urlhaus.abuse.ch/downloads/hostfile/
 https://v.firebog.net/hosts/AdguardDNS.txt
