@@ -179,9 +179,13 @@
             <h3 class="embiggen">National Pokédex over DNS</h3>
             <ul>
               <li><a href="pokedexoverdns.html#examplequeries" class="embiggen">Example Pokédex over DNS Queries</a></li>
+<!--
               <li><a href="pokedexoverdns.html#examplequeryusingdig" class="embiggen">Using dig</a></li>
+-->
               <li><a href="pokedexoverdns.html#examplequeryusingdnslookup" class="embiggen">Using dnslookup</a></li>
+<!--
               <li><a href="pokedexoverdns.html#examplequeryusingnslookup" class="embiggen">Using nslookup</a></li>
+-->
               <li><a href="pokedexoverdns.html#unboundconfiguration" class="embiggen">Unbound Configuration</a></li>
               <li><a href="pokedexoverdns.html#nationalpokedexunboundconfiguration" class="embiggen">National Pokédex Unbound Configuration</a></li>
             </ul>
@@ -197,7 +201,7 @@
                   <img src="resources/images/terminal.jpg" width="820" height="480" alt="Example Pokédex-over-DNS query using nslookup and dig utilities from the command line: nslookup -type=txt wurmple.pokedex dns.sainternet.xyz, dig +short txt wurmple.pokedex @dns.sainternet.xyz">
                 </picture>
                 <picture class="mdl-tooltip mdl-tooltip--top" for="image-terminal">
-                  Example Pokédex-over-DNS query using nslookup and dig utilities from the command line: nslookup -type=txt wurmple.pokedex dns.sainternet.xyz, dig +short txt wurmple.pokedex @dns.sainternet.xyz
+                  Example National Pokédex-over-DNS queries (outdated).
                 </picture>
               </a>
             </div>
@@ -210,6 +214,7 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--2dp content mdl-cell mdl-cell--8-col enlift">
             <h3 class="embiggen">Example Pokédex over DNS Queries</h3>
+<!--
             <p class="embiggen sainternet-subheader-centered" id="examplequeryusingdig">
               Using dig
             </p>
@@ -246,6 +251,7 @@
             <div class="enlift rounded-corners shadow-boxing">
               <pre>dig +short txt waumpel.pokedex @dns.sainternet.xyz</pre>
             </div>
+-->
             <p class="embiggen sainternet-subheader-centered" id="examplequeryusingdnslookup">
               Using dnslookup
             </p>
@@ -256,32 +262,33 @@
               National Pokédex
             </p>
             <div class="enlift rounded-corners shadow-boxing">
-              <pre>RRTYPE=TXT dnslookup 265.pokedex dns.sainternet.xyz</pre>
+              <pre>RRTYPE=TXT dnslookup 265.pokedex https://dns.sainternet.xyz</pre>
             </div>
             <p>
               English US
             </p>
             <div class="enlift rounded-corners shadow-boxing">
-              <pre>RRTYPE=TXT dnslookup wurmple.pokedex dns.sainternet.xyz</pre>
+              <pre>RRTYPE=TXT dnslookup wurmple.pokedex https://dns.sainternet.xyz</pre>
             </div>
             <p>
               Nihon
             </p>
             <div class="enlift rounded-corners shadow-boxing">
-              <pre>RRTYPE=TXT dnslookup kemusso.pokedex dns.sainternet.xyz</pre>
+              <pre>RRTYPE=TXT dnslookup kemusso.pokedex https://dns.sainternet.xyz</pre>
             </div>
             <p>
               Français
             </p>
             <div class="enlift rounded-corners shadow-boxing">
-              <pre>RRTYPE=TXT dnslookup chenipotte.pokedex dns.sainternet.xyz</pre>
+              <pre>RRTYPE=TXT dnslookup chenipotte.pokedex https://dns.sainternet.xyz</pre>
             </div>
             <p>
               Deutsch
             </p>
             <div class="enlift rounded-corners shadow-boxing">
-              <pre>RRTYPE=TXT dnslookup waumpel.pokedex dns.sainternet.xyz</pre>
+              <pre>RRTYPE=TXT dnslookup waumpel.pokedex https://dns.sainternet.xyz</pre>
             </div>
+<!--
             <p class="embiggen sainternet-subheader-centered" id="examplequeryusingnslookup">
               Using nslookup
             </p>
@@ -318,6 +325,7 @@
             <div class="enlift rounded-corners shadow-boxing">
               <pre>nslookup -type=txt waumpel.pokedex dns.sainternet.xyz</pre>
             </div>
+-->
           </div>
         </div>
         <div class="sainternet-container mdl-grid" id="unboundconfiguration">
