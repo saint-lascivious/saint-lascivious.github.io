@@ -103,6 +103,8 @@
     <script type="text/javascript" src="resources/javascript/load_mono_fonts.min.js" defer></script>
     <link rel="preload" as="script" href="resources/javascript/toggle_drawer.min.js">
     <script type="text/javascript" src="resources/javascript/toggle_drawer.min.js" defer></script>
+    <link rel="preload" as="script" href="resources/javascript/copy_text.min.js">
+    <script type="text/javascript" src="resources/javascript/copy_text.min.js" defer></script>
     <link rel="preload" as="script" href="sainternet.min.js">
     <script type="text/javascript" src="sainternet.min.js" defer></script>
 
@@ -255,7 +257,7 @@
               <pre>dig +short txt waumpel.pokedex @dns.sainternet.xyz</pre>
             </div>
 -->
-            <p class="embiggen sainternet-subheader-centered" id="examplequeryusingdnslookup">
+            <p class="embiggen sainternet-subheader-centered" id="265examplequeryusingdnslookup">
               Using dnslookup
             </p>
             <p>
@@ -265,34 +267,34 @@
               National Pokédex
             </p>
             <div class="enlift rounded-corners shadow-boxing">
-              <pre>RRTYPE=TXT dnslookup 265.pokedex https://dns.sainternet.xyz</pre>
+              <pre id="dnslookupquerynationalpokedex" onclick="copyToClipboard(dnslookupquerynationalpokedex);">RRTYPE=TXT dnslookup 265.pokedex https://dns.sainternet.xyz</pre>
             </div>
             <p>
               English US
             </p>
             <div class="enlift rounded-corners shadow-boxing">
-              <pre>RRTYPE=TXT dnslookup wurmple.pokedex https://dns.sainternet.xyz</pre>
+              <pre id="dnslookupqueryenglishus" onclick="copyToClipboard(dnslookupqueryenglishus);">RRTYPE=TXT dnslookup wurmple.pokedex https://dns.sainternet.xyz</pre>
             </div>
             <p>
               Nihon
             </p>
             <div class="enlift rounded-corners shadow-boxing">
-              <pre>RRTYPE=TXT dnslookup kemusso.pokedex https://dns.sainternet.xyz</pre>
+              <pre id="dnslookupquerynihon" onclick="copyToClipboard(dnslookupquerynihon);">RRTYPE=TXT dnslookup kemusso.pokedex https://dns.sainternet.xyz</pre>
             </div>
             <p>
               Français
             </p>
             <div class="enlift rounded-corners shadow-boxing">
-              <pre>RRTYPE=TXT dnslookup chenipotte.pokedex https://dns.sainternet.xyz</pre>
+              <pre id="dnslookupqueryfrancias" onclick="copyToClipboard(dnslookupqueryfrancais);">RRTYPE=TXT dnslookup chenipotte.pokedex https://dns.sainternet.xyz</pre>
             </div>
             <p>
               Deutsch
             </p>
             <div class="enlift rounded-corners shadow-boxing">
-              <pre>RRTYPE=TXT dnslookup waumpel.pokedex https://dns.sainternet.xyz</pre>
+              <pre id="dnslookupquerydeutsch" onclick="copyToClipboard(dnslookupquerydeutsch);">RRTYPE=TXT dnslookup waumpel.pokedex https://dns.sainternet.xyz</pre>
             </div>
 <!--
-            <p class="embiggen sainternet-subheader-centered" id="examplequeryusingnslookup">
+            <p class="embiggen sainternet-subheader-centered" id="265examplequeryusingnslookup">
               Using nslookup
             </p>
             <p>
