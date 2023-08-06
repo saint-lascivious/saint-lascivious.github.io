@@ -17,7 +17,7 @@
 <string>119.224.127.171</string>
 </array>
 <key>ServerURL</key>
-<string>https://dns.sainternet.xyz</string>
+<string>https://dns.sainternet.xyz/dns-query</string>
 </dict>
 <key>OnDemandRules</key>
 <array>
@@ -39,15 +39,15 @@
 </dict>
 </array>
 <key>PayloadDescription</key>
-<string>Configures device to use Sainternet DNS over HTTPS Encrypted DNS over HTTPS</string>
+<string>Configures device to use Sainternet Encrypted DNS over HTTPS</string>
 <key>PayloadDisplayName</key>
-<string>Sainternet DNS over HTTPS DNS over HTTPS</string>
+<string>Sainternet DNS over HTTPS</string>
 <key>PayloadIdentifier</key>
-<string>com.apple.dnsSettings.managed.d6dde818-57d9-44d2-afcf-b769f44b84d9</string>
+<string>com.apple.dnsSettings.managed.2ad099da-3fff-48b9-b5be-afd09e19784b</string>
 <key>PayloadType</key>
 <string>com.apple.dnsSettings.managed</string>
 <key>PayloadUUID</key>
-<string>37a13c51-f1fb-4d61-9b4a-b66bd75040bf</string>
+<string>0623bfa9-38c6-4918-a162-52464d7af47a</string>
 <key>PayloadVersion</key>
 <integer>1</integer>
 <key>ProhibitDisablement</key>
@@ -55,17 +55,17 @@
 </dict>
 </array>
 <key>PayloadDescription</key>
-<string>Adds different encrypted DNS configurations to Big Sur and iOS 14 based systems</string>
+<string>Adds different encrypted DNS configurations to Big Sur (or newer) and iOS 14 (or newer) based systems</string>
 <key>PayloadDisplayName</key>
 <string>Encrypted DNS (DoH, DoT)</string>
 <key>PayloadIdentifier</key>
-<string>com.notjakob.apple-dns.b6ec4556-6e62-4245-a1d0-e00e4a0393de</string>
+<string>com.notjakob.apple-dns.96417fb3-2188-4809-a012-f5e374601c1b</string>
 <key>PayloadRemovalDisallowed</key>
 <false/>
 <key>PayloadType</key>
 <string>Configuration</string>
 <key>PayloadUUID</key>
-<string>66cc6ee0-44f7-4dc0-8c2f-59b301c6aba6</string>
+<string>ee7b78e3-23ef-401b-86e8-1f4d1f175e09</string>
 <key>PayloadVersion</key>
 <integer>1</integer>
 </dict>
