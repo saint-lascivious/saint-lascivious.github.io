@@ -198,28 +198,23 @@
             <div class="enlift rounded-corners shadow-boxing">
               <table>
                 <tr>
-                  <th>Type</th>
-                  <th>Address</th>
-                  <th>Port</th>
+                  <th>Encryption</th>
+                  <th>Protocol<br>Port</th>
                 </tr>
                 <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS" id="dnsoverhttps">HTTPS</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverhttps">DNS over HTTPS</a></td>
-                  <td><code>https://dns.sainternet.xyz/dns-query</code></td>
+                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS" id="dnsoverhttps">HTTPS</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverhttps"><code>https://dns.sainternet.xyz/dns-query</code></a></td>
                   <td>TCP<br><code>443</code></td>
                 </tr>
                 <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/HTTP/3" id="dnsoverhttp3">HTTP/3</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverhttp3">DNS over HTTP/3</a></td>
-                  <td><code>h3://dns.sainternet.xyz/dns-query</code></td>
+                  <td><a href="https://en.wikipedia.org/wiki/HTTP/3" id="dnsoverhttp3">HTTP/3</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverhttp3"><code>h3://dns.sainternet.xyz/dns-query</code></a></td>
                   <td>UDP<br><code>443</code></td>
                 </tr>
                 <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_TLS" id="dnsovertls">TLS</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsovertls">DNS over TLS</a></td>
-                  <td><code>tls://dns.sainternet.xyz:853</code></td>
+                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_TLS" id="dnsovertls">TLS</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsovertls"><code>tls://dns.sainternet.xyz:853</code></a></td>
                   <td>TCP<br><code>853</code></td>
                 </tr>
                 <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_QUIC" id="dnsoverquic">QUIC</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverhttps">DNS over QUIC</a></td>
-                  <td><code>quic://dns.sainternet.xyz:853</code></td>
+                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_QUIC" id="dnsoverquic">QUIC</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverquic"><code>quic://dns.sainternet.xyz:853</code></a></td>
                   <td>UDP<br><code>853</code></td>
                 </tr>
               </table>
@@ -228,7 +223,8 @@
               Notes:
             </p>
             <ul>
-              <li>You can instead use <code>unfiltered-client.dns.sainternet.xyz</code> for (mostly) unfiltered resolution.</li>
+              <li>For <a href="connecttosainternet.html#androidprivatedns">Android Private DNS</a> use just the <code>dns.sainternet.xyz</code> domain without <code>proto://</code>, <code>/path</code> or <code>:port</code> sections.</li>
+              <li>You can instead use <code>unfiltered-client.dns.sainternet.xyz</code> for (mostly) unfiltered DNS resolution.</li>
             </ul>
             <p class="embiggen sainternet-subheader-centered" id="unencrypteddns">
               Unencrypted DNS
@@ -236,19 +232,16 @@
             <div class="enlift rounded-corners shadow-boxing">
               <table>
                 <tr>
-                  <th>Type</th>
-                  <th>Address</th>
+                  <th>Protocol</th>
                   <th>Port</th>
                 </tr>
                 <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol" id="dnsovertcp">TCP</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsovertcp">DNS over TCP</a></td>
-                  <td><code>119.224.127.171</code><br><code id="alt-ipv6-1">::ffff:77e0:7fab</code><code class="mdl-tooltip mdl-tooltip--top" for="alt-ipv6-1">::ffff:119.224.127.171</code></td>
-                  <td>TCP<br><code>53</code></td>
+                  <td><a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol" id="dnsovertcp">TCP</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsovertcp"><code>119.224.127.171</code><br><code id="alt-ipv6-1">::ffff:77e0:7fab</code><code class="mdl-tooltip mdl-tooltip--top" for="alt-ipv6-1">::ffff:119.224.127.171</code></a></td>
+                  <td><code>53</code></td>
                 </tr>
                 <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol" id="dnsoverudp">UDP</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverudp">DNS over UDP</a></td>
-                  <td><code>119.224.127.171</code><br><code id="alt-ipv6-2">::ffff:77e0:7fab</code><code class="mdl-tooltip mdl-tooltip--top" for="alt-ipv6-2">::ffff:119.224.127.171</code></td>
-                  <td>UDP<br><code>53</code></td>
+                  <td><a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol" id="dnsoverudp">UDP</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverudp"><code>119.224.127.171</code><br><code id="alt-ipv6-2">::ffff:77e0:7fab</code><code class="mdl-tooltip mdl-tooltip--top" for="alt-ipv6-2">::ffff:119.224.127.171</code></a></td>
+                  <td><code>53</code></td>
                 </tr>
               </table>
             </div>

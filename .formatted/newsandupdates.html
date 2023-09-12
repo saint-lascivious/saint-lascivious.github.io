@@ -220,10 +220,10 @@
           <div class="sainternet-content mdl-shadow--2dp content mdl-cell mdl-cell--8-col enlift">
             <h3 class="embiggen">Old Blog, New Tricks</h3>
             <p class="embiggen" id="datetime">
-              first posted on Wednesday, 13 September 2023 00:20+12:00 (NZST)<br>updated on Wednesday, 13 September 2023 01:30+12:00 (NZST)
+              first posted on Wednesday, 13 September 2023 00:20+12:00 (NZST)<br>updated on Wednesday, 13 September 2023 06:15+12:00 (NZST)
             </p>
             <p>
-              If you <a href="connecttosainternet.html">Connect to Sainternet</a> using an <a href="portsandprotocols.html#encrypteddns" class="embiggen">Encrypted DNS</a> protocol, it is now possible to add an <code>unfiltered-client</code> identifier to your query path for (mostly) unfiltered DNS resolution.
+              If you <a href="connecttosainternet.html">Connect to Sainternet</a> using an <a href="portsandprotocols.html#encrypteddns" class="embiggen">Encrypted DNS</a> protocol, it is now possible to add an <code>unfiltered-client</code> identifier to your query destination for (mostly) unfiltered DNS resolution.
             </p>
             <p>
               Minor filtering is performed for rate limiting and abuse mitigation, but otherwise no blocking is performed.
@@ -231,24 +231,24 @@
             <div class="enlift rounded-corners shadow-boxing">
               <table>
                 <tr>
-                  <th>Protocol</th>
-                  <th>Path</th>
+                  <th>Encryption</th>
+                  <th>Protocol<br>Port</th>
                 </tr>
                 <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS" id="dnsoverhttps">HTTPS</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverhttps">DNS over HTTPS</a></td>
-                  <td><code>https://unfiltered-client.dns.sainternet.xyz/dns-query</code></td>
+                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS" id="dnsoverhttps">HTTPS</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverhttps"><code>https://unfiltered-client.dns.sainternet.xyz/dns-query</code></a></td>
+                  <td>TCP<br><code>443</code></td>
                 </tr>
                 <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/HTTP/3" id="dnsoverhttp3">HTTP/3</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverhttp3">DNS over HTTP/3</a></td>
-                  <td><code>h3://unfiltered-client.dns.sainternet.xyz/dns-query</code></td>
+                  <td><a href="https://en.wikipedia.org/wiki/HTTP/3" id="dnsoverhttp3">HTTP/3</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverhttp3"><code>h3://unfiltered-client.dns.sainternet.xyz/dns-query</code></a></td>
+                  <td>UDP<br><code>443</code></td>
                 </tr>
                 <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_TLS" id="dnsovertls">TLS</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsovertls">DNS over TLS</a></td>
-                  <td><code>tls://unfiltered-client.dns.sainternet.xyz:853</code></td>
+                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_TLS" id="dnsovertls">TLS</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsovertls"><code>tls://unfiltered-client.dns.sainternet.xyz:853</code></a></td>
+                  <td>TCP<br><code>853</code></td>
                 </tr>
                 <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_QUIC" id="dnsoverquic">QUIC</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverhttps">DNS over QUIC</a></td>
-                  <td><code>quic://unfiltered-client.dns.sainternet.xyz:853</code></td>
+                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_QUIC" id="dnsoverquic">QUIC</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverquic"><code>quic://unfiltered-client.dns.sainternet.xyz:853</code></a></td>
+                  <td>UDP<br><code>853</code></td>
                 </tr>
               </table>
             </div>
@@ -256,7 +256,8 @@
               Notes:
             </p>
             <ul>
-              <li>For <a href="connecttosainternet.html#androidprivatedns">Android Private DNS</a> use <code>unfiltered-client.dns.sainternet.xyz</code>.</li>
+              <li>For <a href="connecttosainternet.html#androidprivatedns">Android Private DNS</a> use just the <code>unfiltered-client.dns.sainternet.xyz</code> domain without <code>proto://</code>, <code>/path</code> or <code>:port</code> sections.</li>
+              <li>You can still use <code>dns.sainternet.xyz</code> for filtered DNS resolution.</li>
           </div>
         </div>
         <div class="sainternet-container mdl-grid" id="everycatdeservesscritchesalways">
