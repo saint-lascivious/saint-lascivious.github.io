@@ -120,8 +120,12 @@
 
     <link rel="prefetch" href="archive.html" as="document">
     <link rel="prerender" href="archive.html">
+    <link rel="prefetch" href="connecttosainternet.html" as="document">
+    <link rel="prerender" href="connecttosainternet.html">
     <link rel="prefetch" href="devdiary.html" as="document">
     <link rel="prerender" href="devdiary.html">
+    <link rel="prefetch" href="portsandprotocols.html" as="document">
+    <link rel="prerender" href="portsandprotocols.html">
 
     <link rel="prefetch" href="index.html" as="document">
     <link rel="prerender" href="index.html">
@@ -216,14 +220,43 @@
           <div class="sainternet-content mdl-shadow--2dp content mdl-cell mdl-cell--8-col enlift">
             <h3 class="embiggen">Old Blog, New Tricks</h3>
             <p class="embiggen" id="datetime">
-              first posted on Wednesday, 13 September 2023 00:20+12:00 (NZST)
+              first posted on Wednesday, 13 September 2023 00:20+12:00 (NZST)<br>updated on Wednesday, 13 September 2023 01:30+12:00 (NZST)
             </p>
             <p>
-              If you <a href="connecttosainternet.html">Connect to Sainternet</a> using a domain, it is now possible to add the <code>unfiltered-client</code> identifier to your domain query path, for example <code>unfiltered-client.dns.sainternet.xyz</code> or <code>https://unfiltered-client.dns.sainternet.xyz/dns-query</code>.
+              If you <a href="connecttosainternet.html">Connect to Sainternet</a> using an <a href="portsandprotocols.html#encrypteddns" class="embiggen">Encrypted DNS</a> protocol, it is now possible to add an <code>unfiltered-client</code> identifier to your query path for (mostly) unfiltered DNS resolution.
             </p>
             <p>
               Minor filtering is performed for rate limiting and abuse mitigation, but otherwise no blocking is performed.
             </p>
+            <div class="enlift rounded-corners shadow-boxing">
+              <table>
+                <tr>
+                  <th>Protocol</th>
+                  <th>Path</th>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS" id="dnsoverhttps">HTTPS</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverhttps">DNS over HTTPS</a></td>
+                  <td><code>https://unfiltered-client.dns.sainternet.xyz/dns-query</code></td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/HTTP/3" id="dnsoverhttp3">HTTP/3</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverhttp3">DNS over HTTP/3</a></td>
+                  <td><code>h3://unfiltered-client.dns.sainternet.xyz/dns-query</code></td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_TLS" id="dnsovertls">TLS</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsovertls">DNS over TLS</a></td>
+                  <td><code>tls://unfiltered-client.dns.sainternet.xyz:853</code></td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_QUIC" id="dnsoverquic">QUIC</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverhttps">DNS over QUIC</a></td>
+                  <td><code>quic://unfiltered-client.dns.sainternet.xyz:853</code></td>
+                </tr>
+              </table>
+            </div>
+            <p>
+              Notes:
+            </p>
+            <ul>
+              <li>For <a href="connecttosainternet.html#androidprivatedns">Android Private DNS</a> use <code>unfiltered-client.dns.sainternet.xyz</code>.</li>
           </div>
         </div>
         <div class="sainternet-container mdl-grid" id="everycatdeservesscritchesalways">
@@ -597,7 +630,7 @@
           <div class="sainternet-content mdl-shadow--2dp content mdl-cell mdl-cell--8-col enlift">
             <h3 class="embiggen">Analytics Disclosure</h3>
             <p class="embiggen" id="datetime">
-              Wednesday, 15 February 2023 01:00+13:00 (NZDT)
+              first posted on Wednesday, 15 February 2023 01:00+13:00 (NZDT)
             </p>
             <p>
               As of approximately 00:00+13:00 (NZDT) Tuesday, 14 February 2023 all pages on this site implemented anonymous metrics collection using Google Analytics 4 and Google Tag Manager.
@@ -621,7 +654,7 @@
           <div class="sainternet-content mdl-shadow--2dp content mdl-cell mdl-cell--8-col enlift">
             <h3 class="embiggen">PWA!</h3>
             <p class="embiggen" id="datetime">
-              Sunday, 22 January 2023 06:00+13:00 (NZDT)
+              first posted on Sunday, 22 January 2023 06:00+13:00 (NZDT)
             </p>
             <p>
               No, it's not a visual sound effect from Adam West's Batman.
