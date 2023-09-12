@@ -204,7 +204,7 @@
               Notes:
             </p>
             <ul>
-              <li>You can instead use <code>unfiltered-client.dns.sainternet.xyz</code> for (mostly) unfiltered resolution.</li>
+              <li>Unfiltered DNS resolution is available via the <code>unfiltered-client.dns.sainternet.xyz</code> domain with the <code>unfiltered-client</code> identifier.</li>
             </ul>
           </div>
         </div>
@@ -223,6 +223,9 @@
               <li>Agree to any/all prompts</li>
               <li>Done</li>
             </ol>
+            <p class="embiggen sainternet-subheader-centered" id="filtereddnsprofiles">
+              Filtered DNS Profiles
+            </p>
             <div class="sainternet-list-action mdl-list">
               <div class="mdl-list__item">
                 <span class="embiggen mdl-list__item-primary-content">DNS over HTTPS</span>
@@ -238,6 +241,26 @@
                 <span class="embiggen mdl-list__item-primary-content">DNS over HTTPS/TLS</span>
                 <a class="mdl-list__item-secondary-action" download="sainternet-https-and-tls.mobileconfig" href="downloads/apple/sainternet-https-and-tls.mobileconfig" id="httpstlsmobileconfig"><icon class="material-icons mdl-list__item-icon">file_download</icon></a>
                 <a class="mdl-tooltip mdl-tooltip--bottom" for="httpstlsmobileconfig">Download HTTPS/TLS .mobileconfig for Apple iOS/macOS.</a>
+              </div>
+            </div>
+            <p class="embiggen sainternet-subheader-centered" id="unfiltereddnsprofiles">
+              Unfiltered DNS Profiles
+            </p>
+            <div class="sainternet-list-action mdl-list">
+              <div class="mdl-list__item">
+                <span class="embiggen mdl-list__item-primary-content">DNS over HTTPS</span>
+                <a class="mdl-list__item-secondary-action" download="sainternet-https-only-unfiltered.mobileconfig" href="downloads/apple/sainternet-https-only-unfiltered.mobileconfig" id="unfilteredhttpsmobileconfig"><icon class="material-icons mdl-list__item-icon">file_download</icon></a>
+                <a class="mdl-tooltip mdl-tooltip--top" for="unfilteredhttpsmobileconfig">Download unfiltered HTTPS .mobileconfig for Apple iOS/macOS.</a>
+              </div>
+              <div class="mdl-list__item">
+                <span class="embiggen mdl-list__item-primary-content">DNS over TLS</span>
+                <a class="mdl-list__item-secondary-action" download="sainternet-tls-only-unfiltered.mobileconfig" href="downloads/apple/sainternet-tls-only-unfiltered.mobileconfig" id="unfilteredtlsmobileconfig"><icon class="material-icons mdl-list__item-icon">file_download</icon></a>
+                <a class="mdl-tooltip mdl-tooltip--left" for="unfilteredtlsmobileconfig">Download unfiltered TLS .mobileconfig for Apple iOS/macOS.</a>
+              </div>
+              <div class="mdl-list__item">
+                <span class="embiggen mdl-list__item-primary-content">DNS over HTTPS/TLS</span>
+                <a class="mdl-list__item-secondary-action" download="sainternet-https-and-tls-unfiltered.mobileconfig" href="downloads/apple/sainternet-https-and-tls-unfiltered.mobileconfig" id="unfilteredhttpstlsmobileconfig"><icon class="material-icons mdl-list__item-icon">file_download</icon></a>
+                <a class="mdl-tooltip mdl-tooltip--bottom" for="unfilteredhttpstlsmobileconfig">Download unfiltered HTTPS/TLS .mobileconfig for Apple iOS/macOS.</a>
               </div>
             </div>
             <p>
@@ -268,7 +291,7 @@
               Notes:
             </p>
             <ul>
-              <li>You can instead use <code>https://unfiltered-client.dns.sainternet.xyz/dns-query</code> for (mostly) unfiltered resolution.</li>
+              <li>Unfiltered DNS resolution is available via the <code>unfiltered-client.dns.sainternet.xyz</code> domain with the <code>unfiltered-client</code> identifier.</li>
             </ul>
           </div>
         </div>
@@ -294,7 +317,7 @@
             </p>
             <ul>
               <li>Sainternet intentionally disables Mozilla's <a href="https://support.mozilla.org/en-US/kb/configuring-networks-disable-dns-over-https">default DNS over HTTPS</a> to prevent it from bypassing Sainternet<br>(Ignored if manually configured.)</li>
-              <li>You can instead use <code>https://unfiltered-client.dns.sainternet.xyz/dns-query</code> for (mostly) unfiltered resolution.</li>
+              <li>Unfiltered DNS resolution is available via the <code>unfiltered-client.dns.sainternet.xyz</code> domain with the <code>unfiltered-client</code> identifier.</li>
             </ul>
           </div>
         </div>
