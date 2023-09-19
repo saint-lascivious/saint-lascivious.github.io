@@ -1,0 +1,243 @@
+<!doctype html>
+<!--
+  sainternet.xyz - test.html
+  Copyright 2023 saint-lascivious (Hayden Pearce). All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en-NZ" dir="ltr" xml:lang="en-NZ">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+
+    <title>sainternet.xyz</title>
+
+    <meta name="description" content="Sainternet offers validating, recursive, caching, mostly specification compliant, filtered DNS servers with a zero logging policy served over all your favourite acronyms.">
+    <meta name="keywords" content="dns, DNS, dns.sainternet.xyz, doh, DoH, dohttps, DoHTTPS, doh/3, DoH/3, dohttp/3, DoHTTP/3, dot, DoT, dotls, DoTLS, doq, DoQ, doquic, DoQUIC, 'filtered dns', 'filtered DNS', 'Hayden Pearce', pokedex, Pokedex, pokédex, Pokédex, saint, sainternet, saint-lascivious, sainternet.xyz">
+    <meta name="author" content="saint-lascivious, 'Hayden Pearce'">
+
+    <meta name="theme-color" content="#9C27BO">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="sainternet.xyz">
+
+    <meta http-equiv="Content-Security-Policy" content="connect-src https://www.google-analytics.com www.google-analytics.com; default-src 'self'; img-src 'self' https://failure.sainternet.xyz failure.sainternet.xyz https://success.sainternet.xyz success.sainternet.xyz https://www.google-analytics.com www.google-analytics.com; script-src 'self' https://www.google-analytics.com https://www.googletagmanager.com 'unsafe-inline'">
+
+    <link rel="icon" type="image/x-icon" sizes="16x16 24x24 32x32 64x64" href="resources/icons/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="resources/icons/favicon/favicon-24x24.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="resources/icons/android-chrome-48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="resources/icons/favicon/favicon-64x64.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="resources/icons/android-chrome-72x72.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="resources/icons/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="resources/icons/android-chrome-128x128.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="resources/icons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="resources/icons/android-chrome-384x384.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="resources/icons/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/icons/apple-touch-icon.png">
+    <link rel="mask-icon" href="resources/icons/safari-pinned-tab.svg" color="#f44336">
+    <meta name="msapplication-TileImage" content="resources/icons/mstile-144x144.png">
+    <meta name="msapplication-config" content="resources/icons/browserconfig.xml">
+    <meta name="msapplication-TileColor" content="#ef5350">
+
+    <link rel="canonical" href="https://sainternet.xyz/test.html">
+
+    <link rel="preload" as="image" href="resources/test/unknown-light.webp" type="image/webp" media="(prefers-color-scheme: light)" fetchpriority="high">
+    <link rel="preload" as="image" href="resources/test/unknown-dark.webp" type="image/webp" media="(prefers-color-scheme: dark)" fetchpriority="high">
+
+    <link rel="preload" as="style" href="resources/stylesheets/material.purple-red.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/material.purple-red.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/sainternet.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/sainternet.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/ribbons.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/ribbons.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/img.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/img.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/button_home.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/button_home.min.css">
+
+    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/materialicons/v140/Material-Icons.woff2">
+    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/roboto/v30/Roboto-Bold.woff2">
+    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/roboto/v30/Roboto-Medium.woff2">
+    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/roboto/v30/Roboto-Regular.woff2">
+    <link rel="preload" as="font" type="font/woff2" href="resources/fontawesome-free-6.4.0-web/webfonts/fa-brands-400.woff2">
+
+    <link rel="preload" as="style" href="resources/google/css/roboto.min.css">
+    <link href="resources/google/css/roboto.min.css" rel="stylesheet">
+    <link rel="preload" as="style" href="resources/google/css/materialicons.min.css">
+    <link href="resources/google/css/materialicons.min.css" rel="stylesheet">
+
+    <link rel="preload" as="style" href="resources/fontawesome-free-6.4.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="resources/fontawesome-free-6.4.0-web/css/fontawesome.min.css">
+    <link rel="preload" as="style" href="resources/fontawesome-free-6.4.0-web/css/brands.min.css">
+    <link rel="stylesheet" href="resources/fontawesome-free-6.4.0-web/css/brands.min.css">
+
+    <link rel="preload" as="script" href="resources/javascript/material.min.js">
+    <script type="text/javascript" src="resources/javascript/material.min.js" defer></script>
+    <link rel="preload" as="script" href="resources/javascript/console_wrapper.min.js">
+    <script type="text/javascript" src="resources/javascript/console_wrapper.min.js" defer></script>
+    <link rel="preload" as="script" href="resources/javascript/load_fonts.min.js">
+    <script type="text/javascript" src="resources/javascript/load_fonts.min.js" defer></script>
+
+    <link rel="preload" as="script" href="resources/javascript/toggle_drawer.min.js">
+    <script type="text/javascript" src="resources/javascript/toggle_drawer.min.js" defer></script>
+    <link rel="preload" as="script" href="sainternet.min.js">
+    <script type="text/javascript" src="sainternet.min.js" defer></script>
+    <link rel="preload" as="script" href="resources/javascript/test.min.js">
+    <script type="text/javascript" src="resources/javascript/test.min.js" defer></script>
+
+    <link rel="dns-prefetch" href="www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preload" as="script" href="resources/javascript/tag_manager.min.js">
+    <script type="text/javascript" src="resources/javascript/tag_manager.min.js" defer></script>
+
+    <link rel="prefetch" href="newsandupdates.html" as="document">
+    <link rel="prerender" href="newsandupdates.html">
+    <link rel="prefetch" href="filtereddns.html" as="document">
+    <link rel="prerender" href="filtereddns.html">
+    <link rel="prefetch" href="pokedexoverdns.html" as="document">
+    <link rel="prerender" href="pokedexoverdns.html">
+    <link rel="prefetch" href="projects.html" as="document">
+    <link rel="prerender" href="projects.html">
+    <link rel="prefetch" href="debug.html" as="document">
+    <link rel="prerender" href="debug.html">
+
+    <link rel="manifest" href="sainternet.webmanifest">
+
+    <link rel="dns-prefetch" href="discord.gg">
+    <link rel="dns-prefetch" href="github.com">
+    <link rel="dns-prefetch" href="www.reddit.com">
+  </head>
+  <body>
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DT44KL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <div class="sainternet-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-shadow--2dp enlift">
+        <div class="mdl-layout__header-row">
+          <span class="embiggen mdl-layout-title">sainternet.xyz</span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="embiggen mdl-navigation__link" href="#welcome"><b>Home</b></a>
+            <a class="embiggen mdl-navigation__link" href="newsandupdates.html">News and Updates</a>
+            <a class="embiggen mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
+            <a class="embiggen mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
+            <a class="embiggen mdl-navigation__link" href="projects.html">Popular Projects</a>
+            <a class="embiggen mdl-navigation__link" href="debug.html">Debug</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="embiggen mdl-layout-title">sainternet.xyz</span>
+        <nav class="mdl-navigation">
+          <a class="embiggen mdl-navigation__link" href="#welcome"><b>Home</b></a>
+          <a class="embiggen mdl-navigation__link" href="newsandupdates.html">News and Updates</a>
+          <a class="embiggen mdl-navigation__link" href="filtereddns.html">Filtered DNS</a>
+          <a class="embiggen mdl-navigation__link" href="pokedexoverdns.html">Pokédex over DNS</a>
+          <a class="embiggen mdl-navigation__link" href="projects.html">Popular Projects</a>
+        </nav>
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="embiggen mdl-navigation__link" href="debug.html">Debug</a>
+        </nav>
+      </div>
+      <div class="ribbon purple-ribbon"></div>
+      <main class="sainternet-main mdl-layout__content">
+<!--
+        <div class="sainternet-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-navigation mdl-shadow--2dp content mdl-cell mdl-cell--8-col enlift">
+            <div class="sainternet-crumbs">
+              <a class="embiggen" href="index.html">Home</a> &gt; <a class="embiggen" href="filtereddns.html">Filtered DNS</a> &gt; <a class="embiggen" href="testsainternet.html"><b>Test Sainternet</b></a> &gt; <a class="embiggen" href="#testdns"><b>Test DNS</b></a>
+            </div>
+          </div>
+        </div>
+-->
+        <div class="sainternet-container mdl-grid" id="testdns">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="sainternet-content mdl-shadow--2dp content mdl-cell mdl-cell--8-col enlift">
+            <h3 class="embiggen">Test DNS</h3>
+            <p class="embiggen sainternet-subheader-centered">
+              Test Sainternet DNS
+            </p>
+            <div id="test-result">
+              <picture class="light-mode-img">
+                <source srcset="resources/test/unknown-light.webp" type="image/webp">
+<!--
+                <source srcset="resources/test/unknown.png" type="image/png">
+                <source srcset="resources/test/unknown.jpeg" type="image/jpeg">
+-->
+                <img id="test-result-image" src="resources/test/unknown.jpg" width="480" height="480" alt="Sainternet DNS test results are displayed here.">
+              </picture>
+              <picture class="dark-mode-img">
+                <source srcset="resources/test/unknown-dark.webp" type="image/webp">
+<!--
+                <source srcset="resources/test/unknown-shiny.png" type="image/png">
+                <source srcset="resources/test/unknown-shiny.jpeg" type="image/jpeg">
+-->
+                <img id="test-result-image" src="resources/test/unknown-dark.jpg" width="480" height="480" alt="Sainternet DNS test results are displayed here.">
+              </picture>
+            </div>
+            <div class="mdl-tooltip mdl-tooltip--top" for="test-result">
+              Sainternet DNS test results are displayed here.
+            </div>
+          </div>
+        </div>
+      </main>
+    <footer class="sainternet-footer mdl-mini-footer">
+      <div class="mdl-mini-footer--left-section">
+        <ul class="mdl-mini-footer--link-list">
+          <li>
+            <a href="mailto:saint@sainternet.xyz" target="_blank" rel="noopener noreferrer" id="icon-email">
+              <icon class="enlift material-icons">email</icon>
+            </a>
+            <a class="mdl-tooltip mdl-tooltip--top" for="icon-email">
+              Email
+            </a>
+          </li>
+          <li>
+            <a href="https://discord.gg/NC7taVyn" id="icon-discord">
+              <icon class="enlift fa-brands fa-discord"></icon>
+            </a>
+            <a class="mdl-tooltip mdl-tooltip--top" for="icon-discord">
+              Discord
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/saint-lascivious" id="icon-github">
+              <icon class="enlift fa-brands fa-github"></icon>
+            </a>
+            <a class="mdl-tooltip mdl-tooltip--top" for="icon-github">
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/user/saint-lascivious" id="icon-reddit">
+              <icon class="enlift fa-brands fa-reddit"></icon>
+            </a>
+            <a class="mdl-tooltip mdl-tooltip--top" for="icon-reddit">
+              Reddit
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <a href="index.html" id="button_home" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--2dp enlift"><icon class="material-icons">home</icon></a>
+    <a class="mdl-tooltip mdl-tooltip--left" for="button_home">
+      Back to Home page.
+    </a>
+  </body>
+</html>
