@@ -223,7 +223,7 @@
               first posted on Wednesday, 13 September 2023 00:20+12:00 (NZST)<br>updated on Thursday, 14 September 2023 22:15+12:00 (NZST)
             </p>
             <p>
-              If you <a href="connecttosainternet.html#connecttosainternet">Connect to Sainternet</a> using a domain and an <a href="portsandprotocols.html#encrypteddns" class="embiggen">Encrypted DNS</a> protocol, it is now possible to add an <code>unfiltered-client</code> identifier to your query destination for (mostly) unfiltered DNS resolution.
+              If you <a href="connecttosainternet.html#connecttosainternet">Connect to Sainternet</a> using a domain and an <a href="portsandprotocols.html#encrypteddns" class="embiggen">Encrypted DNS</a> protocol, it is now possible to add an <code>unfiltered</code> identifier to your query destination for (mostly) unfiltered DNS resolution.
             </p>
             <p>
               Minor filtering is performed for rate limiting and abuse mitigation, but otherwise no blocking is performed.
@@ -235,19 +235,19 @@
                   <th>Protocol<br>Port</th>
                 </tr>
                 <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS" id="dnsoverhttps">HTTPS</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverhttps"><code>https://unfiltered-client.dns.sainternet.xyz/dns-query</code></a></td>
+                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS" id="dnsoverhttps">HTTPS</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverhttps"><code>https://unfiltered.dns.sainternet.xyz/dns-query</code></a></td>
                   <td>TCP<br><code>443</code></td>
                 </tr>
                 <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/HTTP/3" id="dnsoverhttp3">HTTP/3</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverhttp3"><code>h3://unfiltered-client.dns.sainternet.xyz/dns-query</code></a></td>
+                  <td><a href="https://en.wikipedia.org/wiki/HTTP/3" id="dnsoverhttp3">HTTP/3</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverhttp3"><code>h3://unfiltered.dns.sainternet.xyz/dns-query</code></a></td>
                   <td>UDP<br><code>443</code></td>
                 </tr>
                 <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_TLS" id="dnsovertls">TLS</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsovertls"><code>tls://unfiltered-client.dns.sainternet.xyz:853</code></a></td>
+                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_TLS" id="dnsovertls">TLS</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsovertls"><code>tls://unfiltered.dns.sainternet.xyz:853</code></a></td>
                   <td>TCP<br><code>853</code></td>
                 </tr>
                 <tr>
-                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_QUIC" id="dnsoverquic">QUIC</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverquic"><code>quic://unfiltered-client.dns.sainternet.xyz:853</code></a></td>
+                  <td><a href="https://en.wikipedia.org/wiki/DNS_over_QUIC" id="dnsoverquic">QUIC</a><a class="mdl-tooltip mdl-tooltip--top" for="dnsoverquic"><code>quic://unfiltered.dns.sainternet.xyz:853</code></a></td>
                   <td>UDP<br><code>853</code></td>
                 </tr>
               </table>
@@ -256,7 +256,7 @@
               Notes:
             </p>
             <ul>
-              <li>For <a href="connecttosainternet.html#androidprivatedns">Android Private DNS</a> use just the <code>unfiltered-client.dns.sainternet.xyz</code> domain without <code>proto://</code>, <code>/path</code> or <code>:port</code> sections.</li>
+              <li>For <a href="connecttosainternet.html#androidprivatedns">Android Private DNS</a> use just the <code>unfiltered.dns.sainternet.xyz</code> domain without <code>proto://</code>, <code>/path</code> or <code>:port</code> sections.</li>
               <li>Filtered DNS resolution is available via <code>dns.sainternet.xyz</code>.</li>
           </div>
         </div>
