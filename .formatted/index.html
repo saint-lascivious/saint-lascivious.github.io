@@ -68,11 +68,11 @@
     <link rel="preload" as="style" href="resources/stylesheets/img.min.css">
     <link rel="stylesheet" href="resources/stylesheets/img.min.css">
 
-    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/materialicons/v140/Material-Icons.woff2">
-    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/roboto/v30/Roboto-Bold.woff2">
-    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/roboto/v30/Roboto-Medium.woff2">
-    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/roboto/v30/Roboto-Regular.woff2">
-    <link rel="preload" as="font" type="font/woff2" href="resources/fontawesome-free-6.4.0-web/webfonts/fa-brands-400.woff2">
+    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/materialicons/v140/Material-Icons.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/roboto/v30/Roboto-Bold.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/roboto/v30/Roboto-Medium.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/roboto/v30/Roboto-Regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="resources/fontawesome-free-6.4.0-web/webfonts/fa-brands-400.woff2" crossorigin>
 
     <link rel="preload" as="style" href="resources/google/css/roboto.min.css">
     <link href="resources/google/css/roboto.min.css" rel="stylesheet">
@@ -172,7 +172,7 @@
               Welcome to Sainternet.
             </p>
             <p>
-              I'm saint (aka. Hayden Pearce), and I make (and break) things on the internet sometimes.
+              I'm saint (aka. Hayden Pearce), and I make (and more frequently break) things on the internet sometimes.
             </p>
             <p>
               This site is one of those things.
@@ -185,17 +185,17 @@
                 <source srcset="resources/images/wurmple.webp" type="image/webp">
                 <source srcset="resources/images/wurmple.png" type="image/png">
                 <source srcset="resources/images/wurmple.jpeg" type="image/jpeg">
-                <img src="resources/images/wurmple.jpg" width="480" height="480" alt="Image supplied not illustrative, the author is not a Pokémon.">
+                <img src="resources/images/wurmple.jpg" width="480" height="480" alt="The image supplied is not strictly illustrative, the author is not a Pokémon.">
               </picture>
               <picture class="dark-mode-img">
                 <source srcset="resources/images/wurmple-shiny.webp" type="image/webp">
                 <source srcset="resources/images/wurmple-shiny.png" type="image/png">
                 <source srcset="resources/images/wurmple-shiny.jpeg" type="image/jpeg">
-                <img src="resources/images/wurmple-shiny.jpg" width="480" height="480" alt="Image supplied not illustrative, the author is not a Pokémon.">
+                <img src="resources/images/wurmple-shiny.jpg" width="480" height="480" alt="The image supplied is not strictly illustrative, the author is not a Pokémon.">
               </picture>
             </div>
             <div class="mdl-tooltip mdl-tooltip--top" for="hero-image">
-              Image supplied not illustrative, the author is not a Pokémon.
+              The image supplied is not strictly illustrative, the author is not a Pokémon.
             </div>
           </div>
         </div>
@@ -204,7 +204,7 @@
       <div class="mdl-mini-footer--left-section">
         <ul class="mdl-mini-footer--link-list">
           <li>
-            <a href="mailto:saint@sainternet.xyz" target="_blank" rel="noopener noreferrer" id="icon-email">
+            <a href="mailto:saint@sainternet.xyz" aria-label="Email me at saint@sainternet.xyz" target="_blank" rel="noopener noreferrer" id="icon-email">
               <icon class="enlift material-icons">email</icon>
             </a>
             <a class="mdl-tooltip mdl-tooltip--top" for="icon-email">
@@ -212,7 +212,7 @@
             </a>
           </li>
           <li>
-            <a href="https://discord.gg/NC7taVyn" id="icon-discord">
+            <a href="https://discord.gg/NC7taVyn" aria-label="Talk to me on Discord (probably not)" id="icon-discord">
               <icon class="enlift fa-brands fa-discord"></icon>
             </a>
             <a class="mdl-tooltip mdl-tooltip--top" for="icon-discord">
@@ -220,7 +220,7 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/saint-lascivious" id="icon-github">
+            <a href="https://github.com/saint-lascivious" aria-label="Check out my GitHub" id="icon-github">
               <icon class="enlift fa-brands fa-github"></icon>
             </a>
             <a class="mdl-tooltip mdl-tooltip--top" for="icon-github">
@@ -228,7 +228,7 @@
             </a>
           </li>
           <li>
-            <a href="https://www.reddit.com/user/saint-lascivious" id="icon-reddit">
+            <a href="https://www.reddit.com/user/saint-lascivious" aria-label="Occasionally I do things on Reddit" id="icon-reddit">
               <icon class="enlift fa-brands fa-reddit"></icon>
             </a>
             <a class="mdl-tooltip mdl-tooltip--top" for="icon-reddit">

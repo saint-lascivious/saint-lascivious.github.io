@@ -73,12 +73,12 @@
     <link rel="preload" as="style" href="resources/stylesheets/button_home.min.css">
     <link rel="stylesheet" href="resources/stylesheets/button_home.min.css">
 
-    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/materialicons/v140/Material-Icons.woff2">
-    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/robotomono/v22/RobotoMono-Regular.woff2">
-    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/roboto/v30/Roboto-Bold.woff2">
-    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/roboto/v30/Roboto-Medium.woff2">
-    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/roboto/v30/Roboto-Regular.woff2">
-    <link rel="preload" as="font" type="font/woff2" href="resources/fontawesome-free-6.4.0-web/webfonts/fa-brands-400.woff2">
+    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/materialicons/v140/Material-Icons.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/robotomono/v22/RobotoMono-Regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/roboto/v30/Roboto-Bold.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/roboto/v30/Roboto-Medium.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="resources/google/webfonts/roboto/v30/Roboto-Regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="resources/fontawesome-free-6.4.0-web/webfonts/fa-brands-400.woff2" crossorigin>
 
     <link rel="preload" as="style" href="resources/google/css/roboto.min.css">
     <link href="resources/google/css/roboto.min.css" rel="stylesheet">
@@ -337,7 +337,7 @@
       <div class="mdl-mini-footer--left-section">
         <ul class="mdl-mini-footer--link-list">
           <li>
-            <a href="mailto:saint@sainternet.xyz" target="_blank" rel="noopener noreferrer" id="icon-email">
+            <a href="mailto:saint@sainternet.xyz" aria-label="Email me at saint@sainternet.xyz" target="_blank" rel="noopener noreferrer" id="icon-email">
               <icon class="enlift material-icons">email</icon>
             </a>
             <a class="mdl-tooltip mdl-tooltip--top" for="icon-email">
@@ -345,7 +345,7 @@
             </a>
           </li>
           <li>
-            <a href="https://discord.gg/NC7taVyn" id="icon-discord">
+            <a href="https://discord.gg/NC7taVyn" aria-label="Talk to me on Discord (probably not)" id="icon-discord">
               <icon class="enlift fa-brands fa-discord"></icon>
             </a>
             <a class="mdl-tooltip mdl-tooltip--top" for="icon-discord">
@@ -353,7 +353,7 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/saint-lascivious" id="icon-github">
+            <a href="https://github.com/saint-lascivious" aria-label="Check out my GitHub" id="icon-github">
               <icon class="enlift fa-brands fa-github"></icon>
             </a>
             <a class="mdl-tooltip mdl-tooltip--top" for="icon-github">
@@ -361,7 +361,7 @@
             </a>
           </li>
           <li>
-            <a href="https://www.reddit.com/user/saint-lascivious" id="icon-reddit">
+            <a href="https://www.reddit.com/user/saint-lascivious" aria-label="Occasionally I do things on Reddit" id="icon-reddit">
               <icon class="enlift fa-brands fa-reddit"></icon>
             </a>
             <a class="mdl-tooltip mdl-tooltip--top" for="icon-reddit">
@@ -371,7 +371,7 @@
         </ul>
       </div>
     </footer>
-    <a href="index.html" id="button_home" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--2dp enlift"><icon class="material-icons">home</icon></a>
+    <a href="index.html" aria-label="Go back to the Home page" id="button_home" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--2dp enlift"><icon class="material-icons">home</icon></a>
     <a class="mdl-tooltip mdl-tooltip--left" for="button_home">
       Back to Home page.
     </a>
