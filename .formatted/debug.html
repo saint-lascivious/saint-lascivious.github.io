@@ -155,35 +155,22 @@
           <div class="sainternet-content mdl-shadow--2dp content mdl-cell mdl-cell--8-col enlift">
             <h3 class="embiggen">Debug</h3>
             <ul>
-              <li><a href="debug.html#sitelogging" class="embiggen">Site Logging</a></li>
-              <li><a href="debug.html#serviceworkerlogging" class="embiggen">Service Worker Logging</a></li>
+              <li><a href="debug.html#consolelogging" class="embiggen">Console Logging</a></li>
               <li><a href="debug.html#deletestorage" class="embiggen">Delete Storage</a></li>
               <li><a href="debug.html#pingserviceworker" class="embiggen">Ping Service Worker</a></li>
               <li><a href="debug.html#serviceworkerinfo" class="embiggen">Service Worker Info</a></li>
             </ul>
           </div>
         </div>
-        <div class="sainternet-container mdl-grid" id="sitelogging">
+        <div class="sainternet-container mdl-grid" id="consolelogging">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--2dp content mdl-cell mdl-cell--8-col enlift">
-            <h3 class="embiggen">Site Logging</h3>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast enlift" id="button_sitelogging" onclick="toggleLogging(SITE_LOGGING);">
-              Site Logging
+            <h3 class="embiggen">Console Logging</h3>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast enlift" id="button_consolelogging" onclick="toggleConsoleLogging();">
+              Console Logging
             </button>
-            <button class="mdl-tooltip mdl-tooltip--top" for="button_sitelogging">
-              Toggle site logging
-            </button>
-          </div>
-        </div>
-        <div class="sainternet-container mdl-grid" id="serviceworkerlogging">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="sainternet-content mdl-shadow--2dp content mdl-cell mdl-cell--8-col enlift">
-            <h3 class="embiggen">Service Worker Logging</h3>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast enlift" id="button_serviceworkerlogging" onclick="toggleLogging(SERVICEWORKER_LOGGING);">
-              Service Worker Logging
-            </button>
-            <button class="mdl-tooltip mdl-tooltip--top" for="button_serviceworkerlogging">
-              Toggle service worker logging
+            <button class="mdl-tooltip mdl-tooltip--top" for="button_consolelogging">
+              Toggle console logging
             </button>
           </div>
         </div>
@@ -199,7 +186,7 @@
             </button>
           </div>
         </div>
-        <div class="sainternet-container mdl-grid">
+        <div class="sainternet-container mdl-grid" id="pingserviceworker">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="sainternet-content mdl-shadow--2dp content mdl-cell mdl-cell--8-col enlift">
             <h3 class="embiggen">Ping Service Worker</h3>
