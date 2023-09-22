@@ -1,7 +1,11 @@
 User-agent: *
 Disallow:
+Disallow: /404.html
 Disallow: /.formatted/
 Disallow: /.git/
 Disallow: /.github/
+Disallow: /debug.html
+Disallow: /downloads.html
 Disallow: /resources/
+Disallow: /test.html
 Sitemap: https://sainternet.xyz/sitemap.xml
