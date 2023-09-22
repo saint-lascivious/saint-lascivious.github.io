@@ -10,3 +10,5 @@ Disallow: /downloads.html
 Disallow: /resources/
 Disallow: /test.html
 Sitemap: https://sainternet.xyz/sitemap.xml
+Sitemap: https://www.sainternet.xyz/sitemap.xml
+Sitemap: https://saint-lascivious.github.io/sitemap.xml
