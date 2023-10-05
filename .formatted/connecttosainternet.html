@@ -231,17 +231,37 @@
               <div class="mdl-list__item">
                 <span class="embiggen mdl-list__item-primary-content">DNS over HTTPS</span>
                 <a class="mdl-list__item-secondary-action" download="sainternet-https-only.mobileconfig" href="downloads/apple/sainternet-https-only.mobileconfig" id="httpsmobileconfig"><icon class="material-icons mdl-list__item-icon">file_download</icon></a>
-                <a href="#" class="mdl-tooltip mdl-tooltip--top" for="httpsmobileconfig">Download HTTPS .mobileconfig for Apple iOS/macOS.</a>
+                <a href="#" class="mdl-tooltip mdl-tooltip--top" for="httpsmobileconfig">Download filtered HTTPS DNS profile for Apple iOS/macOS.</a>
               </div>
               <div class="mdl-list__item">
                 <span class="embiggen mdl-list__item-primary-content">DNS over TLS</span>
                 <a class="mdl-list__item-secondary-action" download="sainternet-tls-only.mobileconfig" href="downloads/apple/sainternet-tls-only.mobileconfig" id="tlsmobileconfig"><icon class="material-icons mdl-list__item-icon">file_download</icon></a>
-                <a href="#" class="mdl-tooltip mdl-tooltip--left" for="tlsmobileconfig">Download TLS .mobileconfig for Apple iOS/macOS.</a>
+                <a href="#" class="mdl-tooltip mdl-tooltip--left" for="tlsmobileconfig">Download filtered TLS DNS profile for Apple iOS/macOS.</a>
               </div>
               <div class="mdl-list__item" id="recommendeddnsprofile">
                 <span class="embiggen mdl-list__item-primary-content">DNS over HTTPS/TLS</span>
                 <a class="mdl-list__item-secondary-action" download="sainternet-https-and-tls.mobileconfig" href="downloads/apple/sainternet-https-and-tls.mobileconfig" id="httpstlsmobileconfig"><icon class="material-icons mdl-list__item-icon">file_download</icon></a>
-                <a href="#" class="mdl-tooltip mdl-tooltip--bottom" for="httpstlsmobileconfig">Download HTTPS/TLS .mobileconfig for Apple iOS/macOS.</a>
+                <a href="#" class="mdl-tooltip mdl-tooltip--left" for="httpstlsmobileconfig">Download filtered HTTPS/TLS DNS profile for Apple iOS/macOS.</a>
+              </div>
+            </div>
+            <p class="embiggen sainternet-subheader-centered" id="safesearchdnsprofiles">
+              Safe Search DNS Profiles
+            </p>
+            <div class="sainternet-list-action mdl-list">
+              <div class="mdl-list__item">
+                <span class="embiggen mdl-list__item-primary-content">Safe Search DNS over HTTPS</span>
+                <a class="mdl-list__item-secondary-action" download="sainternet-https-only-safe-search.mobileconfig" href="downloads/apple/sainternet-https-only-safe-search.mobileconfig" id="safesearchhttpsmobileconfig"><icon class="material-icons mdl-list__item-icon">file_download</icon></a>
+                <a href="#" class="mdl-tooltip mdl-tooltip--left" for="safesearchhttpsmobileconfig">Download safe search HTTPS DNS profile for Apple iOS/macOS.</a>
+              </div>
+              <div class="mdl-list__item">
+                <span class="embiggen mdl-list__item-primary-content">Safe Search DNS over TLS</span>
+                <a class="mdl-list__item-secondary-action" download="sainternet-tls-only-safe-search.mobileconfig" href="downloads/apple/sainternet-tls-only-safe-search.mobileconfig" id="safesearchtlsmobileconfig"><icon class="material-icons mdl-list__item-icon">file_download</icon></a>
+                <a href="#" class="mdl-tooltip mdl-tooltip--left" for="safesearchtlsmobileconfig">Download safe search TLS DNS profile for Apple iOS/macOS.</a>
+              </div>
+              <div class="mdl-list__item">
+                <span class="embiggen mdl-list__item-primary-content">Safe Search DNS over HTTPS/TLS</span>
+                <a class="mdl-list__item-secondary-action" download="sainternet-https-and-tls-safe-search.mobileconfig" href="downloads/apple/sainternet-https-and-tls-safe-search.mobileconfig" id="safesearchhttpstlsmobileconfig"><icon class="material-icons mdl-list__item-icon">file_download</icon></a>
+                <a href="#" class="mdl-tooltip mdl-tooltip--left" for="safesearchhttpstlsmobileconfig">Download safe-search HTTPS/TLS DNS profile for Apple iOS/macOS.</a>
               </div>
             </div>
             <p class="embiggen sainternet-subheader-centered" id="unfiltereddnsprofiles">
@@ -249,28 +269,26 @@
             </p>
             <div class="sainternet-list-action mdl-list">
               <div class="mdl-list__item">
-                <span class="embiggen mdl-list__item-primary-content">DNS over HTTPS</span>
+                <span class="embiggen mdl-list__item-primary-content">Unfiltered DNS over HTTPS</span>
                 <a class="mdl-list__item-secondary-action" download="sainternet-https-only-unfiltered.mobileconfig" href="downloads/apple/sainternet-https-only-unfiltered.mobileconfig" id="unfilteredhttpsmobileconfig"><icon class="material-icons mdl-list__item-icon">file_download</icon></a>
-                <a href="#" class="mdl-tooltip mdl-tooltip--top" for="unfilteredhttpsmobileconfig">Download unfiltered HTTPS .mobileconfig for Apple iOS/macOS.</a>
+                <a href="#" class="mdl-tooltip mdl-tooltip--left" for="unfilteredhttpsmobileconfig">Download unfiltered HTTPS DNS profile for Apple iOS/macOS.</a>
               </div>
               <div class="mdl-list__item">
-                <span class="embiggen mdl-list__item-primary-content">DNS over TLS</span>
+                <span class="embiggen mdl-list__item-primary-content">Unfiltered DNS over TLS</span>
                 <a class="mdl-list__item-secondary-action" download="sainternet-tls-only-unfiltered.mobileconfig" href="downloads/apple/sainternet-tls-only-unfiltered.mobileconfig" id="unfilteredtlsmobileconfig"><icon class="material-icons mdl-list__item-icon">file_download</icon></a>
-                <a href="#" class="mdl-tooltip mdl-tooltip--left" for="unfilteredtlsmobileconfig">Download unfiltered TLS .mobileconfig for Apple iOS/macOS.</a>
+                <a href="#" class="mdl-tooltip mdl-tooltip--left" for="unfilteredtlsmobileconfig">Download unfiltered TLS DNS profile for Apple iOS/macOS.</a>
               </div>
               <div class="mdl-list__item">
-                <span class="embiggen mdl-list__item-primary-content">DNS over HTTPS/TLS</span>
+                <span class="embiggen mdl-list__item-primary-content">Unfiltered DNS over HTTPS/TLS</span>
                 <a class="mdl-list__item-secondary-action" download="sainternet-https-and-tls-unfiltered.mobileconfig" href="downloads/apple/sainternet-https-and-tls-unfiltered.mobileconfig" id="unfilteredhttpstlsmobileconfig"><icon class="material-icons mdl-list__item-icon">file_download</icon></a>
-                <a href="#" class="mdl-tooltip mdl-tooltip--bottom" for="unfilteredhttpstlsmobileconfig">Download unfiltered HTTPS/TLS .mobileconfig for Apple iOS/macOS.</a>
+                <a href="#" class="mdl-tooltip mdl-tooltip--bottom" for="unfilteredhttpstlsmobileconfig">Download unfiltered HTTPS/TLS DNS profile for Apple iOS/macOS.</a>
               </div>
             </div>
             <p>
               Notes:
             </p>
             <ul>
-<!--
-              <li>These profiles are not digitally signed and that is expected/normal</li>
--->
+              <li>These profiles are digitally signed, but not by me</li>
               <li>Sainternet intentionally disables Apple's <a href="https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay">iCloud Private Relay</a> to prevent it from bypassing Sainternet</li>
             </ul>
           </div>
