@@ -67,6 +67,10 @@ body {
   transition: box-shadow .3s ease-in-out;
 }
 
+.subterfuge {
+  cursor:default;
+}
+
 .sainternet-list-action {
   margin-left: auto;
   margin-right: auto;

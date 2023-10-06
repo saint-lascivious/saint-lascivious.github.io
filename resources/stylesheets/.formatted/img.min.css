@@ -25,10 +25,6 @@ img {
   display: none;
 }
 
-.subterfuge {
-  cursor:default;
-}
-
 @media (orientation: landscape) {
   img {
     height: auto;

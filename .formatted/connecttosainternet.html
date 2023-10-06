@@ -64,6 +64,8 @@
     <link rel="stylesheet" href="resources/stylesheets/ribbons.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/mono.min.css">
     <link rel="stylesheet" href="resources/stylesheets/mono.min.css">
+    <link rel="preload" as="style" href="resources/stylesheets/img.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/img.min.css">
     <link rel="preload" as="style" href="resources/stylesheets/button_home.min.css">
     <link rel="stylesheet" href="resources/stylesheets/button_home.min.css">
 
@@ -128,7 +130,7 @@
     <div class="sainternet-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header mdl-shadow--2dp enlift">
         <div class="mdl-layout__header-row">
-          <span class="embiggen mdl-layout-title">sainternet.xyz</span>
+          <span class="embiggen mdl-layout-title"><a href="index.html" class="subterfuge mdl-color-text--primary-contrast">sainternet.xyz</a></span>
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation mdl-layout--large-screen-only">
             <a class="embiggen mdl-navigation__link" href="index.html">Home</a>
@@ -179,6 +181,9 @@
             <ul>
               <li><a href="connecttosainternet.html#androidprivatedns" class="embiggen">Android Private DNS</a></li>
               <li><a href="connecttosainternet.html#appleiosmacos" class="embiggen">Apple iOS/MacOS</a></li>
+                <ul>
+                  <li><a href="connecttosainternet.html#dnsprofiles" class="embiggen">DNS Profiles</a></li>
+                </ul>
               <li><a href="connecttosainternet.html#googlechromechromium" class="embiggen">Google Chrome/Chromium</a></li>
               <li><a href="connecttosainternet.html#mozillafirefox" class="embiggen">Mozilla Firefox</a></li>
             </ul>
@@ -224,8 +229,8 @@
               <li>Agree to any/all prompts</li>
               <li>Done</li>
             </ol>
-            <p class="embiggen sainternet-subheader-centered" id="filtereddnsprofiles">
-              Filtered DNS Profiles
+            <p class="embiggen sainternet-subheader-centered" id="dnsprofiles">
+              DNS Profiles
             </p>
             <div class="sainternet-list-action mdl-list">
               <div class="mdl-list__item">
@@ -243,11 +248,6 @@
                 <a class="mdl-list__item-secondary-action" download="sainternet-https-and-tls.mobileconfig" href="downloads/apple/sainternet-https-and-tls.mobileconfig" id="httpstlsmobileconfig"><icon class="material-icons mdl-list__item-icon">file_download</icon></a>
                 <a href="#" class="mdl-tooltip mdl-tooltip--left" for="httpstlsmobileconfig">Download filtered HTTPS/TLS DNS profile for Apple iOS/macOS.</a>
               </div>
-            </div>
-            <p class="embiggen sainternet-subheader-centered" id="safesearchdnsprofiles">
-              Safe Search DNS Profiles
-            </p>
-            <div class="sainternet-list-action mdl-list">
               <div class="mdl-list__item">
                 <span class="embiggen mdl-list__item-primary-content">Safe Search DNS over HTTPS</span>
                 <a class="mdl-list__item-secondary-action" download="sainternet-https-only-safe-search.mobileconfig" href="downloads/apple/sainternet-https-only-safe-search.mobileconfig" id="safesearchhttpsmobileconfig"><icon class="material-icons mdl-list__item-icon">file_download</icon></a>
@@ -263,11 +263,6 @@
                 <a class="mdl-list__item-secondary-action" download="sainternet-https-and-tls-safe-search.mobileconfig" href="downloads/apple/sainternet-https-and-tls-safe-search.mobileconfig" id="safesearchhttpstlsmobileconfig"><icon class="material-icons mdl-list__item-icon">file_download</icon></a>
                 <a href="#" class="mdl-tooltip mdl-tooltip--left" for="safesearchhttpstlsmobileconfig">Download safe-search HTTPS/TLS DNS profile for Apple iOS/macOS.</a>
               </div>
-            </div>
-            <p class="embiggen sainternet-subheader-centered" id="unfiltereddnsprofiles">
-              Unfiltered DNS Profiles
-            </p>
-            <div class="sainternet-list-action mdl-list">
               <div class="mdl-list__item">
                 <span class="embiggen mdl-list__item-primary-content">Unfiltered DNS over HTTPS</span>
                 <a class="mdl-list__item-secondary-action" download="sainternet-https-only-unfiltered.mobileconfig" href="downloads/apple/sainternet-https-only-unfiltered.mobileconfig" id="unfilteredhttpsmobileconfig"><icon class="material-icons mdl-list__item-icon">file_download</icon></a>
